@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ionic Builds</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<!--External Hamburger Menu Animations-->
+	<link rel="stylesheet" href="styles/hamburgers.css">
+	<!--Google Icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+	<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<!-- HEADER -->
+	<header id = "header">
+		<div class="container header-container">
+
+			<!-- HEADER-BRANDING -->
+			<div class="branding">
+				<div class="branding-text">
+					<div class="company-name">IONIC BUILDS</div>
+					<div class="company-slogan">visualise.design.construct</div>
+				</div>
+				<img src="img/logo.png" class = "branding-logo" alt="Ionic Logo">
+			</div>
+
+			<!-- HAMBURGER BUTTON -->
+			<button class="hamburger hamburger--squeeze" id = "hamburger-menu" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+			<!-- NAVIGATION -->
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Gallery</a></li>
+					<a href = "#contact-us.html" class = "CTA-btn nav-contact-btn">Contact Us</a>
+					<!--<i class="material-icons">phone</i>-->
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id = "contact-form-section">
+			<div class="container">
+				<h2>Get in touch - we'd love to hear from you!</h2>
+				<form action="" class = "contact-form">
+					<div class="text-input-container">
+						<label for="name" class = "label">Name</label>
+						<input type = "text" name = "name" class = "text-entry" id = "name" placeholder = "John Smith" required>
+					</div>
+					<div class="text-input-container">
+						<label for="email" class = "label">Email</label>
+						<input type = "email" name = "email" class = "text-entry" id = "email" placeholder = "e.g. johnsmith@email.com" required>
+					</div>
+					<div class="text-box-container">
+						<label class = "label" id = "commentbox-label" for ="comments">Your Message</label>
+						<textarea id = "commentbox" class = "text-entry" name = "comment" placeholder = "Enter your comment here..."></textarea>
+					</div>
+
+				</form>
+			</div>
+		</section>
+
+
+	</main>
+
+
+
+	<script> </script>
+</body>
+</html>

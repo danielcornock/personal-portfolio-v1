@@ -1,0 +1,31 @@
+ .section-testimonials{
+	background-color: $primary-light-color;
+	padding: 80px 30px;
+	h2{
+		color: $primary-dark-color;
+		text-align: center;
+		margin: 20px;
+	}
+ }
+
+.testimonial-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+ .testimonial{
+	border-left: 4px solid $cyan;
+	margin: 30px 15px;
+	padding-left: 30px;
+ }
+
+ .quote{
+	font-style: italic;
+ }
+
+ .quote-author{
+	margin-top: 20px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #808080
+ }

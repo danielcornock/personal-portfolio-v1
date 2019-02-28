@@ -1,0 +1,55 @@
+//------------ services -----------//
+
+.section-services{
+	background-color: rgba(42, 46, 59, 0.97);
+//	background-color: $primary-dark-color;
+
+	padding: 80px 30px;
+
+	h2{
+		color: white;
+		text-align: center;
+		margin: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+.skills-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: 2s ease;
+}
+
+.skills{
+	background-color: $cyan;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: 0.5s ease;
+	p{
+		margin-top: 3px;
+	}
+}
+
+.skills:hover{
+	transform: scale(1.1);
+	color: $cyan;
+	background-color: white;
+}
+
+.skills-icon{
+}
+
+.fas, .fab{
+	font-size: 26px;
+}

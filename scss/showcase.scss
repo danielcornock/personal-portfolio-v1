@@ -1,0 +1,96 @@
+.welcome-container{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 100%;
+}
+
+#section-welcome{
+	height: 100vh;
+
+}
+
+.section-welcome--slide{
+	height: 100%;
+	position: relative;
+	padding: 30px;
+	overflow: none;
+
+}
+
+#slide-bgimage1{
+	background-image: url("../img/planning.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	transition: 1s ease;
+}
+
+#slide-bgimage1:after{
+	content: "";
+	position: absolute;
+	background-color: $primary-dark-color;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.6;
+}
+
+h1{
+	color: white;
+	font-size: 4.5em;
+	font-weight: 200;
+
+	animation-name: fade-down;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-delay: 0.5s;
+	position: relative;
+	opacity: 0;
+}
+
+@keyframes fade-down{
+	from{
+		bottom: 100px;
+		opacity: 0;
+	}
+	to{
+		bottom: 0;
+		opacity: 1;
+	}
+}
+.showcase-text{
+	animation-name: fade-up;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-delay: 2s;
+	opacity: 0;
+	color: white;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: rgba(117, 171, 188, 0.2);
+	p{
+		font-size: 1em;
+		font-weight: 300;
+		margin: 5px 0 20px 0;
+	}
+}
+
+@keyframes fade-up{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}

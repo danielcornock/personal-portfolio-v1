@@ -1,0 +1,50 @@
+//------------- CARDS ---------------//
+
+#section-cards{
+	background-color: $primary-dark-color;
+}
+
+.card-container{
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(3, 1fr);
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.card{
+//	background-color: $pale-blue;
+	color: white;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	border: 2px solid $cyan;
+	background-color: rgba(22, 26, 39, 1);
+	opacity: 0;
+	transition: 2s ease;
+}
+
+.card h2{
+	align-self: center;
+	margin:20px;
+	color: $cyan;
+}
+
+.card p{
+	font-weight: 200;
+}
+
+.card-text{
+	display: flex;
+	flex-direction: column;
+}
+.svg-whole{
+	height: 80px;
+
+}
+
+.small-only{
+	display:none;
+}

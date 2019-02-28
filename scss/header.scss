@@ -1,0 +1,109 @@
+header{
+	background-color: $primary-dark-color;
+	width: 100%;
+	box-shadow: 1px 1px 8px;
+
+}
+
+.header-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+//--- HEADER BRANDING AND LOGOS ---//
+.branding{
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+
+	.branding-text{
+
+		.company-name{
+			font-weight: 200;
+			font-size: 2.5em;
+			color: $primary-light-color;
+			line-height: 30px;
+			letter-spacing: 1.5px;
+		}
+
+		.company-slogan{
+			font-weight: 100;
+			font-size: 1em;
+			letter-spacing: 0.1em;
+			color: $primary-light-color;
+			opacity: 0.5;
+			letter-spacing: 0.23em;
+		}
+	}
+
+	.branding-logo{
+		height: 45px;
+	}
+}
+
+//--- NAVIGATION MENU ---//
+nav{
+	width: 50%;
+	display: block;
+	z-index: 9;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li{
+	list-style: none;
+	height: 100%;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	transition: 1s ease;
+	border-bottom: 1px solid transparent;
+}
+
+a:hover{
+	color: $cyan;
+	border-bottom: 1px solid $cyan;
+}
+
+.active-page{
+	font-weight: 400;
+	color: $cyan;
+}
+
+.nav-contact-btn{
+
+	display: block;
+	white-space: nowrap;
+	//-- Most styles for this come from the .CTA-btn class in globals.
+}
+
+#hamburger-menu{
+	display: none;
+	z-index: 10;
+}
+
+
+//------- FOOTER -------//
+
+footer{
+	background-color: $black;
+	color: white;
+}
+.footer-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 30px;
+	font-weight: 200;
+}
+
+
