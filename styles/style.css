@@ -65,8 +65,8 @@ header {
     align-items: center; }
     .branding .branding-text .company-slogan i {
       font-size: 5px; }
-    .branding .branding-text .company-slogan pre {
-      font-size: 10px; }
+    .branding .branding-text .company-slogan span {
+      font-size: 8px; }
   .branding .branding-logo {
     height: 60px; }
 
