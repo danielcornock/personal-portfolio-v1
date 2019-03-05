@@ -1,8 +1,8 @@
-$primary-light-color: rgba(214, 226, 251, 1);
-$primary-dark-color: rgba(42, 46, 59, 1);
-$black: rgba(7, 16, 19, 1);
-$cyan: rgba(35, 181, 211, 1);
-$pale-blue: rgba(117, 171, 188, 1);
+$primary-light-color: rgba(216, 226, 249, 1);
+$primary-dark-color: rgba(43, 46, 58, 1);
+$black: rgba(9, 16, 19, 1);
+$cyan: rgba(103, 155, 231, 1);
+$pale-blue: rgba(172, 197, 249, 1);
 
 *{
 	margin: 0px;
@@ -32,6 +32,7 @@ h2{
 	padding: 10px 35px;
 	font-size: 1em;
 	border: none;
+	outline: none;
 	cursor: pointer;
 
 }

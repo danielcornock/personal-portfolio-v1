@@ -14,32 +14,47 @@ header{
 
 //--- HEADER BRANDING AND LOGOS ---//
 .branding{
-	display: flex;
-	justify-content: space-between;
-	width: 300px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	width: auto;
+	align-items: center;
+	*{
+		font-family: copperplate;
+	}
+	
 
 	.branding-text{
 
 		.company-name{
-			font-weight: 200;
+			font-weight: 500;
 			font-size: 2.5em;
 			color: $primary-light-color;
 			line-height: 30px;
-			letter-spacing: 1.5px;
 		}
 
 		.company-slogan{
-			font-weight: 100;
+			font-weight: 500;
 			font-size: 1em;
-			letter-spacing: 0.1em;
 			color: $primary-light-color;
 			opacity: 0.5;
-			letter-spacing: 0.23em;
+			letter-spacing: 0.1em;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			i{
+				font-size: 5px;
+			}
+
+			pre{
+				font-size: 10px;
+			}
 		}
 	}
 
 	.branding-logo{
-		height: 45px;
+		height: 60px;
 	}
 }
 
@@ -60,7 +75,6 @@ nav ul li{
 	list-style: none;
 	height: 100%;
 }
-
 a{
 	color: white;
 	text-decoration: none;
@@ -69,7 +83,7 @@ a{
 	border-bottom: 1px solid transparent;
 }
 
-a:hover{
+li a:hover{
 	color: $cyan;
 	border-bottom: 1px solid $cyan;
 }
@@ -95,15 +109,58 @@ a:hover{
 //------- FOOTER -------//
 
 footer{
-	background-color: $black;
+	background-color: $primary-dark-color;
 	color: white;
 }
 .footer-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	padding: 30px;
 	font-weight: 200;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.footer-left{
+	i{
+		font-size: inherit;
+		color: $cyan;
+		text-align: center;
+		
+	}
+	p, a{
+		letter-spacing: 1px;
+	}
+
+	a:hover{
+		color: $cyan;
+	}
+	
+	i:nth-child(1){
+		font-size: 20px;
+	}
+	display: grid;
+	grid-template-columns: 30px auto;
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+
+
+}
+
+.footer-right{
+	height: 100%;
+	overflow: hidden;
+	display: grid;
+	align-items: center;
+	justify-items: right;
+
+	img{
+		width: 100%;
+		cursor: pointer;
+	}
+
+	a{
+		letter-spacing: 4px;
+		font-size: 12px;
+	}
 }
 
 

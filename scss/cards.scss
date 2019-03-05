@@ -16,9 +16,8 @@
 //	background-color: $pale-blue;
 	color: white;
 	padding: 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	text-align: center;
+
 	border-radius: 10px;
 	border: 2px solid $cyan;
 	background-color: rgba(22, 26, 39, 1);
@@ -27,13 +26,15 @@
 }
 
 .card h2{
-	align-self: center;
-	margin:20px;
+	align-self: left;
+
 	color: $cyan;
+	margin-bottom: 5px;
 }
 
 .card p{
 	font-weight: 200;
+	text-align: left;
 }
 
 .card-text{
@@ -43,8 +44,5 @@
 .svg-whole{
 	height: 80px;
 
-}
 
-.small-only{
-	display:none;
 }
