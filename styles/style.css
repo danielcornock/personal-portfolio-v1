@@ -158,7 +158,6 @@ footer {
 .section-welcome--slide {
   height: 100%;
   position: relative;
-  padding: 30px;
   overflow: hidden; }
 
 #slide-bgimage1 {
@@ -166,7 +165,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 30px;
   position: absolute;
   top: 0;
   left: 0;
@@ -248,11 +246,13 @@ h1 {
 .card h2 {
   align-self: left;
   color: #679be7;
+  margin-top: 10px;
   margin-bottom: 5px; }
 
 .card p {
   font-weight: 200;
-  text-align: left; }
+  text-align: left;
+  font-size: 1em; }
 
 .card-text {
   display: flex;
@@ -400,7 +400,7 @@ h1 {
     font-size: 3.3em; }
 
   h2 {
-    font-size: 1.5em !important; }
+    font-size: 1.8em !important; }
 
   .company-name {
     font-size: 2.1em !important;
@@ -449,7 +449,7 @@ h1 {
     transform: scale(0.8); }
 
   .branding-logo {
-    display: none; }
+    height: 35px !important; }
 
   .showcase-text {
     background-color: transparent;
@@ -471,7 +471,10 @@ h1 {
     flex-direction: column; }
     .card h2 {
       margin-top: 20px;
-      text-align: center; }
+      text-align: center;
+      font-size: 2em !important; }
+    .card p {
+      font-size: 1.2em; }
 
   .svg-whole {
     margin: 0; }
