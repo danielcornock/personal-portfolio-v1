@@ -14,8 +14,6 @@ h2 {
   font-weight: 400; }
 
 .CTA-btn {
-  background-color: #679be7;
-  color: white;
   border-radius: 50px;
   transition: 0.5s ease;
   font-weight: 500;
@@ -26,8 +24,6 @@ h2 {
   cursor: pointer; }
 
 .CTA-btn:hover {
-  background-color: white;
-  color: #679be7;
   transform: scale(1.1); }
 
 .colored {
@@ -106,8 +102,14 @@ li a:hover {
   color: #679be7; }
 
 .nav-contact-btn {
+  background-color: #679be7;
+  color: white;
   display: block;
   white-space: nowrap; }
+
+.nav-contact-btn:hover {
+  color: #679be7;
+  background-color: white; }
 
 #hamburger-menu {
   display: none;
@@ -158,6 +160,43 @@ footer {
   justify-content: space-around;
   flex-direction: column;
   height: 100%; }
+  .welcome-container h2 {
+    color: white;
+    font-weight: 100;
+    text-align: center; }
+  .welcome-container .gallery-btn {
+    background-color: white;
+    color: #679be7; }
+
+h1 {
+  color: white;
+  font-size: 4.5em;
+  font-weight: 100;
+  text-align: center;
+  animation-name: fade-down;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  position: relative;
+  opacity: 0;
+  margin-bottom: 30px; }
+
+.showcase-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .showcase-btns button {
+    width: 40%;
+    max-width: 300px; }
+
+.gallery-btn:hover, .contact-btn:hover {
+  color: white;
+  background-color: #2b2e3a; }
+
+.contact-btn {
+  background-color: #679be7;
+  color: white; }
 
 #section-welcome {
   height: 100vh; }
@@ -189,19 +228,6 @@ footer {
   bottom: 0;
   right: 0;
   opacity: 0.6; }
-
-h1 {
-  color: white;
-  font-size: 4.5em;
-  font-weight: 100;
-  text-align: center;
-  animation-name: fade-down;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-delay: 0.5s;
-  position: relative;
-  opacity: 0; }
 
 @keyframes fade-down {
   from {

@@ -94,11 +94,19 @@ li a:hover{
 }
 
 .nav-contact-btn{
-
+	background-color: $cyan;
+	color: white;
 	display: block;
 	white-space: nowrap;
 	//-- Most styles for this come from the .CTA-btn class in globals.
 }
+
+.nav-contact-btn:hover{
+	color: $cyan;
+	background-color: white;
+}
+
+
 
 #hamburger-menu{
 	display: none;

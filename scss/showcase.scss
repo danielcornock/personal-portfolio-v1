@@ -3,7 +3,56 @@
 	justify-content: space-around;
 	flex-direction: column;
 	height: 100%;
+
+	h2{
+		color: white;
+		font-weight: 100;
+		text-align: center;
+	}
+
+	.gallery-btn{
+		background-color: white;
+		color: $cyan;
+	}
 }
+
+h1{
+	color: white;
+	font-size: 4.5em;
+	font-weight: 100;
+	text-align: center;
+	animation-name: fade-down;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-delay: 0.5s;
+	position: relative;
+	opacity: 0;
+	margin-bottom: 30px;
+}
+
+.showcase-btns{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	button{
+		width: 40%;
+		max-width: 300px;
+
+	}
+}
+
+.gallery-btn:hover, .contact-btn:hover{
+	color: white;
+	background-color: $primary-dark-color;
+}
+
+.contact-btn{
+	background-color: $cyan;
+	color: white;
+}
+
 
 #section-welcome{
 	height: 100vh;
@@ -42,19 +91,7 @@
 	opacity: 0.6;
 }
 
-h1{
-	color: white;
-	font-size: 4.5em;
-	font-weight: 100;
-	text-align: center;
-	animation-name: fade-down;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
-	animation-delay: 0.5s;
-	position: relative;
-	opacity: 0;
-}
+
 
 @keyframes fade-down{
 	from{

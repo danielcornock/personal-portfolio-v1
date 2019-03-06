@@ -24,8 +24,6 @@ h2{
 }
 
 .CTA-btn{
-	background-color: $cyan;
-	color: white;
 	border-radius: 50px;
 	transition: 0.5s ease;
 	font-weight: 500;
@@ -37,9 +35,9 @@ h2{
 
 }
 
+
+
 .CTA-btn:hover{
-	background-color: white;
-	color: $cyan;
 	transform: scale(1.1);
 }
 
