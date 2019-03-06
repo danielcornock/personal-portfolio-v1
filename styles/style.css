@@ -30,6 +30,12 @@ h2 {
   color: #679be7;
   transform: scale(1.1); }
 
+.colored {
+  color: #679be7; }
+
+.bold {
+  font-weight: 400; }
+
 header {
   background-color: #2b2e3a;
   width: 100%;
@@ -48,7 +54,7 @@ header {
   width: auto;
   align-items: center; }
   .branding * {
-    font-family: copperplate; }
+    font-family: Copperplate, Georgia, 'Times New Roman', Times, serif; }
   .branding .branding-text .company-name {
     font-weight: 500;
     font-size: 2.5em;
@@ -115,7 +121,7 @@ footer {
   padding: 30px;
   font-weight: 200;
   display: grid;
-  grid-template-columns: 3fr 1fr; }
+  grid-template-columns: 1fr 1fr; }
 
 .footer-left {
   display: grid;
@@ -125,7 +131,8 @@ footer {
   .footer-left i {
     font-size: inherit;
     color: #679be7;
-    text-align: center; }
+    text-align: center;
+    font-style: normal; }
   .footer-left p, .footer-left a {
     letter-spacing: 1px; }
   .footer-left a:hover {
@@ -140,7 +147,7 @@ footer {
   align-items: center;
   justify-items: right; }
   .footer-right img {
-    width: 100%;
+    width: 200px;
     cursor: pointer; }
   .footer-right a {
     letter-spacing: 4px;
@@ -186,7 +193,8 @@ footer {
 h1 {
   color: white;
   font-size: 4.5em;
-  font-weight: 200;
+  font-weight: 100;
+  text-align: center;
   animation-name: fade-down;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -202,6 +210,11 @@ h1 {
   to {
     bottom: 0;
     opacity: 1; } }
+.showcase-text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px; }
+
 .showcase-text {
   animation-name: fade-up;
   animation-duration: 2s;
@@ -212,11 +225,44 @@ h1 {
   color: white;
   padding: 30px;
   border-radius: 10px;
-  background-color: rgba(117, 171, 188, 0.2); }
+  background-color: rgba(117, 171, 188, 0.2);
+  border: 2px solid transparent;
+  transition: 2s;
+  overflow: hidden;
+  position: relative; }
   .showcase-text p {
     font-size: 1em;
     font-weight: 300;
     margin: 5px 0 20px 0; }
+
+.showcase-text-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.showcase-text-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#showcase-text-1 {
+  background-image: url("../img/bathroom.jpeg"); }
+
+#showcase-text-2 {
+  background-image: url("../img/kitchen.jpeg"); }
+
+.showcase-text:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5); }
 
 @keyframes fade-up {
   from {
@@ -369,7 +415,7 @@ h1 {
 .text-box-container {
   grid-column: 1/3; }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   nav {
     background-color: rgba(7, 16, 19, 0.8);
     position: absolute;

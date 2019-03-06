@@ -20,7 +20,7 @@ header{
 	width: auto;
 	align-items: center;
 	*{
-		font-family: copperplate;
+		font-family: Copperplate, Georgia, 'Times New Roman', Times, serif;
 	}
 	
 
@@ -116,7 +116,7 @@ footer{
 	padding: 30px;
 	font-weight: 200;
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 .footer-left{
@@ -124,6 +124,7 @@ footer{
 		font-size: inherit;
 		color: $cyan;
 		text-align: center;
+		font-style: normal;
 		
 	}
 	p, a{
@@ -153,7 +154,7 @@ footer{
 	justify-items: right;
 
 	img{
-		width: 100%;
+		width: 200px;
 		cursor: pointer;
 	}
 
