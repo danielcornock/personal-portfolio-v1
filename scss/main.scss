@@ -43,11 +43,11 @@
 	}
 
 	h1{
-		font-size: 3.3em;
+		font-size: 8vw;
 	}
 
 	h2{
-		font-size:1.8em !important;
+		font-size:1.8em;
 	}
 
 	.company-name{
@@ -135,12 +135,21 @@
 		}
 	}
 
-	h1{
-		font-size: 2.2em;
+	.showcase-titles{
+		h2{
+			font-size: 7vw;
+		}
 	}
 
-	.contact-btn{
-		margin-top: 20px;
+	.showcase-btns{
+		.CTA-btn{
+			font-size: 4.2vw;
+			padding: 15px 10px;
+		}
+	}
+
+	h1{
+		font-size: 2.2em;
 	}
 	.card{
 		flex-direction: column;

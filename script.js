@@ -16,6 +16,7 @@ function mobileMenuToggle(){
 function setWelcomeSectionHeight(){
 	let headerHeight = document.getElementById('header').clientHeight;
 	document.getElementById('section-welcome').style.height = (window.innerHeight - headerHeight) + "px";
+
 }
 
 

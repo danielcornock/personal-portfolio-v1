@@ -1,7 +1,7 @@
 header{
 	background-color: $primary-dark-color;
 	width: 100%;
-	box-shadow: 1px 1px 8px;
+	//box-shadow: 1px 1px 8px;
 
 }
 
@@ -38,7 +38,7 @@ header{
 			font-size: 1em;
 			color: $primary-light-color;
 			opacity: 0.5;
-			letter-spacing: 0.1em;
+			letter-spacing: 0.05em;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -81,11 +81,13 @@ a{
 	font-weight: 300;
 	transition: 1s ease;
 	border-bottom: 1px solid transparent;
+	display: block;
 }
 
 li a:hover{
 	color: $cyan;
-	border-bottom: 1px solid $cyan;
+	transform: scale(1.1);
+	//border-bottom: 1px solid $cyan;
 }
 
 .active-page{
@@ -124,8 +126,10 @@ footer{
 	padding: 30px;
 	font-weight: 200;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
+
+
 
 .footer-left{
 	i{
@@ -152,6 +156,17 @@ footer{
 	align-items: center;
 
 
+}
+
+.footer-middle{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+}
+
+.social-media-icon{
+	font-size: 40px !important;
 }
 
 .footer-right{

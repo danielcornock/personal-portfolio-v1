@@ -8,6 +8,12 @@
 		color: white;
 		font-weight: 100;
 		text-align: center;
+		animation-name: statement-fade;
+		animation-delay: 2s;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+		opacity: 0;
 	}
 
 	.gallery-btn{
@@ -16,10 +22,20 @@
 	}
 }
 
+@keyframes statement-fade{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
 h1{
 	color: white;
 	font-size: 4.5em;
-	font-weight: 100;
+	
+	font-weight: 300;
 	text-align: center;
 	animation-name: fade-down;
 	animation-duration: 2s;
@@ -31,15 +47,35 @@ h1{
 	margin-bottom: 30px;
 }
 
+
+
 .showcase-btns{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	animation-name: buttons-fade;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	position: relative;
 
 	button{
 		width: 40%;
 		max-width: 300px;
 
+	}
+}
+
+@keyframes buttons-fade{
+	from{
+		top: 100px;
+		opacity: 0;
+	}
+	to{
+		top: 0px;
+		opacity: 1;
 	}
 }
 
@@ -56,6 +92,7 @@ h1{
 
 #section-welcome{
 	height: 100vh;
+	box-shadow: inset 0px 0px 20px #000000;
 
 }
 
