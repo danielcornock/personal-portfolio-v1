@@ -28,17 +28,21 @@ header{
 
 		.company-name{
 			font-weight: 500;
-			font-size: 2.5em;
+			//font-size: 2.5em;
+			font-size: 2.1em;
+			letter-spacing: 2px;
 			color: $primary-light-color;
 			line-height: 30px;
 		}
 
 		.company-slogan{
 			font-weight: 500;
-			font-size: 1em;
+			letter-spacing: 0.015em;
+			font-size: 0.97em;
+			//font-size: 1em;
 			color: $primary-light-color;
 			opacity: 0.5;
-			letter-spacing: 0.05em;
+			//letter-spacing: 0.05em;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -54,7 +58,8 @@ header{
 	}
 
 	.branding-logo{
-		height: 60px;
+		//height: 60px;
+		height: 50px;
 	}
 }
 

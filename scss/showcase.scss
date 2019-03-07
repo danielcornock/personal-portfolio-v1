@@ -9,7 +9,7 @@
 		font-weight: 100;
 		text-align: center;
 		animation-name: statement-fade;
-		animation-delay: 2s;
+		animation-delay: 1.5s;
 		animation-duration: 1s;
 		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
@@ -38,10 +38,10 @@ h1{
 	font-weight: 300;
 	text-align: center;
 	animation-name: fade-down;
-	animation-duration: 2s;
+	animation-duration: 1.3s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
-	animation-delay: 0.5s;
+	animation-delay: 0.2s;
 	position: relative;
 	opacity: 0;
 	margin-bottom: 30px;
@@ -53,19 +53,28 @@ h1{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	animation-name: buttons-fade;
-	animation-duration: 1s;
-	animation-delay: 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-	opacity: 0;
-	position: relative;
-
 	button{
 		width: 40%;
 		max-width: 300px;
 
 	}
+}
+
+.showcase-btn{
+	animation-name: buttons-fade;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	position: relative;
+}
+
+.contact-btn{
+	animation-delay: 2.5s;
+}
+
+.gallery-btn{
+	animation-delay: 3.5s;
 }
 
 @keyframes buttons-fade{

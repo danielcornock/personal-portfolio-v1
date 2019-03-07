@@ -13,9 +13,9 @@ $pale-blue: rgba(172, 197, 249, 1);
 }
 
 .container{
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
-	padding: 30px;
+	padding: 25px 20px;
 }
 
 h2{
@@ -42,7 +42,31 @@ h2{
 }
 
 .colored{
-	color: $cyan;
+	animation-name: textcolortransition;
+	animation-duration: 0.4s;
+	animation-fill-mode: forwards;
+
+}
+
+.c1{
+	animation-delay: 4s;
+}
+
+.c2{
+	animation-delay: 5s;
+}
+
+.c3{
+	animation-delay: 6s;
+}
+@keyframes textcolortransition{
+	from{
+		color: white;
+	}
+
+	to{
+		color: $pale-blue;
+	}
 }
 
 .bold{

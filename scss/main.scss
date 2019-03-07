@@ -56,7 +56,7 @@
 	}
 
 	.company-slogan{
-		letter-spacing: 0.065em !important;
+		letter-spacing: 0.015em !important;
 		font-size: 0.97em !important;
 	}
 
@@ -103,13 +103,17 @@
 
 	}
 	.company-name{
-		font-size: 1.5em !important;
+		font-size: 1.55em !important;
 		line-height: 20px !important;
+	}
+
+	.container{
+		padding: 20px;
 	}
 
 	.company-slogan{
 		letter-spacing: 0px !important;
-		font-size: 0.8em !important;
+		font-size: 0.75em !important;
 	}
 
 	#hamburger-menu{
@@ -153,6 +157,9 @@
 	}
 	.card{
 		flex-direction: column;
+		padding: 0;
+		background-color: transparent;
+		border: none;
 		h2{
 			margin-top:20px;
 			text-align: center;
