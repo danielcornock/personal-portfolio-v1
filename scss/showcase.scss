@@ -52,9 +52,11 @@
 		animation-delay: 0.2s;
 		position: relative;
 		opacity: 0;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
+		
 	}
 	.showcase-subhead{
+		margin-top: 15px;
 		font-weight: 100;
 		font-size: 2em;
 		animation-name: h2-anim;
@@ -63,6 +65,11 @@
 		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
 		opacity: 0;
+	}
+
+	hr{
+		width: 20%;
+		margin: auto;
 	}
 }
 
