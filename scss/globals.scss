@@ -4,6 +4,10 @@ $black: rgba(9, 16, 19, 1);
 $cyan: rgba(103, 155, 231, 1);
 $pale-blue: rgba(172, 197, 249, 1);
 
+$tablet-sizing: 950px;
+$large-phone-sizing: 480px;
+$small-phone-sizing: 380px;
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -15,12 +19,30 @@ $pale-blue: rgba(172, 197, 249, 1);
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 25px 20px;
+	padding: 25px 60px;
 }
 
+.section-container{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
 h2{
+	text-align: center;
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 200;
+	margin-bottom: 50px;
+}
+
+	
+	
+
+a{
+	color: inherit;
+	text-decoration: none;
+	transition: 1s ease;
+	&:hover{
+		color: $cyan;
+	}
 }
 
 .CTA-btn{
@@ -33,40 +55,14 @@ h2{
 	outline: none;
 	cursor: pointer;
 
-}
+	&:hover{
+		transform: scale(1.1);
+	}
 
-
-
-.CTA-btn:hover{
-	transform: scale(1.1);
 }
 
 .colored{
-	animation-name: textcolortransition;
-	animation-duration: 0.4s;
-	animation-fill-mode: forwards;
-
-}
-
-.c1{
-	animation-delay: 4s;
-}
-
-.c2{
-	animation-delay: 5s;
-}
-
-.c3{
-	animation-delay: 6s;
-}
-@keyframes textcolortransition{
-	from{
-		color: white;
-	}
-
-	to{
-		color: $pale-blue;
-	}
+	color: $pale-blue;
 }
 
 .bold{

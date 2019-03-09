@@ -1,3 +1,4 @@
+//----- HEADER CONTAINERS -----//
 header{
 	background-color: $primary-dark-color;
 	width: 100%;
@@ -12,7 +13,7 @@ header{
 	align-items: center;
 }
 
-//--- HEADER BRANDING AND LOGOS ---//
+//----- BRANDING AND LOGOS -----//
 .branding{
 	display: grid;
 	grid-template-columns: auto auto;
@@ -22,48 +23,38 @@ header{
 	*{
 		font-family: Copperplate, Georgia, 'Times New Roman', Times, serif;
 	}
-	
+}
 
-	.branding-text{
+.branding-text{
 
-		.company-name{
-			font-weight: 500;
-			//font-size: 2.5em;
-			font-size: 2.1em;
-			letter-spacing: 2px;
-			color: $primary-light-color;
-			line-height: 30px;
-		}
-
-		.company-slogan{
-			font-weight: 500;
-			letter-spacing: 0.015em;
-			font-size: 0.97em;
-			//font-size: 1em;
-			color: $primary-light-color;
-			opacity: 0.5;
-			//letter-spacing: 0.05em;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-
-			i{
-				font-size: 5px;
-			}
-
-			span{
-				font-size: 8px;
-			}
-		}
+	.company-name{
+		font-weight: 500;
+		font-size: 2.1em;
+		letter-spacing: 2px;
+		color: $primary-light-color;
+		line-height: 30px;
 	}
 
-	.branding-logo{
-		//height: 60px;
-		height: 50px;
+	.company-slogan{
+		font-weight: 500;
+		letter-spacing: 0.015em;
+		font-size: 0.97em;
+		color: $primary-light-color;
+		opacity: 0.5;
+		display: flex;
+		align-items: center;
+
+		span{
+			font-size: 8px;
+		}
 	}
 }
 
-//--- NAVIGATION MENU ---//
+.branding-logo{
+	height: 50px;
+}
+
+//----- NAVIGATION MENU -----//
 nav{
 	width: 50%;
 	display: block;
@@ -78,21 +69,8 @@ nav ul{
 
 nav ul li{
 	list-style: none;
-	height: 100%;
-}
-a{
 	color: white;
-	text-decoration: none;
 	font-weight: 300;
-	transition: 1s ease;
-	border-bottom: 1px solid transparent;
-	display: block;
-}
-
-li a:hover{
-	color: $cyan;
-	transform: scale(1.1);
-	//border-bottom: 1px solid $cyan;
 }
 
 .active-page{
@@ -103,93 +81,99 @@ li a:hover{
 .nav-contact-btn{
 	background-color: $cyan;
 	color: white;
-	display: block;
 	white-space: nowrap;
 	//-- Most styles for this come from the .CTA-btn class in globals.
+	&:hover{
+		color: $cyan;
+		background-color: white;
+	}
 }
-
-.nav-contact-btn:hover{
-	color: $cyan;
-	background-color: white;
-}
-
-
 
 #hamburger-menu{
 	display: none;
 	z-index: 10;
 }
 
+//----- MEDIA QUERIES -----//
 
-//------- FOOTER -------//
-
-footer{
-	background-color: $primary-dark-color;
-	color: white;
-}
-.footer-container{
-	padding: 30px;
-	font-weight: 200;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-
-.footer-left{
-	i{
-		font-size: inherit;
-		color: $cyan;
-		text-align: center;
-		font-style: normal;
-		
-	}
-	p, a{
-		letter-spacing: 1px;
+@media (max-width: $tablet-sizing){
+	nav{
+		background-color: rgba(7, 16, 19, 0.8);
+		position: absolute;
+		right: 0;
+		top:0;
+		height: 120vh;
+		overflow-x: hidden;
+		width: 0;
+		transition: 0.5s;
 	}
 
-	a:hover{
-		color: $cyan;
-	}
-	
-	i:nth-child(1){
-		font-size: 20px;
-	}
-	display: grid;
-	grid-template-columns: 30px auto;
-	grid-template-rows: repeat(3, 1fr);
-	align-items: center;
+	nav ul{
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 300px;
+		width: 100%;
+		padding: 100px 40px 40px 40px;
 
+		li {
+			font-size: 1.5em;
+			line-height: 3em;
+		}
+
+		.contact-btn{
+			font-size: 1.2em;
+			margin-top: 50px;
+
+		}
+
+	}
+
+	#hamburger-menu{
+		display: block;
+	}
+
+	h1{
+		font-size: 8vw;
+	}
+
+	h2{
+		font-size:1.8em;
+	}
+
+	.company-name{
+		font-size: 2.1em !important;
+		letter-spacing: 2px;
+	}
+
+	.company-slogan{
+		letter-spacing: 0.015em !important;
+		font-size: 0.97em !important;
+	}
+
+	.branding-logo{
+		height: 50px !important;
+	}
 
 }
 
-.footer-middle{
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
-	align-items: center;
-}
-
-.social-media-icon{
-	font-size: 40px !important;
-}
-
-.footer-right{
-	height: 100%;
-	overflow: hidden;
-	display: grid;
-	align-items: center;
-	justify-items: right;
-
-	img{
-		width: 200px;
-		cursor: pointer;
+@media (max-width: $large-phone-sizing){
+	.company-name{
+		font-size: 1.55em !important;
+		line-height: 20px !important;
 	}
 
-	a{
-		letter-spacing: 4px;
-		font-size: 12px;
+	.company-slogan{
+		letter-spacing: 0px !important;
+		font-size: 0.75em !important;
 	}
-}
 
+	#hamburger-menu{
+		transform: scale(0.8);
+	}
+
+	.branding-logo{
+		height: 35px !important;
+	}
+
+}
 

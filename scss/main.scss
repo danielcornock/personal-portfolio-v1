@@ -5,69 +5,10 @@
 @import "services.scss";
 @import "testimonials.scss";
 @import "contact.scss";
+@import "footer.scss";
 
 @media(max-width: 950px){
-	nav{
-		background-color: rgba(7, 16, 19, 0.8);
-		position: absolute;
-		right: 0;
-		top:0;
-		height: 120vh;
-		overflow-x: hidden;
-		width: 0;
-		transition: 0.5s;
-	}
-
-	nav ul{
-		flex-direction: column;
-		justify-content: flex-start;
-		height: 300px;
-		width: 100%;
-		padding: 100px 40px 40px 40px;
-
-		li {
-			font-size: 1.5em;
-			line-height: 3em;
-		}
-
-		.contact-btn{
-			font-size: 1.2em;
-			margin-top: 50px;
-
-		}
-
-	}
-
-	#hamburger-menu{
-		display: block;
-	}
-
-	h1{
-		font-size: 8vw;
-	}
-
-	h2{
-		font-size:1.8em;
-	}
-
-	.company-name{
-		font-size: 2.1em !important;
-		letter-spacing: 2px;
-	}
-
-	.company-slogan{
-		letter-spacing: 0.015em !important;
-		font-size: 0.97em !important;
-	}
-
-	.branding-logo{
-		height: 50px !important;
-	}
-
-	.small-only{
-		display: block;
-	}
-
+	
 	.card-container{
 		display: grid;
 		grid-gap: 30px;
@@ -99,62 +40,13 @@
 }
 
 @media(max-width: 450px){
-	.branding{
-
-	}
-	.company-name{
-		font-size: 1.55em !important;
-		line-height: 20px !important;
-	}
-
 	.container{
 		padding: 20px;
 	}
 
-	.company-slogan{
-		letter-spacing: 0px !important;
-		font-size: 0.75em !important;
-	}
+	
 
-	#hamburger-menu{
-		transform: scale(0.8);
-	}
-
-	.branding-logo{
-		height: 35px !important;
-	}
-
-
-	.showcase-text{
-		background-color: transparent;
-		padding:0;
-		p{
-			display: none;
-		}
-		h2{
-			display: none;
-		}
-		.contact-btn{
-			width: 100%;
-		}
-	}
-
-	.showcase-titles{
-		h2{
-			font-size: 7vw;
-		}
-	}
-
-	.showcase-btns{
-		.CTA-btn{
-			font-size: 4.2vw;
-			padding: 15px 10px;
-		}
-	}
-
-	h1{
-		font-size: 2.2em;
-	}
+	
 	.card{
 		flex-direction: column;
 		padding: 0;
@@ -165,31 +57,14 @@
 			text-align: center;
 			font-size: 2em !important;
 		}
-		p{
-			font-size: 1.2em;
-		}
+
 	}
 	.svg-whole{
 		margin: 0;
 	}
 
-	footer *{
-		font-size: 12px;
-	}
-	.skills-list{
-		padding: 0;
-	}
-	.skills{
-		margin: 7px;
-		padding: 8px 12px;
-		p{
-			font-size: 0.8em;
-		}
-
-		.fas, .fab{
-			font-size: 20px;
-		}
-	}
+	
+	
 }
 
 @media(max-width: 380px){
@@ -197,9 +72,7 @@
 		padding: 50px 0;
 	}
 
-	.section-services{
-		padding: 50px 0;
-	}
+	
 
 	.card-container{
 		padding: 50px 20px;
@@ -209,9 +82,7 @@
 		padding: 20px;
 	}
 
-	.footer-container{
-		grid-template-columns: 1fr;
-	}
+
 
 	.dan-logo{
 		width: 50% !important;

@@ -1,6 +1,6 @@
-//------------- CARDS ---------------//
+// ----- CARD CONTAINERS ----- //
 
-#section-cards{
+.section-cards{
 	background-color: $primary-dark-color;
 }
 
@@ -8,12 +8,9 @@
 	display: grid;
 	grid-gap: 30px;
 	grid-template-columns: repeat(3, 1fr);
-	padding-top: 80px;
-	padding-bottom: 80px;
 }
 
 .card{
-//	background-color: $pale-blue;
 	color: white;
 	padding: 30px;
 	text-align: center;
@@ -44,7 +41,7 @@
 	flex-direction: column;
 }
 .svg-whole{
-	height: 80px;
+	height: 70px;
 
 
 }

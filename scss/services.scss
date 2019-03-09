@@ -1,15 +1,10 @@
-//------------ services -----------//
+//----- SERVICES GLOBALS -----//
 
 .section-services{
-	background-color: rgba(42, 46, 59, 0.97);
-	
-	padding: 80px 30px;
+	background-color: rgba(42, 46, 59, 0.97);	
 
 	h2{
 		color: white;
-		text-align: center;
-		margin: 20px;
-		margin-bottom: 50px;
 	}
 }
 
@@ -21,36 +16,57 @@
 	justify-content: center;
 	opacity: 0;
 	transition: 2s ease;
-	padding: 0 50px;
-}
 
-.skills{
-	background-color: $cyan;
-	color: white;
-	padding: 10px 15px;
-	border-radius: 10px;
-	margin: 10px;
-	text-align: center;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	transition: 0.5s ease;
-	p{
-		margin-top: 3px;
-
+	.skills{
+		background-color: $cyan;
+		color: white;
+		padding: 10px 15px;
+		border-radius: 10px;
+		margin: 3px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transition: 0.5s ease;
+		&:hover{
+			transform: scale(1.1);
+			color: $cyan;
+			background-color: white;
+		}
+		p{
+			margin-top: 3px;
+		}
+		.fas{
+			font-size: 26px;
+		}
 	}
 }
 
-.skills:hover{
-	transform: scale(1.1);
-	color: $cyan;
-	background-color: white;
+@media (max-width: $tablet-sizing){
+
 }
 
-.skills-icon{
+@media (max-width: $large-phone-sizing){
+	.skills-list{
+		padding: 0;
+	}
+
+	.skills{
+		margin: 4px;
+		padding: 8px 12px;
+		p{
+			font-size: 0.8em;
+		}
+
+		.fas{
+			font-size: 20px;
+		}
+	}
 }
 
-.fas, .fab{
-	font-size: 26px;
+@media (max-width: $small-phone-sizing){
+	.section-services{
+		padding: 50px 0;
+	}
 }
+

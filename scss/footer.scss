@@ -1,0 +1,72 @@
+//----- FOOTER CONTAINERS -----//
+footer{
+	background-color: $primary-dark-color;
+	color: white;
+}
+.footer-container{
+	font-weight: 200;
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+}
+
+//----- FOOTER SECTIONS -----//
+.footer-left{
+	display: grid;
+	grid-template-columns: 30px auto;
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+
+	i{
+		font-size: inherit;
+		color: $cyan;
+		text-align: center;
+		font-style: normal;
+		&:nth-child(1){
+			font-size: 20px;
+		}
+		
+	}
+	p, a{
+		letter-spacing: 1px;
+	}
+}
+
+.footer-middle{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+
+	.social-media-icon{
+		font-size: 40px !important;
+	}
+}
+
+.footer-right{
+	height: 100%;
+	overflow: hidden;
+	display: grid;
+	align-items: center;
+	justify-items: right;
+
+	img{
+		width: 200px;
+		cursor: pointer;
+	}
+}
+
+//----- MEDIA QUERIES -----//
+@media (max-width: $tablet-sizing){
+}
+
+@media (max-width: $large-phone-sizing){
+    footer *{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: $small-phone-sizing){
+    .footer-container{
+		grid-template-columns: 1fr;
+	}
+}
