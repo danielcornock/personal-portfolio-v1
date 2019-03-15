@@ -71,6 +71,9 @@ nav ul li{
 	list-style: none;
 	color: white;
 	font-weight: 300;
+	a:hover{
+		color: $cyan;
+	}
 }
 
 .active-page{

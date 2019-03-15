@@ -29,6 +29,10 @@ footer{
 	p, a{
 		letter-spacing: 1px;
 	}
+
+	a:hover{
+		color: $cyan;
+	}
 }
 
 .footer-middle{
@@ -67,6 +71,12 @@ footer{
 
 @media (max-width: $small-phone-sizing){
     .footer-container{
-		grid-template-columns: 1fr;
+			grid-template-columns: 1fr;
+	}
+
+	.dan-logo{
+		width: 50% !important;
+		margin: auto;
+		margin-top: 20px;
 	}
 }

@@ -3,14 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ionic Builds</title>
+	<!-- Material Stylesheet -->
+	<link rel="stylesheet" href="styles/materialize.css">
+
+	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="styles/style.css">
+
 	<!--External Hamburger Menu Animations-->
 	<link rel="stylesheet" href="styles/hamburgers.css">
 	<!--Google Icons-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
 	<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
@@ -42,7 +47,7 @@
 				<ul>
 					<li><a href="#" class = "active-page">Home</a></li>
 					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Gallery</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
 					<a href = "contact-us.html" class = "CTA-btn nav-contact-btn">Contact Us</a>
 					<!--<i class="material-icons">phone</i>-->
 				</ul>
@@ -76,7 +81,7 @@
 				<div class="card">
 					<img src="icons/helmet.svg" class = "svg-whole" alt="">
 					<div class="card-text">
-						<h2>who we are.</h2>
+						<h3>who we are.</h3>
 						<p>A unique company that offers fully managed, professional and reliable building services for residential and commercial clients, regardless of the size of the project.</p><br>
 						<p>We are a Bristol-based company, meaning Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure omnis praesentium id numquam eaque doloribus, sed nam quo porro aliquid.</p>
 					</div>
@@ -84,7 +89,7 @@
 				<div class="card">
 					<img src="icons/home.svg" class = "svg-whole" alt="">
 					<div class="card-text">
-						<h2>what we do.</h2>
+						<h3>what we do.</h3>
 						<p>From restoration, renovation to complete renewal, we can offer you a tailor-made package to suit your needs.</p><br>
 						<p>Offering honest advice and direct communication with a named individual for the duration of the project, we are the only company to offer a truly personal service that will maximise your budget to its full potential. </p>
 					</div>
@@ -92,7 +97,7 @@
 				<div class="card">
 					<img src="icons/sketch.svg" class = "svg-whole" alt="">
 					<div class="card-text">
-						<h2>how we do it.</h2>
+						<h3>how we do it.</h3>
 						<p>We have excellent relationships with our network of subcontractors and suppliers and we <span class = "bold">guarantee</span> to complete the job to the highest of standards, at the lowest possible cost, with no hidden fees.</p><br>
 						<p>At Ionic Builds, we endeavour to make the building process less intrusive, ensuring a <span class = "bold">safe</span> and <span class = "bold">tidy</span></span> workplace throughout the build and, crucially, treating your property and possessions with the utmost <span class = "bold">care</span> and <span class = "bold">respect</span>.</p>
 					</div>
@@ -109,9 +114,9 @@
 				<div class="skills"><i class="material-icons ">account_balance</i><p>Conversions</p></div>
 				<div class="skills"><i class="material-icons ">arrow_forward</i><p>Extensions</p></div>
 				<div class="skills"><i class="material-icons ">kitchen</i><p>Kitchens</p></div>
-				<div class="skills"><i class="fas fa-toilet-paper"></i><p>Bathrooms</p></div>
+				<div class="skills"><i class="fas fa-shower"></i><p>Bathrooms</p></div>
 				<div class="skills"><i class="fas fa-hammer"></i><p>Bespoke Carpentry</p></div>
-				<div class="skills"><i class="fas fa-window-maximize"></i><p>Plastering</p></div>
+				<div class="skills"><i class="fas fa-brush"></i><p>Plastering</p></div>
 				<div class="skills"><i class="fas fa-chess-rook"></i><p>Roofing</p></div>
 				<div class="skills"><i class="fas fa-bars"></i><p>Flooring</p></div>
 				<div class="skills"><i class="fas fa-toilet"></i><p>Plumbing</p></div>
@@ -119,14 +124,14 @@
 				<div class="skills"><i class="fas fa-grip-vertical"></i></i><p>Sash Windows</p></div>
 				<div class="skills"><i class="fas fa-th-large"></i><p>Double Glazing</p></div>
 				<div class="skills"><i class="fas fa-tree"></i><p>Landscaping</p></div>
-				<div style="cursor: pointer;" onclick="window.location='https://www.jaksdecorationanddesign.co.uk/about-jaks/'" class="skills"><i class="fas fa-paint-roller"></i><p>Decorating</p></div>
+				<div style="cursor: pointer;" onclick="window.location='www.jaksdecorationanddesign.co.uk/about-jaks/'" class="skills"><i class="fas fa-paint-roller"></i><p>Decorating</p></div>
 			</div>
 		</section>
 
 		<!-- TESTIMONIALS SECTIONS -->
 		<section class="section-testimonials section-container">
 			<h2>don't just take our word for it.</h2>
-			<div class="container testimonial-container">
+			<!-- <div class="container testimonial-container">
 				<div class="testimonial">
 					<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
 					<p class="quote-author">Lorem ipsum.</p>
@@ -140,8 +145,56 @@
 					<p class="quote-author">Lorem ipsum.</p>
 				</div>
 
+				
+
+			</div> -->
+			<div class="carousel carousel-slider container" data-ride = "carousel">
+				<a href = "testimonials.html" class = "CTA-btn see-more-btn">See More</a>
+				<div class="arrow-holder" id = "arrow-left"><i class="fas fa-chevron-left"></i></div>
+				<div class="arrow-holder" id = "arrow-right"><i class="fas fa-chevron-right"></i></div>
+				<a class="carousel-item" href="#one!"><img src="img/bathroom-legit.JPG">
+					<div class="carousel-fixed-item">
+						<div class="testimonial">
+							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
+							<p class="quote-author">Lorem ipsum.</p>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-item" href="#two!"><img src="img/IMG_2893.JPG">
+					<div class="carousel-fixed-item">
+						<div class="testimonial">
+							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
+							<p class="quote-author">Lorem ipsum.</p>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-item" href="#three!"><img src="img/IMG_2916.JPG">
+					<div class="carousel-fixed-item">
+						<div class="testimonial">
+							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
+							<p class="quote-author">Lorem ipsum.</p>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-item" href="#four!"><img src="img/IMG_2917.JPG">
+					<div class="carousel-fixed-item">
+						<div class="testimonial">
+							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
+							<p class="quote-author">Lorem ipsum.</p>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-item" href="#five!"><img src="img/IMG_2902.JPG">
+					<div class="carousel-fixed-item">
+						<div class="testimonial">
+							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
+							<p class="quote-author">Lorem ipsum.</p>
+						</div>
+					</div>
+				</a>
 			</div>
 		</section>
+		
 
 		<!-- FOOTER -->
 		<footer>
@@ -166,8 +219,9 @@
 	</main>
 
 
-
-	<script src = "script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src = "scripts/script.js"></script>
+	
 
 </body>
 </html>

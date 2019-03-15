@@ -23,8 +23,6 @@ a {
   color: inherit;
   text-decoration: none;
   transition: 1s ease; }
-  a:hover {
-    color: #679be7; }
 
 .CTA-btn {
   border-radius: 50px;
@@ -44,6 +42,9 @@ a {
 .bold {
   font-weight: 400; }
 
+@media (max-width: 450px) {
+  .container {
+    padding: 20px; } }
 header {
   background-color: #2b2e3a;
   width: 100%; }
@@ -97,6 +98,8 @@ nav ul li {
   list-style: none;
   color: white;
   font-weight: 300; }
+  nav ul li a:hover {
+    color: #679be7; }
 
 .active-page {
   font-weight: 400;
@@ -313,11 +316,13 @@ nav ul li {
   opacity: 0;
   transition: 2s ease; }
 
-.card h2 {
+.card h3 {
   align-self: left;
   color: #679be7;
   margin-top: 10px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  font-weight: 500; }
 
 .card p {
   font-weight: 200;
@@ -331,6 +336,40 @@ nav ul li {
 .svg-whole {
   height: 70px; }
 
+@media (max-width: 950px) {
+  .card-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr; }
+
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: row; }
+    .card p {
+      text-align: left; }
+    .card h3 {
+      text-align: left;
+      margin-top: 0px; }
+
+  .svg-whole {
+    margin-right: 30px; } }
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+    border: none; }
+    .card h3 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 2em !important; }
+
+  .svg-whole {
+    margin: 0; } }
+@media (max-width: 380px) {
+  .card-container {
+    padding: 50px 20px; } }
 .section-services {
   background-color: rgba(42, 46, 59, 0.97); }
   .section-services h2 {
@@ -374,7 +413,9 @@ nav ul li {
     .skills p {
       font-size: 0.8em; }
     .skills .fas {
-      font-size: 20px; } }
+      font-size: 20px; }
+    .skills img {
+      height: 0.8em; } }
 @media (max-width: 380px) {
   .section-services {
     padding: 50px 0; } }
@@ -383,8 +424,7 @@ nav ul li {
   padding: 80px 30px; }
   .section-testimonials h2 {
     color: #2b2e3a;
-    text-align: center;
-    margin: 20px; }
+    margin-bottom: 75px; }
 
 .testimonial-container {
   display: grid;
@@ -404,8 +444,14 @@ nav ul li {
   margin-top: 20px;
   font-size: 0.9em;
   font-weight: bold;
-  color: #808080; }
+  color: #d0d0d0; }
 
+@media (max-width: 950px) {
+  .testimonial-container {
+    grid-template-columns: 1fr; } }
+@media (max-width: 380px) {
+  .section-testimonials {
+    padding: 50px 0; } }
 #contact-form-section {
   background-color: #d8e2f9; }
 
@@ -469,6 +515,8 @@ footer {
       font-size: 20px; }
   .footer-left p, .footer-left a {
     letter-spacing: 1px; }
+  .footer-left a:hover {
+    color: #679be7; }
 
 .footer-middle {
   display: flex;
@@ -493,57 +541,179 @@ footer {
     font-size: 12px; } }
 @media (max-width: 380px) {
   .footer-container {
-    grid-template-columns: 1fr; } }
-@media (max-width: 950px) {
-  .card-container {
-    display: grid;
-    grid-gap: 30px;
     grid-template-columns: 1fr; }
-
-  .card {
-    display: flex;
-    align-items: center;
-    flex-direction: row; }
-    .card p {
-      text-align: left; }
-    .card h2 {
-      text-align: left;
-      margin-top: 0px; }
-
-  .svg-whole {
-    margin-right: 30px; }
-
-  .testimonial-container {
-    grid-template-columns: 1fr; } }
-@media (max-width: 450px) {
-  .container {
-    padding: 20px; }
-
-  .card {
-    flex-direction: column;
-    padding: 0;
-    background-color: transparent;
-    border: none; }
-    .card h2 {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 2em !important; }
-
-  .svg-whole {
-    margin: 0; } }
-@media (max-width: 380px) {
-  .section-testimonials {
-    padding: 50px 0; }
-
-  .card-container {
-    padding: 50px 20px; }
-
-  .container {
-    padding: 20px; }
 
   .dan-logo {
     width: 50% !important;
     margin: auto;
     margin-top: 20px; } }
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%; }
+
+.carousel.carousel-slider {
+  top: 0;
+  left: 0; }
+
+.carousel.carousel-slider .carousel-fixed-item {
+  position: absolute;
+  left: 0;
+  width: auto;
+  bottom: 60px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1; }
+
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+  bottom: 68px; }
+
+.carousel.carousel-slider .carousel-item {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.carousel.carousel-slider .carousel-item h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px; }
+
+.carousel.carousel-slider .carousel-item p {
+  font-size: 20px; }
+
+.carousel .carousel-item {
+  visibility: hidden;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s !important; }
+
+.carousel .carousel-item > img {
+  width: 100%; }
+
+.carousel .indicators {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0; }
+
+.carousel .indicators .indicator-item {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 24px 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  border-radius: 50%; }
+
+.carousel .indicators .indicator-item.active {
+  background-color: #fff; }
+
+.carousel.scrolling .carousel-item .materialboxed,
+.carousel .carousel-item:not(.active) .materialboxed {
+  pointer-events: none; }
+
+.carousel .see-more-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 20;
+  background-color: #679be7; }
+
+.carousel .arrow-holder {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  cursor: pointer; }
+
+.carousel #arrow-left {
+  left: 30px; }
+
+.carousel #arrow-right {
+  right: 30px; }
+
+.carousel .fas {
+  color: white;
+  font-size: 20px; }
+
+.gallery-header {
+  padding: 30px;
+  background-image: url(../img/woodwork.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.gallery-container {
+  background-color: #d8e2f9; }
+
+.gallery-img {
+  width: 200px;
+  height: 150px;
+  margin: 5px; }
+
+.materialboxed {
+  display: block;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  -webkit-backface-visibility: hidden; }
+
+.materialboxed:hover:not(.active) {
+  opacity: .8; }
+
+.materialboxed.active {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out; }
+
+#materialbox-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #292929;
+  z-index: 1000;
+  will-change: opacity; }
+
+.materialbox-caption {
+  position: fixed;
+  display: none;
+  color: #fff;
+  line-height: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0% 15%;
+  height: 50px;
+  z-index: 1000;
+  -webkit-font-smoothing: antialiased; }
 
 /*# sourceMappingURL=style.css.map */

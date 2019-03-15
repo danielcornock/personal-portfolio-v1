@@ -22,12 +22,14 @@
 	transition: 2s ease;
 }
 
-.card h2{
+.card h3{
 	align-self: left;
 
 	color: $cyan;
 	margin-top: 10px;
 	margin-bottom: 5px;
+	font-size: 1.5em;
+	font-weight: 500;
 }
 
 .card p{
@@ -44,4 +46,56 @@
 	height: 70px;
 
 
+}
+
+@media(max-width: $tablet-sizing){
+	
+	.card-container{
+		display: grid;
+		grid-gap: 30px;
+		grid-template-columns: 1fr;
+	}
+
+	.card{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+
+		p{
+			text-align: left;
+		}
+
+		h3{
+			text-align: left;
+			margin-top:0px;
+		}
+	}
+
+	.svg-whole{
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: $large-phone-sizing){
+	.card{
+		flex-direction: column;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		h3{
+			margin-top:20px;
+			text-align: center;
+			font-size: 2em !important;
+		}
+
+	}
+	.svg-whole{
+		margin: 0;
+	}
+}
+
+@media (max-width: $small-phone-sizing){
+	.card-container{
+		padding: 50px 20px;
+	}
 }

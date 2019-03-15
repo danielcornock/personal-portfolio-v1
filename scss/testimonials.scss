@@ -3,8 +3,7 @@
 	padding: 80px 30px;
 	h2{
 		color: $primary-dark-color;
-		text-align: center;
-		margin: 20px;
+		margin-bottom: 75px;
 	}
  }
 
@@ -28,5 +27,19 @@
 	margin-top: 20px;
 	font-size: 0.9em;
 	font-weight: bold;
-	color: #808080
+	color: #d0d0d0
+ }
+
+
+
+ @media(max-width: $tablet-sizing){
+	.testimonial-container{
+		grid-template-columns: 1fr;
+	}
+ }
+
+ @media (max-width: $small-phone-sizing){
+	.section-testimonials{
+		padding: 50px 0;
+	}
  }

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import "globals.scss";
 @import "header.scss";
 @import "showcase.scss";
@@ -6,91 +8,5 @@
 @import "testimonials.scss";
 @import "contact.scss";
 @import "footer.scss";
-
-@media(max-width: 950px){
-	
-	.card-container{
-		display: grid;
-		grid-gap: 30px;
-		grid-template-columns: 1fr;
-	}
-
-	.card{
-		display: flex;
-		align-items: center;
-		flex-direction: row;
-
-		p{
-			text-align: left;
-		}
-
-		h2{
-			text-align: left;
-			margin-top:0px;
-		}
-	}
-
-	.svg-whole{
-		margin-right: 30px;
-	}
-
-	.testimonial-container{
-		grid-template-columns: 1fr;
-}
-}
-
-@media(max-width: 450px){
-	.container{
-		padding: 20px;
-	}
-
-	
-
-	
-	.card{
-		flex-direction: column;
-		padding: 0;
-		background-color: transparent;
-		border: none;
-		h2{
-			margin-top:20px;
-			text-align: center;
-			font-size: 2em !important;
-		}
-
-	}
-	.svg-whole{
-		margin: 0;
-	}
-
-	
-	
-}
-
-@media(max-width: 380px){
-	.section-testimonials{
-		padding: 50px 0;
-	}
-
-	
-
-	.card-container{
-		padding: 50px 20px;
-	}
-
-	.container{
-		padding: 20px;
-	}
-
-
-
-	.dan-logo{
-		width: 50% !important;
-		margin: auto;
-		margin-top: 20px;
-	}
-}
-
-
-
-
+@import "carousel.scss";
+@import "gallery.scss";
