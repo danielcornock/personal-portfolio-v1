@@ -666,7 +666,9 @@ footer {
 .gallery {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; }
 
 .gallery-container {
   background-color: #d8e2f9; }
