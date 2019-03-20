@@ -101,32 +101,56 @@ nav ul li{
 
 @media (max-width: $tablet-sizing){
 	nav{
-		background-color: rgba(7, 16, 19, 0.8);
+		background-color: rgba(43, 46, 58, 0.95);
 		position: absolute;
 		right: 0;
 		top:0;
 		height: 120vh;
 		overflow-x: hidden;
 		width: 0;
-		transition: 0.5s;
+		transition: 0.2s;
 	}
 
 	nav ul{
 		flex-direction: column;
 		justify-content: flex-start;
+		align-items: flex-start;
 		height: 300px;
 		width: 100%;
-		padding: 100px 40px 40px 40px;
+		text-align: left;
+		padding: 100px 0px;
 
 		li {
-			font-size: 1.5em;
+			font-size: 1.2em;
 			line-height: 3em;
+			width: 100%;
+			padding: 0 20px;
+			transition: 0;
+
+			a{
+				display: block;
+				width: 100%;
+			}
+			&:hover{
+				background-color: rgba(255,255,255,0.2);
+			}
 		}
 
-		.contact-btn{
+		.nav-contact-btn{
 			font-size: 1.2em;
-			margin-top: 50px;
+			font-weight: 300;
+			background-color: transparent;
+			line-height: 3em;
+			padding: 0 20px;
+			width: 100%;
+			border-radius: 0;
+			text-align: left;
+			transition: 0;
 
+			&:hover{
+				transform: none;
+				background-color: rgba(255,255,255,0.2);
+			}
 		}
 
 	}

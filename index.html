@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ionic Builds</title>
-	<!-- Material Stylesheet -->
-	<link rel="stylesheet" href="styles/materialize.css">
+
 
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="styles/style.css">
@@ -46,7 +45,7 @@
 			<nav>
 				<ul>
 					<li><a href="#" class = "active-page">Home</a></li>
-					<li><a href="#">Testimonials</a></li>
+					<li><a href="our-work.html">Our Work</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
 					<a href = "contact-us.html" class = "CTA-btn nav-contact-btn">Contact Us</a>
 					<!--<i class="material-icons">phone</i>-->
@@ -68,8 +67,8 @@
 					<div class = "showcase-subhead">A company that puts <span class = "bold colored">professionalism</span>, <span class = "bold colored">passion</span> & <span class = "bold colored">respect</span> first, consistently delivering building work of exceptional quality, at the best possible price.</div>
 				</div>
 					<div class="showcase-btns">
-						<button class = "CTA-btn showcase-btn contact-btn">Get in Contact</button>
-						<button class = "CTA-btn showcase-btn gallery-btn">See our work</button>
+						<a href = "contact-us.html" class = "CTA-btn showcase-btn contact-btn">Get in Contact</a>
+						<a href = "our-work.html" class = "CTA-btn showcase-btn gallery-btn">See our work</a>
 				</div>
 				
 			</div>
@@ -79,15 +78,19 @@
 		<section class="section-cards section-container">
 			<div class="container card-container">
 				<div class="card">
-					<img src="icons/helmet.svg" class = "svg-whole" alt="">
+					<div class="icon-container">
+						<img src="icons/helmet.svg" class = "svg-whole" alt="">
+					</div>
+					
 					<div class="card-text">
 						<h3>who we are.</h3>
-						<p>A unique company that offers fully managed, professional and reliable building services for residential and commercial clients, regardless of the size of the project.</p><br>
-						<p>We are a Bristol-based company, meaning Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure omnis praesentium id numquam eaque doloribus, sed nam quo porro aliquid.</p>
+						<p>A unique company that offers fully managed, professional and reliable building services for residential and commercial clients, regardless of the size of the project.</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="icons/home.svg" class = "svg-whole" alt="">
+					<div class="icon-container">
+						<img src="icons/home.svg" class = "svg-whole" alt="">
+					</div>
 					<div class="card-text">
 						<h3>what we do.</h3>
 						<p>From restoration, renovation to complete renewal, we can offer you a tailor-made package to suit your needs.</p><br>
@@ -95,11 +98,13 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="icons/sketch.svg" class = "svg-whole" alt="">
+					<div class="icon-container">
+						<img src="icons/sketch.svg" class = "svg-whole" alt="">
+					</div>
 					<div class="card-text">
 						<h3>how we do it.</h3>
-						<p>We have excellent relationships with our network of subcontractors and suppliers and we <span class = "bold">guarantee</span> to complete the job to the highest of standards, at the lowest possible cost, with no hidden fees.</p><br>
-						<p>At Ionic Builds, we endeavour to make the building process less intrusive, ensuring a <span class = "bold">safe</span> and <span class = "bold">tidy</span></span> workplace throughout the build and, crucially, treating your property and possessions with the utmost <span class = "bold">care</span> and <span class = "bold">respect</span>.</p>
+						<p>We have excellent relationships with our network of subcontractors and suppliers and we guarantee to complete the job to the highest of standards, at the lowest possible cost, with no hidden fees.</p><br>
+						<p>At Ionic Builds, we endeavour to make the building process less intrusive, ensuring a safe and tidy workplace throughout the build and, crucially, treating your property and possessions with the utmost care and respect.</p>
 					</div>
 				</div>
 			</div>
@@ -116,7 +121,7 @@
 				<div class="skills"><i class="material-icons ">kitchen</i><p>Kitchens</p></div>
 				<div class="skills"><i class="fas fa-bath"></i><p>Bathrooms</p></div>
 				<div class="skills"><i class="fas fa-hammer"></i><p>Bespoke Carpentry</p></div>
-				<div class="skills"><i class="fas fa-brush"></i><p>Plastering</p></div>
+				<div class="skills" id = "plastering-img-container"><img id = "plaster-img" src = "icons/plasteringwhite.png"><p>Plastering</p></div>
 				<div class="skills"><i class="fas fa-chess-rook"></i><p>Roofing</p></div>
 				<div class="skills"><i class="fas fa-bars"></i><p>Flooring</p></div>
 				<div class="skills"><i class="fas fa-toilet"></i><p>Plumbing</p></div>
@@ -124,12 +129,12 @@
 				<div class="skills"><i class="fas fa-grip-vertical"></i></i><p>Sash Windows</p></div>
 				<div class="skills"><i class="fas fa-th-large"></i><p>Double Glazing</p></div>
 				<div class="skills"><i class="fas fa-tree"></i><p>Landscaping</p></div>
-				<div style="cursor: pointer;" onclick="window.location='www.jaksdecorationanddesign.co.uk/about-jaks/'" class="skills"><i class="fas fa-paint-roller"></i><p>Decorating</p></div>
+				<a href = "https://www.jaksdecorationanddesign.co.uk/'" target=”_blank” style="cursor: pointer;"  class="skills"><i class="fas fa-paint-roller"></i><p>Decorating</p></a>
 			</div>
 		</section>
 
 		<!-- TESTIMONIALS SECTIONS -->
-		<section class="section-testimonials section-container">
+		<section class=" container section-testimonials section-container">
 			<h2>don't just take our word for it.</h2>
 			<!-- <div class="container testimonial-container">
 				<div class="testimonial">
@@ -152,7 +157,7 @@
 				<a href = "testimonials.html" class = "CTA-btn see-more-btn">See More</a>
 				<div class="arrow-holder" id = "arrow-left"><i class="fas fa-chevron-left"></i></div>
 				<div class="arrow-holder" id = "arrow-right"><i class="fas fa-chevron-right"></i></div>
-				<a class="carousel-item" href="#one!"><img src="img/bathroom-legit.JPG">
+				<a class="carousel-item" href="#one!">
 					<div class="carousel-fixed-item">
 						<div class="testimonial">
 							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
@@ -160,7 +165,7 @@
 						</div>
 					</div>
 				</a>
-				<a class="carousel-item" href="#two!"><img src="img/IMG_2893.JPG">
+				<a class="carousel-item" href="#two!">
 					<div class="carousel-fixed-item">
 						<div class="testimonial">
 							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
@@ -168,7 +173,7 @@
 						</div>
 					</div>
 				</a>
-				<a class="carousel-item" href="#three!"><img src="img/IMG_2916.JPG">
+				<a class="carousel-item" href="#three!">
 					<div class="carousel-fixed-item">
 						<div class="testimonial">
 							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
@@ -176,7 +181,7 @@
 						</div>
 					</div>
 				</a>
-				<a class="carousel-item" href="#four!"><img src="img/IMG_2917.JPG">
+				<a class="carousel-item" href="#four!">
 					<div class="carousel-fixed-item">
 						<div class="testimonial">
 							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
@@ -184,7 +189,7 @@
 						</div>
 					</div>
 				</a>
-				<a class="carousel-item" href="#five!"><img src="img/IMG_2902.JPG">
+				<a class="carousel-item" href="#five!">
 					<div class="carousel-fixed-item">
 						<div class="testimonial">
 							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sint temporibus, doloribus ipsum velit commodi facere maiores, voluptatum nobis, voluptate, ad eius quod ratione maxime eum voluptas amet aut. Natus ipsa iure voluptatum dicta numquam, dolorum mollitia. Corporis, a, ea.</p>
@@ -195,28 +200,28 @@
 			</div>
 		</section>
 		
-
-		<!-- FOOTER -->
-		<footer>
-			<div class="container footer-container">
-				<div class="footer-left">
-						<i>&copy;</i><p> 2019 Ionic Builds</p>
-						<i class="fas fa-phone"></i> <a href = "tel:07585441767">0758 544 1767</a>
-						<i class="fas fa-envelope"></i><a href="mailto:info@ionicbuilds.co.uk"> info@ionicbuilds.co.uk</a>
-
-				</div>
-				<div class="footer-middle">
-					<i class="fab fa-facebook-square social-media-icon"></i>
-					<i class="far fa-envelope-open social-media-icon"></i>
-				</div>
-				<div class="footer-right">
-						<img class = "dan-logo" src="img/my_logo.png" alt="" onclick="window.location='https://www.danielcornock.co.uk'">
-						<!-- <a href = "www.danielcornock.co.uk">www.danielcornock.co.uk</a> -->
-				</div>
-				
-			</div>
-		</footer>
 	</main>
+		<!-- FOOTER -->
+	<footer>
+		<div class="container footer-container">
+			<div class="footer-left">
+					<i>&copy;</i><p> 2019 Ionic Builds</p>
+					<i class="fas fa-phone"></i> <a href = "tel:07585441767">0758 544 1767</a>
+					<i class="fas fa-envelope"></i><a href="mailto:info@ionicbuilds.co.uk"> info@ionicbuilds.co.uk</a>
+
+			</div>
+			<div class="footer-middle">
+				<i class="fab fa-facebook-square social-media-icon"></i>
+				<i class="far fa-envelope-open social-media-icon"></i>
+			</div>
+			<div class="footer-right">
+					<img class = "dan-logo" src="img/my_logo.png" alt="" onclick="window.location='https://www.danielcornock.co.uk'">
+					<!-- <a href = "www.danielcornock.co.uk">www.danielcornock.co.uk</a> -->
+			</div>
+			
+		</div>
+	</footer>
+	
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

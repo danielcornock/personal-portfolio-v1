@@ -63,6 +63,17 @@ footer{
 @media (max-width: $tablet-sizing){
 }
 
+@media (max-width: 583px){
+	.footer-container{
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-items: center;
+	}
+	.footer-right{
+		img{
+			width: 80%;
+		}
+}
 @media (max-width: $large-phone-sizing){
     footer *{
 		font-size: 12px;
@@ -79,4 +90,5 @@ footer{
 		margin: auto;
 		margin-top: 20px;
 	}
+}
 }

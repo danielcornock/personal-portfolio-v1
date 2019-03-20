@@ -1,4 +1,4 @@
- .section-testimonials{
+.section-testimonials{
 	background-color: $primary-light-color;
 	padding: 80px 30px;
 	h2{
@@ -16,6 +16,7 @@
 	border-left: 4px solid $cyan;
 	margin: 30px 15px;
 	padding-left: 30px;
+	color: white;
  }
 
  .quote{
@@ -36,10 +37,26 @@
 	.testimonial-container{
 		grid-template-columns: 1fr;
 	}
+
+	.quote{
+		font-size: 17px;
+	 }
+ }
+
+ @media(max-width: $large-phone-sizing){
+	.quote{
+		font-size: 16px;
+	 }
  }
 
  @media (max-width: $small-phone-sizing){
 	.section-testimonials{
 		padding: 50px 0;
 	}
+	.section-testimonials{
+		h2{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	 }
  }

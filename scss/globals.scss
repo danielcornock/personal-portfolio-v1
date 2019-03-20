@@ -48,6 +48,7 @@ a{
 	border: none;
 	outline: none;
 	cursor: pointer;
+	text-align: center;
 
 	&:hover{
 		transform: scale(1.1);
@@ -63,8 +64,24 @@ a{
 	font-weight: 400;
 }
 
-@media(max-width: 450px){
+
+@media (max-width: $tablet-sizing){
 	.container{
 		padding: 20px;
+	}
+
+	.section-container{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+@media(max-width: $large-phone-sizing){
+	.container{
+		padding: 20px;
+	}
+
+	.section-container{
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
