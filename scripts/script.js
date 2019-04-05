@@ -17,15 +17,19 @@ function mobileMenuToggle(){
 mobileMenuToggle();
 
 // ----- UPDATING THE SINGULAR IMAGE IN THE LIST OF SERVICES ----- //
-document.querySelector('#plastering-img-container').addEventListener("mouseover", (e) =>{
-	document.getElementById('plaster-img').src = "icons/plasteringblack.png";
-	console.log(e.target);
-});
+if (document.querySelector('#plastering-img-container')){
+	document.querySelector('#plastering-img-container').addEventListener("mouseover", (e) =>{
+		document.getElementById('plaster-img').src = "icons/plasteringblue.png";
+		console.log(e.target);
 
-document.querySelector('#plastering-img-container').addEventListener("mouseleave", (e) =>{
-	document.getElementById('plaster-img').src = "icons/plasteringwhite.png";
-	console.log(e.target);
-});
+		document.querySelector('#plastering-img-container').addEventListener("mouseleave", (e) =>{
+			document.getElementById('plaster-img').src = "icons/plasteringwhite.png";
+			console.log(e.target);
+		});
+	});
+}
+
+
 
 
 // ----- DYNAMICALLY SET THE WELCOME SECTION HEIGHT BASED ON HEADER HEIGHT ----- //

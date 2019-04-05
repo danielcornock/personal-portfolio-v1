@@ -1,9 +1,8 @@
 .section-testimonials{
 	background-color: $primary-light-color;
-	padding: 80px 30px;
 	h2{
 		color: $primary-dark-color;
-		margin-bottom: 75px;
+		margin-bottom: 55px;
 	}
  }
 
@@ -14,9 +13,9 @@
 }
  .testimonial{
 	border-left: 4px solid $cyan;
-	margin: 30px 15px;
+	margin: 0 15px;
 	padding-left: 30px;
-	color: white;
+	color: $primary-dark-color;
  }
 
  .quote{
@@ -28,7 +27,7 @@
 	margin-top: 20px;
 	font-size: 0.9em;
 	font-weight: bold;
-	color: #d0d0d0
+	color: lighten($primary-dark-color, 40%);
  }
 
 
