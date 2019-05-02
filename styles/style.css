@@ -43,7 +43,7 @@ body{
   z-index: 1;
   background-color: rgba(0,0,0,0.4);
   animation: bg-anim 0.5s forwards ease-in-out 1;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 
 @keyframes bg-anim{
@@ -76,8 +76,8 @@ body{
     top: 0;
   }
   100%{
-    opacity: 0;
-    top: -100px;
+    opacity: 0.6;
+    top: 0px;
   }
 }
 
@@ -95,7 +95,7 @@ body{
 
 @keyframes animation2{
   0%{
-    transform: translate(-50%, -50%) rotate(0deg) scale(1.5);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
     color: red;
   }
 
@@ -105,18 +105,22 @@ body{
   40%{
     color: blue;
     letter-spacing: 12px;
-    transform: translate(-50%, -50%) rotate(180deg) scale(1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1.5);
 
   }
   60%{
     color: green;
+  }
+  70%{
+    transform: translate(-50%, -50%) rotate(180deg) scale(1);
+
   }
   80%{
     color: yellow;
   }
   100%{
     color: red;
-    transform: translate(-50%, -50%) rotate(360deg) scale(1.5);
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
 
   }
 }
