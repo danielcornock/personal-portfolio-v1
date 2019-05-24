@@ -1,0 +1,158 @@
+.header{
+    position: fixed;
+    background-color: $black;
+    transform: translateY(-100%);
+    left: 0;
+    right: 0;
+    height: auto;
+    color: $white;
+    z-index: 5;
+    border-bottom: 2px solid transparent;
+
+    animation: header-slide 1000ms ease-in-out forwards;
+    animation-delay: 3.3s;
+    transition: transform 1s;
+
+        &--main{
+            background-color: transparent;
+        }
+        &--no-anim{
+            transform: translateY(0);
+            animation: none;
+        }
+        &--active{
+            transform: translateY(0);
+        }
+
+        &--fixed{
+            border-bottom: 2px solid $pink;
+            background-color: $black;
+            z-index: 20;
+        }
+
+       
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__branding{
+        
+        display: flex;
+        align-items: center;
+
+        &__text{
+            font-size: 22px;
+            font-weight: 300;
+            margin-left: 15px;
+            color: $white !important;
+
+            &>span{
+                color: $pink !important;
+                font-size: 20px;
+                display: block;
+                line-height: 20px;
+            }
+        }
+
+        &:hover{
+            transform: scale(1.02);
+        }
+
+    }
+
+    &__logo{
+        height: 60px;
+        display: block;
+        transition: 1s;
+
+        &--small{
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+.nav{
+    &__item{
+        padding: 10px 10px;
+        display: inline-block;
+        margin-right: 40px;
+
+        &--current{
+            border-top: 2px solid $pink;
+
+            @media (max-width: $tablet-sizing){
+                border-top: none;
+                background-color: $pink;
+            }
+        }
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+
+        &:hover{
+            color: $pink;
+        }
+    }
+
+    @media (max-width: $tablet-sizing){
+        position: fixed;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: rgba($black,0.8);
+
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: 400ms;
+
+
+        &__item{
+            display: block;
+            text-align: center;
+            margin-right: 0;
+            opacity: 0;
+            &--active{
+                opacity: 1;
+            }
+        }
+
+        &--active{
+            transform: scale(1,1);
+        }
+
+        &--fixed{
+            
+            border-top: 2px solid $pink;
+        }
+    }
+
+    
+}
+
+.hamburger{
+    display: none;
+    transform: scale(0.8);
+    transform-origin: right;
+
+    @media (max-width: $tablet-sizing){
+        display: block;
+    }
+}
+
+@keyframes header-slide{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

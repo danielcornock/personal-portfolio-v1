@@ -1,0 +1,90 @@
+.services{
+    background: $black;
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+
+        @media (max-width: $tablet-sizing){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;    
+    }
+
+    &__icon{
+        height: 90px;
+        fill: $pink;
+    }
+
+    &__name{
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    &__description{
+        color: $grey-on-black;
+    }
+}
+
+.tools{
+    background-color: $grey;
+    &__content{
+        display: grid;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__icon{
+        font-size: 50px;
+        color: rgba(white,0.7);
+        text-align: center;
+        width: calc(100%/7);
+        min-width: 100px;
+        position: relative;
+        transition: 250ms;
+        padding: 10px;
+
+        &:hover{
+            color: $pink;
+            transform: translateY(-10%) scale(1.1);
+            .tools__expansion{
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+        }
+    }
+
+    &__expansion{
+        color: $white;
+        position: absolute;
+        font-size: 20px;
+        font-family: "Poppins", open-sans;
+        font-weight: 700;
+        padding: 10px;
+        opacity: 0;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,50%) scale(0.1);
+        transition: 400ms;
+    }
+
+    &__background{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        font-size: 90px;
+        z-index: -1;
+        font-weight: 800;
+        color: rgba($white,0.01);
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,50 @@
+    <div class="mailing">
+        <div class="wrapper wrapper--section">
+            <h2 class = "mailing__subhead">Like what you see? Keep updated with my latest posts.</h2>
+            <!-- <div class="mailing__content">
+                <form action="" class="mailing__form">
+                    <input type="email" class = "mailing__input" id = "newsletter-email" name = "newsletter-email" placeholder = "e.g. johnsmith@gmail.com" required>
+                    <button type = "submit" class="mailing__btn btn btn--primary">Count me in!</button>
+                </form>
+            </div> -->
+            <div class="mailing__content">
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = '{{site.url}}/thank-you';}"></iframe>
+               
+                <form class = "mailing__form" action="https://docs.google.com/forms/d/e/1FAIpQLSeuHXjqbf8hQeKVrFit-LpFEzVDeRBE_Bm3WPYcVaTKjUR3MA/formResponse" method="post" target = "hidden_iframe" onsubmit = "submitted=true">
+                    <input type='email' class = "mailing__input" name='emailAddress' placeholder = "e.g. johnsmith@gmail.com" required/>
+                    <button type='submit' class = "mailing__btn btn btn--primary" value="Send">Count me in!</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper wrapper">
+            <div class="footer__content">
+                <div class="footer__sitemap">
+                    
+                </div>
+                <div class="footer__social">
+                    <!-- <h3>Social</h3> -->
+                    <a href = "#" class="footer__social-icon fab fa-twitter"></a>
+                    <a href = "#" class="footer__social-icon fab fa-linkedin-in"></a>
+                    <a href = "#" class="footer__social-icon fab fa-github"></a>
+                    <a href = "#" class="footer__social-icon fab fa-instagram"></a>
+                    <a href = "#" class="footer__social-icon fab fa-youtube"></a>
+                </div>
+                
+            </div>
+            <div class="footer__other">
+
+            </div>
+            <div class="footer__credits">
+                SVG icons in SERVICES designed by Andi Nur Abdillah, Creative Mania & LAFS from the Noun Project.
+                <br>&copy; Daniel Cornock 2019
+            </div>
+        </div>
+    </footer>
+    <script src = "{{ "/script.js" | absolute_url }}" ></script>
+</body>
+
+</html>

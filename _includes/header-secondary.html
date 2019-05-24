@@ -1,0 +1,33 @@
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+    <header class="header header--no-anim">
+        <div class="wrapper">
+            <div class="header__content">
+                <a href = "/" class="header__branding">
+                    <img class = "header__logo" src="{{ "/assets/icons/mylogo_full.png" | absolute_url }}" alt="">
+                    <div class="header__branding__text">
+                        Daniel Cornock<span>Web Developer</span>
+                    </div>
+                </a>
+
+                <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                
+                <nav class="nav">
+                    {% assign mypages = site.pages | sort: "order" %}
+
+                    {% for node in mypages %}
+                    {% unless node.exclude %}
+                        <a class = "nav__item
+                        {% if node.url == page.url %} nav__item--current
+                        {% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                    {% endunless %}
+                    {% endfor %}
+                </nav>
+            </div>
+        </div>
+    </header>

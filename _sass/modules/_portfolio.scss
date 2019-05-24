@@ -1,0 +1,83 @@
+.portfolio{
+    &__header{
+        &__content{
+            color: $black;
+            z-index: 1;
+            position: relative;
+        }
+    }
+}
+
+.fp-portfolio{
+    background-color: $black;
+
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+
+        @media (max-width: $large-phone-sizing){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__entry{
+        position: relative;
+        overflow: hidden;
+
+        &:hover{
+            .fp-portfolio__img{
+                object-position: bottom;
+            }
+
+            .fp-portfolio__overlay{
+                opacity: 1;
+                // transform: translateY(0);
+            }
+        }
+    }
+
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        height: 400px;
+        transition: 5000ms;
+
+        
+    }
+
+    &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        background-color: rgba($grey,0.8);
+
+        // transform: translateY(100%);
+        opacity: 0;
+        transition: 1000ms;
+    }
+
+    &__title{
+        font-size: 25px;
+    }
+    &__description{
+        color: $grey-on-black;
+    }
+    &__btn{
+        margin-top: 10px;
+    }
+
+    &__viewmore{
+        margin-top: 50px;
+        padding: 10px 30px;
+    }
+}

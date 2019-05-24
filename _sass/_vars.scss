@@ -1,0 +1,31 @@
+@mixin center-background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@mixin gradient-background{
+    background: linear-gradient(to bottom right, $pink, $orange);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+
+$pink: #EC5367;
+$black: #1f1f1f;
+$white: white;
+$secondary: #46ACC2;
+$light-grey: #424C55;
+$grey: lighten($black,2%);
+$orange: #ff6348;
+$grey-on-black: rgba(white,0.7);
+
+$tablet-sizing: 950px;
+$large-phone-sizing: 570px;

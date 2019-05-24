@@ -1,0 +1,123 @@
+.testimonials{
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+
+        @media (max-width: 700px){
+            grid-template-columns: 1fr;
+            grid-gap: 80px;
+            margin-top: 20px;
+        }
+    }
+
+    &__card{
+        background-color: $grey;
+        text-align: center;
+        padding: 30px;
+        transition: 250ms;
+        position: relative;
+        
+        &:hover{
+            background-color: $pink;
+            transform: scale(1.05);
+
+            .testimonials__paragraph{
+                color: $white;
+            }
+
+            .testimonials__bg{
+                color: white;
+                z-index: 20;
+                &--top{
+                    top: -50px;
+                }
+                &--bottom{
+                    bottom: -50px;
+                }
+            }
+
+            .testimonials__website{
+                color: rgba($black,0.8);
+            }
+
+        }
+    }
+
+    &__paragraph{
+        color: $grey-on-black;
+        position: relative;
+        z-index: 15;
+    }
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 15;
+    }
+
+    &__image{
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        object-fit: cover;
+        border: 2px solid $pink;
+        margin-bottom: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    &__details{
+
+    }
+
+    &__name{
+        font-size: 22px;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    &__website{
+        color: grey;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__icon{
+        color: $pink;
+        &--start{
+            transform: rotate(180deg);
+        }
+        &--end{
+
+        }
+    }
+
+    &__bg{
+        position: absolute;
+        color: rgba($pink, 0.4);
+        font-size: 100px !important;
+        transition: 250ms;
+        
+
+        &--top{
+            transform: rotate(180deg);
+            top: 90px;
+            left: 2%;
+        }
+
+        &--bottom{
+            bottom: 0px;
+            right: 2%;
+        }
+    }
+}

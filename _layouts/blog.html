@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<header class="page__header">
+    <div class="page__background">
+        <img src = "{{ site.url }}{{ site.bgImgLocation}}{{page.featuredImg}}" alt="">
+    </div>
+    <div class="wrapper wrapper--section">
+        <div class="blog__header__content">
+            <h1 class = "page__header__title">Blog</h1>
+            <div class="page__header__subtext">Read about my journey as a web developer and learn new things with my tutorials.
+        </div>
+    </div>
+</header>
+
+<section class="blog">
+    <div class="wrapper">
+        <div class="blog__content">
+            <ul class="blog__list">
+                    {% for post in site.posts %}
+                    {% if forloop.index > 1 %}
+                        <hr class = "blog__divider">
+                    {% endif %}
+                        <li class = "blog__post">
+                            <img class = "blog__postImg" src="{{ site.url }}{{ site.blogImgLocation}}{{post.featuredImg}}" alt="">
+                            <div class="blog__postDetails">
+                                <a class = "blog__postTitle" href="{{ post.url }}">
+                                    <h2>{{post.title}}</h2>
+                                </a>
+                                <div class = "blog__postExcerpt">
+                                    {{post.description}}
+                                </div>
+                                <a class = "btn btn--tertiary blog__postBtn" href="{{ post.url }}">Read More</a>
+                                <div class="blog__postMeta">
+                                    <a class="blog__postMeta-entry" href = "{{site.url}}/about">
+                                        <i class="blog__postMeta-icon fas fa-user"></i>
+                                        {{ post.author }}
+                                    </a>
+                                    <div class="blog__postMeta-entry">
+                                        <i class="blog__postMeta-icon fas fa-calendar-day"></i>
+                                        <time datetime = '{{post.date}}'>
+                                            {{ post.date | date_to_string }}
+                                        </time>
+                                    </div>
+                                    <a class="blog__postMeta-entry" href = "{{ site.url}}/blog/{{ post.category }}">
+                                        <i class="blog__postMeta-icon fas fa-list"></i>
+                                        {{ post.category }}
+                                    </a>
+                                    {% if post.tags %}
+                                    <div class="blog__postMeta-entry">
+                                        <i class="blog__postMeta-icon fas fa-tag"></i>
+                                        {{ post.tags }}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            
+                        </li>
+                    {% endfor %}
+                </ul>
+        </div>
+    </div>
+</section>

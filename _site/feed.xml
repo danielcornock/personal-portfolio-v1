@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Daniel Cornock</title>
+        <link>http://localhost:4000</link>
+        <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
+        <lastBuildDate>Fri, 24 May 2019 16:25:15 +0100</lastBuildDate>
+        
+        <item>
+            <title>The Anatomy of a Website</title>
+            <link>
+                http://localhost:4000/blog/tutorials/website-anatomy
+            </link>
+            <description>
+                &lt;p&gt;For newcomers, jumping straight into code can be a daunting task. For somebody that’s been creating websites for a while, the layout of a HTML page might seem simple, or even obvious. This is the curse of knowledge at its peak here, so in this article I will be reverse-engineering a website in ways, so that you can see exactly how it is built, and why it is built the way it is.&lt;/p&g...
+            </description>
+            <pubDate>Thu, 23 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/tutorials/website-anatomy
+            </guid>
+        </item>
+        
+        <item>
+            <title>#100DaysOfCode - My Thoughts So Far</title>
+            <link>
+                http://localhost:4000/blog/general/100-days-of-code-thoughts
+            </link>
+            <description>
+                &lt;p&gt;If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-experience&quot;&gt;My Experience&lt;/h2&gt;
+
+            </description>
+            <pubDate>Thu, 23 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/general/100-days-of-code-thoughts
+            </guid>
+        </item>
+        
+        <item>
+            <title>CSS Positioning For Absolute Beginners</title>
+            <link>
+                http://localhost:4000/blog/tutorials/css-positioning
+            </link>
+            <description>
+                &lt;p&gt;CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.&lt;/p&gt;
+
+&lt;p&gt;Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.&lt;/p&gt;
+
+...
+            </description>
+            <pubDate>Fri, 17 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/tutorials/css-positioning
+            </guid>
+        </item>
+        
+        <item>
+            <title>Hello, and welcome to my humble blog!</title>
+            <link>
+                http://localhost:4000/blog/general/my-first-post
+            </link>
+            <description>
+                &lt;p&gt;Hi, and welcome to my web development blog!&lt;/p&gt;
+
+&lt;p&gt;In this blog, you can find my thoughts, ideas and experiences within the web development world. I will also be posting tutorials for common development concepts, both to help others and for my own benefit when I need a little bit of a reminder.&lt;/p&gt;
+
+&lt;p&gt;I hope you find something here that can benefit you or you ...
+            </description>
+            <pubDate>Thu, 16 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/general/my-first-post
+            </guid>
+        </item>
+        
+    </channel>
+</rss>
