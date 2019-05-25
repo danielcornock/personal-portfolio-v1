@@ -453,6 +453,7 @@ input, textarea {
             transform-origin: top;
     -webkit-transition: 400ms;
     transition: 400ms;
+    z-index: 15;
   }
   .nav__item {
     display: block;
@@ -535,7 +536,6 @@ input, textarea {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   opacity: 0;
-  z-index: 10;
 }
 
 .hero__logo--left {
