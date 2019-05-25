@@ -55,16 +55,22 @@
             &:last-of-type{
                 margin-right: 0;
             }
-
             display: flex;
             align-items: center;
-
         }
 
         &__icon{
             font-size: 22px;
             color: $white;
             margin-right: 15px;
+            @media (max-width: $tablet-sizing){
+                margin-right: 0;
+            }
+            
+        }
+
+        @media (max-width: $tablet-sizing){
+            flex-direction: column;
         }
     }
     &__date{
@@ -81,9 +87,10 @@
 
     &__article{
         color: black;
+        font-size: 18px;
 
         &>p{
-
+            line-height: 35px;
         }
 
         &>h2{

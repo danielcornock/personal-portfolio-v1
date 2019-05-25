@@ -4,77 +4,84 @@
     
     <url>
         <loc>/404.html</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/about</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/blog</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/contact</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/feed.xml</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/blog/general</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/portfolio</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>/search.json</loc>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/sitemap.xml</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/thank-you</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/blog/tutorials</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
@@ -83,28 +90,28 @@
     
     <url>
         <loc>/blog/tutorials/website-anatomy</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/blog/general/100-days-of-code-thoughts</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/blog/tutorials/css-positioning</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/blog/general/my-first-post</loc>
-        <lastmod>2019-05-24</lastmod>
+        <lastmod>2019-05-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>

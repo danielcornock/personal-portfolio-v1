@@ -14,7 +14,17 @@
         padding: 30px;
         display: flex;
         flex-direction: column;
-        text-align: center;    
+        text-align: center;
+        
+        @media (max-width: $tablet-sizing){
+            background-color: transparent;
+            padding: 0;
+            margin-bottom: 20px;
+
+            &::after{
+                content: initial;
+            }
+        }
     }
 
     &__icon{
@@ -63,6 +73,7 @@
     }
 
     &__expansion{
+        user-select: none;
         color: $white;
         position: absolute;
         font-size: 20px;

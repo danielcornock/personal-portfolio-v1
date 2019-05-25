@@ -1,0 +1,47 @@
+[
+    
+      {
+  
+        "title"    : "The Anatomy of a Website",
+        "url"      : "/blog/tutorials/website-anatomy",
+        "category" : "Tutorials",
+        "tags"     : "HTML, CSS, Design",
+        "date"     : "2019-05-23 00:00:00 +0100",
+        "description" : "This post is for beginners to give them an overall view of how a website is laid out, and what&#39;s going on in the background."
+  
+      } ,
+    
+      {
+  
+        "title"    : "#100DaysOfCode - My Thoughts So Far",
+        "url"      : "/blog/general/100-days-of-code-thoughts",
+        "category" : "General",
+        "tags"     : "Challenges",
+        "date"     : "2019-05-23 00:00:00 +0100",
+        "description" : "I&#39;m currently on day 16 of the challenge. In this post I&#39;ll talk about what I&#39;ve learned &amp; how I&#39;ve found it."
+  
+      } ,
+    
+      {
+  
+        "title"    : "CSS Positioning For Absolute Beginners",
+        "url"      : "/blog/tutorials/css-positioning",
+        "category" : "Tutorials",
+        "tags"     : "CSS, HTML",
+        "date"     : "2019-05-17 00:00:00 +0100",
+        "description" : "A handy reference for both new and experienced developers for when you just can&#39;t get that positioning quite right."
+  
+      } ,
+    
+      {
+  
+        "title"    : "Hello, and welcome to my humble blog!",
+        "url"      : "/blog/general/my-first-post",
+        "category" : "General",
+        "tags"     : "",
+        "date"     : "2019-05-16 00:00:00 +0100",
+        "description" : "Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything &amp; everything web dev."
+  
+      } 
+    
+  ]

@@ -5,7 +5,7 @@ author: Daniel Cornock
 category: Tutorials
 layout: post
 featuredImg: /post_positioning.jpg
-tags: CSS, HTML
+tags: CSS HTML
 
 ---
 
