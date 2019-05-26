@@ -94,32 +94,106 @@
         <img src = "http://localhost:4000/assets/img/pages/blog_background.jpg" alt="">
     </div>
     <div class="wrapper wrapper--section">
-        <div class="blog__header__content">
+        <div class="page__header__content">
             <h1 class = "page__header__title">Blog</h1>
-            <div class="page__header__subtext">Read about my journey as a web developer and learn new things with my tutorials.
+            <div class="page__header__subtext">Read about my journey as a web developer and learn new things with my tutorials.</div>
         </div>
     </div>
 </header>
-<!-- Html Elements for Search -->
-<div id="search-container">
-    <input type="text" id="search-input" placeholder="search...">
-    <ul id="results-container"></ul>
-    </div>
-    
-    <!-- Script pointing to search-script.js -->
-    <script src="/path/to/search-script.js" type="text/javascript"></script>
-    
-    <!-- Configuration -->
-    <script>
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json'
-    })
-    </script>
+<section class="blog__featured-list">
+    <div class="wrapper wrapper--section">
+        <h2 data-heading="FEATURED POSTS" class="section-header section-header">the best bits.</h2>
+        <div class="blog__featured-list__content">
+            
+            
+            
+            <div class="blog__hero-post">
+                <img src="http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="" class="blog__hero-post__img">
+                <div class="blog__hero-post__overlay">
+                    <div class="fp-blog__meta">
+                        <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
+                        • Tutorials
+                    </div>
+                    
+                    <a href="/blog/tutorials/website-anatomy"><h3 class="blog__hero-post__title">The Anatomy of a Website</h3></a>
+                    <p class="blog__hero-post__description">This post is for beginners to give them an overall view of how a website is laid out, and what's going on in the background.</p>
+                    <a href="/blog/tutorials/website-anatomy" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                </div>
+            </div>
+            
 
+            
+            
+            
+            
+            <div class="blog__featured-post">
+                <img src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="" class="fp-blog__img">
+                <div class="fp-blog__details">
+                    <div class="fp-blog__meta">
+                        <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
+                        • General
+                    </div>
+                    
+                    <a href="/blog/general/100-days-of-code-thoughts"><h3 class="fp-blog__title">#100DaysOfCode - My Thoughts So Far</h3></a>
+                    <p class="fp-blog__description">I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.</p>
+                    <a href="/blog/general/100-days-of-code-thoughts" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                </div>
+            </div>
+
+            
+            
+
+            
+            
+            
+            
+            <div class="blog__featured-post">
+                <img src="http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="" class="fp-blog__img">
+                <div class="fp-blog__details">
+                    <div class="fp-blog__meta">
+                        <time datetime = '2019-05-17 00:00:00 +0100'>17 May 2019</time>
+                        • Tutorials
+                    </div>
+                    
+                    <a href="/blog/tutorials/css-positioning"><h3 class="fp-blog__title">CSS Positioning For Absolute Beginners</h3></a>
+                    <p class="fp-blog__description">A handy reference for both new and experienced developers for when you just can't get that positioning quite right.</p>
+                    <a href="/blog/tutorials/css-positioning" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                </div>
+            </div>
+
+            
+            
+
+            
+            
+            
+            
+            <div class="blog__featured-post">
+                <img src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="" class="fp-blog__img">
+                <div class="fp-blog__details">
+                    <div class="fp-blog__meta">
+                        <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
+                        • General
+                    </div>
+                    
+                    <a href="/blog/general/my-first-post"><h3 class="fp-blog__title">Hello, and welcome to my humble blog!</h3></a>
+                    <p class="fp-blog__description">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
+                    <a href="/blog/general/my-first-post" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                </div>
+            </div>
+
+            
+            
+
+            
+            
+            </div>
+        </div>
+    </div>
+</section>
 <section class="blog">
-    <div class="wrapper">
+    <div class="wrapper wrapper--section">
+        <h2 data-heading="RECENT POSTS" class="section-header section-header--dark">what's new?</h2>
         <div class="blog__content">
             <ul class="blog__list">
                     
@@ -286,12 +360,6 @@
     <div class="mailing">
         <div class="wrapper wrapper--section">
             <h2 class = "mailing__subhead">Like what you see? Keep updated with my latest posts.</h2>
-            <!-- <div class="mailing__content">
-                <form action="" class="mailing__form">
-                    <input type="email" class = "mailing__input" id = "newsletter-email" name = "newsletter-email" placeholder = "e.g. johnsmith@gmail.com" required>
-                    <button type = "submit" class="mailing__btn btn btn--primary">Count me in!</button>
-                </form>
-            </div> -->
             <div class="mailing__content">
                 <script type="text/javascript">var submitted=false;</script>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = 'http://localhost:4000/thank-you';}"></iframe>
@@ -305,10 +373,17 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="wrapper wrapper">
+        <div class="wrapper wrapper--section">
             <div class="footer__content">
-                <div class="footer__sitemap">
-                    
+                <div class="sitemap">
+                    <h3>Links</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "#">About Me</a></li>
+                        <li class="sitemap__entry"><a href = "#">My Work</a></li>
+                        <li class="sitemap__entry"><a href = "#">Blog</a></li>
+                        <li class="sitemap__entry"><a href = "#">Free Resources</a></li>
+                        <li class="sitemap__entry"><a href = "#">Contact Me</a></li>
+                    </ul>
                 </div>
                 <div class="footer__social">
                     <!-- <h3>Social</h3> -->

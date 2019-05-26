@@ -86,22 +86,22 @@ const mobileMenuToggle = function(){
     
 }();
 
-const setHeaderPadding = function(){
-    const main = document.querySelector('.main__secondary');
-    if(!main){
-        return;
-    }
-    checkPadding();
-    window.addEventListener("resize", () =>{
-        checkPadding();
+// const setHeaderPadding = function(){
+//     const main = document.querySelector('.main__secondary');
+//     if(!main){
+//         return;
+//     }
+//     checkPadding();
+//     window.addEventListener("resize", () =>{
+//         checkPadding();
         
-    });
+//     });
     
-    function checkPadding(){
-        let headerHeight = (document.querySelector('.header')).clientHeight;
-        main.style.paddingTop = headerHeight + "px";
-    }
-}();
+//     function checkPadding(){
+//         let headerHeight = (document.querySelector('.header')).clientHeight;
+//         main.style.paddingTop = headerHeight + "px";
+//     }
+// }();
 
 const lightsOnLightsOff = function() {
     const button = document.querySelector('.lights');

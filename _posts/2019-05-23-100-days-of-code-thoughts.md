@@ -6,6 +6,8 @@ category: General
 layout: post
 featuredImg: /post_100daysofcode.jpg
 tags: Challenges
+featured: true
+
 ---
 
 If you're an active member of the tech community, I'd be surprised if you hadn't heard of #100DaysOfCode.

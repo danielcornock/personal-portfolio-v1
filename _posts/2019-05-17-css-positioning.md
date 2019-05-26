@@ -6,6 +6,7 @@ category: Tutorials
 layout: post
 featuredImg: /post_positioning.jpg
 tags: CSS HTML
+featured: true
 
 ---
 

@@ -14,7 +14,7 @@
     &__content{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;
+
 
         @media (max-width: $large-phone-sizing){
             grid-template-columns: 1fr;
@@ -24,15 +24,16 @@
     &__entry{
         position: relative;
         overflow: hidden;
+        height: 260px;
 
         &:hover{
-            .fp-portfolio__img{
-                object-position: bottom;
-            }
-
             .fp-portfolio__overlay{
                 opacity: 1;
-                // transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            .fp-portfolio__img{
+                transform: scale(1.1);
             }
         }
     }
@@ -40,9 +41,9 @@
     &__img{
         width: 100%;
         object-fit: cover;
-        object-position: top;
-        height: 400px;
-        transition: 5000ms;
+        object-position: center;
+        height: 100%;
+        transition: 1000ms;
 
         
     }
@@ -59,11 +60,11 @@
         align-items: center;
         color: white;
 
-        background-color: rgba($grey,0.8);
+        background-color: rgba($grey,0.7);
 
-        // transform: translateY(100%);
+        transform: translateY(100%);
         opacity: 0;
-        transition: 1000ms;
+        transition: 500ms;
     }
 
     &__title{
@@ -71,6 +72,7 @@
     }
     &__description{
         color: $grey-on-black;
+        font-size: 20px;
     }
     &__btn{
         margin-top: 10px;

@@ -37,7 +37,9 @@
         z-index: 1;
 
         &__content{
-
+            z-index: 1;
+            position: relative;
+            align-self: flex-start;
         }
 
         &__title{
@@ -89,14 +91,21 @@
 
     &--tertiary{
         color: $pink;
+        padding: 10px 0;
+        text-align: left;
+
         &:hover{
-            color: darken($pink,20%);
+            color: $white;
         }
     }
 
     &__view-more{
-        margin-top: 50px;
+        margin: 50px auto 0 auto;
         padding: 10px 50px;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
 
         @media (max-width: $large-phone-sizing){
             width: 100%;
@@ -125,6 +134,10 @@
     font-weight: 400;
 
     margin-bottom: 50px;
+
+    &--dark{
+        color: $black;
+    }
 
     &::before{
         content: attr(data-heading);
@@ -201,4 +214,11 @@
 
         transform: scale(1.1);
     }
+}
+
+.img--responsive{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }

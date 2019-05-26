@@ -90,12 +90,12 @@
     </header>
 <main class = "main__secondary main__secondary--About">
     <header class="page__header">
-    <div class="page__background blog__background">
+    <div class="page__background">
         <img src = "http://localhost:4000/assets/img/pages/about_background.jpg" alt="">
     </div>
     <div class="wrapper wrapper--section">
-        <div class="portfolio__header__content">
-            <h1>About Me</h1>
+        <div class="page__header__content">
+            <h1 class = "page__header__title">About Me</h1>
             <div class="page__header__subtext">I'm Daniel Cornock, a front-end developer from Birmingham, United Kingdom.</div>
         </div>
     </div>
@@ -104,12 +104,6 @@
     <div class="mailing">
         <div class="wrapper wrapper--section">
             <h2 class = "mailing__subhead">Like what you see? Keep updated with my latest posts.</h2>
-            <!-- <div class="mailing__content">
-                <form action="" class="mailing__form">
-                    <input type="email" class = "mailing__input" id = "newsletter-email" name = "newsletter-email" placeholder = "e.g. johnsmith@gmail.com" required>
-                    <button type = "submit" class="mailing__btn btn btn--primary">Count me in!</button>
-                </form>
-            </div> -->
             <div class="mailing__content">
                 <script type="text/javascript">var submitted=false;</script>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = 'http://localhost:4000/thank-you';}"></iframe>
@@ -123,10 +117,17 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="wrapper wrapper">
+        <div class="wrapper wrapper--section">
             <div class="footer__content">
-                <div class="footer__sitemap">
-                    
+                <div class="sitemap">
+                    <h3>Links</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "#">About Me</a></li>
+                        <li class="sitemap__entry"><a href = "#">My Work</a></li>
+                        <li class="sitemap__entry"><a href = "#">Blog</a></li>
+                        <li class="sitemap__entry"><a href = "#">Free Resources</a></li>
+                        <li class="sitemap__entry"><a href = "#">Contact Me</a></li>
+                    </ul>
                 </div>
                 <div class="footer__social">
                     <!-- <h3>Social</h3> -->

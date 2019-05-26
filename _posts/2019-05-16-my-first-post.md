@@ -6,6 +6,9 @@ category: General
 layout: post
 featuredImg: /post_welcome.jpg
 
+featured: true
+
+
 ---
 
 Hi, and welcome to my web development blog!

@@ -7,6 +7,11 @@
         grid-template-areas:
             "sitemap social other"
             "bottom bottom bottom";
+
+        @media (max-width: $tablet-sizing){
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "";
+        }
     }
 
     &__credits{
@@ -37,6 +42,28 @@
     }
 }
 
+.sitemap{
+
+    &>h3{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    &__list{
+        
+    }
+    &__entry{
+        list-style: none;
+        margin-left: 0;
+        margin-bottom: 5px;
+
+        &>a{
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+
 .mailing{
     border-top: 2px solid $pink;
     background-color: $black;
@@ -46,6 +73,7 @@
     }
 
     &__subhead{
+        text-align: center;
         margin-bottom: 30px;
     }
 
@@ -65,7 +93,7 @@
         border: none;
         display: block;
         color: $white;
-        background-color: rgba(grey,0.1);
+        background-color: $grey;
         padding: 15px;
         font-size: 18px;
         width: 550px;

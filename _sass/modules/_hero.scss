@@ -7,6 +7,11 @@
     background-color: $black;
     @include center-background;
 
+    @media (max-width: $large-phone-sizing){
+        height: initial;
+        min-height: 70vh;
+    }
+
     &__content{
 
     }
