@@ -40,15 +40,22 @@ const headerResize = function(){
                 headerSub.style.display = "block";
             }
         }
-
-        let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos < 200){
+        
+        const blogHeader = document.querySelector('.blog-header');
+        if(!blogHeader){
             return;
         }
-        if (prevScrollPos > currentScrollPos){
-            header.classList.remove("header--active");
-        } else {
-            header.classList.add("header--active");
+        const headerHeight = header.clientHeight;
+        const blogHeaderHeight = blogHeader.clientHeight;
+        const moveUp = headerHeight - blogHeaderHeight;
+
+        let currentScrollPos = window.pageYOffset;
+        if (currentScrollPos < 250){
+            header.style.transform = "translateY(0)";
+            return;
+        }
+        if (prevScrollPos < currentScrollPos){
+            header.style.transform = "translateY(-" + moveUp + "px)";
         }
         prevScrollPos = currentScrollPos;
 

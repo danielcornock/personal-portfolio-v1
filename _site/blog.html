@@ -20,11 +20,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140387372-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140387372-1');
+    </script>
+
 </head>
 <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-    <header class="header header--no-anim">
+    <header class="header header--no-anim header--secondary">
         <div class="wrapper">
             <div class="header__content">
                 <a href = "/" class="header__branding">
@@ -33,13 +45,13 @@
                         Daniel Cornock<span>Web Developer</span>
                     </div>
                 </a>
-
+                
                 <button class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                
+
                 <nav class="nav">
                     
 
@@ -89,36 +101,41 @@
         </div>
     </header>
 <main class = "main__secondary main__secondary--Blog">
-    <header class="page__header">
-    <div class="page__background">
-        <img src = "http://localhost:4000/assets/img/pages/blog_background.jpg" alt="">
-    </div>
-    <div class="wrapper wrapper--section">
-        <div class="page__header__content">
-            <h1 class = "page__header__title">Blog</h1>
-            <div class="page__header__subtext">Read about my journey as a web developer and learn new things with my tutorials.</div>
+    <div class="blog-header">
+    <div class="wrapper wrapper--fixed-header">
+        <div class="blog-header__content">
+            <div class="blog-header__categories">
+                <a href = "#" class="blog-header__category">General</a>
+                <a href = "#" class="blog-header__category">Tutorials</a>
+                <a href = "#" class="blog-header__category">My Work</a>
+            </div>
+            <div class = "blog-header__search-container">
+                <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Blog">
+                <i class="blog-header__search-icon fas fa-search"></i>
+            </div>
+            
         </div>
     </div>
-</header>
-<section class="blog__featured-list">
-    <div class="wrapper wrapper--section">
-        <h2 data-heading="FEATURED POSTS" class="section-header section-header">the best bits.</h2>
-        <div class="blog__featured-list__content">
+</div>
+
+
+<section class="blog__featured">
+    <div class="wrapper">
+        <h2 class="blog__header">FEATURED POSTS</h2>
+        <div class="blog-posts--featured">
             
             
             
-            <div class="blog__hero-post">
-                <img src="http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="" class="blog__hero-post__img">
-                <div class="blog__hero-post__overlay">
-                    <div class="fp-blog__meta">
-                        <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                        • Tutorials
-                    </div>
-                    
-                    <a href="/blog/tutorials/website-anatomy"><h3 class="blog__hero-post__title">The Anatomy of a Website</h3></a>
-                    <p class="blog__hero-post__description">This post is for beginners to give them an overall view of how a website is laid out, and what's going on in the background.</p>
-                    <a href="/blog/tutorials/website-anatomy" class="btn btn--tertiary fp-blog__btn">Read More</a>
+            <div class="blog-entry--hero">
+                <img src="http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="" class="img--responsive blog-entry--hero__img">
+                <div class="blog-entry__meta blog-entry--hero__meta">
+                    <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
+                    • Daniel Cornock
                 </div>
+                
+                <a href="/blog/tutorials/website-anatomy"><h3 class="blog-entry--hero__title">The Anatomy of a Website</h3></a>
+                <p class="blog-entry--hero__description">This post is for beginners to give them an overall view of how a website is laid out, and what's going on in the background.</p>
+                <a href="/blog/tutorials/website-anatomy" class="btn btn--primary">Read More</a>
             </div>
             
 
@@ -126,17 +143,30 @@
             
             
             
-            <div class="blog__featured-post">
-                <img src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="" class="fp-blog__img">
-                <div class="fp-blog__details">
-                    <div class="fp-blog__meta">
+            <div class="blog-entry--tall blog-entry--grey">
+                
+                <div class = "blog-entry__tags blog-entry__tags--onImage">
+                    
+                    <div class="blog-entry__tag">
+                        #Challenges
+                    </div>
+                    
+                    <div class="blog-entry__tag">
+                        #Personal
+                    </div>
+                    
+                
+                </div>
+                <img src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="" class="img--responsive blog-entry--tall__img">
+                <div class="blog-entry--tall__details">
+                    <div class="blog-entry__meta">
                         <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
                         • General
                     </div>
                     
-                    <a href="/blog/general/100-days-of-code-thoughts"><h3 class="fp-blog__title">#100DaysOfCode - My Thoughts So Far</h3></a>
-                    <p class="fp-blog__description">I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.</p>
-                    <a href="/blog/general/100-days-of-code-thoughts" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                    <a href="/blog/general/100-days-of-code-thoughts"><h3 class="blog-entry--tall__title">#100DaysOfCode - My Thoughts So Far</h3></a>
+                    <p class="blog-entry--tall__description">I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.</p>
+                    <a href="/blog/general/100-days-of-code-thoughts" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                 </div>
             </div>
 
@@ -147,17 +177,34 @@
             
             
             
-            <div class="blog__featured-post">
-                <img src="http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="" class="fp-blog__img">
-                <div class="fp-blog__details">
-                    <div class="fp-blog__meta">
+            <div class="blog-entry--tall blog-entry--grey">
+                
+                <div class = "blog-entry__tags blog-entry__tags--onImage">
+                    
+                    <div class="blog-entry__tag">
+                        #CSS
+                    </div>
+                    
+                    <div class="blog-entry__tag">
+                        #HTML
+                    </div>
+                    
+                    <div class="blog-entry__tag">
+                        #Beginner
+                    </div>
+                    
+                
+                </div>
+                <img src="http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="" class="img--responsive blog-entry--tall__img">
+                <div class="blog-entry--tall__details">
+                    <div class="blog-entry__meta">
                         <time datetime = '2019-05-17 00:00:00 +0100'>17 May 2019</time>
                         • Tutorials
                     </div>
                     
-                    <a href="/blog/tutorials/css-positioning"><h3 class="fp-blog__title">CSS Positioning For Absolute Beginners</h3></a>
-                    <p class="fp-blog__description">A handy reference for both new and experienced developers for when you just can't get that positioning quite right.</p>
-                    <a href="/blog/tutorials/css-positioning" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                    <a href="/blog/tutorials/css-positioning"><h3 class="blog-entry--tall__title">CSS Positioning For Absolute Beginners</h3></a>
+                    <p class="blog-entry--tall__description">A handy reference for both new and experienced developers for when you just can't get that positioning quite right.</p>
+                    <a href="/blog/tutorials/css-positioning" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                 </div>
             </div>
 
@@ -168,17 +215,26 @@
             
             
             
-            <div class="blog__featured-post">
-                <img src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="" class="fp-blog__img">
-                <div class="fp-blog__details">
-                    <div class="fp-blog__meta">
+            <div class="blog-entry--tall blog-entry--grey">
+                
+                <div class = "blog-entry__tags blog-entry__tags--onImage">
+                    
+                    <div class="blog-entry__tag">
+                        #Personal
+                    </div>
+                    
+                
+                </div>
+                <img src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="" class="img--responsive blog-entry--tall__img">
+                <div class="blog-entry--tall__details">
+                    <div class="blog-entry__meta">
                         <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
                         • General
                     </div>
                     
-                    <a href="/blog/general/my-first-post"><h3 class="fp-blog__title">Hello, and welcome to my humble blog!</h3></a>
-                    <p class="fp-blog__description">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
-                    <a href="/blog/general/my-first-post" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                    <a href="/blog/general/my-first-post"><h3 class="blog-entry--tall__title">Hello, and welcome to my humble blog!</h3></a>
+                    <p class="blog-entry--tall__description">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
+                    <a href="/blog/general/my-first-post" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                 </div>
             </div>
 
@@ -191,167 +247,170 @@
         </div>
     </div>
 </section>
-<section class="blog">
+<section class="blog__latest">
     <div class="wrapper wrapper--section">
-        <h2 data-heading="RECENT POSTS" class="section-header section-header--dark">what's new?</h2>
-        <div class="blog__content">
-            <ul class="blog__list">
-                    
-                    
-                        <li class = "blog__post">
-                            <img class = "blog__postImg" src="http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="">
-                            <div class="blog__postDetails">
-                                <a class = "blog__postTitle" href="/blog/tutorials/website-anatomy">
-                                    <h2>The Anatomy of a Website</h2>
+            <h2 class="blog__header">RECENT POSTS</h2>
+            <ul class="blog-posts--vertical">
+                
+                
+                    <li class = "blog-entry--wide">
+                        <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="">
+                        <div class="blog-entry--wide__details">
+                            <div class="blog-entry__meta blog-entry--wide__meta">
+                                <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
+                                • Tutorials
+                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Tutorials">
+                                    <i class="blog__postMeta-icon fas fa-list"></i>
+                                    Tutorials
                                 </a>
-                                <div class = "blog__postExcerpt">
-                                    This post is for beginners to give them an overall view of how a website is laid out, and what's going on in the background.
-                                </div>
-                                <a class = "btn btn--tertiary blog__postBtn" href="/blog/tutorials/website-anatomy">Read More</a>
-                                <div class="blog__postMeta">
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/about">
-                                        <i class="blog__postMeta-icon fas fa-user"></i>
-                                        Daniel Cornock
-                                    </a>
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-calendar-day"></i>
-                                        <time datetime = '2019-05-23 00:00:00 +0100'>
-                                            23 May 2019
-                                        </time>
-                                    </div>
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Tutorials">
-                                        <i class="blog__postMeta-icon fas fa-list"></i>
-                                        Tutorials
-                                    </a>
-                                    
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-tag"></i>
-                                        HTMLCSSDesign
-                                    </div>
-                                    
-                                </div>
+                                </div> -->
+                            </div>
+                            <a href="/blog/tutorials/website-anatomy">
+                                <h2 class = "blog-entry--wide__title">The Anatomy of a Website</h2>
+                            </a>
+                            <div class = "blog-entry--wide__description">
+                                This post is for beginners to give them an overall view of how a website is laid out, and what's going on in the background.
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/tutorials/website-anatomy">Read More...</a>
                             </div>
                             
-                        </li>
-                    
-                    
-                        <hr class = "blog__divider">
-                    
-                        <li class = "blog__post">
-                            <img class = "blog__postImg" src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="">
-                            <div class="blog__postDetails">
-                                <a class = "blog__postTitle" href="/blog/general/100-days-of-code-thoughts">
-                                    <h2>#100DaysOfCode - My Thoughts So Far</h2>
+
+                            
+                            <div class = "blog-entry__tags">
+                                
+                                <div class="blog-entry__tag">
+                                    #HTML
+                                </div>
+                                
+                                <div class="blog-entry__tag">
+                                    #CSS
+                                </div>
+                                
+                                <div class="blog-entry__tag">
+                                    #Beginner
+                                </div>
+                                
+                            
+                        </div>
+                    </li>
+                
+                
+                    <hr class = "blog-entry__divider">
+                
+                    <li class = "blog-entry--wide">
+                        <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="">
+                        <div class="blog-entry--wide__details">
+                            <div class="blog-entry__meta blog-entry--wide__meta">
+                                <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
+                                • General
+                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/General">
+                                    <i class="blog__postMeta-icon fas fa-list"></i>
+                                    General
                                 </a>
-                                <div class = "blog__postExcerpt">
-                                    I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.
-                                </div>
-                                <a class = "btn btn--tertiary blog__postBtn" href="/blog/general/100-days-of-code-thoughts">Read More</a>
-                                <div class="blog__postMeta">
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/about">
-                                        <i class="blog__postMeta-icon fas fa-user"></i>
-                                        Daniel Cornock
-                                    </a>
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-calendar-day"></i>
-                                        <time datetime = '2019-05-23 00:00:00 +0100'>
-                                            23 May 2019
-                                        </time>
-                                    </div>
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/General">
-                                        <i class="blog__postMeta-icon fas fa-list"></i>
-                                        General
-                                    </a>
-                                    
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-tag"></i>
-                                        Challenges
-                                    </div>
-                                    
-                                </div>
+                                </div> -->
+                            </div>
+                            <a href="/blog/general/100-days-of-code-thoughts">
+                                <h2 class = "blog-entry--wide__title">#100DaysOfCode - My Thoughts So Far</h2>
+                            </a>
+                            <div class = "blog-entry--wide__description">
+                                I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/general/100-days-of-code-thoughts">Read More...</a>
                             </div>
                             
-                        </li>
-                    
-                    
-                        <hr class = "blog__divider">
-                    
-                        <li class = "blog__post">
-                            <img class = "blog__postImg" src="http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="">
-                            <div class="blog__postDetails">
-                                <a class = "blog__postTitle" href="/blog/tutorials/css-positioning">
-                                    <h2>CSS Positioning For Absolute Beginners</h2>
+
+                            
+                            <div class = "blog-entry__tags">
+                                
+                                <div class="blog-entry__tag">
+                                    #Challenges
+                                </div>
+                                
+                                <div class="blog-entry__tag">
+                                    #Personal
+                                </div>
+                                
+                            
+                        </div>
+                    </li>
+                
+                
+                    <hr class = "blog-entry__divider">
+                
+                    <li class = "blog-entry--wide">
+                        <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="">
+                        <div class="blog-entry--wide__details">
+                            <div class="blog-entry__meta blog-entry--wide__meta">
+                                <time datetime = '2019-05-17 00:00:00 +0100'>17 May 2019</time>
+                                • Tutorials
+                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Tutorials">
+                                    <i class="blog__postMeta-icon fas fa-list"></i>
+                                    Tutorials
                                 </a>
-                                <div class = "blog__postExcerpt">
-                                    A handy reference for both new and experienced developers for when you just can't get that positioning quite right.
-                                </div>
-                                <a class = "btn btn--tertiary blog__postBtn" href="/blog/tutorials/css-positioning">Read More</a>
-                                <div class="blog__postMeta">
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/about">
-                                        <i class="blog__postMeta-icon fas fa-user"></i>
-                                        Daniel Cornock
-                                    </a>
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-calendar-day"></i>
-                                        <time datetime = '2019-05-17 00:00:00 +0100'>
-                                            17 May 2019
-                                        </time>
-                                    </div>
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Tutorials">
-                                        <i class="blog__postMeta-icon fas fa-list"></i>
-                                        Tutorials
-                                    </a>
-                                    
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-tag"></i>
-                                        CSSHTML
-                                    </div>
-                                    
-                                </div>
+                                </div> -->
+                            </div>
+                            <a href="/blog/tutorials/css-positioning">
+                                <h2 class = "blog-entry--wide__title">CSS Positioning For Absolute Beginners</h2>
+                            </a>
+                            <div class = "blog-entry--wide__description">
+                                A handy reference for both new and experienced developers for when you just can't get that positioning quite right.
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/tutorials/css-positioning">Read More...</a>
                             </div>
                             
-                        </li>
-                    
-                    
-                        <hr class = "blog__divider">
-                    
-                        <li class = "blog__post">
-                            <img class = "blog__postImg" src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="">
-                            <div class="blog__postDetails">
-                                <a class = "blog__postTitle" href="/blog/general/my-first-post">
-                                    <h2>Hello, and welcome to my humble blog!</h2>
+
+                            
+                            <div class = "blog-entry__tags">
+                                
+                                <div class="blog-entry__tag">
+                                    #CSS
+                                </div>
+                                
+                                <div class="blog-entry__tag">
+                                    #HTML
+                                </div>
+                                
+                                <div class="blog-entry__tag">
+                                    #Beginner
+                                </div>
+                                
+                            
+                        </div>
+                    </li>
+                
+                
+                    <hr class = "blog-entry__divider">
+                
+                    <li class = "blog-entry--wide">
+                        <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="">
+                        <div class="blog-entry--wide__details">
+                            <div class="blog-entry__meta blog-entry--wide__meta">
+                                <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
+                                • General
+                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/General">
+                                    <i class="blog__postMeta-icon fas fa-list"></i>
+                                    General
                                 </a>
-                                <div class = "blog__postExcerpt">
-                                    Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.
-                                </div>
-                                <a class = "btn btn--tertiary blog__postBtn" href="/blog/general/my-first-post">Read More</a>
-                                <div class="blog__postMeta">
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/about">
-                                        <i class="blog__postMeta-icon fas fa-user"></i>
-                                        Daniel Cornock
-                                    </a>
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-calendar-day"></i>
-                                        <time datetime = '2019-05-16 00:00:00 +0100'>
-                                            16 May 2019
-                                        </time>
-                                    </div>
-                                    <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/General">
-                                        <i class="blog__postMeta-icon fas fa-list"></i>
-                                        General
-                                    </a>
-                                    
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-tag"></i>
-                                        
-                                    </div>
-                                    
-                                </div>
+                                </div> -->
+                            </div>
+                            <a href="/blog/general/my-first-post">
+                                <h2 class = "blog-entry--wide__title">Hello, and welcome to my humble blog!</h2>
+                            </a>
+                            <div class = "blog-entry--wide__description">
+                                Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/general/my-first-post">Read More...</a>
                             </div>
                             
-                        </li>
-                    
-                </ul>
+
+                            
+                            <div class = "blog-entry__tags">
+                                
+                                <div class="blog-entry__tag">
+                                    #Personal
+                                </div>
+                                
+                            
+                        </div>
+                    </li>
+                
+            </ul>
         </div>
     </div>
 </section>

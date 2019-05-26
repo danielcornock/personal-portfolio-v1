@@ -5,6 +5,8 @@ author: Daniel Cornock
 category: General
 layout: post
 featuredImg: /post_welcome.jpg
+tags:
+- Personal
 
 featured: true
 

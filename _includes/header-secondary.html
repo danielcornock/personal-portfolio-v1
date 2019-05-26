@@ -1,7 +1,7 @@
 <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-    <header class="header header--no-anim">
+    <header class="header header--no-anim header--secondary">
         <div class="wrapper">
             <div class="header__content">
                 <a href = "/" class="header__branding">
@@ -10,13 +10,13 @@
                         Daniel Cornock<span>Web Developer</span>
                     </div>
                 </a>
-
+                
                 <button class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                
+
                 <nav class="nav">
                     {% assign mypages = site.pages | sort: "order" %}
 

@@ -58,7 +58,7 @@
 }
 
 .btn{
-    padding: 10px;
+    padding: 10px 30px;
     transition: 250ms ease-in-out;
     cursor: pointer;
     outline: none;
@@ -149,21 +149,6 @@
         transform: translateX(-50%);
         color: $pink;
     }
-
-
-
-    // &::after{
-    //     content: "";
-    //     position: absolute;
-    //     height: 15px;
-    //     // width: 180px;
-    //     width: 95%;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%,-50%);
-    //     z-index: -1;
-    //     background-color: rgba($pink,0.8);
-    // }
 }
 
 .card{

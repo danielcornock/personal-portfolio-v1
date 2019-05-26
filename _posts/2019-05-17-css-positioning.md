@@ -5,7 +5,10 @@ author: Daniel Cornock
 category: Tutorials
 layout: post
 featuredImg: /post_positioning.jpg
-tags: CSS HTML
+tags: 
+- CSS
+- HTML
+- Beginner
 featured: true
 
 ---
@@ -20,7 +23,6 @@ Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. 
 - Fixed Positioning
 - Sticky Positioning
 - Static Positioning
-
 
 Well, if you didn't get it, it seems we're in a bit of a sticky!
 Again.

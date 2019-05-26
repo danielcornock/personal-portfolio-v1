@@ -5,4 +5,5 @@ description: Read about my journey as a web developer and learn new things with 
 layout: blog
 order: 3
 featuredImg: /blog_background.jpg
+include: true
 ---

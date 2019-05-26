@@ -123,20 +123,20 @@
     <section class="fp-blog">
         <div class="wrapper wrapper--section">
             <h2 data-heading = "BLOG" class="section-header">what I write about.</h2>
-            <div class="fp-blog__content">
+            <div class="blog-posts--horizontal">
                 {% for post in site.posts limit:4%}
 
-                       <div class="fp-blog__card">
-                            <img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="fp-blog__img">
-                            <div class="fp-blog__details">
-                                <div class="fp-blog__meta">
+                       <div class="blog-entry--tall blog-entry--black">
+                            <img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--tall__img">
+                            <div class="blog-entry--tall__details">
+                                <div class="blog-entry__meta">
                                     <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
                                     • {{post.category}}
                                 </div>
                                 
-                                <a href="{{post.url}}"><h3 class="fp-blog__title">{{post.title}}</h3></a>
-                                <p class="fp-blog__description">{{post.description}}</p>
-                                <a href="{{post.url}}" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                                <a href="{{post.url}}"><h3 class="blog-entry--tall__title">{{post.title}}</h3></a>
+                                <p class="blog-entry--tall__description">{{post.description}}</p>
+                                <a href="{{post.url}}" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                             </div>
                         </div> 
                 {% endfor %}

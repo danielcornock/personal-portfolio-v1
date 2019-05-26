@@ -5,7 +5,9 @@ author: Daniel Cornock
 category: General
 layout: post
 featuredImg: /post_100daysofcode.jpg
-tags: Challenges
+tags:
+- Challenges
+- Personal
 featured: true
 
 ---

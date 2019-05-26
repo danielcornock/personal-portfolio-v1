@@ -5,7 +5,10 @@ author: Daniel Cornock
 category: Tutorials
 layout: post
 featuredImg: /post_anatomy.jpg
-tags: HTML CSS Design
+tags: 
+- HTML
+- CSS
+- Beginner
 featured: true
 
 ---

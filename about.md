@@ -5,4 +5,5 @@ description: I'm Daniel Cornock, a front-end developer from Birmingham, United K
 layout: about
 order: 1
 featuredImg: /about_background.jpg
+include: true
 ---

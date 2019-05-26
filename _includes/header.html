@@ -18,9 +18,9 @@
                     {% assign mypages = site.pages | sort: "order" %}
 
                     {% for node in mypages %}
-                    {% unless node.exclude %}
+                    {% if node.include %}
                         <a class = "nav__item" href = "{{ node.url | absolute_url }}">{{ node.title }}</a>
-                    {% endunless %}
+                    {% endif %}
                     {% endfor %}
                 </nav>
             </div>

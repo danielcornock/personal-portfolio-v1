@@ -20,11 +20,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140387372-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140387372-1');
+    </script>
+
 </head>
 <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-    <header class="header header--no-anim">
+    <header class="header header--no-anim header--secondary">
         <div class="wrapper">
             <div class="header__content">
                 <a href = "/" class="header__branding">
@@ -33,13 +45,13 @@
                         Daniel Cornock<span>Web Developer</span>
                     </div>
                 </a>
-
+                
                 <button class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                
+
                 <nav class="nav">
                     
 
@@ -88,7 +100,26 @@
         </div>
     </header>
 <main class = "main__secondary main__secondary--Hello, and welcome to my humble blog!">
-    <header class="post__header">
+    <div class="blog-header">
+    <div class="wrapper wrapper--fixed-header">
+        <div class="blog-header__content">
+            <div class="blog-header__categories">
+                <a href = "#" class="blog-header__category">General</a>
+                <a href = "#" class="blog-header__category">Tutorials</a>
+                <a href = "#" class="blog-header__category">My Work</a>
+            </div>
+            <div class = "blog-header__search-container">
+                <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Blog">
+                <i class="blog-header__search-icon fas fa-search"></i>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<header class="post__header">
     <div class="post__background">
         <img src = " http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="">
     </div>

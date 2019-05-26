@@ -1,40 +1,46 @@
 ---
 layout: default
 ---
-
-{% include page-header.html %}
-<section class="blog__featured-list">
-    <div class="wrapper wrapper--section">
-        <h2 data-heading="FEATURED POSTS" class="section-header section-header">the best bits.</h2>
-        <div class="blog__featured-list__content">
+{% include header-blog.html %}
+<section class="blog__featured">
+    <div class="wrapper">
+        <h2 class="blog__header">FEATURED POSTS</h2>
+        <div class="blog-posts--featured">
             {% for post in site.posts limit: 4 %}
             {% if post.featured == true %}
             {% if forloop.index == 1 %}
-            <div class="blog__hero-post">
-                <img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="blog__hero-post__img">
-                <div class="blog__hero-post__overlay">
-                    <div class="fp-blog__meta">
-                        <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
-                        • {{post.category}}
-                    </div>
-                    
-                    <a href="{{post.url}}"><h3 class="blog__hero-post__title">{{post.title}}</h3></a>
-                    <p class="blog__hero-post__description">{{post.description}}</p>
-                    <a href="{{post.url}}" class="btn btn--tertiary fp-blog__btn">Read More</a>
+            <div class="blog-entry--hero">
+                <img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--hero__img">
+                <div class="blog-entry__meta blog-entry--hero__meta">
+                    <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
+                    • {{post.author}}
                 </div>
+                
+                <a href="{{post.url}}"><h3 class="blog-entry--hero__title">{{post.title}}</h3></a>
+                <p class="blog-entry--hero__description">{{post.description}}</p>
+                <a href="{{post.url}}" class="btn btn--primary">Read More</a>
             </div>
             {% else %}
-            <div class="blog__featured-post">
-                <img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="fp-blog__img">
-                <div class="fp-blog__details">
-                    <div class="fp-blog__meta">
+            <div class="blog-entry--tall blog-entry--grey">
+                {% if post.tags %}
+                <div class = "blog-entry__tags blog-entry__tags--onImage">
+                    {% for tag in post.tags %}
+                    <div class="blog-entry__tag">
+                        #{{ tag }}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+                </div>
+                <img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--tall__img">
+                <div class="blog-entry--tall__details">
+                    <div class="blog-entry__meta">
                         <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
                         • {{post.category}}
                     </div>
                     
-                    <a href="{{post.url}}"><h3 class="fp-blog__title">{{post.title}}</h3></a>
-                    <p class="fp-blog__description">{{post.description}}</p>
-                    <a href="{{post.url}}" class="btn btn--tertiary fp-blog__btn">Read More</a>
+                    <a href="{{post.url}}"><h3 class="blog-entry--tall__title">{{post.title}}</h3></a>
+                    <p class="blog-entry--tall__description">{{post.description}}</p>
+                    <a href="{{post.url}}" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                 </div>
             </div>
 
@@ -47,52 +53,47 @@ layout: default
         </div>
     </div>
 </section>
-<section class="blog">
+<section class="blog__latest">
     <div class="wrapper wrapper--section">
-        <h2 data-heading="RECENT POSTS" class="section-header section-header--dark">what's new?</h2>
-        <div class="blog__content">
-            <ul class="blog__list">
-                    {% for post in site.posts %}
-                    {% if forloop.index > 1 %}
-                        <hr class = "blog__divider">
-                    {% endif %}
-                        <li class = "blog__post">
-                            <img class = "blog__postImg" src="{{ site.url }}{{ site.blogImgLocation}}{{post.featuredImg}}" alt="">
-                            <div class="blog__postDetails">
-                                <a class = "blog__postTitle" href="{{ post.url }}">
-                                    <h2>{{post.title}}</h2>
+            <h2 class="blog__header">RECENT POSTS</h2>
+            <ul class="blog-posts--vertical">
+                {% for post in site.posts %}
+                {% if forloop.index > 1 %}
+                    <hr class = "blog-entry__divider">
+                {% endif %}
+                    <li class = "blog-entry--wide">
+                        <img class = "img--responsive blog-entry--wide__img" src="{{ site.url }}{{ site.blogImgLocation}}{{post.featuredImg}}" alt="">
+                        <div class="blog-entry--wide__details">
+                            <div class="blog-entry__meta blog-entry--wide__meta">
+                                <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
+                                • {{post.category}}
+                                <!-- <a class="blog__postMeta-entry" href = "{{ site.url}}/blog/{{ post.category }}">
+                                    <i class="blog__postMeta-icon fas fa-list"></i>
+                                    {{ post.category }}
                                 </a>
-                                <div class = "blog__postExcerpt">
-                                    {{post.description}}
-                                </div>
-                                <a class = "btn btn--tertiary blog__postBtn" href="{{ post.url }}">Read More</a>
-                                <div class="blog__postMeta">
-                                    <a class="blog__postMeta-entry" href = "{{site.url}}/about">
-                                        <i class="blog__postMeta-icon fas fa-user"></i>
-                                        {{ post.author }}
-                                    </a>
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-calendar-day"></i>
-                                        <time datetime = '{{post.date}}'>
-                                            {{ post.date | date_to_string }}
-                                        </time>
-                                    </div>
-                                    <a class="blog__postMeta-entry" href = "{{ site.url}}/blog/{{ post.category }}">
-                                        <i class="blog__postMeta-icon fas fa-list"></i>
-                                        {{ post.category }}
-                                    </a>
-                                    {% if post.tags %}
-                                    <div class="blog__postMeta-entry">
-                                        <i class="blog__postMeta-icon fas fa-tag"></i>
-                                        {{ post.tags }}
-                                    </div>
-                                    {% endif %}
-                                </div>
+                                </div> -->
+                            </div>
+                            <a href="{{ post.url }}">
+                                <h2 class = "blog-entry--wide__title">{{post.title}}</h2>
+                            </a>
+                            <div class = "blog-entry--wide__description">
+                                {{post.description}}
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="{{ post.url }}">Read More...</a>
                             </div>
                             
-                        </li>
-                    {% endfor %}
-                </ul>
+
+                            {% if post.tags %}
+                            <div class = "blog-entry__tags">
+                                {% for tag in post.tags %}
+                                <div class="blog-entry__tag">
+                                    #{{ tag }}
+                                </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </section>

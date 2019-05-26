@@ -20,14 +20,15 @@
             transform: translateY(0);
             animation: none;
         }
-        &--active{
-            transform: translateY(0);
-        }
 
         &--fixed{
             border-bottom: 2px solid $pink;
             background-color: $black;
             z-index: 20;
+        }
+
+        &--secondary{
+            border-bottom: 2px solid $pink;
         }
 
        
@@ -77,13 +78,104 @@
     }
 }
 
+.blog-header{
+    padding: 14px 0;
+    background-color: $pink;
+    position: relative;
 
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        @media (max-width: 600px){
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__categories{
+        display: flex;
+        @media (max-width: 600px){
+            width: 100%;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+    }
+
+    &__category{
+        color: $white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        margin-right: 50px;
+
+        &:hover{
+            transform: translateY(-2%);
+            color: $black;
+        }
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+
+        @media (max-width: 700px){
+            margin-right: 20px;
+        }
+        @media (max-width: 600px){
+            margin-right: 0;
+        }
+    }
+
+    &__search{  
+        outline: none;
+        font-weight: 600;
+        border: 1px solid $white;
+        border-radius: 20px;
+        background-color: rgba($white,1);
+        padding: 10px 20px;
+        font-size: 16px;
+        color: $pink;
+        width: 300px;
+
+        @media (max-width: 600px){
+            width: 100%;
+        }
+
+
+        &-container{
+            position: relative;
+        }
+
+        &-icon{
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            color: $pink;
+        }
+        
+        &::placeholder{
+            color: $pink;
+        }
+
+        &:focus{
+            &::placeholder{
+                color: rgba($pink, 0.8);
+            }
+        }
+    }
+}
 
 .nav{
     &__item{
         padding: 10px 10px;
         display: inline-block;
         margin-right: 40px;
+        position: relative;
 
         &--current{
             border-top: 2px solid $pink;
@@ -100,6 +192,7 @@
 
         &:hover{
             color: $pink;
+            transform: translateY(-2%);
         }
     }
 

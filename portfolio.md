@@ -5,4 +5,5 @@ description: Have a browse through my collection of projects, both personal proj
 layout: portfolio
 order: 2
 featuredImg: /portfolio_background.jpg
+include: true
 ---

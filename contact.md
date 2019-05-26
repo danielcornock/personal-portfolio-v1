@@ -5,4 +5,5 @@ description: Whether you'd like a website, to collaborate with me, or anything. 
 layout: contact
 order: 4
 featuredImg: /contact_background.jpg
+include: true
 ---
