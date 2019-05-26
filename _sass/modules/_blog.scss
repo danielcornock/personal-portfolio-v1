@@ -139,8 +139,8 @@
 
         @media (max-width: $large-phone-sizing){
             grid-template-columns: 1fr;
-            grid-gap: 15px;
-            margin-bottom: 15px;
+            grid-gap: 0px;
+            margin-bottom: 20px;
         }
 
         &__details{

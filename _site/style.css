@@ -1226,8 +1226,8 @@ input, textarea {
   .blog-entry--wide {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 15px;
-    margin-bottom: 15px;
+    grid-gap: 0px;
+    margin-bottom: 20px;
   }
 }
 
