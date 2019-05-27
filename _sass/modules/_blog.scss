@@ -135,7 +135,8 @@
         list-style: none;
         margin: 0;
         overflow: hidden;
-        grid-gap: 30px;
+
+        background-color: $black;
 
 
         @media (max-width: $tablet-sizing){
@@ -152,7 +153,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            padding: 20px 0;
+            padding: 30px;
         }
 
         &__img{
@@ -272,11 +273,29 @@
     &__featured{
         background: $black;
         position: relative;
-        z-index: -1;
+        z-index: 0;
+        overflow: hidden;
     }
     &__latest{
         background-color: $grey;
         z-index: -1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__background{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        z-index: -1;
+        background-color: rgb(123,60,66);
+        transform: skewY(-20deg);
+
+        &--right{
+            transform: skewY(40deg);
+            top:44%;
+        }
     }
 
 }

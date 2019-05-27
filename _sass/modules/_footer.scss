@@ -1,9 +1,13 @@
 .footer{
-    background-color: $pink;
+    background-color: $grey;
+    color: $grey-on-black;
+    position: relative;
+    overflow: hidden;
 
     &__content{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 400px 1fr 1fr 1fr;
+        grid-gap: 70px;
         grid-template-areas:
             "sitemap resources social other "
             "bottom bottom bottom bottom";
@@ -15,6 +19,7 @@
     }
 
     &__title{
+        color: $pink;
         font-size: 24px;
         margin-bottom: 10px;
     }
@@ -37,6 +42,14 @@
 
             &:hover{
                 color: $white;
+                .footer__social-icon{
+                    color: white;
+                    animation-name: animate-icon;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: forwards;
+                    animation-iteration-count: 1;
+                    color: $pink;
+                }
             }
         }
         &-icon{
@@ -46,16 +59,28 @@
             margin-right: 10px;
 
             &:hover{
-                color: white;
-                animation-name: animate-icon;
-                animation-duration: 0.5s;
-                animation-fill-mode: forwards;
-                animation-iteration-count: 1;
+                
+                
             }
         }
-
-        
     }
+
+    &__branding{
+        
+
+        &-text{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 1px;
+
+        }
+        &__link{
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+
+
 }
 
 .sitemap{

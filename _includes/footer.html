@@ -14,8 +14,21 @@
         </div>
     </div>
     <footer class="footer">
+        <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+        <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
         <div class="wrapper wrapper--section">
             <div class="footer__content">
+                <div class="footer__branding">
+                    <a href = "/" class="header__branding footer__title">
+                        <img class = "header__logo" src="{{ "/assets/icons/mylogo_full.png" | absolute_url }}" alt="">
+                        <div class="header__branding__text">
+                            Daniel Cornock<span>Web Developer</span>
+                        </div>
+                    </a>
+                    <div class="footer__branding-text">
+                        I design, create and implement beautiful, functional websites for your every need. Contact me using any of the methods here, or read more on my <a class = "footer__branding__link" href="{{site.url}}/blog">blog</a>.
+                    </div>  
+                </div>
                 <div class="sitemap">
                     <h3 class = "footer__title">Links</h3>
                     <ul class="sitemap__list">

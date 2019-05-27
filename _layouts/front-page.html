@@ -2,6 +2,10 @@
 {% include header.html %}
 
 <main>
+    <button class="lights">
+        <i class="lights__icon far fa-lightbulb"></i>
+        <div class="lights__text">LIGHTS ON!</div>
+    </button>
     <section class="hero">
         <div class="wrapper section-wrapper">
             <div class="hero__content">
@@ -17,12 +21,8 @@
             </div>
         </div>
         <a href = "#about" class="hero__icon fas fa-chevron-down"></a>
-        <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo_full.png" | absolute_url }}" alt="">
-        <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo_full.png" | absolute_url }}" alt="">
-        <button class="lights lights--off">
-            <i class="lights__icon fas fa-lightbulb"></i>
-            <div class="lights__text">LIGHTS ON!</div>
-        </button>
+        <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+        <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
     </section>
 
     <section class="fp-about" id = "about">

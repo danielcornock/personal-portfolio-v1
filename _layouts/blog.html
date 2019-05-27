@@ -3,6 +3,11 @@ layout: default
 ---
 {% include header-blog.html %}
 <section class="blog__featured">
+        <div class="blog__background"></div>
+
+
+        <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+        <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
     <div class="wrapper">
         <h2 class="blog__header">FEATURED POSTS</h2>
         <div class="blog-posts--featured">
@@ -54,6 +59,9 @@ layout: default
     </div>
 </section>
 <section class="blog__latest">
+    <div class="blog__background blog__background--right"></div>
+
+
     <div class="wrapper wrapper--section">
             <h2 class="blog__header">RECENT POSTS</h2>
             <ul class="blog-posts--vertical">

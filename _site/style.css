@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
+@import url("monokai.css");
 body, html {
   font-family: 'Poppins', sans-serif;
   background-color: #1f1f1f;
@@ -13,6 +14,11 @@ html {
           filter: invert(100%);
   -webkit-transition: 2000ms;
   transition: 2000ms;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 * {
@@ -97,6 +103,10 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+}
+
+.main__secondary--post {
+  background-color: white;
 }
 
 .main--blog {
@@ -434,7 +444,7 @@ input, textarea {
 }
 
 .blog-header {
-  padding: 14px 0;
+  padding: 8px 0;
   background-color: #EC5367;
   position: relative;
 }
@@ -811,6 +821,7 @@ input, textarea {
 .hero__bg {
   position: absolute;
   opacity: 0.03;
+  height: 762px;
 }
 
 .hero__bg--right {
@@ -832,10 +843,10 @@ input, textarea {
 .lights {
   position: fixed;
   z-index: 100;
-  background-color: #1f1f1f;
+  background-color: rgba(255, 255, 255, 0.1);
   bottom: 20px;
-  left: 20px;
-  border: none;
+  right: 0px;
+  border: 2px solid #EC5367;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,17 +856,27 @@ input, textarea {
   outline: none;
   font-size: 14px;
   padding: 0 10px;
-  color: yellow;
+  color: white;
   cursor: pointer;
+}
+
+.lights:hover .lights__text {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  width: 100px;
 }
 
 .lights__icon {
   margin: 10px;
   font-size: 30px;
+  color: #EC5367;
 }
 
 .lights__text {
-  margin: 10px;
+  width: 0;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  overflow: hidden;
 }
 
 @-webkit-keyframes title-fade {
@@ -1220,7 +1241,7 @@ input, textarea {
   list-style: none;
   margin: 0;
   overflow: hidden;
-  grid-gap: 30px;
+  background-color: #1f1f1f;
 }
 
 @media (max-width: 950px) {
@@ -1250,7 +1271,7 @@ input, textarea {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 20px 0;
+  padding: 30px;
 }
 
 .blog-entry--wide__img {
@@ -1364,191 +1385,78 @@ input, textarea {
 .blog__featured {
   background: #1f1f1f;
   position: relative;
-  z-index: -1;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .blog__latest {
   background-color: #242424;
   z-index: -1;
+  position: relative;
+  overflow: hidden;
 }
 
-.post__background {
+.blog__background {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  background-color: #7b3c42;
+  -webkit-transform: skewY(-20deg);
+          transform: skewY(-20deg);
+}
+
+.blog__background--right {
+  -webkit-transform: skewY(40deg);
+          transform: skewY(40deg);
+  top: 44%;
+}
+
+.post-header {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  height: 300px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.post-header__background {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-.post__background > img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
-.post__background::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(236, 83, 103, 0.8);
+.post__title {
+  background-color: #EC5367;
 }
 
-.post__header {
-  position: relative;
-}
-
-.post__header h1 {
-  color: white;
-  margin-bottom: 50px;
-}
-
-.post__header__content {
-  position: relative;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.post__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 18px;
+.post__meta {
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.post__info__entry {
-  margin-right: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.post__info__entry:last-of-type {
-  margin-right: 0;
-}
-
-.post__info__icon {
-  font-size: 22px;
-  color: white;
-  margin-right: 15px;
-}
-
-@media (max-width: 950px) {
-  .post__info__icon {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 950px) {
-  .post__info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.post__article {
-  color: white;
-  font-size: 18px;
-}
-
-.post__article > p {
-  line-height: 35px;
-}
-
-.post__article > h2 {
-  margin-top: 30px;
-}
-
-.post__share-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 150px;
-}
-
-.post__footer {
-  margin-top: 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
-  background-color: rgba(128, 128, 128, 0.1);
-  padding: 30px;
-}
-
-.post__footer__img {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
-.post__footer__details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 30px;
-}
-
-.post__footer__intro {
-  text-transform: uppercase;
-  color: #1f1f1f;
   font-size: 12px;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 2px 5px;
 }
 
-.post__footer__name {
-  font-size: 25px;
-  color: #EC5367;
-}
-
-.post__footer__about {
-  color: grey;
-}
-
-.post__footer__social {
-  margin-top: 10px;
+.post__content {
+  background-color: white;
 }
 
 h2 {
@@ -1560,6 +1468,13 @@ p {
   margin-bottom: 15px;
   line-height: 30px;
   font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 570px) {
+  p {
+    font-size: 18px;
+  }
 }
 
 p:last-of-type {
@@ -1578,6 +1493,13 @@ li {
 
 li:last-of-type {
   margin-bottom: 0;
+}
+
+.highlight {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .portfolio__header__content {
@@ -1938,14 +1860,18 @@ li:last-of-type {
 }
 
 .footer {
-  background-color: #EC5367;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  overflow: hidden;
 }
 
 .footer__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 400px 1fr 1fr 1fr;
+      grid-template-columns: 400px 1fr 1fr 1fr;
+  grid-gap: 70px;
       grid-template-areas: "sitemap resources social other " "bottom bottom bottom bottom";
 }
 
@@ -1958,6 +1884,7 @@ li:last-of-type {
 }
 
 .footer__title {
+  color: #EC5367;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -1995,15 +1922,7 @@ li:last-of-type {
   color: white;
 }
 
-.footer__social-icon {
-  font-size: 30px;
-  -webkit-transition: 250ms;
-  transition: 250ms;
-  display: block;
-  margin-right: 10px;
-}
-
-.footer__social-icon:hover {
+.footer__social-entry:hover .footer__social-icon {
   color: white;
   -webkit-animation-name: animate-icon;
           animation-name: animate-icon;
@@ -2013,6 +1932,26 @@ li:last-of-type {
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+  color: #EC5367;
+}
+
+.footer__social-icon {
+  font-size: 30px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  display: block;
+  margin-right: 10px;
+}
+
+.footer__branding-text {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.footer__branding__link {
+  color: white;
+  text-decoration: underline;
 }
 
 .sitemap__entry {

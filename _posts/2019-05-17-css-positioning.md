@@ -34,12 +34,15 @@ Absolute positioning is probably the most wideley used of the <kbd>position</kbd
 We position our element by setting <kbd>positiong: absolute </kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.
 
 For example, this code...
-{% highlight python %}
-x = ('a', 1, False)
-functiom (){
-    print(hey);
+```css
+.fullscreen-div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
-{% endhighlight %}
+```
 
 When you position an element 'absolutely' it needs to have a container that it is positioned 'relative' to. I know, this may sound confusing... there is already a <kbd>position: relative</kbd>, right?
 

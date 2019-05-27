@@ -100,7 +100,11 @@
             </div>
         </div>
     </header>
-<main class = "main__secondary main__secondary--Blog">
+<main class = "main__secondary main__secondary--blog">
+    <button class="lights">
+        <i class="lights__icon far fa-lightbulb"></i>
+        <div class="lights__text">LIGHTS ON!</div>
+    </button>
     <div class="blog-header">
     <div class="wrapper wrapper--fixed-header">
         <div class="blog-header__content">
@@ -120,6 +124,11 @@
 
 
 <section class="blog__featured">
+        <div class="blog__background"></div>
+
+
+        <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
     <div class="wrapper">
         <h2 class="blog__header">FEATURED POSTS</h2>
         <div class="blog-posts--featured">
@@ -248,6 +257,9 @@
     </div>
 </section>
 <section class="blog__latest">
+    <div class="blog__background blog__background--right"></div>
+
+
     <div class="wrapper wrapper--section">
             <h2 class="blog__header">RECENT POSTS</h2>
             <ul class="blog-posts--vertical">
@@ -432,8 +444,21 @@
         </div>
     </div>
     <footer class="footer">
+        <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
         <div class="wrapper wrapper--section">
             <div class="footer__content">
+                <div class="footer__branding">
+                    <a href = "/" class="header__branding footer__title">
+                        <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo_full.png" alt="">
+                        <div class="header__branding__text">
+                            Daniel Cornock<span>Web Developer</span>
+                        </div>
+                    </a>
+                    <div class="footer__branding-text">
+                        I design, create and implement beautiful, functional websites for your every need. Contact me using any of the methods here, or read more on my <a class = "footer__branding__link" href="http://localhost:4000/blog">blog</a>.
+                    </div>  
+                </div>
                 <div class="sitemap">
                     <h3 class = "footer__title">Links</h3>
                     <ul class="sitemap__list">

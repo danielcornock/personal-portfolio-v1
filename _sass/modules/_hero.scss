@@ -106,6 +106,7 @@
     &__bg{
         position: absolute;
         opacity: 0.03;
+        height: 762px;
         &--right{  
             right: 0%;
             bottom: 0%;
@@ -127,25 +128,35 @@
 .lights{
     position: fixed;
     z-index: 100;
-    background-color: $black;
+    background-color: rgba($white,0.1);
     bottom: 20px;
-    left: 20px;
-    border: none;
+    right: 0px;
+    border: 2px solid $pink;
     display: flex;
     align-items: center;
     outline: none;
     font-size: 14px;
     padding: 0 10px;
-    color: yellow;
+    color: $white;
     cursor: pointer;
+
+    &:hover{
+        .lights__text{
+            transform: scale(1,1);
+            width: 100px;
+        }
+    }
 
     &__icon{
         margin: 10px;
         font-size: 30px;
+        color: $pink;
     }
 
     &__text{
-        margin: 10px;
+        width: 0;
+        transition: 250ms;
+        overflow: hidden;
     }
 }
 

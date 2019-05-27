@@ -99,7 +99,11 @@
             </div>
         </div>
     </header>
-<main class = "main__secondary main__secondary--The Anatomy of a Website">
+<main class = "main__secondary main__secondary--post">
+    <button class="lights">
+        <i class="lights__icon far fa-lightbulb"></i>
+        <div class="lights__text">LIGHTS ON!</div>
+    </button>
     <div class="blog-header">
     <div class="wrapper wrapper--fixed-header">
         <div class="blog-header__content">
@@ -118,32 +122,34 @@
 </div>
 
 
+<div class="wrapper wrapper--blog">
+<header class="post-header">
+    <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="">
 
-<header class="post__header">
-    <div class="post__background">
-        <img src = " http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="">
-    </div>
     
-    <div class="wrapper wrapper--section post__header__content">
-        <h1>The Anatomy of a Website</h1>
-        <div class="post__info">
-            <div class="post__info__entry post__author">
-                <i class="post__info__icon fas fa-user"></i>
-                Daniel Cornock
-            </div>
-            <div class="post__info__entry post__date">
-                <i class="post__info__icon fas fa-calendar-day"></i>
-                <time datetime = '2019-05-23 00:00:00 +0100'>
-                    23 May 2019
-                </time>
-            </div>
-            <div class="post__info__entry post__category">
-                <i class="post__info__icon fas fa-list"></i>
-                Tutorials
-            </div>
+    <div class="post__meta">
+        <time datetime = ''>23 May 2019</time>
+            • Daniel Cornock • Tutorials
+        <!-- <div class="post__meta post__author">
+            <i class="post__info__icon fas fa-user"></i>
+            Daniel Cornock
         </div>
+        <div class="post__info__entry post__date">
+            <i class="post__info__icon fas fa-calendar-day"></i>
+            <time datetime = '2019-05-23 00:00:00 +0100'>
+                23 May 2019
+            </time>
+        </div>
+        <div class="post__info__entry post__category">
+            <i class="post__info__icon fas fa-list"></i>
+            Tutorials
+        </div> -->
     </div>
+    <h1 class = "post__title">The Anatomy of a Website</h1>
+        
+    
 </header>
+</div>
 <section class="post__content">
     <div class="wrapper wrapper--blog">
             <div class="breadcrumbs">
@@ -176,7 +182,7 @@
         </div>
 
         <footer class = "post__footer">
-    <img class = "post__footer__img" src="http://localhost:4000/assets/img/avatar.jpg" alt="Daniel Cornock Avatar">
+    <img class = "post__footer__img" src="http://localhost:4000/assets/img/about_img.jpg" alt="Daniel Cornock Avatar">
     <div class="post__footer__details">
         <div class="post__footer__intro">Meet the author...</div>
         <div class="post__footer__name">Daniel Cornock</div>
@@ -231,8 +237,21 @@
         </div>
     </div>
     <footer class="footer">
+        <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
         <div class="wrapper wrapper--section">
             <div class="footer__content">
+                <div class="footer__branding">
+                    <a href = "/" class="header__branding footer__title">
+                        <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo_full.png" alt="">
+                        <div class="header__branding__text">
+                            Daniel Cornock<span>Web Developer</span>
+                        </div>
+                    </a>
+                    <div class="footer__branding-text">
+                        I design, create and implement beautiful, functional websites for your every need. Contact me using any of the methods here, or read more on my <a class = "footer__branding__link" href="http://localhost:4000/blog">blog</a>.
+                    </div>  
+                </div>
                 <div class="sitemap">
                     <h3 class = "footer__title">Links</h3>
                     <ul class="sitemap__list">

@@ -3,32 +3,34 @@ layout: default
 ---
 
 {% include header-blog.html %}
+<div class="wrapper wrapper--blog">
+<header class="post-header">
+    <img class = "img--responsive post-header__background" src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt="">
 
-<header class="post__header">
-    <div class="post__background">
-        <img src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt="">
-    </div>
     
-    <div class="wrapper wrapper--section post__header__content">
-        <h1>{{page.title}}</h1>
-        <div class="post__info">
-            <div class="post__info__entry post__author">
-                <i class="post__info__icon fas fa-user"></i>
-                {{ page.author }}
-            </div>
-            <div class="post__info__entry post__date">
-                <i class="post__info__icon fas fa-calendar-day"></i>
-                <time datetime = '{{page.date}}'>
-                    {{ page.date | date_to_string }}
-                </time>
-            </div>
-            <div class="post__info__entry post__category">
-                <i class="post__info__icon fas fa-list"></i>
-                {{ page.category }}
-            </div>
+    <div class="post__meta">
+        <time datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
+            • {{page.author}} • {{page.category}}
+        <!-- <div class="post__meta post__author">
+            <i class="post__info__icon fas fa-user"></i>
+            {{ page.author }}
         </div>
+        <div class="post__info__entry post__date">
+            <i class="post__info__icon fas fa-calendar-day"></i>
+            <time datetime = '{{page.date}}'>
+                {{ page.date | date_to_string }}
+            </time>
+        </div>
+        <div class="post__info__entry post__category">
+            <i class="post__info__icon fas fa-list"></i>
+            {{ page.category }}
+        </div> -->
     </div>
+    <h1 class = "post__title">{{page.title}}</h1>
+        
+    
 </header>
+</div>
 <section class="post__content">
     <div class="wrapper wrapper--blog">
             {% include breadcrumbs.html %}
