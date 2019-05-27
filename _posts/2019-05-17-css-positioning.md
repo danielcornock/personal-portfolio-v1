@@ -31,10 +31,13 @@ Again.
 Absolute positioning is probably the most wideley used of the <kbd>position</kbd> values. It's great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.
 
 ### How to use it
-We position our element by setting <kbd>positiong: absolute </kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.
+We position our element by setting <kbd>position: absolute</kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.
 
 For example, this code...
 ```css
+.container{
+    position: relative;
+}
 .fullscreen-div{
     position: absolute;
     left: 0;

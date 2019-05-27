@@ -122,37 +122,17 @@
 </div>
 
 
-<div class="wrapper wrapper--blog">
+<div class="wrapper">
 <header class="post-header">
     <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="">
 
     
     <div class="post__meta">
         <time datetime = ''>17 May 2019</time>
-            • Daniel Cornock • Tutorials
-        <!-- <div class="post__meta post__author">
-            <i class="post__info__icon fas fa-user"></i>
-            Daniel Cornock
-        </div>
-        <div class="post__info__entry post__date">
-            <i class="post__info__icon fas fa-calendar-day"></i>
-            <time datetime = '2019-05-17 00:00:00 +0100'>
-                17 May 2019
-            </time>
-        </div>
-        <div class="post__info__entry post__category">
-            <i class="post__info__icon fas fa-list"></i>
-            Tutorials
-        </div> -->
     </div>
-    <h1 class = "post__title">CSS Positioning For Absolute Beginners</h1>
-        
-    
-</header>
-</div>
-<section class="post__content">
-    <div class="wrapper wrapper--blog">
-            <div class="breadcrumbs">
+    <h1 class = "post__title"><span>CSS Positioning For Absolute Beginners</span></h1>
+    <div class="post-header__bottom">
+        <div class="breadcrumbs">
 
 
   
@@ -168,6 +148,31 @@
   
 
 </div>
+        
+        
+        <div class = "blog-entry__tags blog-entry__tags--post">
+            
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #CSS
+            </div>
+            
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #HTML
+            </div>
+            
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #Beginner
+            </div>
+            
+        </div>
+        
+    </div>
+        
+    
+</header>
+</div>
+<section class="post__content">
+    <div class="wrapper wrapper--blog">
 
         <article class="post__article">
             <p>CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.</p>
@@ -189,10 +194,13 @@ Again.</p>
 <p>Absolute positioning is probably the most wideley used of the <kbd>position</kbd> values. It’s great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.</p>
 
 <h3 id="how-to-use-it">How to use it</h3>
-<p>We position our element by setting <kbd>positiong: absolute </kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.</p>
+<p>We position our element by setting <kbd>position: absolute</kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.</p>
 
 <p>For example, this code…</p>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.fullscreen-div</span><span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.fullscreen-div</span><span class="p">{</span>
     <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
     <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
     <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
@@ -210,10 +218,10 @@ Again.</p>
 
             
         </article>
-        <div class="post__share-btns">
+        <!-- <div class="post__share-btns">
             <div class="fb-share-button" data-href="http://localhost:4000/blog/tutorials/css-positioning" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Ftutorials%2Fcss-positioning&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        </div> -->
 
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/about_img.jpg" alt="Daniel Cornock Avatar">
@@ -254,6 +262,8 @@ Again.</p>
     </div>
     
 </section>
+
+
 </main>
     <div class="mailing">
         <div class="wrapper wrapper--section">

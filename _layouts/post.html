@@ -3,46 +3,43 @@ layout: default
 ---
 
 {% include header-blog.html %}
-<div class="wrapper wrapper--blog">
+<div class="wrapper">
 <header class="post-header">
     <img class = "img--responsive post-header__background" src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt="">
 
     
     <div class="post__meta">
         <time datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
-            • {{page.author}} • {{page.category}}
-        <!-- <div class="post__meta post__author">
-            <i class="post__info__icon fas fa-user"></i>
-            {{ page.author }}
-        </div>
-        <div class="post__info__entry post__date">
-            <i class="post__info__icon fas fa-calendar-day"></i>
-            <time datetime = '{{page.date}}'>
-                {{ page.date | date_to_string }}
-            </time>
-        </div>
-        <div class="post__info__entry post__category">
-            <i class="post__info__icon fas fa-list"></i>
-            {{ page.category }}
-        </div> -->
     </div>
-    <h1 class = "post__title">{{page.title}}</h1>
+    <h1 class = "post__title"><span>{{page.title}}</span></h1>
+    <div class="post-header__bottom">
+        {% include breadcrumbs.html %}
+        
+        {% if page.tags %}
+        <div class = "blog-entry__tags blog-entry__tags--post">
+            {% for tag in page.tags %}
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #{{ tag }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
         
     
 </header>
 </div>
 <section class="post__content">
     <div class="wrapper wrapper--blog">
-            {% include breadcrumbs.html %}
 
         <article class="post__article">
             {{ content }}
             
         </article>
-        <div class="post__share-btns">
+        <!-- <div class="post__share-btns">
             <div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Ftutorials%2Fcss-positioning&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        </div> -->
 
         {% include written-by-dan.html %}
 
@@ -73,3 +70,4 @@ layout: default
     </div>
     
 </section>
+

@@ -72,7 +72,6 @@ a:hover {
 }
 
 h1 {
-  text-align: center;
   font-size: 50px;
   color: white;
   font-weight: 700;
@@ -250,17 +249,6 @@ input, textarea {
   .btn__view-more {
     width: 100%;
   }
-}
-
-.breadcrumbs {
-  text-align: center;
-  margin: 20px;
-  color: #EC5367;
-}
-
-.breadcrumbs__element {
-  text-transform: uppercase;
-  color: white;
 }
 
 .section-header {
@@ -447,6 +435,7 @@ input, textarea {
   padding: 8px 0;
   background-color: #EC5367;
   position: relative;
+  border-bottom: 2px solid #EC5367;
 }
 
 .blog-header__content {
@@ -536,6 +525,7 @@ input, textarea {
 @media (max-width: 600px) {
   .blog-header__search {
     width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -1303,6 +1293,12 @@ input, textarea {
   margin-top: 0;
 }
 
+.blog-entry__tags--post {
+  margin-top: 30px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .blog-entry__tag {
   background-color: #EC5367;
   color: white;
@@ -1316,6 +1312,11 @@ input, textarea {
   border: 1px solid rgba(255, 255, 255, 0.7);
   -webkit-transition: 250ms;
   transition: 250ms;
+}
+
+.blog-entry__tag--post {
+  background-color: white;
+  color: #EC5367;
 }
 
 .blog-entry__tag:hover {
@@ -1414,10 +1415,9 @@ input, textarea {
 }
 
 .post-header {
-  max-width: 800px;
   margin: auto;
   position: relative;
-  height: 300px;
+  min-height: 300px;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1443,20 +1443,118 @@ input, textarea {
   z-index: -1;
 }
 
-.post__title {
+.post-header__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 5px;
+}
+
+@media (max-width: 950px) {
+  .post-header__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.post__title > span {
   background-color: #EC5367;
+  padding: 5px 10px;
 }
 
 .post__meta {
   text-transform: uppercase;
-  font-size: 12px;
-  background-color: #1f1f1f;
+  font-size: 14px;
+  background-color: #242424;
   color: white;
   padding: 2px 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
-.post__content {
+.post__article {
   background-color: white;
+  font-size: 18px;
+}
+
+.breadcrumbs {
+  background-color: white;
+  padding: 3px 6px;
+  color: #EC5367;
+  margin-top: 20px;
+}
+
+.breadcrumbs__element {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #EC5367;
+}
+
+.post__footer {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  border-top: 4px solid #EC5367;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 30px;
+}
+
+.post__footer__img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.post__footer__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 30px;
+}
+
+.post__footer__intro {
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font-size: 12px;
+}
+
+.post__footer__name {
+  font-size: 25px;
+  color: #EC5367;
+}
+
+.post__footer__about {
+  color: grey;
+}
+
+.post__footer__social {
+  margin-top: 10px;
 }
 
 h2 {
@@ -1496,10 +1594,16 @@ li:last-of-type {
 }
 
 .highlight {
+  font-size: 16px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+kbd {
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .portfolio__header__content {
@@ -1517,6 +1621,7 @@ li:last-of-type {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
 
 @media (max-width: 570px) {

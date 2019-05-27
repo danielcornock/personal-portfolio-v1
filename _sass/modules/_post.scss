@@ -1,9 +1,9 @@
 .post{
     &-header{
-        max-width: 800px;
+        // max-width: 800px;
         margin: auto;
         position: relative;
-        height: 300px;
+        min-height: 300px;
         padding: 30px;
         display: flex;
         flex-direction: column;
@@ -18,25 +18,96 @@
             width: 100%;
             z-index: -1;
         }
+
+        &__bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 5px;
+
+            @media (max-width: $tablet-sizing){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     }
     &__title{
-        background-color: $pink;
+        &>span{
+            background-color: $pink;
+            padding: 5px 10px;
+        }
     }
     &__meta{
         text-transform: uppercase;
-        font-size: 12px;
-        background-color: $black;
+        font-size: 14px;
+        background-color: $grey;
         color: white;
         padding: 2px 5px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
     }
 
     &__content{
-        background-color: $white;
+        
     }
 
     &__article{
+        background-color: $white;
+        font-size: 18px;
+    }
+}
+
+.breadcrumbs{
+    background-color: $white;
+    padding: 3px 6px;
+    color: $pink;
+    margin-top: 20px;
+    &__element{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $pink;
+    }
+}
+
+.post__footer{
+    margin-top: 50px;
+    display: grid;
+    border-top: 4px solid $pink;
+    grid-template-columns: auto 1fr;
+    background-color: rgba(grey,0.1);
+    padding: 30px;
+    &__img{
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        object-position: bottom;
 
     }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+    &__intro{
+        text-transform: uppercase;
+        color: $black;
+        font-size: 12px;
+    }
+    &__name{
+        font-size: 25px;
+        color: $pink;
+    }
+    &__about{
+        color: grey;
+    }
+    &__social{
+        margin-top: 10px;
+    }
+
 }
 
 
@@ -79,8 +150,14 @@ li{
 }
 
 .highlight{
+    font-size: 16px;
     padding: 10px;
-    background-color: rgba($white,0.1);
-    border-radius: 20px;
-    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+kbd{
+    background-color: rgba(grey,0.2);
+    padding: 5px;
+    border-radius: 5px;
 }
