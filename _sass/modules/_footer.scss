@@ -3,18 +3,20 @@
     color: $grey-on-black;
     position: relative;
     overflow: hidden;
+    
+    
 
     &__content{
         display: grid;
         grid-template-columns: 400px 1fr 1fr 1fr;
         grid-gap: 70px;
-        grid-template-areas:
-            "sitemap resources social other "
-            "bottom bottom bottom bottom";
+        padding-top: 70px;
 
         @media (max-width: $tablet-sizing){
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: "";
+            grid-template-columns: 1fr;
+            text-align: center;
+            grid-gap: 30px;
+            padding-top: 30px;
         }
     }
 
@@ -25,20 +27,25 @@
     }
 
     &__credits{
+        margin-top: 70px;
         font-size: 12px;
         text-align: center;
+        grid-column: 1/5;
     }
 
     &__social{
-        grid-area: social;
         height: 100%;
         display: flex;
         flex-direction: column;
+        @media (max-width: $tablet-sizing){
+            align-items: center;
+        }
 
         &-entry{
             display: flex;
             align-items: center;
             margin-bottom: 10px;
+            
 
             &:hover{
                 color: $white;
@@ -78,6 +85,9 @@
             color: $white;
             text-decoration: underline;
         }
+        @media (max-width: $tablet-sizing){
+            display: none;
+        }
     }
 
 
@@ -101,7 +111,6 @@
 }
 
 .resources{
-    grid-area: resources;
 }
 
 .mailing{
