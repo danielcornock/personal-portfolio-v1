@@ -78,12 +78,21 @@
     grid-template-columns: auto 1fr;
     background-color: rgba(grey,0.1);
     padding: 30px;
+
+    @media (max-width: $large-phone-sizing){
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
     &__img{
         border-radius: 50%;
         height: 150px;
         width: 150px;
         object-fit: cover;
         object-position: bottom;
+        @media (max-width: $large-phone-sizing){
+
+            margin: auto;
+        }
 
     }
     &__details{
@@ -91,6 +100,11 @@
         flex-direction: column;
         justify-content: center;
         padding-left: 30px;
+
+        @media (max-width: $large-phone-sizing){
+            padding-left: 0;
+            margin-top: 10px;
+        }
     }
     &__intro{
         text-transform: uppercase;
@@ -107,6 +121,10 @@
     &__social{
         margin-top: 10px;
     }
+
+    
+
+    
 
 }
 
