@@ -15,3 +15,8 @@ featured: true
 If you're an active member of the tech community, I'd be surprised if you hadn't heard of #100DaysOfCode.
 
 ## My Experience
+MY first real experience documenting things.
+
+It was what helped me to come involved in the tech society. I'm now part of a coding group.
+
+On days where I didn't have motivation, I did some work to stick to the goal and that turned into organic motivation.

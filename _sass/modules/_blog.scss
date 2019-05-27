@@ -95,6 +95,7 @@
         position: relative;
 
         &__img{
+            display: block;
             height: 200px;
         }
 
@@ -108,6 +109,7 @@
             border-bottom: 2px solid rgba($pink, 0.4);
             padding-bottom: 8px;
             margin-bottom: 8px;
+            transition: 250ms;
         }
 
         &__description{
@@ -121,6 +123,9 @@
 
         &:hover{
             transform: translateY(-5%);
+            .blog-entry--tall__title{
+                color: $pink;
+            }
         }
     }
 
@@ -195,6 +200,11 @@
         letter-spacing: 1px;
         padding: 2px 12px;
         border: 1px solid $grey-on-black;
+        transition: 250ms;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 
     &__meta{
@@ -240,9 +250,24 @@
     &__header{
         text-transform: uppercase;
         color: $white;
-        font-size: 25px;
+        font-size: 35px;
         padding: 10px 0 0 0;
         margin-bottom: 10px;
+        z-index: 10;
+
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 300px;
+            height: 10px;
+            top: 50%;
+            transform: translateY(50%);
+            background-color: rgba($pink,0.8);
+            z-index: -1;
+        }
     }
     &__featured{
         background: $black;
@@ -251,6 +276,7 @@
     }
     &__latest{
         background-color: $grey;
+        z-index: -1;
     }
 
 }

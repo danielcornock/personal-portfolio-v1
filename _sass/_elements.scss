@@ -118,9 +118,10 @@
 .breadcrumbs{
     text-align: center;
     margin: 20px;
+    color: $pink;
     &__element{
         text-transform: uppercase;
-        color: $black;
+        color: $white;
     }
 }
 

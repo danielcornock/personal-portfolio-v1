@@ -180,7 +180,21 @@
 Again.</p>
 
 <h2 id="absolute-positioning">Absolute Positioning</h2>
-<p>Here is where blah blah</p>
+<p>Absolute positioning is probably the most wideley used of the <kbd>position</kbd> values. It’s great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.</p>
+
+<h3 id="how-to-use-it">How to use it</h3>
+<p>We position our element by setting <kbd>positiong: absolute </kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.</p>
+
+<p>For example, this code…</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="s">'a'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="n">functiom</span> <span class="p">(){</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">hey</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>When you position an element ‘absolutely’ it needs to have a container that it is positioned ‘relative’ to. I know, this may sound confusing… there is already a <kbd>position: relative</kbd>, right?</p>
+
+<p>Well, that’s the thing, to positio</p>
 
 <h3 id="more">More</h3>
 <p>here is where fishklfhdklghdjklhgldkf</p>
@@ -251,22 +265,29 @@ Again.</p>
         <div class="wrapper wrapper--section">
             <div class="footer__content">
                 <div class="sitemap">
-                    <h3>Links</h3>
+                    <h3 class = "footer__title">Links</h3>
                     <ul class="sitemap__list">
                         <li class="sitemap__entry"><a href = "#">About Me</a></li>
                         <li class="sitemap__entry"><a href = "#">My Work</a></li>
-                        <li class="sitemap__entry"><a href = "#">Blog</a></li>
-                        <li class="sitemap__entry"><a href = "#">Free Resources</a></li>
                         <li class="sitemap__entry"><a href = "#">Contact Me</a></li>
+                        <li class="sitemap__entry"><a href = "#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h3 class = "footer__title">Resources</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "#">Blog</a></li>
+                        <li class="sitemap__entry"><a href = "#">Tutorials</a></li>
+                        <li class="sitemap__entry"><a href = "#">My Work</a></li>
+                        <li class="sitemap__entry"><a href = "#">Free Resources</a></li>
                     </ul>
                 </div>
                 <div class="footer__social">
-                    <!-- <h3>Social</h3> -->
-                    <a href = "#" class="footer__social-icon fab fa-twitter"></a>
-                    <a href = "#" class="footer__social-icon fab fa-linkedin-in"></a>
-                    <a href = "#" class="footer__social-icon fab fa-github"></a>
-                    <a href = "#" class="footer__social-icon fab fa-instagram"></a>
-                    <a href = "#" class="footer__social-icon fab fa-youtube"></a>
+                    <h3 class = "footer__title">Social</h3>
+                    <a href = "#" class = "footer__social-entry"><i class="footer__social-icon fab fa-linkedin-in"></i>LinkedIn</a>
+                    <a href = "#" class = "footer__social-entry"><i class="footer__social-icon fab fa-twitter"></i>Twitter</a>
+                    <a href = "#" class = "footer__social-entry"><i class="footer__social-icon fab fa-github"></i>Github</a>
+                    
                 </div>
                 
             </div>
