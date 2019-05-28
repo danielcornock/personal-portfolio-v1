@@ -120,16 +120,37 @@
 </div>
 
 
-<div class="wrapper">
 <header class="post-header">
-    <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="">
-
-    
-    <div class="post__meta">
-        <time datetime = ''>17 May 2019</time>
+    <div class="wrapper wrapper--section">
+        <div class="post-header__content">
+            <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="">
+            <div class="post__meta">
+                <time datetime = ''>17 May 2019</time>
+            </div>
+            <h1 class = "post__title">CSS Positioning For Absolute Beginners</h1>
+            
+            <div class = "blog-entry__tags blog-entry__tags--post">
+                
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #CSS
+                </div>
+                
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #HTML
+                </div>
+                
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #Beginner
+                </div>
+                
+            </div>
+            
+        </div>
     </div>
-    <h1 class = "post__title">CSS Positioning For Absolute Beginners</h1>
-    <div class="post-header__bottom">
+    <!-- STARTED CHANGING THE ONE BEFORE NOW. MOVED H1 -->
+</header>
+<div class="post-header__bottom">
+    <div class="wrapper--blog post-header__bottom__content">
         <div class="breadcrumbs">
 
 
@@ -149,31 +170,20 @@
   
 
 </div>
-        
-        
-        <div class = "blog-entry__tags blog-entry__tags--post">
+        <div class="post-header__read-time" title="Estimated read time">
+            <i class="post-header__read-time__icon far fa-clock"></i>     
             
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #CSS
-            </div>
             
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #HTML
-            </div>
             
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #Beginner
-            </div>
+                7 mins
             
         </div>
-        
     </div>
-        
-    
-</header>
+</div>
 </div>
 <section class="post__content">
     <div class="wrapper wrapper--blog">
+        
 
         <article class="post__article">
             <p>CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.</p>
@@ -217,12 +227,172 @@ Again.</p>
 <h3 id="more">More</h3>
 <p>here is where fishklfhdklghdjklhgldkf</p>
 
+<p>CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.</p>
+
+<p>Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.</p>
+
+<ul>
+  <li>Absolute Positioning</li>
+  <li>Relative Positioning</li>
+  <li>Fixed Positioning</li>
+  <li>Sticky Positioning</li>
+  <li>Static Positioning</li>
+</ul>
+
+<p>Well, if you didn’t get it, it seems we’re in a bit of a sticky!
+Again.</p>
+
+<h2 id="absolute-positioning-1">Absolute Positioning</h2>
+<p>Absolute positioning is probably the most wideley used of the <kbd>position</kbd> values. It’s great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.</p>
+
+<h3 id="how-to-use-it-1">How to use it</h3>
+<p>We position our element by setting <kbd>position: absolute</kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.</p>
+
+<p>For example, this code…</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.fullscreen-div</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>When you position an element ‘absolutely’ it needs to have a container that it is positioned ‘relative’ to. I know, this may sound confusing… there is already a <kbd>position: relative</kbd>, right?</p>
+
+<p>Well, that’s the thing, to positio</p>
+
+<h3 id="more-1">More</h3>
+<p>here is where fishklfhdklghdjklhgldkf</p>
+
+<p>CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.</p>
+
+<p>Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.</p>
+
+<ul>
+  <li>Absolute Positioning</li>
+  <li>Relative Positioning</li>
+  <li>Fixed Positioning</li>
+  <li>Sticky Positioning</li>
+  <li>Static Positioning</li>
+</ul>
+
+<p>Well, if you didn’t get it, it seems we’re in a bit of a sticky!
+Again.</p>
+
+<h2 id="absolute-positioning-2">Absolute Positioning</h2>
+<p>Absolute positioning is probably the most wideley used of the <kbd>position</kbd> values. It’s great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.</p>
+
+<h3 id="how-to-use-it-2">How to use it</h3>
+<p>We position our element by setting <kbd>position: absolute</kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.</p>
+
+<p>For example, this code…</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.fullscreen-div</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>When you position an element ‘absolutely’ it needs to have a container that it is positioned ‘relative’ to. I know, this may sound confusing… there is already a <kbd>position: relative</kbd>, right?</p>
+
+<p>Well, that’s the thing, to positio</p>
+
+<h3 id="more-2">More</h3>
+<p>here is where fishklfhdklghdjklhgldkf</p>
+
+<p>CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.</p>
+
+<p>Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.</p>
+
+<ul>
+  <li>Absolute Positioning</li>
+  <li>Relative Positioning</li>
+  <li>Fixed Positioning</li>
+  <li>Sticky Positioning</li>
+  <li>Static Positioning</li>
+</ul>
+
+<p>Well, if you didn’t get it, it seems we’re in a bit of a sticky!
+Again.</p>
+
+<h2 id="absolute-positioning-3">Absolute Positioning</h2>
+<p>Absolute positioning is probably the most wideley used of the <kbd>position</kbd> values. It’s great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.</p>
+
+<h3 id="how-to-use-it-3">How to use it</h3>
+<p>We position our element by setting <kbd>position: absolute</kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.</p>
+
+<p>For example, this code…</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.fullscreen-div</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>When you position an element ‘absolutely’ it needs to have a container that it is positioned ‘relative’ to. I know, this may sound confusing… there is already a <kbd>position: relative</kbd>, right?</p>
+
+<p>Well, that’s the thing, to positio</p>
+
+<h3 id="more-3">More</h3>
+<p>here is where fishklfhdklghdjklhgldkf</p>
+
+<p>CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.</p>
+
+<p>Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.</p>
+
+<ul>
+  <li>Absolute Positioning</li>
+  <li>Relative Positioning</li>
+  <li>Fixed Positioning</li>
+  <li>Sticky Positioning</li>
+  <li>Static Positioning</li>
+</ul>
+
+<p>Well, if you didn’t get it, it seems we’re in a bit of a sticky!
+Again.</p>
+
+<h2 id="absolute-positioning-4">Absolute Positioning</h2>
+<p>Absolute positioning is probably the most wideley used of the <kbd>position</kbd> values. It’s great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.</p>
+
+<h3 id="how-to-use-it-4">How to use it</h3>
+<p>We position our element by setting <kbd>position: absolute</kbd> and using <kbd>top</kbd>, <kbd>right</kbd>, <kbd>bottom</kbd> and <kbd>left</kbd> to place it. By default, these values will be referring to the <kbd>body</kbd> element.</p>
+
+<p>For example, this code…</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.fullscreen-div</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>When you position an element ‘absolutely’ it needs to have a container that it is positioned ‘relative’ to. I know, this may sound confusing… there is already a <kbd>position: relative</kbd>, right?</p>
+
+<p>Well, that’s the thing, to positio</p>
+
+<h3 id="more-4">More</h3>
+<p>here is where fishklfhdklghdjklhgldkf</p>
+
             
         </article>
-        <!-- <div class="post__share-btns">
-            <div class="fb-share-button" data-href="http://localhost:4000/blog/tutorials/css-positioning" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Ftutorials%2Fcss-positioning&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div> -->
 
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/about_img.jpg" alt="Daniel Cornock Avatar">
@@ -246,12 +416,12 @@ Again.</p>
         /**
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
+        
         var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "http://localhost:4000/blog/tutorials/css-positioning";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/blog/tutorials/css-positioning"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
-        */
+        
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://danielcornock.disqus.com/embed.js';
@@ -264,6 +434,8 @@ Again.</p>
     
 </section>
 
+
+    <script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>
 
 </main>
     <div class="mailing">
@@ -332,7 +504,7 @@ Again.</p>
             </div>
         </div>
     </footer>
-    <script src = "http://localhost:4000/js/script.js" }}" ></script>
+    <script src = "http://localhost:4000/js/script.js" ></script>
 </body>
 
 </html>

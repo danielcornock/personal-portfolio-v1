@@ -1,14 +1,20 @@
+// STARTED CHANGING NOW
+
 .post{
     &-header{
-        // max-width: 800px;
         margin: auto;
         position: relative;
-        min-height: 300px;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
+        overflow: hidden;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            margin: auto;
+            padding: 0 20px;
+
+        }
         &__background{
             
             position: absolute;
@@ -17,24 +23,52 @@
             height: 100%;
             width: 100%;
             z-index: -1;
+            filter: blur(4px);
+            transform: scale(1.05);
         }
 
         &__bottom{
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-top: 5px;
+            margin: auto;
+            background-color: $grey;
+            border-top: 2px solid rgba($pink,0.5);
+            border-bottom: 2px solid rgba($pink,0.5);
+
+            &__content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
 
             @media (max-width: $tablet-sizing){
                 flex-direction: column;
                 align-items: flex-start;
             }
         }
+
+        &__read-time{
+            color: $pink;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            &__icon{
+                margin-right: 8px;
+                display: block;
+                font-size: 20px;
+                color: $white;
+            }
+        }
     }
     &__title{
-        background-color: $pink;
+
         padding: 5px 10px;
+        text-align: center;
+
+        background-color: $pink;
+        color: $white;
 
         @media (max-width: $tablet-sizing){
             font-size: 40px;
@@ -42,11 +76,11 @@
     }
     &__meta{
         text-transform: uppercase;
-        font-size: 14px;
-        background-color: $grey;
-        color: white;
+        font-size: 16px;
+        background-color: $grey-on-black;
+        color: $black;
         padding: 2px 5px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         font-weight: bold;
         letter-spacing: 0.5px;
     }
@@ -62,10 +96,7 @@
 }
 
 .breadcrumbs{
-    background-color: $white;
-    padding: 3px 6px;
-    color: $pink;
-    margin-top: 20px;
+    color: $white;
     &__element{
         font-weight: bold;
         text-transform: uppercase;
@@ -152,6 +183,23 @@ p{
 
     &:last-of-type{
         margin-bottom: 0;
+    }
+}
+
+article{
+    &>p{
+    line-height: 40px;
+    font-size: 18px;
+    }
+
+    h2{
+        margin-top: 30px;
+        font-size: 35px;
+        color: $pink;
+    }
+    h3, h4{
+        margin-top: 20px;
+        color: $pink;
     }
 }
 

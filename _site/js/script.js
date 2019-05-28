@@ -31,6 +31,7 @@ const headerResize = function(){
             nav.classList.add("nav--fixed");
             if(headerSub){
                 headerSub.style.display = "none";
+                headerSub.style.transform = "scale(0)";
             }
             
         } else if (window.scrollY < 150){
@@ -41,26 +42,10 @@ const headerResize = function(){
 
             if(headerSub){
                 headerSub.style.display = "block";
+                headerSub.style.transform = "scale(1)";
+
             }
         }
-        
-        const blogHeader = document.querySelector('.blog-header');
-        if(!blogHeader){
-            return;
-        }
-        const headerHeight = header.clientHeight;
-        const blogHeaderHeight = blogHeader.clientHeight;
-        const moveUp = headerHeight - blogHeaderHeight;
-
-        let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos < 250){
-            header.style.transform = "translateY(0)";
-            return;
-        }
-        if (prevScrollPos < currentScrollPos){
-            header.style.transform = "translateY(-" + moveUp + "px)";
-        }
-        prevScrollPos = currentScrollPos;
 
     })
 }();

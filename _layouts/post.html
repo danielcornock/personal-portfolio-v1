@@ -3,43 +3,51 @@ layout: default
 ---
 
 {% include header-blog.html %}
-<div class="wrapper">
 <header class="post-header">
-    <img class = "img--responsive post-header__background" src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt="">
-
-    
-    <div class="post__meta">
-        <time datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
-    </div>
-    <h1 class = "post__title">{{page.title}}</h1>
-    <div class="post-header__bottom">
-        {% include breadcrumbs.html %}
-        
-        {% if page.tags %}
-        <div class = "blog-entry__tags blog-entry__tags--post">
-            {% for tag in page.tags %}
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #{{ tag }}
+    <div class="wrapper wrapper--section">
+        <div class="post-header__content">
+            <img class = "img--responsive post-header__background" src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt="">
+            <div class="post__meta">
+                <time datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
             </div>
-            {% endfor %}
+            <h1 class = "post__title">{{page.title}}</h1>
+            {% if page.tags %}
+            <div class = "blog-entry__tags blog-entry__tags--post">
+                {% for tag in page.tags %}
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #{{ tag }}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </div>
-        
-    
+    <!-- STARTED CHANGING THE ONE BEFORE NOW. MOVED H1 -->
 </header>
+<div class="post-header__bottom">
+    <div class="wrapper--blog post-header__bottom__content">
+        {% include breadcrumbs.html %}
+        <div class="post-header__read-time" title="Estimated read time">
+            <i class="post-header__read-time__icon far fa-clock"></i>     
+            
+            {% assign words = content | number_of_words %}
+            {% if words < 360 %}
+                1 min
+            {% else %}
+                {{ words | divided_by:180 }} mins
+            {% endif %}
+        </div>
+    </div>
+</div>
 </div>
 <section class="post__content">
     <div class="wrapper wrapper--blog">
+        
 
         <article class="post__article">
             {{ content }}
             
         </article>
-        <!-- <div class="post__share-btns">
-            <div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Ftutorials%2Fcss-positioning&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div> -->
 
         {% include written-by-dan.html %}
 
@@ -53,12 +61,12 @@ layout: default
         /**
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
+        
         var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "{{ site.url }}{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
-        */
+        
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://danielcornock.disqus.com/embed.js';

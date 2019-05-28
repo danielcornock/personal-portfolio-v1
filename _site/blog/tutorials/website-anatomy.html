@@ -120,16 +120,37 @@
 </div>
 
 
-<div class="wrapper">
 <header class="post-header">
-    <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="">
-
-    
-    <div class="post__meta">
-        <time datetime = ''>23 May 2019</time>
+    <div class="wrapper wrapper--section">
+        <div class="post-header__content">
+            <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="">
+            <div class="post__meta">
+                <time datetime = ''>23 May 2019</time>
+            </div>
+            <h1 class = "post__title">The Anatomy of a Website</h1>
+            
+            <div class = "blog-entry__tags blog-entry__tags--post">
+                
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #HTML
+                </div>
+                
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #CSS
+                </div>
+                
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #Beginner
+                </div>
+                
+            </div>
+            
+        </div>
     </div>
-    <h1 class = "post__title">The Anatomy of a Website</h1>
-    <div class="post-header__bottom">
+    <!-- STARTED CHANGING THE ONE BEFORE NOW. MOVED H1 -->
+</header>
+<div class="post-header__bottom">
+    <div class="wrapper--blog post-header__bottom__content">
         <div class="breadcrumbs">
 
 
@@ -149,31 +170,20 @@
   
 
 </div>
-        
-        
-        <div class = "blog-entry__tags blog-entry__tags--post">
+        <div class="post-header__read-time" title="Estimated read time">
+            <i class="post-header__read-time__icon far fa-clock"></i>     
             
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #HTML
-            </div>
             
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #CSS
-            </div>
             
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #Beginner
-            </div>
+                1 min
             
         </div>
-        
     </div>
-        
-    
-</header>
+</div>
 </div>
 <section class="post__content">
     <div class="wrapper wrapper--blog">
+        
 
         <article class="post__article">
             <p>For newcomers, jumping straight into code can be a daunting task. For somebody that’s been creating websites for a while, the layout of a HTML page might seem simple, or even obvious. This is the curse of knowledge at its peak here, so in this article I will be reverse-engineering a website in ways, so that you can see exactly how it is built, and why it is built the way it is.</p>
@@ -190,10 +200,6 @@
 
             
         </article>
-        <!-- <div class="post__share-btns">
-            <div class="fb-share-button" data-href="http://localhost:4000/blog/tutorials/website-anatomy" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Ftutorials%2Fcss-positioning&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div> -->
 
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/about_img.jpg" alt="Daniel Cornock Avatar">
@@ -217,12 +223,12 @@
         /**
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
+        
         var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "http://localhost:4000/blog/tutorials/website-anatomy";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/blog/tutorials/website-anatomy"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
-        */
+        
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://danielcornock.disqus.com/embed.js';
@@ -235,6 +241,8 @@
     
 </section>
 
+
+    <script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>
 
 </main>
     <div class="mailing">
@@ -303,7 +311,7 @@
             </div>
         </div>
     </footer>
-    <script src = "http://localhost:4000/js/script.js" }}" ></script>
+    <script src = "http://localhost:4000/js/script.js" ></script>
 </body>
 
 </html>
