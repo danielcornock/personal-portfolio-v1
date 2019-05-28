@@ -33,9 +33,11 @@
         }
     }
     &__title{
-        &>span{
-            background-color: $pink;
-            padding: 5px 10px;
+        background-color: $pink;
+        padding: 5px 10px;
+
+        @media (max-width: $tablet-sizing){
+            font-size: 40px;
         }
     }
     &__meta{

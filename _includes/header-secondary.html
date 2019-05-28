@@ -21,11 +21,11 @@
                     {% assign mypages = site.pages | sort: "order" %}
 
                     {% for node in mypages %}
-                    {% unless node.exclude %}
+                    {% if node.include %}
                         <a class = "nav__item
                         {% if node.url == page.url %} nav__item--current
                         {% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
-                    {% endunless %}
+                    {% endif %}
                     {% endfor %}
                 </nav>
             </div>

@@ -1,5 +1,6 @@
 .services{
     background: $black;
+    position: relative;
     &__content{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

@@ -157,7 +157,9 @@
         }
 
         &__img{
-            height: 200px;
+            @media (max-width: $large-phone-sizing){
+                height: 200px;
+            }
         }
 
         &__title{

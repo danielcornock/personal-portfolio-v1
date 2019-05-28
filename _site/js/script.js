@@ -78,13 +78,13 @@ const mobileMenuToggle = function(){
                 item.classList.toggle('nav__item--active');
             });
 
-            if(transparentHeader){
-                header.style.backgroundColor = "#1f1f1f"; 
-                transparentHeader = !transparentHeader;
-            } else {
-                header.removeAttribute('style');
-                transparentHeader = !transparentHeader;
-            }
+            // if(transparentHeader && header){
+            //     header.style.backgroundColor = "#1f1f1f"; 
+            //     transparentHeader = !transparentHeader;
+            // } else if (header){
+            //     header.removeAttribute('style');
+            //     transparentHeader = !transparentHeader;
+            // }
 
         });
 
@@ -123,7 +123,11 @@ function setLights(){
     const body = document.querySelector('main');
     const images = document.querySelectorAll('main img');
     const lightText = document.querySelector('.lights__text');
+    const hero = document.querySelector('.hero');
 
+    if (hero){
+        hero.classList.toggle('inverted');
+    }
     body.classList.toggle('inverted');
     images.forEach(image => image.classList.toggle('inverted'));
     
