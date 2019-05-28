@@ -9,7 +9,7 @@
 
     @media (max-width: $large-phone-sizing){
         height: initial;
-        min-height: 70vh;
+        min-height: 85vh;
     }
 
     &__content{
@@ -129,7 +129,7 @@
     position: fixed;
     z-index: 100;
     background-color: rgba($white,0.1);
-    bottom: 20px;
+    top: 90vh;
     right: 0px;
     border: 2px solid $pink;
     display: flex;

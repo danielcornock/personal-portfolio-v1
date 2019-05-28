@@ -1,5 +1,7 @@
+
+
 window.onload = () =>{
-    sessionStorage.setItem('visited', true)
+    sessionStorage.setItem('visited', true);
 }
 
 if(sessionStorage.getItem('visited')){
@@ -11,6 +13,7 @@ if(sessionStorage.getItem('visited')){
         document.querySelector('.hero__icon').style.animationDelay = "1s";
     }
 }
+
 
 const headerResize = function(){
     const header = document.querySelector('.header');
@@ -110,17 +113,38 @@ const mobileMenuToggle = function(){
 //     }
 // }();
 
+
+
+if(sessionStorage.getItem('inverted') == "true"){
+    setLights();
+}
+
+function setLights(){
+    const body = document.querySelector('main');
+    const images = document.querySelectorAll('main img');
+    const lightText = document.querySelector('.lights__text');
+
+    body.classList.toggle('inverted');
+    images.forEach(image => image.classList.toggle('inverted'));
+    
+    if(sessionStorage.getItem('inverted') == "true"){
+        lightText.innerHTML = "LIGHTS OFF!";
+    } else {
+        lightText.innerHTML = "LIGHTS ON!";
+    }
+}
+
 const lightsOnLightsOff = function() {
     const button = document.querySelector('.lights');
-    const body = document.querySelector('body');
-    const images = document.querySelectorAll('img');
-
-    if(!button){
-        return;
-    }
-    button.addEventListener("click", () =>{
-        body.classList.toggle('inverted');
-        images.forEach(image => image.classList.toggle('inverted'));
-        // button.classList.toggle('inverted');
-    })
+    
+    button.addEventListener("click", () => {
+        if (sessionStorage.getItem('inverted') == "true"){
+            sessionStorage.setItem('inverted', "false");
+        } else {
+            sessionStorage.setItem('inverted', "true");
+        }
+        setLights();
+    });
 }();
+
+
