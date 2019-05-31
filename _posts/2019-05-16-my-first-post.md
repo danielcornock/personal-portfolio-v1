@@ -6,7 +6,6 @@ category: Discussion
 featuredImg: /post_welcome.jpg
 tags:
 - Personal
-
 featured: true
 
 ---
