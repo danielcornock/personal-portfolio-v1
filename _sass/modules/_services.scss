@@ -45,7 +45,12 @@
 
 .tools{
     background-color: $grey;
+
     &__content{
+
+    }
+
+    &__list{
         display: grid;
         display: flex;
         justify-content: center;

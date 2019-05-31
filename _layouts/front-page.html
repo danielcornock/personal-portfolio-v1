@@ -1,4 +1,3 @@
-{% include head.html %}
 {% include header.html %}
 <button class="lights">
     <i class="lights__icon far fa-lightbulb"></i>
@@ -79,19 +78,21 @@
     </section>
     <section class="tools">
         <div class="wrapper wrapper--section wrapper--tools">
-            <h2 data-heading="MY TOOLKIT" class="section-header section-header--tools">what I use.</h2>
+            <h2 data-heading="MY TECH STACK" class="section-header section-header--tools">what I use.</h2>
             <div class="tools__content">
-                <i class="tools__icon fab fa-html5"><div class="tools__expansion">HTML5</div></i>
-                <i class="tools__icon fab fa-css3"><div class="tools__expansion">CSS3</div></i>
-                <i class="tools__icon fab fa-js"><div class="tools__expansion">Javascript</div></i>
-                <i class="tools__icon fab fa-sass"><div class="tools__expansion">SASS/SCSS</div></i>
-                <i class="tools__icon fab fa-angular"><div class="tools__expansion">Angular2</div></i>
-                <i class="tools__icon fab fa-php"><div class="tools__expansion">PHP</div></i>
-                <i class="tools__icon fab fa-wordpress-simple"><div class="tools__expansion">Wordpress</div></i>
-                <i class="tools__icon fab fa-git"><div class="tools__expansion">Git CLI</div></i>
-                <i class="tools__icon fab fa-github"><div class="tools__expansion">Github</div></i>
-                <i class="tools__icon fas fa-database"><div class="tools__expansion">MySql</div></i>
-                <i class="tools__icon fas fa-mobile-alt"><div class="tools__expansion">Media Queries</div></i>
+                <div class = "tools__list">
+                    <i class="tools__icon fab fa-html5"><div class="tools__expansion">HTML5</div></i>
+                    <i class="tools__icon fab fa-css3"><div class="tools__expansion">CSS3</div></i>
+                    <i class="tools__icon fab fa-js"><div class="tools__expansion">Javascript</div></i>
+                    <i class="tools__icon fab fa-sass"><div class="tools__expansion">SASS/SCSS</div></i>
+                    <i class="tools__icon fab fa-angular"><div class="tools__expansion">Angular2</div></i>
+                    <i class="tools__icon fab fa-php"><div class="tools__expansion">PHP</div></i>
+                    <i class="tools__icon fab fa-wordpress-simple"><div class="tools__expansion">Wordpress</div></i>
+                    <i class="tools__icon fab fa-git"><div class="tools__expansion">Git CLI</div></i>
+                    <i class="tools__icon fab fa-github"><div class="tools__expansion">Github</div></i>
+                    <i class="tools__icon fas fa-database"><div class="tools__expansion">MySql</div></i>
+                    <i class="tools__icon fas fa-mobile-alt"><div class="tools__expansion">Media Queries</div></i>
+                </div>
             </div>
         </div>
     </section>
@@ -100,22 +101,18 @@
         <div class="wrapper wrapper--section">
             <h2 data-heading="FEATURED PROJECTS" class="section-header">what I've made.</h2>
             <div class="fp-portfolio__content">
+                {% for work in site.portfolio %}
+                {% if work.featured %}
                 <div class="fp-portfolio__entry">
-                    <img src="assets/img/mywork/GW.jpg" alt="" class="fp-portfolio__img">
+                    <img src="assets/img/mywork{{ work.img }}" alt="" class="fp-portfolio__img">
                     <div class="fp-portfolio__overlay">
-                        <h3 class = "fp-portfolio__title">Academic Portfolio</h3>
-                        <a href = "#" class="fp-portfolio__description">www.gregwoodin.co.uk</a>
+                        <h3 class = "fp-portfolio__title">{{ work.type }}</h3>
+                        <a href = "https://{{work.link}}" class="fp-portfolio__description">{{ work.link }}</a>
                         <a href="#" class="btn btn--primary fp-portfolio__btn">Find out more</a>
                     </div>
                 </div>
-                <div class="fp-portfolio__entry">
-                    <img src="assets/img/mywork/ionic.jpg" alt="" class="fp-portfolio__img">
-                    <div class="fp-portfolio__overlay">
-                        <h3 class="fp-portfolio__title">Construction Company</h3>
-                        <a href = "#" class="fp-portfolio__description">www.ionicbuilds.co.uk</a>
-                        <a href="#" class="btn btn--primary fp-portfolio__btn">Find out more</a>
-                    </div>
-                </div>
+                {% endif %}
+                {% endfor %} 
             </div>
             <a href="#" class="btn btn--secondary btn__view-more">See more of my work</a>
         </div>

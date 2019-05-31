@@ -11,3 +11,20 @@ categories:
   - general
 comments: true
 highlighter: rouge
+
+collections:
+  portfolio:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+

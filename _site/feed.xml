@@ -5,7 +5,7 @@
         <title>Daniel Cornock</title>
         <link>http://localhost:4000</link>
         <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
-        <lastBuildDate>Tue, 28 May 2019 15:05:39 +0100</lastBuildDate>
+        <lastBuildDate>Fri, 31 May 2019 01:30:33 +0100</lastBuildDate>
         
         <item>
             <title>The Anatomy of a Website</title>
@@ -24,7 +24,7 @@
         <item>
             <title>#100DaysOfCode - My Thoughts So Far</title>
             <link>
-                http://localhost:4000/blog/general/100-days-of-code-thoughts
+                http://localhost:4000/blog/discussion/100-days-of-code-thoughts
             </link>
             <description>
                 &lt;p&gt;If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode.&lt;/p&gt;
@@ -38,7 +38,7 @@
             </description>
             <pubDate>Thu, 23 May 2019 00:00:00 +0100</pubDate>
             <guid>
-                http://localhost:4000/blog/general/100-days-of-code-thoughts
+                http://localhost:4000/blog/discussion/100-days-of-code-thoughts
             </guid>
         </item>
         
@@ -63,7 +63,7 @@
         <item>
             <title>Hello, and welcome to my humble blog!</title>
             <link>
-                http://localhost:4000/blog/general/my-first-post
+                http://localhost:4000/blog/discussion/my-first-post
             </link>
             <description>
                 &lt;p&gt;Hi, and welcome to my web development blog!&lt;/p&gt;
@@ -74,7 +74,7 @@
             </description>
             <pubDate>Thu, 16 May 2019 00:00:00 +0100</pubDate>
             <guid>
-                http://localhost:4000/blog/general/my-first-post
+                http://localhost:4000/blog/discussion/my-first-post
             </guid>
         </item>
         

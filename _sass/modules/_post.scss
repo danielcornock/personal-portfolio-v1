@@ -86,11 +86,11 @@
     }
 
     &__content{
-        
+        background-color: #fcfcfc;
     }
 
     &__article{
-        background-color: $white;
+        background-color: #fcfcfc;
         font-size: 18px;
     }
 }
@@ -190,6 +190,7 @@ article{
     &>p{
     line-height: 40px;
     font-size: 18px;
+    color: #333;
     }
 
     h2{

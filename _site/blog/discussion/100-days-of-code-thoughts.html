@@ -7,15 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- META INFORMATION -->
-    <title>Hello, and welcome to my humble blog! | Daniel Cornock</title>
+    <title>#100DaysOfCode - My Thoughts So Far | Daniel Cornock</title>
     <meta name="description" content="Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom."/>
 
     <!-- XML FEED -->
     <link rel="alternate" type="application/rss+xml"  href="http://localhost:4000/feed.xml" title="Daniel Cornock">
 
     <!-- STYLESHEETS / FONTAWESOME -->
-    <link rel="stylesheet" href="http://localhost:4000/hamburgers.css">
-    <link rel="stylesheet" href="http://localhost:4000/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -33,76 +32,56 @@
     </script>
 
 </head>
+
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-    <header class="header header--no-anim header--secondary">
-        <div class="wrapper">
-            <div class="header__content">
-                <a href = "/" class="header__branding">
-                    <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo_full.png" alt="">
-                    <div class="header__branding__text">
-                        Daniel Cornock<span>Web Developer</span>
-                    </div>
-                </a>
-                
-                <button class="hamburger hamburger--squeeze" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+  <header class="header 
+      
+          header--secondary
+      ">
+      <div class="wrapper">
+          <div class="header__content">
+              <a href = "/" class="header__branding">
+                  <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+                  
+                  <div class="header__branding__text">
+                      Daniel Cornock<span>Web Developer</span>
+                  </div>
+                  
+              </a>
 
-                <nav class="nav">
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <a class = "nav__item
-                        " href="http://localhost:4000/about">About</a>
-                    
-                    
-                    
-                    
-                    
-                        <a class = "nav__item
-                        " href="http://localhost:4000/portfolio">Portfolio</a>
-                    
-                    
-                    
-                        <a class = "nav__item
-                        " href="http://localhost:4000/blog">Blog</a>
-                    
-                    
-                    
-                        <a class = "nav__item
-                        " href="http://localhost:4000/contact">Contact</a>
-                    
-                    
-                </nav>
-            </div>
-        </div>
-    </header>
+              <button class="hamburger hamburger--squeeze" type="button">
+                  <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                  </span>
+              </button>
+                  
+              <nav class="nav">
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/about">About</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/portfolio">Portfolio</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/blog">Blog</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/contact">Contact</a>
+                  
+              </nav>
+          </div>
+      </div>
+  </header>
 <button class="lights">
     <i class="lights__icon far fa-lightbulb"></i>
     <div class="lights__text">LIGHTS<br>ON!</div>
 </button>
 <main class = "main__secondary main__secondary--post">
     
-    <div class="blog-header">
+    <div class="blog-header  hide-on-mobile ">
     <div class="wrapper wrapper--fixed-header">
         <div class="blog-header__content">
             <div class="blog-header__categories">
@@ -123,13 +102,17 @@
 <header class="post-header">
     <div class="wrapper wrapper--section">
         <div class="post-header__content">
-            <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="">
+            <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="">
             <div class="post__meta">
-                <time datetime = ''>16 May 2019</time>
+                <time datetime = ''>23 May 2019</time>
             </div>
-            <h1 class = "post__title">Hello, and welcome to my humble blog!</h1>
+            <h1 class = "post__title">#100DaysOfCode - My Thoughts So Far</h1>
             
             <div class = "blog-entry__tags blog-entry__tags--post">
+                
+                <div class="blog-entry__tag blog-entry__tag--post">
+                    #Challenges
+                </div>
                 
                 <div class="blog-entry__tag blog-entry__tag--post">
                     #Personal
@@ -153,12 +136,12 @@
 
 
   
-    <a class = "breadcrumbs__element" href="/blog/general/">General</a> >
+    <a class = "breadcrumbs__element" href="/blog/discussion/">Discussion</a> >
   
 
 
   
-    <a class = "breadcrumbs__element" href = "#">My first post</a>
+    <a class = "breadcrumbs__element" href = "#">100 days of code thoughts</a>
   
 
 </div>
@@ -178,13 +161,14 @@
         
 
         <article class="post__article">
-            <p>Hi, and welcome to my web development blog!</p>
+            <p>If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode.</p>
 
-<p>In this blog, you can find my thoughts, ideas and experiences within the web development world. I will also be posting tutorials for common development concepts, both to help others and for my own benefit when I need a little bit of a reminder.</p>
+<h2 id="my-experience">My Experience</h2>
+<p>MY first real experience documenting things.</p>
 
-<p>I hope you find something here that can benefit you or you find interesting!</p>
+<p>It was what helped me to come involved in the tech society. I’m now part of a coding group.</p>
 
-<p>Enjoy!</p>
+<p>On days where I didn’t have motivation, I did some work to stick to the goal and that turned into organic motivation.</p>
 
             
         </article>
@@ -213,8 +197,8 @@
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
         
         var disqus_config = function () {
-        this.page.url = "http://localhost:4000/blog/general/my-first-post";  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = "/blog/general/my-first-post"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "http://localhost:4000/blog/discussion/100-days-of-code-thoughts";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/blog/discussion/100-days-of-code-thoughts"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         
         (function() { // DON'T EDIT BELOW THIS LINE
@@ -229,8 +213,10 @@
     
 </section>
 
+<script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>
 
-    <script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>
+
+    
 
 </main>
     <div class="mailing">

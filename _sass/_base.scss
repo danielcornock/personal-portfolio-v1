@@ -75,10 +75,14 @@ h1{
     font-weight: 700;
 }
 
-
+.hide-on-mobile{
+    @media (max-width: $large-phone-sizing){
+        display: none;
+    }
+}
 
 .main__secondary{
-    background-color: $grey;
+    background-color: $black;
     animation: page-fade-in 400ms ease-in-out forwards;
     opacity: 0;
     padding-top: 100px;
@@ -94,7 +98,11 @@ h1{
     }
 
     &--post{
+        padding-top: 102px;
         background-color: $white;
+    }
+    &--blog{
+        padding-top: 102px;
     }
 }
 

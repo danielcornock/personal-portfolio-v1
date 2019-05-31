@@ -3,7 +3,6 @@ title: The Anatomy of a Website
 description: Are you new to web development, and find yourself wondering what goes in to all these websites? This article may be for you!
 author: Daniel Cornock
 category: Tutorials
-layout: post
 featuredImg: /post_anatomy.jpg
 tags: 
 - HTML

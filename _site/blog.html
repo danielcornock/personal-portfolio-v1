@@ -14,8 +14,7 @@
     <link rel="alternate" type="application/rss+xml"  href="http://localhost:4000/feed.xml" title="Daniel Cornock">
 
     <!-- STYLESHEETS / FONTAWESOME -->
-    <link rel="stylesheet" href="http://localhost:4000/hamburgers.css">
-    <link rel="stylesheet" href="http://localhost:4000/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -33,77 +32,57 @@
     </script>
 
 </head>
+
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-    <header class="header header--no-anim header--secondary">
-        <div class="wrapper">
-            <div class="header__content">
-                <a href = "/" class="header__branding">
-                    <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo_full.png" alt="">
-                    <div class="header__branding__text">
-                        Daniel Cornock<span>Web Developer</span>
-                    </div>
-                </a>
-                
-                <button class="hamburger hamburger--squeeze" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+  <header class="header 
+      
+          header--secondary
+      ">
+      <div class="wrapper">
+          <div class="header__content">
+              <a href = "/" class="header__branding">
+                  <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+                  
+                  <div class="header__branding__text">
+                      Daniel Cornock<span>Web Developer</span>
+                  </div>
+                  
+              </a>
 
-                <nav class="nav">
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <a class = "nav__item
-                        " href="http://localhost:4000/about">About</a>
-                    
-                    
-                    
-                    
-                    
-                        <a class = "nav__item
-                        " href="http://localhost:4000/portfolio">Portfolio</a>
-                    
-                    
-                    
-                        <a class = "nav__item
-                         nav__item--current
-                        " href="http://localhost:4000/blog">Blog</a>
-                    
-                    
-                    
-                        <a class = "nav__item
-                        " href="http://localhost:4000/contact">Contact</a>
-                    
-                    
-                </nav>
-            </div>
-        </div>
-    </header>
+              <button class="hamburger hamburger--squeeze" type="button">
+                  <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                  </span>
+              </button>
+                  
+              <nav class="nav">
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/about">About</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/portfolio">Portfolio</a>
+                  
+                      <a class = "nav__item
+                       nav__item--current
+                      " href="http://localhost:4000/blog">Blog</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/contact">Contact</a>
+                  
+              </nav>
+          </div>
+      </div>
+  </header>
 <button class="lights">
     <i class="lights__icon far fa-lightbulb"></i>
     <div class="lights__text">LIGHTS<br>ON!</div>
 </button>
 <main class = "main__secondary main__secondary--blog">
     
-    <div class="blog-header">
+    <div class="blog-header ">
     <div class="wrapper wrapper--fixed-header">
         <div class="blog-header__content">
             <div class="blog-header__categories">
@@ -165,16 +144,16 @@
                 </div>
                 
                 
-                <a href = "/blog/general/100-days-of-code-thoughts" class = "blog-entry--tall__img"><img src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="" class="img--responsive"></a>
+                <a href = "/blog/discussion/100-days-of-code-thoughts" class = "blog-entry--tall__img"><img src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="" class="img--responsive"></a>
                 <div class="blog-entry--tall__details">
                     <div class="blog-entry__meta">
                         <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                        • General
+                        • Discussion
                     </div>
                     
-                    <a href="/blog/general/100-days-of-code-thoughts"><h3 class="blog-entry--tall__title">#100DaysOfCode - My Thoughts So Far</h3></a>
+                    <a href="/blog/discussion/100-days-of-code-thoughts"><h3 class="blog-entry--tall__title">#100DaysOfCode - My Thoughts So Far</h3></a>
                     <p class="blog-entry--tall__description">I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.</p>
-                    <a href="/blog/general/100-days-of-code-thoughts" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
+                    <a href="/blog/discussion/100-days-of-code-thoughts" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                 </div>
             </div>
 
@@ -235,16 +214,16 @@
                 </div>
                 
                 
-                <a href = "/blog/general/my-first-post" class = "blog-entry--tall__img"><img src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="" class="img--responsive"></a>
+                <a href = "/blog/discussion/my-first-post" class = "blog-entry--tall__img"><img src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="" class="img--responsive"></a>
                 <div class="blog-entry--tall__details">
                     <div class="blog-entry__meta">
                         <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
-                        • General
+                        • Discussion
                     </div>
                     
-                    <a href="/blog/general/my-first-post"><h3 class="blog-entry--tall__title">Hello, and welcome to my humble blog!</h3></a>
+                    <a href="/blog/discussion/my-first-post"><h3 class="blog-entry--tall__title">Hello, and welcome to my humble blog!</h3></a>
                     <p class="blog-entry--tall__description">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
-                    <a href="/blog/general/my-first-post" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
+                    <a href="/blog/discussion/my-first-post" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                 </div>
             </div>
 
@@ -314,19 +293,19 @@
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                                • General
-                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/General">
+                                • Discussion
+                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Discussion">
                                     <i class="blog__postMeta-icon fas fa-list"></i>
-                                    General
+                                    Discussion
                                 </a>
                                 </div> -->
                             </div>
-                            <a href="/blog/general/100-days-of-code-thoughts">
+                            <a href="/blog/discussion/100-days-of-code-thoughts">
                                 <h2 class = "blog-entry--wide__title">#100DaysOfCode - My Thoughts So Far</h2>
                             </a>
                             <div class = "blog-entry--wide__description">
                                 I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.
-                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/general/100-days-of-code-thoughts">Read More...</a>
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/discussion/100-days-of-code-thoughts">Read More...</a>
                             </div>
                             
 
@@ -396,19 +375,19 @@
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
-                                • General
-                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/General">
+                                • Discussion
+                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Discussion">
                                     <i class="blog__postMeta-icon fas fa-list"></i>
-                                    General
+                                    Discussion
                                 </a>
                                 </div> -->
                             </div>
-                            <a href="/blog/general/my-first-post">
+                            <a href="/blog/discussion/my-first-post">
                                 <h2 class = "blog-entry--wide__title">Hello, and welcome to my humble blog!</h2>
                             </a>
                             <div class = "blog-entry--wide__description">
                                 Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.
-                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/general/my-first-post">Read More...</a>
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="/blog/discussion/my-first-post">Read More...</a>
                             </div>
                             
 
@@ -428,7 +407,7 @@
     </div>
 </section>
 
-    <script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>
+    
 
 </main>
     <div class="mailing">

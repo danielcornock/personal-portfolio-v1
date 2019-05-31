@@ -14,8 +14,7 @@
     <link rel="alternate" type="application/rss+xml"  href="http://localhost:4000/feed.xml" title="Daniel Cornock">
 
     <!-- STYLESHEETS / FONTAWESOME -->
-    <link rel="stylesheet" href="http://localhost:4000/hamburgers.css">
-    <link rel="stylesheet" href="http://localhost:4000/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -33,62 +32,43 @@
     </script>
 
 </head>
+
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-    <header class="header header--main">
-        <div class="wrapper">
-            <div class="header__content">
-                <a href = "/" class="header__branding">
-                    <img class = "header__logo" src="assets/icons/mylogo.svg" alt="">
-                </a>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+  <header class="header 
+      ">
+      <div class="wrapper">
+          <div class="header__content">
+              <a href = "/" class="header__branding">
+                  <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+                  
+              </a>
 
-                <button class="hamburger hamburger--squeeze" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                    
-                <nav class="nav">
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <a class = "nav__item" href = "http://localhost:4000/about">About</a>
-                    
-                    
-                    
-                    
-                    
-                        <a class = "nav__item" href = "http://localhost:4000/portfolio">Portfolio</a>
-                    
-                    
-                    
-                        <a class = "nav__item" href = "http://localhost:4000/blog">Blog</a>
-                    
-                    
-                    
-                        <a class = "nav__item" href = "http://localhost:4000/contact">Contact</a>
-                    
-                    
-                </nav>
-            </div>
-        </div>
-    </header>
+              <button class="hamburger hamburger--squeeze" type="button">
+                  <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                  </span>
+              </button>
+                  
+              <nav class="nav">
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/about">About</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/portfolio">Portfolio</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/blog">Blog</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/contact">Contact</a>
+                  
+              </nav>
+          </div>
+      </div>
+  </header>
 <button class="lights">
     <i class="lights__icon far fa-lightbulb"></i>
     <div class="lights__text">LIGHTS<br>ON!</div>
@@ -168,19 +148,21 @@
     </section>
     <section class="tools">
         <div class="wrapper wrapper--section wrapper--tools">
-            <h2 data-heading="MY TOOLKIT" class="section-header section-header--tools">what I use.</h2>
+            <h2 data-heading="MY TECH STACK" class="section-header section-header--tools">what I use.</h2>
             <div class="tools__content">
-                <i class="tools__icon fab fa-html5"><div class="tools__expansion">HTML5</div></i>
-                <i class="tools__icon fab fa-css3"><div class="tools__expansion">CSS3</div></i>
-                <i class="tools__icon fab fa-js"><div class="tools__expansion">Javascript</div></i>
-                <i class="tools__icon fab fa-sass"><div class="tools__expansion">SASS/SCSS</div></i>
-                <i class="tools__icon fab fa-angular"><div class="tools__expansion">Angular2</div></i>
-                <i class="tools__icon fab fa-php"><div class="tools__expansion">PHP</div></i>
-                <i class="tools__icon fab fa-wordpress-simple"><div class="tools__expansion">Wordpress</div></i>
-                <i class="tools__icon fab fa-git"><div class="tools__expansion">Git CLI</div></i>
-                <i class="tools__icon fab fa-github"><div class="tools__expansion">Github</div></i>
-                <i class="tools__icon fas fa-database"><div class="tools__expansion">MySql</div></i>
-                <i class="tools__icon fas fa-mobile-alt"><div class="tools__expansion">Media Queries</div></i>
+                <div class = "tools__list">
+                    <i class="tools__icon fab fa-html5"><div class="tools__expansion">HTML5</div></i>
+                    <i class="tools__icon fab fa-css3"><div class="tools__expansion">CSS3</div></i>
+                    <i class="tools__icon fab fa-js"><div class="tools__expansion">Javascript</div></i>
+                    <i class="tools__icon fab fa-sass"><div class="tools__expansion">SASS/SCSS</div></i>
+                    <i class="tools__icon fab fa-angular"><div class="tools__expansion">Angular2</div></i>
+                    <i class="tools__icon fab fa-php"><div class="tools__expansion">PHP</div></i>
+                    <i class="tools__icon fab fa-wordpress-simple"><div class="tools__expansion">Wordpress</div></i>
+                    <i class="tools__icon fab fa-git"><div class="tools__expansion">Git CLI</div></i>
+                    <i class="tools__icon fab fa-github"><div class="tools__expansion">Github</div></i>
+                    <i class="tools__icon fas fa-database"><div class="tools__expansion">MySql</div></i>
+                    <i class="tools__icon fas fa-mobile-alt"><div class="tools__expansion">Media Queries</div></i>
+                </div>
             </div>
         </div>
     </section>
@@ -189,22 +171,51 @@
         <div class="wrapper wrapper--section">
             <h2 data-heading="FEATURED PROJECTS" class="section-header">what I've made.</h2>
             <div class="fp-portfolio__content">
+                
+                
+                <div class="fp-portfolio__entry">
+                    <img src="assets/img/mywork/danielcornock.png" alt="" class="fp-portfolio__img">
+                    <div class="fp-portfolio__overlay">
+                        <h3 class = "fp-portfolio__title">Portfolio & Blog</h3>
+                        <a href = "https://www.danielcornock.co.uk" class="fp-portfolio__description">www.danielcornock.co.uk</a>
+                        <a href="#" class="btn btn--primary fp-portfolio__btn">Find out more</a>
+                    </div>
+                </div>
+                
+                
+                
                 <div class="fp-portfolio__entry">
                     <img src="assets/img/mywork/GW.jpg" alt="" class="fp-portfolio__img">
                     <div class="fp-portfolio__overlay">
                         <h3 class = "fp-portfolio__title">Academic Portfolio</h3>
-                        <a href = "#" class="fp-portfolio__description">www.gregwoodin.co.uk</a>
+                        <a href = "https://www.gregwoodin.co.uk" class="fp-portfolio__description">www.gregwoodin.co.uk</a>
                         <a href="#" class="btn btn--primary fp-portfolio__btn">Find out more</a>
                     </div>
                 </div>
+                
+                
+                
                 <div class="fp-portfolio__entry">
                     <img src="assets/img/mywork/ionic.jpg" alt="" class="fp-portfolio__img">
                     <div class="fp-portfolio__overlay">
-                        <h3 class="fp-portfolio__title">Construction Company</h3>
-                        <a href = "#" class="fp-portfolio__description">www.ionicbuilds.co.uk</a>
+                        <h3 class = "fp-portfolio__title">Construction Site</h3>
+                        <a href = "https://www.ionicbuilds.co.uk" class="fp-portfolio__description">www.ionicbuilds.co.uk</a>
                         <a href="#" class="btn btn--primary fp-portfolio__btn">Find out more</a>
                     </div>
                 </div>
+                
+                
+                
+                <div class="fp-portfolio__entry">
+                    <img src="assets/img/mywork/studentgrub.png" alt="" class="fp-portfolio__img">
+                    <div class="fp-portfolio__overlay">
+                        <h3 class = "fp-portfolio__title">Food Review & Recipe Site</h3>
+                        <a href = "https://www.studentgrub.co.uk" class="fp-portfolio__description">www.studentgrub.co.uk</a>
+                        <a href="#" class="btn btn--primary fp-portfolio__btn">Find out more</a>
+                    </div>
+                </div>
+                
+                 
             </div>
             <a href="#" class="btn btn--secondary btn__view-more">See more of my work</a>
         </div>
@@ -236,12 +247,12 @@
                             <div class="blog-entry--tall__details">
                                 <div class="blog-entry__meta">
                                     <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                                    • General
+                                    • Discussion
                                 </div>
                                 
-                                <a href="/blog/general/100-days-of-code-thoughts"><h3 class="blog-entry--tall__title">#100DaysOfCode - My Thoughts So Far</h3></a>
+                                <a href="/blog/discussion/100-days-of-code-thoughts"><h3 class="blog-entry--tall__title">#100DaysOfCode - My Thoughts So Far</h3></a>
                                 <p class="blog-entry--tall__description">I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.</p>
-                                <a href="/blog/general/100-days-of-code-thoughts" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
+                                <a href="/blog/discussion/100-days-of-code-thoughts" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                             </div>
                         </div> 
                 
@@ -266,12 +277,12 @@
                             <div class="blog-entry--tall__details">
                                 <div class="blog-entry__meta">
                                     <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
-                                    • General
+                                    • Discussion
                                 </div>
                                 
-                                <a href="/blog/general/my-first-post"><h3 class="blog-entry--tall__title">Hello, and welcome to my humble blog!</h3></a>
+                                <a href="/blog/discussion/my-first-post"><h3 class="blog-entry--tall__title">Hello, and welcome to my humble blog!</h3></a>
                                 <p class="blog-entry--tall__description">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
-                                <a href="/blog/general/my-first-post" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
+                                <a href="/blog/discussion/my-first-post" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                             </div>
                         </div> 
                 

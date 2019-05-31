@@ -3,7 +3,6 @@ title: CSS Positioning For Absolute Beginners
 description: A handy reference for both new and experienced developers for when you just can't get that positioning quite right.
 author: Daniel Cornock
 category: Tutorials
-layout: post
 featuredImg: /post_positioning.jpg
 tags: 
 - CSS

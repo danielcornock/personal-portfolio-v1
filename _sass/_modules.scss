@@ -9,3 +9,29 @@
 
 
 @import "modules/footer";
+
+
+// thank-you screen
+
+.thankyou{
+    background-color: $pink;
+    &__content{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    &__header{
+        color: $white;
+    }
+    &__message{
+        color: $grey;
+        text-align: center;
+
+        &>a{
+            font-weight: 800;
+            color: $white;
+        }
+    }
+}

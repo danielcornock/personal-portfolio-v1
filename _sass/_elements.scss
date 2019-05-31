@@ -163,34 +163,6 @@
     color: $pink;
 }
 
-.thank-you{
-    &__header{
-        color: $white;
-    }
-    &__message{
-        color: $grey-on-black;
-        text-align: center;
-
-        &>a{
-            font-weight: 800;
-            color: $pink;
-        }
-    }
-
-    &__img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: -1;
-
-        filter: grayscale(0.3);
-
-        transform: scale(1.1);
-    }
-}
 
 .img--responsive{
     width: 100%;
