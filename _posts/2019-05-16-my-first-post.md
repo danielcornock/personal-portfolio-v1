@@ -1,16 +1,7 @@
 ---
-title: Hello, and welcome to my humble blog!
-description: Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.
-author: Daniel Cornock
-category: Discussion
-featuredImg: /post_welcome.jpg
-tags:
-- Personal
-
-featured: true
-
-
+title: 'Hello, and welcome to my humble blog!'
 ---
+![](/assets/img/about_img.jpg)
 
 Hi, and welcome to my web development blog!
 
@@ -19,3 +10,5 @@ In this blog, you can find my thoughts, ideas and experiences within the web dev
 I hope you find something here that can benefit you or you find interesting!
 
 Enjoy!
+
+hello
