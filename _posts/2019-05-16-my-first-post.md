@@ -3,7 +3,7 @@ title: Hello, and welcome to my humble blog!
 description: Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.
 author: Daniel Cornock
 category: Discussion
-featuredImg: /post_welcome.jpg
+featuredImg: /assets/img/post_welcome.jpg
 tags:
 - Personal
 featured: true

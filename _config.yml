@@ -3,9 +3,7 @@ url: https://www.danielcornock.co.uk
 title: Daniel Cornock
 description: Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.
 permalink: /blog/:categories/:title
-blogImgLocation: /assets/img/blog
-imgLocation: /assets/img
-bgImgLocation: /assets/img/pages
+staticImgLocation: /assets/img/static
 categories:
   - tutorials
   - general

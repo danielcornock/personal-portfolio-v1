@@ -4,7 +4,7 @@ layout: post
 description: 'I decided to get stuck in to a CMS with jekyll, and boy am I surprised!'
 author: Daniel Cornock
 category: discussion
-featuredImg: /post_netlify.jpeg
+featuredImg: /assets/img/post_netlify.jpeg
 tags:
   - CMS
   - Jekyll

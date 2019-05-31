@@ -9,7 +9,7 @@ stacks:
 - Javascript
 - Design
 description: A personal academic portfolio designed to replace social media sites such as 'LinkedIn' in order to display the achievements and academic progress of masters student Greg Woodin.
-img: /GW.jpg
+img: /assets/img/work_greg-woodin.jpg
 
 featured: true
 ---
