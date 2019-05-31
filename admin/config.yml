@@ -25,5 +25,14 @@ collections:
   - name: 'portfolio'
     label: 'Portfolio'
     folder: '_portfolio'
+    create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: Title }
+      - { label: "Title", name: title, widget: "string" }
+      - { label: "Type", name: type, widget: "string" }
+      - { label: "Link", name: link, widget: "string" }
+      - { label: "GitHub", name: github, widget: "string" }
+      - { label: "Stacks", name: stacks, widget: "list" }
+      - { label: "Description", name: description, widget: "string" }
+      - { label: "Image", name: img, widget: "image" }
+      - { label: "Featured", name: featured, widget: "boolean" }
