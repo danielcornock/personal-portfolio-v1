@@ -15,7 +15,7 @@ layout: default
             {% if post.featured == true %}
             {% if forloop.index == 1 %}
             <div class="blog-entry--hero">
-                <img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--hero__img">
+                <img src="{{site.url}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--hero__img">
                 <div class="blog-entry__meta blog-entry--hero__meta">
                     <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
                     • {{post.author}}
@@ -37,7 +37,7 @@ layout: default
                 </div>
                 {% endif %}
                 
-                <a href = "{{post.url}}" class = "blog-entry--tall__img"><img src="{{site.url}}{{site.blogImgLocation}}{{post.featuredImg}}" alt="" class="img--responsive"></a>
+                <a href = "{{post.url}}" class = "blog-entry--tall__img"><img src="{{site.url}}{{post.featuredImg}}" alt="" class="img--responsive"></a>
                 <div class="blog-entry--tall__details">
                     <div class="blog-entry__meta">
                         <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
@@ -71,7 +71,7 @@ layout: default
                     <hr class = "blog-entry__divider">
                 {% endif %}
                     <li class = "blog-entry--wide">
-                        <img class = "img--responsive blog-entry--wide__img" src="{{ site.url }}{{ site.blogImgLocation}}{{post.featuredImg}}" alt="">
+                        <img class = "img--responsive blog-entry--wide__img" src="{{ site.url }}{{post.featuredImg}}" alt="">
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
