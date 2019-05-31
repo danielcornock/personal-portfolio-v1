@@ -17,7 +17,7 @@ collections:
       - { label: "Author", name: "author", widget: "string", default: "Daniel Cornock"}
       - { label: "Category", name: "category", widget: "string"}
       - { label: "Featured Image URL", name: "featuredImg", widget: "string"}
-      - { label: "Tags", name: "tags", widget: "string"}
+      - { label: "Tags", name: "tags", widget: "list"}
       - { label: "Body", name: "body", widget: "markdown", default: "post"}
       - { label: "Featured?", name: "featured", widget: "string"}
 
