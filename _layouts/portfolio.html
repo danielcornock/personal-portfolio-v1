@@ -15,6 +15,15 @@ layout: default
                     <a href = "https://{{work.link}}" class="fp-portfolio__description">{{ work.link }}</a>
                     <a href="#" class="btn btn--primary fp-portfolio__btn">Find out more</a>
                 </div>
+                {% if work.stacks %}
+                <div class = "blog-entry__tags blog-entry__tags--onImage">
+                    {% for stack in work.stacks %}
+                    <div class="blog-entry__tag">
+                        #{{ stack }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
             {% endfor %} 
         </div>
