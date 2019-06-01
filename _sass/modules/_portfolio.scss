@@ -1,10 +1,42 @@
 .portfolio{
-    &__header{
-        &__content{
-            color: $black;
-            z-index: 1;
-            position: relative;
-        }
+    background-color: $grey;
+    &__entry{
+        background-color: $black;
+        border-bottom: 2px solid $pink;
+
+    }
+
+    &__img{
+        height: 250px;
+    }
+    &__info{
+        padding: 15px 30px 30px 30px;
+        margin-top: 0;
+    }
+    &__title{
+        color: $white;
+        font-size: 25px;
+    }
+    &__link{
+        color: $pink;
+        
+    }
+    &__description{
+        color: $grey-on-black;
+        height: 100%;
+        margin-top: 15px;
+
+    }
+    &__tags{
+
+    }
+    &__tag{
+        background-color: $pink;
+        color: $white;
+        border-radius: 0px;
+        border: none;
+        padding: 5px 10px;
+        margin-top: 3px;
     }
 }
 

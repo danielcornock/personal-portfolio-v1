@@ -1,3 +1,30 @@
+.about{
+    &__content{
+
+    }
+
+    &__heading{
+        text-align: center;
+    }
+
+    &__subtext{
+        font-size: 40px;
+        color: $pink;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__text{
+        color: $grey-on-black;
+    }
+
+    &__subheading{
+        color: $pink;
+        font-size: 40px;
+    }
+
+}
+
 .fp-about{
     background: $grey;
     color: $grey-on-black;

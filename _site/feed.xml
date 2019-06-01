@@ -5,7 +5,25 @@
         <title>Daniel Cornock</title>
         <link>http://localhost:4000</link>
         <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
-        <lastBuildDate>Fri, 31 May 2019 01:34:12 +0100</lastBuildDate>
+        <lastBuildDate>Sat, 01 Jun 2019 17:13:35 +0100</lastBuildDate>
+        
+        <item>
+            <title>My first post using netlifyCMS!</title>
+            <link>
+                http://localhost:4000/blog/discussion/my-first-post-using-netlifycms
+            </link>
+            <description>
+                &lt;p&gt;CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.&lt;/p&gt;
+
+&lt;p&gt;Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.&lt;/p&gt;
+
+...
+            </description>
+            <pubDate>Fri, 31 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/discussion/my-first-post-using-netlifycms
+            </guid>
+        </item>
         
         <item>
             <title>The Anatomy of a Website</title>

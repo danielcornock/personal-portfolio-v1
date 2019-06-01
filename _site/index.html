@@ -31,6 +31,11 @@
       gtag('config', 'UA-140387372-1');
     </script>
 
+    
+    <!-- NETLIFY CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+
 </head>
 
 <body>
@@ -98,7 +103,7 @@
         <div class="wrapper wrapper--section">
             <h2 data-heading="ABOUT ME" class="section-header">welcome!</h2>
             <div class = "fp-about__content">
-                <img src="http://localhost:4000/assets/img/about_img.jpg" alt="" class="fp-about__img">
+                <img src="http://localhost:4000/assets/img/static/headshot.jpg" alt="" class="fp-about__img">
                 <div class="fp-about__text">
                     <h3 class = "fp-about__title"><span class = "colored">Who</span> am I?</h3>
                     <p>Hey, I'm Dan! Welcome to my little corner of the internet. I am a front end developer from Birmingham, United Kingdom. I studied Computer Systems Engineering at the University of Birmingham, UK. However, all of my skills regarding web development are completely self-taught. I love web development because I'm constantly learning new things!</p>
@@ -174,7 +179,7 @@
                 
                 
                 <div class="fp-portfolio__entry">
-                    <img src="assets/img/mywork/danielcornock.png" alt="" class="fp-portfolio__img">
+                    <img src="/assets/img/work_daniel-cornock.png" alt="" class="fp-portfolio__img">
                     <div class="fp-portfolio__overlay">
                         <h3 class = "fp-portfolio__title">Portfolio & Blog</h3>
                         <a href = "https://www.danielcornock.co.uk" class="fp-portfolio__description">www.danielcornock.co.uk</a>
@@ -184,8 +189,10 @@
                 
                 
                 
+                
+                
                 <div class="fp-portfolio__entry">
-                    <img src="assets/img/mywork/GW.jpg" alt="" class="fp-portfolio__img">
+                    <img src="/assets/img/work_greg-woodin.jpg" alt="" class="fp-portfolio__img">
                     <div class="fp-portfolio__overlay">
                         <h3 class = "fp-portfolio__title">Academic Portfolio</h3>
                         <a href = "https://www.gregwoodin.co.uk" class="fp-portfolio__description">www.gregwoodin.co.uk</a>
@@ -196,7 +203,7 @@
                 
                 
                 <div class="fp-portfolio__entry">
-                    <img src="assets/img/mywork/ionic.jpg" alt="" class="fp-portfolio__img">
+                    <img src="/assets/img/work_ionic-builds.jpg" alt="" class="fp-portfolio__img">
                     <div class="fp-portfolio__overlay">
                         <h3 class = "fp-portfolio__title">Construction Site</h3>
                         <a href = "https://www.ionicbuilds.co.uk" class="fp-portfolio__description">www.ionicbuilds.co.uk</a>
@@ -207,7 +214,7 @@
                 
                 
                 <div class="fp-portfolio__entry">
-                    <img src="assets/img/mywork/studentgrub.png" alt="" class="fp-portfolio__img">
+                    <img src="/assets/img/work_student-grub.png" alt="" class="fp-portfolio__img">
                     <div class="fp-portfolio__overlay">
                         <h3 class = "fp-portfolio__title">Food Review & Recipe Site</h3>
                         <a href = "https://www.studentgrub.co.uk" class="fp-portfolio__description">www.studentgrub.co.uk</a>
@@ -228,7 +235,22 @@
                 
 
                        <div class="blog-entry--tall blog-entry--black">
-                            <img src="http://localhost:4000/assets/img/blog/post_anatomy.jpg" alt="" class="img--responsive blog-entry--tall__img">
+                            <img src="http://localhost:4000/assets/img/post_netlify.jpeg" alt="" class="img--responsive blog-entry--tall__img">
+                            <div class="blog-entry--tall__details">
+                                <div class="blog-entry__meta">
+                                    <time datetime = '2019-05-31 00:00:00 +0100'>31 May 2019</time>
+                                    • discussion
+                                </div>
+                                
+                                <a href="/blog/discussion/my-first-post-using-netlifycms"><h3 class="blog-entry--tall__title">My first post using netlifyCMS!</h3></a>
+                                <p class="blog-entry--tall__description">I decided to get stuck in to a CMS with jekyll, and boy am I surprised!</p>
+                                <a href="/blog/discussion/my-first-post-using-netlifycms" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
+                            </div>
+                        </div> 
+                
+
+                       <div class="blog-entry--tall blog-entry--black">
+                            <img src="http://localhost:4000/assets/img/post_anatomy.jpg" alt="" class="img--responsive blog-entry--tall__img">
                             <div class="blog-entry--tall__details">
                                 <div class="blog-entry__meta">
                                     <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
@@ -243,7 +265,7 @@
                 
 
                        <div class="blog-entry--tall blog-entry--black">
-                            <img src="http://localhost:4000/assets/img/blog/post_100daysofcode.jpg" alt="" class="img--responsive blog-entry--tall__img">
+                            <img src="http://localhost:4000/assets/img/post_100daysofcode.jpg" alt="" class="img--responsive blog-entry--tall__img">
                             <div class="blog-entry--tall__details">
                                 <div class="blog-entry__meta">
                                     <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
@@ -258,7 +280,7 @@
                 
 
                        <div class="blog-entry--tall blog-entry--black">
-                            <img src="http://localhost:4000/assets/img/blog/post_positioning.jpg" alt="" class="img--responsive blog-entry--tall__img">
+                            <img src="http://localhost:4000/assets/img/post_positioning.jpg" alt="" class="img--responsive blog-entry--tall__img">
                             <div class="blog-entry--tall__details">
                                 <div class="blog-entry__meta">
                                     <time datetime = '2019-05-17 00:00:00 +0100'>17 May 2019</time>
@@ -268,21 +290,6 @@
                                 <a href="/blog/tutorials/css-positioning"><h3 class="blog-entry--tall__title">CSS Positioning For Absolute Beginners</h3></a>
                                 <p class="blog-entry--tall__description">A handy reference for both new and experienced developers for when you just can't get that positioning quite right.</p>
                                 <a href="/blog/tutorials/css-positioning" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
-                            </div>
-                        </div> 
-                
-
-                       <div class="blog-entry--tall blog-entry--black">
-                            <img src="http://localhost:4000/assets/img/blog/post_welcome.jpg" alt="" class="img--responsive blog-entry--tall__img">
-                            <div class="blog-entry--tall__details">
-                                <div class="blog-entry__meta">
-                                    <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
-                                    • Discussion
-                                </div>
-                                
-                                <a href="/blog/discussion/my-first-post"><h3 class="blog-entry--tall__title">Hello, and welcome to my humble blog!</h3></a>
-                                <p class="blog-entry--tall__description">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
-                                <a href="/blog/discussion/my-first-post" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
                             </div>
                         </div> 
                 
@@ -301,7 +308,7 @@
                     <i class="testimonials__bg testimonials__bg--bottom material-icons">
                         format_quote
                     </i>
-                    <img src="http://localhost:4000/assets/img/testimonials/logo_ionic.jpg" alt="" class="testimonials__image">
+                    <img src="http://localhost:4000/assets/img/static/testimonials/logo_ionic.jpg" alt="" class="testimonials__image">
                     <header class="testimonials__header">
                         
                         <div class="testimonials__details">
@@ -330,7 +337,7 @@
                     <i class="testimonials__bg testimonials__bg--bottom material-icons">
                         format_quote
                     </i>
-                    <img src="http://localhost:4000/assets/img/testimonials/logo_GW.jpg" alt="" class="testimonials__image">
+                    <img src="http://localhost:4000/assets/img/static/testimonials/logo_GW.jpg" alt="" class="testimonials__image">
                     <header class="testimonials__header">
                         
                         <div class="testimonials__details">
@@ -352,7 +359,17 @@
         </div>
     </section>
 </main>
-
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
     <div class="mailing">
         <div class="wrapper wrapper--section">
             <h2 class = "mailing__subhead">Like what you see? Keep updated with my latest posts.</h2>
@@ -388,7 +405,7 @@
                     <h3 class = "footer__title">Links</h3>
                     <ul class="sitemap__list">
                         <li class="sitemap__entry"><a href = "#">About Me</a></li>
-                        <li class="sitemap__entry"><a href = "#">My Work</a></li>
+                        <li class="sitemap__entry"><a href = "#">Credits</a></li>
                         <li class="sitemap__entry"><a href = "#">Contact Me</a></li>
                         <li class="sitemap__entry"><a href = "#">Site Map</a></li>
                     </ul>

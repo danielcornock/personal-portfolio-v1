@@ -2,6 +2,17 @@
     
       {
   
+        "title"    : "My first post using netlifyCMS!",
+        "url"      : "/blog/discussion/my-first-post-using-netlifycms",
+        "category" : "discussion",
+        "tags"     : "CMS, Jekyll, Netlify",
+        "date"     : "2019-05-31 00:00:00 +0100",
+        "description" : "I decided to get stuck in to a CMS with jekyll, and boy am I surprised!"
+  
+      } ,
+    
+      {
+  
         "title"    : "The Anatomy of a Website",
         "url"      : "/blog/tutorials/website-anatomy",
         "category" : "Tutorials",

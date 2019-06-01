@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- BROWSER ESSENTIALS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- META INFORMATION -->
+    <title>My first post using netlifyCMS! | Daniel Cornock</title>
+    <meta name="description" content="Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom."/>
+
+    <!-- XML FEED -->
+    <link rel="alternate" type="application/rss+xml"  href="http://localhost:4000/feed.xml" title="Daniel Cornock">
+
+    <!-- STYLESHEETS / FONTAWESOME -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140387372-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140387372-1');
+    </script>
+
+    
+
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+  <header class="header 
+      
+          header--secondary
+      ">
+      <div class="wrapper">
+          <div class="header__content">
+              <a href = "/" class="header__branding">
+                  <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+                  
+                  <div class="header__branding__text">
+                      Daniel Cornock<span>Web Developer</span>
+                  </div>
+                  
+              </a>
+
+              <button class="hamburger hamburger--squeeze" type="button">
+                  <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                  </span>
+              </button>
+                  
+              <nav class="nav">
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/about">About</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/portfolio">Portfolio</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/blog">Blog</a>
+                  
+                      <a class = "nav__item
+                      " href="http://localhost:4000/contact">Contact</a>
+                  
+              </nav>
+          </div>
+      </div>
+  </header>
+<button class="lights">
+    <i class="lights__icon far fa-lightbulb"></i>
+    <div class="lights__text">LIGHTS<br>ON!</div>
+</button>
+<main class = "main__secondary main__secondary--post">
+    
+    <div class="blog-header  hide-on-mobile ">
+    <div class="wrapper wrapper--fixed-header">
+        <div class="blog-header__content">
+            <div class="blog-header__categories">
+                <a href = "#" class="blog-header__category">Discussion</a>
+                <a href = "#" class="blog-header__category">Tutorials</a>
+                <a href = "#" class="blog-header__category">My Work</a>
+            </div>
+            <div class = "blog-header__search-container">
+                <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Blog">
+                <i class="blog-header__search-icon fas fa-search"></i>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<header class="post-header">
+    <div class="wrapper wrapper--section">
+        <div class="post-header__content">
+            <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/post_netlify.jpeg" alt="">
+            <div class="post__meta">
+                <time datetime = ''>31 May 2019</time>
+            </div>
+            <h1 class = "post__title">My first post using netlifyCMS!</h1>
+        </div>
+    </div>
+    <!-- STARTED CHANGING THE ONE BEFORE NOW. MOVED H1 -->
+</header>
+<div class="post-header__bottom">
+    <div class="wrapper--blog post-header__bottom__content">
+        <div class="breadcrumbs">
+
+
+
+  
+    <a class = "breadcrumbs__element" href="/blog/">Blog</a> >
+  
+
+
+  
+    <a class = "breadcrumbs__element" href="/blog/discussion/">Discussion</a> >
+  
+
+
+  
+    <a class = "breadcrumbs__element" href = "#">My first post using netlifycms</a>
+  
+
+</div>
+        <div class="post-header__read-time" title="Estimated read time">
+            <i class="post-header__read-time__icon far fa-clock"></i>     
+            
+            
+            
+                1 min
+            
+        </div>
+    </div>
+</div>
+</div>
+<section class="post__content">
+    <div class="wrapper wrapper--blog">
+        
+
+        <article class="post__article">
+            <p>CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.</p>
+
+<p>Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.</p>
+
+<ul>
+  <li>
+    <p>Absolute Positioning</p>
+  </li>
+  <li>
+    <p>Relative Positioning</p>
+  </li>
+  <li>
+    <p>Fixed Positioning</p>
+  </li>
+  <li>
+    <p>Sticky Positioning</p>
+  </li>
+  <li>
+    <p>Static Positioning</p>
+  </li>
+</ul>
+
+<p>Well, if you didn’t get it, it seems we’re in a bit of a sticky! Again.</p>
+
+<h2 id="absolute-positioning">Absolute Positioning</h2>
+
+<p>Absolute positioning is probably the most wideley used of the position values. It’s great for centering things, and for placing elements where usually it would be hard to without a load of extra divs.</p>
+
+<h3 id="how-to-use-it">How to use it</h3>
+
+<p>We position our element by setting position: absolute and using top, right, bottom and left to place it. By default, these values will be referring to the body element.</p>
+
+<p>For example, this code…</p>
+
+            
+        </article>
+        
+        <div class = "blog-entry__tags blog-entry__tags--post">
+            
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #CMS
+            </div>
+            
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #Jekyll
+            </div>
+            
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #Netlify
+            </div>
+            
+        </div>
+        
+
+        <footer class = "post__footer">
+    <img class = "post__footer__img" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
+    <div class="post__footer__details">
+        <div class="post__footer__intro">Meet the author...</div>
+        <div class="post__footer__name">Daniel Cornock</div>
+        <div class="post__footer__about">Front end developer specialising in HTML, CSS, Javascript and Angular with a keen interest in UX/UI design.</div>
+        <div class="post__footer__social">
+            <a href="https://twitter.com/danielcornock?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-via="danielcornock" data-show-count="true">Follow @danielcornock</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</footer>
+
+        
+
+        
+    </div>
+    <div class="wrapper wrapper--blog wrapper--disqus">
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+        this.page.url = "http://localhost:4000/blog/discussion/my-first-post-using-netlifycms";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/blog/discussion/my-first-post-using-netlifycms"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://danielcornock.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+    
+</section>
+
+<script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>
+
+
+    
+
+</main>
+    <div class="mailing">
+        <div class="wrapper wrapper--section">
+            <h2 class = "mailing__subhead">Like what you see? Keep updated with my latest posts.</h2>
+            <div class="mailing__content">
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = 'http://localhost:4000/thank-you';}"></iframe>
+               
+                <form class = "mailing__form" action="https://docs.google.com/forms/d/e/1FAIpQLSeuHXjqbf8hQeKVrFit-LpFEzVDeRBE_Bm3WPYcVaTKjUR3MA/formResponse" method="post" target = "hidden_iframe" onsubmit = "submitted=true">
+                    <input type='email' class = "mailing__input" name='emailAddress' placeholder = "e.g. johnsmith@gmail.com" required/>
+                    <button type='submit' class = "mailing__btn btn btn--primary" value="Send">Count me in!</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer__branding">
+                    <a href = "/" class="header__branding footer__title">
+                        <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo_full.png" alt="">
+                        <div class="header__branding__text">
+                            Daniel Cornock<span>Web Developer</span>
+                        </div>
+                    </a>
+                    <div class="footer__branding-text">
+                        I design, create and implement beautiful, functional websites for your every need. Contact me using any of the methods here, or read more on my <a class = "footer__branding__link" href="http://localhost:4000/blog">blog</a>.
+                    </div>  
+                </div>
+                <div class="sitemap">
+                    <h3 class = "footer__title">Links</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "#">About Me</a></li>
+                        <li class="sitemap__entry"><a href = "#">Credits</a></li>
+                        <li class="sitemap__entry"><a href = "#">Contact Me</a></li>
+                        <li class="sitemap__entry"><a href = "#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h3 class = "footer__title">Resources</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "#">Blog</a></li>
+                        <li class="sitemap__entry"><a href = "#">Tutorials</a></li>
+                        <li class="sitemap__entry"><a href = "#">My Work</a></li>
+                        <li class="sitemap__entry"><a href = "#">Free Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3 class = "footer__title">Social</h3>
+                    <a href = "#" class = "footer__social-entry"><i class="footer__social-icon fab fa-linkedin-in"></i>LinkedIn</a>
+                    <a href = "#" class = "footer__social-entry"><i class="footer__social-icon fab fa-twitter"></i>Twitter</a>
+                    <a href = "#" class = "footer__social-entry"><i class="footer__social-icon fab fa-github"></i>Github</a>    
+                </div>
+                
+            </div>
+            <div class="footer__other">
+
+            </div>
+            <div class="footer__credits">
+                SVG icons in SERVICES designed by Andi Nur Abdillah, Creative Mania & LAFS from the Noun Project.
+                <br>&copy; Daniel Cornock 2019
+            </div>
+        </div>
+    </footer>
+    <script src = "http://localhost:4000/js/script.js" ></script>
+</body>
+
+</html>

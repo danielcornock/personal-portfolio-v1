@@ -13,7 +13,6 @@
     }
 
     &__content{
-
     }
 
     &__logo{
@@ -107,6 +106,7 @@
         position: absolute;
         opacity: 0.03;
         height: 762px;
+        z-index: 0;
         &--right{  
             right: 0%;
             bottom: 0%;
