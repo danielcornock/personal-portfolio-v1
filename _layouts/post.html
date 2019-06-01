@@ -11,15 +11,6 @@ layout: default
                 <time datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
             </div>
             <h1 class = "post__title">{{page.title}}</h1>
-            {% if page.tags %}
-            <div class = "blog-entry__tags blog-entry__tags--post">
-                {% for tag in page.tags %}
-                <div class="blog-entry__tag blog-entry__tag--post">
-                    #{{ tag }}
-                </div>
-                {% endfor %}
-            </div>
-            {% endif %}
         </div>
     </div>
     <!-- STARTED CHANGING THE ONE BEFORE NOW. MOVED H1 -->
@@ -48,6 +39,15 @@ layout: default
             {{ content }}
             
         </article>
+        {% if page.tags %}
+        <div class = "blog-entry__tags blog-entry__tags--post">
+            {% for tag in page.tags %}
+            <div class="blog-entry__tag blog-entry__tag--post">
+                #{{ tag }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
 
         {% include written-by-dan.html %}
 

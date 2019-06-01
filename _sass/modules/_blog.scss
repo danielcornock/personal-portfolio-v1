@@ -210,8 +210,8 @@
         transition: 250ms;
 
         &--post{
-            background-color: $light-grey;
-            color: $white;
+            background-color: rgba(grey,0.1);
+            color: $black;
             font-size: 14px;
         }
 
