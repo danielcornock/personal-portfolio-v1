@@ -2,55 +2,62 @@
 layout: default
 ---
 
-<header class="post-header">
-    <div class="wrapper wrapper--section">
-        <div class="post-header__content">
-            <img class = "img--responsive post-header__background" src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt="">
-            <div class="post__meta">
-                <time datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
+<article class="post">
+    <!-- HEADER START -->
+    <header class="post__header">
+        <span class = "post__featured-img--container"><img class = "img--responsive post__featured-img" src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt=""></span>
+        <div class="wrapper wrapper--section">
+            <div class="post__header-content">
+                <h1 class = "post__title">
+                    {% include breadcrumbs.html %}
+                    {{ page.title }}
+                </h1>
+                <div class="post__meta">
+                    <img src="{{site.url}}{{site.staticImgLocation}}/headshot.jpg" alt="" class="img--responsive post__meta-avatar">
+                    <div class="post__meta-entry post__meta-author">
+                        <div class="post__meta-label">Author</div>
+                        {{ page.author }}
+                    </div>
+                    <div class="post__meta-entry post__meta-published">
+                        <div class="post__meta-label">Published</div>
+                        <time datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
+                    </div>
+                    <div class="post__meta-entry post__meta-time">
+                        <div class="post__meta-label">Reading Time</div>
+                        {% assign words = content | number_of_words %}
+                        {% if words < 360 %}
+                            1 min
+                        {% else %}
+                            {{ words | divided_by:180 }} mins
+                        {% endif %}
+                    </div>
+                </div>
+                {% if page.tags %}
+                <div class = "blog-entry__tags post__tags">
+                    {% for tag in page.tags %}
+                    <div class="blog-entry__tag post__tag">
+                        #{{ tag }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
-            <h1 class = "post__title">{{page.title}}</h1>
         </div>
-    </div>
-</header>
-<div class="post-header__bottom">
-    <div class="wrapper--blog post-header__bottom__content">
-        {% include breadcrumbs.html %}
-        <div class="post-header__read-time" title="Estimated read time">
-            <i class="post-header__read-time__icon far fa-clock"></i>     
-            
-            {% assign words = content | number_of_words %}
-            {% if words < 360 %}
-                1 min
-            {% else %}
-                {{ words | divided_by:180 }} mins
-            {% endif %}
-        </div>
-    </div>
-</div>
-</div>
-<section class="post__content">
-    <div class="wrapper wrapper--blog">
-        <article class="post__article">
-            {{ content }}
-            
-        </article>
-        {% if page.tags %}
-        <div class = "blog-entry__tags blog-entry__tags--post">
-            {% for tag in page.tags %}
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #{{ tag }}
-            </div>
-            {% endfor %}
-        </div>
-        {% endif %}
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN CONTENT START -->
+    <div class="wrapper wrapper--section wrapper--blog">
+        <section class="post__content">
+            <p class="post__lead">{{page.description}}</p>
+        {{ content }}
 
         {% include written-by-dan.html %}
-
-        
-
-        
     </div>
+    <!-- MAIN CONTENT END -->
+</article>
+<section class="comments">
+    <h2 class = "comments__title">Leave a comment!</h2>
     <div class="wrapper wrapper--blog wrapper--disqus">
         <div id="disqus_thread"></div>
         <script>
@@ -72,7 +79,6 @@ layout: default
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-    
 </section>
 
 <script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>

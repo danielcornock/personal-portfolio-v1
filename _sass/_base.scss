@@ -17,6 +17,26 @@ body{
     width: 100vw;
 }
 
+p{
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+
+    @media (max-width: $large-phone-sizing){
+        font-size: 18px;
+    }
+    
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+h2{
+    font-size: 26px;
+    margin-bottom: 5px;
+}
 
 
 *{

@@ -19,7 +19,10 @@ layout: default
                 </div>
                 <iframe class = "contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155525.55550746876!2d-2.0037149429204786!3d52.47756399694619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942d1b417173%3A0xca81fef0aeee7998!2sBirmingham!5e0!3m2!1sen!2suk!4v1559393899994!5m2!1sen!2suk" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <form action="" class="contact-form">
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = '{{site.url}}/thank-you-form';}"></iframe>
+
+            <form name = "Contact Form" method = "POST" data-netlify = "true" class="contact-form" target = "hidden_iframe" onsubmit = "submitted=true">
                 <label class = "contact-form__label" for="name">Name</label>
                 <input type="text" class="contact-form__input contact-form__name" name = "name" required placeholder = "Full Name">
                 <label class = "contact-form__label" for="email">Email</label>

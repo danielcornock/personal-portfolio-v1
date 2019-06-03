@@ -83,53 +83,75 @@
 </button>
 <main class = "main__secondary main__secondary--post">
     
-    <header class="post-header">
-    <div class="wrapper wrapper--section">
-        <div class="post-header__content">
-            <img class = "img--responsive post-header__background" src = " http://localhost:4000/assets/img/post_100daysofcode.jpg" alt="">
-            <div class="post__meta">
-                <time datetime = ''>23 May 2019</time>
+    <article class="post">
+    <!-- HEADER START -->
+    <header class="post__header">
+        <span class = "post__featured-img--container"><img class = "img--responsive post__featured-img" src = " http://localhost:4000/assets/img/post_100daysofcode.jpg" alt=""></span>
+        <div class="wrapper wrapper--section">
+            <div class="post__header-content">
+                <h1 class = "post__title">
+                    <div class="breadcrumbs">
+
+
+
+  
+    <a class = "breadcrumbs__element" href="/blog/">Blog</a> /
+  
+
+
+  
+    <a class = "breadcrumbs__element" href="/blog/discussion/">Discussion</a> /
+  
+
+
+  
+
+  
+
+</div>
+                    #100DaysOfCode - My Thoughts So Far
+                </h1>
+                <div class="post__meta">
+                    <img src="http://localhost:4000/assets/img/static/headshot.jpg" alt="" class="img--responsive post__meta-avatar">
+                    <div class="post__meta-entry post__meta-author">
+                        <div class="post__meta-label">Author</div>
+                        Daniel Cornock
+                    </div>
+                    <div class="post__meta-entry post__meta-published">
+                        <div class="post__meta-label">Published</div>
+                        <time datetime = ''>23 May 2019</time>
+                    </div>
+                    <div class="post__meta-entry post__meta-time">
+                        <div class="post__meta-label">Reading Time</div>
+                        
+                        
+                            1 min
+                        
+                    </div>
+                </div>
+                
+                <div class = "blog-entry__tags post__tags">
+                    
+                    <div class="blog-entry__tag post__tag">
+                        #Challenges
+                    </div>
+                    
+                    <div class="blog-entry__tag post__tag">
+                        #Personal
+                    </div>
+                    
+                </div>
+                
             </div>
-            <h1 class = "post__title">#100DaysOfCode - My Thoughts So Far</h1>
         </div>
-    </div>
-</header>
-<div class="post-header__bottom">
-    <div class="wrapper--blog post-header__bottom__content">
-        <div class="breadcrumbs">
+    </header>
+    <!-- HEADER END -->
 
-
-
-  
-    <a class = "breadcrumbs__element" href="/blog/">Blog</a> >
-  
-
-
-  
-    <a class = "breadcrumbs__element" href="/blog/discussion/">Discussion</a> >
-  
-
-
-  
-    <a class = "breadcrumbs__element" href = "#">100 days of code thoughts</a>
-  
-
-</div>
-        <div class="post-header__read-time" title="Estimated read time">
-            <i class="post-header__read-time__icon far fa-clock"></i>     
-            
-            
-            
-                1 min
-            
-        </div>
-    </div>
-</div>
-</div>
-<section class="post__content">
-    <div class="wrapper wrapper--blog">
-        <article class="post__article">
-            <p>If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode.</p>
+    <!-- MAIN CONTENT START -->
+    <div class="wrapper wrapper--section wrapper--blog">
+        <section class="post__content">
+            <p class="post__lead">I'm currently on day 16 of the challenge. In this post I'll talk about what I've learned & how I've found it.</p>
+        <p>If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode.</p>
 
 <h2 id="my-experience">My Experience</h2>
 <p>MY first real experience documenting things.</p>
@@ -138,21 +160,6 @@
 
 <p>On days where I didn’t have motivation, I did some work to stick to the goal and that turned into organic motivation.</p>
 
-            
-        </article>
-        
-        <div class = "blog-entry__tags blog-entry__tags--post">
-            
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #Challenges
-            </div>
-            
-            <div class="blog-entry__tag blog-entry__tag--post">
-                #Personal
-            </div>
-            
-        </div>
-        
 
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
@@ -165,11 +172,11 @@
         </div>
     </div>
 </footer>
-
-        
-
-        
     </div>
+    <!-- MAIN CONTENT END -->
+</article>
+<section class="comments">
+    <h2 class = "comments__title">Leave a comment!</h2>
     <div class="wrapper wrapper--blog wrapper--disqus">
         <div id="disqus_thread"></div>
         <script>
@@ -191,7 +198,6 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-    
 </section>
 
 <script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>

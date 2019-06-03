@@ -1,0 +1,229 @@
+// STARTED CHANGING NOW
+
+.post{
+    &-header{
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            margin: auto;
+            padding: 0 20px;
+
+        }
+        &__background{
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            filter: blur(4px);
+            transform: scale(1.05);
+        }
+
+        &__bottom{
+            width: 100%;
+            margin: auto;
+
+
+            &__content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            @media (max-width: $tablet-sizing){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        &__read-time{
+            color: $pink;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            &__icon{
+                margin-right: 8px;
+                display: block;
+                font-size: 20px;
+                color: $white;
+            }
+        }
+    }
+    &__title{
+
+        padding: 5px 10px;
+        text-align: center;
+
+        background-color: $pink;
+        color: $white;
+
+        @media (max-width: $tablet-sizing){
+            font-size: 40px;
+        }
+    }
+    &__meta{
+        text-transform: uppercase;
+        font-size: 16px;
+        background-color: $grey-on-black;
+        color: $black;
+        padding: 2px 5px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    &__content{
+        background-color: #fcfcfc;
+    }
+
+    &__article{
+        background-color: #fcfcfc;
+        font-size: 18px;
+    }
+}
+
+.breadcrumbs{
+    color: $white;
+    &__element{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $pink;
+    }
+}
+
+.post__footer{
+    margin-top: 50px;
+    display: grid;
+    border-top: 4px solid $pink;
+    grid-template-columns: auto 1fr;
+    background-color: rgba(grey,0.1);
+    padding: 30px;
+
+    @media (max-width: $large-phone-sizing){
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    &__img{
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        object-position: bottom;
+        @media (max-width: $large-phone-sizing){
+
+            margin: auto;
+        }
+
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+
+        @media (max-width: $large-phone-sizing){
+            padding-left: 0;
+            margin-top: 10px;
+        }
+    }
+    &__intro{
+        text-transform: uppercase;
+        color: $black;
+        font-size: 12px;
+    }
+    &__name{
+        font-size: 25px;
+        color: $pink;
+    }
+    &__about{
+        color: grey;
+    }
+    &__social{
+        margin-top: 10px;
+    }
+
+    
+
+    
+
+}
+
+
+
+// STYLES FOR BLOG POSTS //
+
+h2{
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+
+    @media (max-width: $large-phone-sizing){
+        font-size: 18px;
+    }
+    
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+article{
+    &>p{
+    line-height: 25px;
+    color: #333;
+    }
+
+    h2{
+        margin-top: 30px;
+        font-size: 35px;
+        color: $pink;
+    }
+    h3, h4{
+        margin-top: 20px;
+        color: $pink;
+    }
+}
+
+ul{
+    margin-bottom: 15px;
+}
+
+li{
+    list-style-type: inside;
+    margin-bottom: 10px;
+    margin-left: 40px;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+.highlight{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+kbd{
+    background-color: rgba(grey,0.2);
+    padding: 5px;
+    border-radius: 5px;
+}

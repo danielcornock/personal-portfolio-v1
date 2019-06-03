@@ -1,102 +1,157 @@
 // STARTED CHANGING NOW
 
 .post{
-    &-header{
-        margin: auto;
-        position: relative;
-        overflow: hidden;
+    background-color: #fcfcfc;
 
-        &__content{
+    &__content{
+        &>p{
+            line-height: 200%;
+            color: #333;
+            font-size: 18px;
+        }
+        .post__lead{
+            line-height: 170%;
+        }
+    
+        &>h2{
+            margin-top: 30px;
+            font-size: 35px;
+            color: $pink;
+        }
+        h3, h4{
+            margin-top: 20px;
+            color: $pink;
+        }
+        &>h3{
+            font-size: 24px;
+        }
+
+        ul{
+            margin-bottom: 15px;
+        }
+        
+        li{
+            list-style-type: inside;
+            margin-bottom: 10px;
+            margin-left: 40px;
+            font-size: 18px;
+        
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    &__header{
+        position: relative;
+
+        &-content{
+            position: relative;
+            z-index: 5;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            max-width: 800px;
-            margin: auto;
-            padding: 0 20px;
-
-        }
-        &__background{
-            
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            z-index: -1;
-            filter: blur(4px);
-            transform: scale(1.05);
-        }
-
-        &__bottom{
-            width: 100%;
-            margin: auto;
-            background-color: $grey;
-            border-top: 2px solid rgba($pink,0.5);
-            border-bottom: 2px solid rgba($pink,0.5);
-
-            &__content{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            @media (max-width: $tablet-sizing){
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-
-        &__read-time{
-            color: $pink;
-            font-weight: 800;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            &__icon{
-                margin-right: 8px;
-                display: block;
-                font-size: 20px;
-                color: $white;
-            }
+            justify-content: center;
+            align-items: flex-start;
         }
     }
     &__title{
-
-        padding: 5px 10px;
-        text-align: center;
-
-        background-color: $pink;
         color: $white;
-
-        @media (max-width: $tablet-sizing){
-            font-size: 40px;
-        }
+        display: inline-block;
+        padding-left: 20px;
+        border-left: 10px solid $pink;
+        margin-bottom: 30px;
     }
     &__meta{
-        text-transform: uppercase;
-        font-size: 16px;
-        background-color: $grey-on-black;
-        color: $black;
-        padding: 2px 5px;
-        margin-bottom: 5px;
-        font-weight: bold;
-        letter-spacing: 0.5px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 80px;
+        align-items: center;
+
+        @media (max-width: $tablet-sizing){
+            grid-template-columns: auto auto;
+            grid-gap: 40px;
+        }
+
+        &-avatar{
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+        }
+        &-entry{
+            color: $white;
+            font-size: 18px;
+        }
+        &-label{
+            font-size: 20px;
+            color: $pink;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 4px;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 30px;
+                height: 1px;
+                bottom: -2px;
+                left: 0;
+                background-color: $pink;
+            }
+        }
     }
 
-    &__content{
-        background-color: #fcfcfc;
+    &__featured-img{
+        opacity: 0.05;
+
+        &--container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: $black;
+        }
+
+        
     }
 
-    &__article{
-        background-color: #fcfcfc;
-        font-size: 18px;
+    &__lead{
+        font-size: 24px !important;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    &__read-time{
+        font-weight: 800;
+        color: $pink;
+        display: flex;
+        align-items: center;
+        &-icon{
+            margin-right: 10px;
+            color: $black;
+            font-size: 20px;
+        }
+    }
+
+    &__tags{
+        margin-top: 40px;
+    }
+    &__tag{
+        background-color: initial;
+        transition: 250ms;
+        &:hover{
+            background-color: $pink;
+        }
     }
 }
 
 .breadcrumbs{
-    color: $white;
+    color: $grey-on-black;
+    word-spacing: 10px;
+    font-size: 20px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+
     &__element{
         font-weight: bold;
         text-transform: uppercase;
@@ -153,68 +208,6 @@
     }
     &__social{
         margin-top: 10px;
-    }
-
-    
-
-    
-
-}
-
-
-
-// STYLES FOR BLOG POSTS //
-
-h2{
-    font-size: 26px;
-    margin-bottom: 5px;
-}
-
-p{
-    margin-bottom: 15px;
-    line-height: 30px;
-    font-weight: 400;
-    font-size: 16px;
-
-    @media (max-width: $large-phone-sizing){
-        font-size: 18px;
-    }
-    
-
-    &:last-of-type{
-        margin-bottom: 0;
-    }
-}
-
-article{
-    &>p{
-    line-height: 40px;
-    font-size: 18px;
-    color: #333;
-    }
-
-    h2{
-        margin-top: 30px;
-        font-size: 35px;
-        color: $pink;
-    }
-    h3, h4{
-        margin-top: 20px;
-        color: $pink;
-    }
-}
-
-ul{
-    margin-bottom: 15px;
-}
-
-li{
-    list-style-type: inside;
-    margin-bottom: 10px;
-    margin-left: 40px;
-
-    &:last-of-type{
-        margin-bottom: 0;
     }
 }
 

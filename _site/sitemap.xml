@@ -87,6 +87,13 @@
     </url>
     
     <url>
+        <loc>/thank-you-form/</loc>
+        <lastmod>2019-06-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>/thank-you/</loc>
         <lastmod>2019-06-03</lastmod>
         <changefreq>daily</changefreq>
