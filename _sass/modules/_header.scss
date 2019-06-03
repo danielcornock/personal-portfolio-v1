@@ -108,6 +108,7 @@
         align-items: center;
         padding: 5px 0;
         margin-right: 50px;
+        text-transform: capitalize;
 
         &:hover{
             transform: translateY(-2%);
@@ -186,6 +187,9 @@
             @media (max-width: $tablet-sizing){
                 border-top: none;
                 background-color: $pink;
+                &:hover{
+                    color: $white;
+                }
             }
         }
 

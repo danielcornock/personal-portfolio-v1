@@ -1,5 +1,3 @@
-
-
 window.onload = () =>{
     sessionStorage.setItem('visited', true);
 }
@@ -62,15 +60,6 @@ const mobileMenuToggle = function(){
             navItems.forEach(item => {
                 item.classList.toggle('nav__item--active');
             });
-
-            // if(transparentHeader && header){
-            //     header.style.backgroundColor = "#1f1f1f"; 
-            //     transparentHeader = !transparentHeader;
-            // } else if (header){
-            //     header.removeAttribute('style');
-            //     transparentHeader = !transparentHeader;
-            // }
-
         });
 
         navItems.forEach(item => item.addEventListener("click", () =>{
@@ -80,25 +69,6 @@ const mobileMenuToggle = function(){
         }));
     
 }();
-
-// const setHeaderPadding = function(){
-//     const main = document.querySelector('.main__secondary');
-//     if(!main){
-//         return;
-//     }
-//     checkPadding();
-//     window.addEventListener("resize", () =>{
-//         checkPadding();
-        
-//     });
-    
-//     function checkPadding(){
-//         let headerHeight = (document.querySelector('.header')).clientHeight;
-//         main.style.paddingTop = headerHeight + "px";
-//     }
-// }();
-
-
 
 if(sessionStorage.getItem('inverted') == "true"){
     setLights();
@@ -134,6 +104,50 @@ const lightsOnLightsOff = function() {
         }
         setLights();
     });
+}();
+
+function checkForTags(entry, tag){
+    entryTags = entry.getAttribute('data-filter');
+    if (entryTags.includes(tag)){
+        return true;
+    }
+}
+const filterWork = function (){
+    if (!document.querySelector('.portfolio__filter-tags')){
+        return;
+    }
+
+    const tags = document.querySelectorAll('.portfolio__filter-tag');
+    const workContainer = document.querySelector('.portfolio__content');
+    const workList = document.querySelectorAll('.portfolio__entry');
+    const workListArray = Array.from(workList);
+    
+
+    tags.forEach(tag => tag.addEventListener("click", () =>{
+        let newList = workListArray.filter(entry => checkForTags(entry, tag.innerHTML));
+
+        // Animation for filtering entries
+        workContainer.classList.add('portfolio-leave-anim');
+
+        setTimeout(function(){
+            // Removes all child nodes
+            while (workContainer.firstChild) {
+                workContainer.removeChild(workContainer.firstChild);
+            }
+            // Adds new child nodes
+            newList.forEach(node => {
+                workContainer.appendChild(node);
+            })
+        }, 500);
+
+        // Remove animation so it can be used again
+        setTimeout(function(){
+            workContainer.classList.remove('portfolio-leave-anim');
+
+        },1000)
+
+        
+    }))
 }();
 
 

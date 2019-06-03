@@ -9,7 +9,7 @@ tags:
   - CMS
   - Jekyll
   - Netlify
-featured: true
+featured: false
 ---
 CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.
 

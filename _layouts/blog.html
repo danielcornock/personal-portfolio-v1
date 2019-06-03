@@ -3,16 +3,22 @@ layout: default
 ---
 {% include header-blog.html %}
 <section class="blog__featured">
-        <div class="blog__background"></div>
+    <div class="blog__background blog__background--left"></div>
 
 
-        <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
-        <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+    <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+    <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
     <div class="wrapper">
         <h2 class="blog__header">FEATURED POSTS</h2>
         <div class="blog-posts--featured">
-            {% for post in site.posts limit: 4 %}
-            {% if post.featured == true %}
+            {% assign featured_array = "" | split: ',' %}
+            {% for post in site.posts %}
+                {% if post.featured %}
+                    {% assign featured_array = featured_array | push: post %}
+                {% endif %}
+            {% endfor %}
+            {% for post in featured_array limit: 4 %}
+
             {% if forloop.index == 1 %}
             <div class="blog-entry--hero">
                 <img src="{{site.url}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--hero__img">
@@ -50,9 +56,6 @@ layout: default
                 </div>
             </div>
 
-            
-            {% endif %}
-
             {% endif %}
             {% endfor %}
             </div>
@@ -76,11 +79,6 @@ layout: default
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
                                 • {{post.category}}
-                                <!-- <a class="blog__postMeta-entry" href = "{{ site.url}}/blog/{{ post.category }}">
-                                    <i class="blog__postMeta-icon fas fa-list"></i>
-                                    {{ post.category }}
-                                </a>
-                                </div> -->
                             </div>
                             <a href="{{ post.url }}">
                                 <h2 class = "blog-entry--wide__title">{{post.title}}</h2>

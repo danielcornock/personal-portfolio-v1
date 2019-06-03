@@ -1,6 +1,6 @@
 ---
 layout: category
-title: General Posts
-category: general
-permalink: /blog/general
+title: Discussion Posts
+category: discussion
+permalink: '/blog/discussion/'
 ---

@@ -3,11 +3,48 @@ layout: default
 ---
 {% include header-blog.html %}
 
-<!-- {% unless page.content == '' %}
-  <p>{{ page.content }}</p>
-{% endunless %}
 
-{% for post in site.categories.[page.category] %}
-  <h2><a href=""></a></h2>
-  <p></p>
-{% endfor %} -->
+{% assign category_array = "" | split: ',' %}
+{% for post in site.posts %}
+    {% if post.category == page.category %}
+        {% assign category_array = category_array | push: post %}
+    {% endif %}
+{% endfor %}
+<section class="blog__featured">
+  <div class="blog__background blog__background--left"></div>
+
+
+  <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+  <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+  <div class="wrapper">
+      <h2 class="blog__header">{{page.category}} posts</h2>
+  <div class="blog-posts--horizontal">
+
+    {% for post in category_array %}
+    <div class="blog-entry--tall blog-entry--black">
+        {% if post.tags %}
+        <div class = "blog-entry__tags blog-entry__tags--onImage">
+            {% for tag in post.tags %}
+            <div class="blog-entry__tag">
+                #{{ tag }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <img src="{{site.url}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--tall__img">
+        <div class="blog-entry--tall__details">
+            <div class="blog-entry__meta">
+                <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
+                • {{post.category}}
+            </div>
+            
+            <a href="{{post.url}}"><h3 class="blog-entry--tall__title">{{post.title}}</h3></a>
+            <p class="blog-entry--tall__description">{{post.description}}</p>
+            <a href="{{post.url}}" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
+        </div>
+      </div> 
+    {% endfor %}
+    </div>
+  </div>
+
+</section>

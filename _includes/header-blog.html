@@ -2,9 +2,9 @@
     <div class="wrapper wrapper--fixed-header">
         <div class="blog-header__content">
             <div class="blog-header__categories">
-                <a href = "#" class="blog-header__category">Discussion</a>
-                <a href = "#" class="blog-header__category">Tutorials</a>
-                <a href = "#" class="blog-header__category">My Work</a>
+                {% for node in site.categoryList %}
+                    <a href = "{{site.url}}/blog/{{node}}/" class="blog-header__category">{{node}}</a>
+                {% endfor %}
             </div>
             <div class = "blog-header__search-container">
                 <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Blog">

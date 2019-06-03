@@ -68,7 +68,6 @@
                       " href="http://localhost:4000/portfolio">Portfolio</a>
                   
                       <a class = "nav__item
-                       nav__item--current
                       " href="http://localhost:4000/blog">Blog</a>
                   
                       <a class = "nav__item
@@ -88,9 +87,11 @@
     <div class="wrapper wrapper--fixed-header">
         <div class="blog-header__content">
             <div class="blog-header__categories">
-                <a href = "#" class="blog-header__category">Discussion</a>
-                <a href = "#" class="blog-header__category">Tutorials</a>
-                <a href = "#" class="blog-header__category">My Work</a>
+                
+                    <a href = "http://localhost:4000/blog/discussion/" class="blog-header__category">discussion</a>
+                
+                    <a href = "http://localhost:4000/blog/tutorials/" class="blog-header__category">tutorials</a>
+                
             </div>
             <div class = "blog-header__search-container">
                 <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Blog">
@@ -103,72 +104,33 @@
 
 
 <section class="blog__featured">
-        <div class="blog__background"></div>
+    <div class="blog__background blog__background--left"></div>
 
 
-        <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
-        <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+    <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+    <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
     <div class="wrapper">
         <h2 class="blog__header">FEATURED POSTS</h2>
         <div class="blog-posts--featured">
             
             
             
+
+            
             <div class="blog-entry--hero">
-                <img src="http://localhost:4000/assets/img/post_netlify.jpeg" alt="" class="img--responsive blog-entry--hero__img">
+                <img src="http://localhost:4000/assets/img/post_anatomy.jpg" alt="" class="img--responsive blog-entry--hero__img">
                 <div class="blog-entry__meta blog-entry--hero__meta">
-                    <time datetime = '2019-05-31 00:00:00 +0100'>31 May 2019</time>
+                    <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
                     • Daniel Cornock
                 </div>
                 
-                <a href="/blog/discussion/my-first-post-using-netlifycms"><h3 class="blog-entry--hero__title">My first post using netlifyCMS!</h3></a>
-                <p class="blog-entry--hero__description">I decided to get stuck in to a CMS with jekyll, and boy am I surprised!</p>
-                <a href="/blog/discussion/my-first-post-using-netlifycms" class="btn btn--primary">Read More</a>
+                <a href="/blog/tutorials/website-anatomy"><h3 class="blog-entry--hero__title">The Anatomy of a Website</h3></a>
+                <p class="blog-entry--hero__description">Are you new to web development, and find yourself wondering what goes in to all these websites? This article may be for you!</p>
+                <a href="/blog/tutorials/website-anatomy" class="btn btn--primary">Read More</a>
             </div>
             
-
-            
-            
-            
-            
-            <div class="blog-entry--tall blog-entry--grey">
-                
-                <div class = "blog-entry__tags blog-entry__tags--onImage">
-                    
-                    <div class="blog-entry__tag">
-                        #HTML
-                    </div>
-                    
-                    <div class="blog-entry__tag">
-                        #CSS
-                    </div>
-                    
-                    <div class="blog-entry__tag">
-                        #Beginner
-                    </div>
-                    
-                </div>
-                
-                
-                <a href = "/blog/tutorials/website-anatomy" class = "blog-entry--tall__img"><img src="http://localhost:4000/assets/img/post_anatomy.jpg" alt="" class="img--responsive"></a>
-                <div class="blog-entry--tall__details">
-                    <div class="blog-entry__meta">
-                        <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                        • Tutorials
-                    </div>
-                    
-                    <a href="/blog/tutorials/website-anatomy"><h3 class="blog-entry--tall__title">The Anatomy of a Website</h3></a>
-                    <p class="blog-entry--tall__description">Are you new to web development, and find yourself wondering what goes in to all these websites? This article may be for you!</p>
-                    <a href="/blog/tutorials/website-anatomy" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
-                </div>
-            </div>
-
-            
             
 
-            
-            
-            
             
             <div class="blog-entry--tall blog-entry--grey">
                 
@@ -189,7 +151,7 @@
                 <div class="blog-entry--tall__details">
                     <div class="blog-entry__meta">
                         <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                        • Discussion
+                        • discussion
                     </div>
                     
                     <a href="/blog/discussion/100-days-of-code-thoughts"><h3 class="blog-entry--tall__title">#100DaysOfCode - My Thoughts So Far</h3></a>
@@ -201,9 +163,6 @@
             
             
 
-            
-            
-            
             
             <div class="blog-entry--tall blog-entry--grey">
                 
@@ -228,7 +187,7 @@
                 <div class="blog-entry--tall__details">
                     <div class="blog-entry__meta">
                         <time datetime = '2019-05-17 00:00:00 +0100'>17 May 2019</time>
-                        • Tutorials
+                        • tutorials
                     </div>
                     
                     <a href="/blog/tutorials/css-positioning"><h3 class="blog-entry--tall__title">CSS Positioning For Absolute Beginners</h3></a>
@@ -239,6 +198,31 @@
 
             
             
+
+            
+            <div class="blog-entry--tall blog-entry--grey">
+                
+                <div class = "blog-entry__tags blog-entry__tags--onImage">
+                    
+                    <div class="blog-entry__tag">
+                        #Personal
+                    </div>
+                    
+                </div>
+                
+                
+                <a href = "/blog/discussion/my-first-post" class = "blog-entry--tall__img"><img src="http://localhost:4000/assets/img/post_welcome.jpg" alt="" class="img--responsive"></a>
+                <div class="blog-entry--tall__details">
+                    <div class="blog-entry__meta">
+                        <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
+                        • discussion
+                    </div>
+                    
+                    <a href="/blog/discussion/my-first-post"><h3 class="blog-entry--tall__title">Hello, and welcome to my humble blog!</h3></a>
+                    <p class="blog-entry--tall__description">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
+                    <a href="/blog/discussion/my-first-post" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
+                </div>
+            </div>
 
             
             
@@ -261,11 +245,6 @@
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '2019-05-31 00:00:00 +0100'>31 May 2019</time>
                                 • discussion
-                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/discussion">
-                                    <i class="blog__postMeta-icon fas fa-list"></i>
-                                    discussion
-                                </a>
-                                </div> -->
                             </div>
                             <a href="/blog/discussion/my-first-post-using-netlifycms">
                                 <h2 class = "blog-entry--wide__title">My first post using netlifyCMS!</h2>
@@ -303,12 +282,7 @@
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                                • Tutorials
-                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Tutorials">
-                                    <i class="blog__postMeta-icon fas fa-list"></i>
-                                    Tutorials
-                                </a>
-                                </div> -->
+                                • tutorials
                             </div>
                             <a href="/blog/tutorials/website-anatomy">
                                 <h2 class = "blog-entry--wide__title">The Anatomy of a Website</h2>
@@ -346,12 +320,7 @@
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '2019-05-23 00:00:00 +0100'>23 May 2019</time>
-                                • Discussion
-                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Discussion">
-                                    <i class="blog__postMeta-icon fas fa-list"></i>
-                                    Discussion
-                                </a>
-                                </div> -->
+                                • discussion
                             </div>
                             <a href="/blog/discussion/100-days-of-code-thoughts">
                                 <h2 class = "blog-entry--wide__title">#100DaysOfCode - My Thoughts So Far</h2>
@@ -385,12 +354,7 @@
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '2019-05-17 00:00:00 +0100'>17 May 2019</time>
-                                • Tutorials
-                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Tutorials">
-                                    <i class="blog__postMeta-icon fas fa-list"></i>
-                                    Tutorials
-                                </a>
-                                </div> -->
+                                • tutorials
                             </div>
                             <a href="/blog/tutorials/css-positioning">
                                 <h2 class = "blog-entry--wide__title">CSS Positioning For Absolute Beginners</h2>
@@ -428,12 +392,7 @@
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
                                 <time datetime = '2019-05-16 00:00:00 +0100'>16 May 2019</time>
-                                • Discussion
-                                <!-- <a class="blog__postMeta-entry" href = "http://localhost:4000/blog/Discussion">
-                                    <i class="blog__postMeta-icon fas fa-list"></i>
-                                    Discussion
-                                </a>
-                                </div> -->
+                                • discussion
                             </div>
                             <a href="/blog/discussion/my-first-post">
                                 <h2 class = "blog-entry--wide__title">Hello, and welcome to my humble blog!</h2>
@@ -529,7 +488,7 @@
             </div>
         </div>
     </footer>
-    <script src = "http://localhost:4000/js/script.js" ></script>
+    <script src = "http://localhost:4000/assets/js/script.js" ></script>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% include header-blog.html %}
+<section class="blog__latest">
+    <div class="blog__background blog__background--right"></div>
+
+
+    <div class="wrapper">
+            <h2 class="blog__header">ALL POSTS</h2>
+            <ul class="blog-posts--vertical">
+                {% for post in site.posts %}
+                {% if forloop.index > 1 %}
+                    <hr class = "blog-entry__divider">
+                {% endif %}
+                    <li class = "blog-entry--wide">
+                        <img class = "img--responsive blog-entry--wide__img" src="{{ site.url }}{{post.featuredImg}}" alt="">
+                        <div class="blog-entry--wide__details">
+                            <div class="blog-entry__meta blog-entry--wide__meta">
+                                <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
+                                • {{post.category}}
+                            </div>
+                            <a href="{{ post.url }}">
+                                <h2 class = "blog-entry--wide__title">{{post.title}}</h2>
+                            </a>
+                            <div class = "blog-entry--wide__description">
+                                {{post.description}}
+                                <a class = "btn btn--tertiary blog-entry--wide__btn" href="{{ post.url }}">Read More...</a>
+                            </div>
+                            
+
+                            {% if post.tags %}
+                            <div class = "blog-entry__tags">
+                                {% for tag in post.tags %}
+                                <div class="blog-entry__tag">
+                                    #{{ tag }}
+                                </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

@@ -83,7 +83,13 @@
 </button>
 <main class = "main__secondary main__secondary--portfolio">
     
-    <header class="page__header">
+    
+
+
+
+
+
+<header class="page__header">
     <div class="page__background">
         <img src = "http://localhost:4000/assets/img/static" alt="">
     </div>
@@ -94,12 +100,33 @@
         </div>
     </div>
 </header>
-<section class="portfolio" id="fp-portfolio">
-    <div class="wrapper wrapper--section">
 
-        <div class="fp-portfolio__content">
+<section class="portfolio">
+    <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+    <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+    <div class="wrapper wrapper--section">
+        <div class="portfolio__filter-label">Filter by tags:</div>
+        <div class="portfolio__filter-tags">
             
-            <div class="portfolio__entry">
+                <button class = "portfolio__filter-tag">CSS</button>
+            
+                <button class = "portfolio__filter-tag">Design</button>
+            
+                <button class = "portfolio__filter-tag">HTML</button>
+            
+                <button class = "portfolio__filter-tag">Javascript</button>
+            
+                <button class = "portfolio__filter-tag">Jekyll</button>
+            
+                <button class = "portfolio__filter-tag">PHP</button>
+            
+                <button class = "portfolio__filter-tag">Wordpress</button>
+            
+        </div>
+        
+        <div class="portfolio__content">
+            
+            <div class="portfolio__entry" data-filter = "HTML CSS Javascript Design Jekyll">
                 <img src="http://localhost:4000/assets/img/work_daniel-cornock.png" alt="" class="img--responsive portfolio__img">
                 <div class="portfolio__info">
                     <h3 class = "portfolio__title">Portfolio & Blog</h3>
@@ -134,7 +161,7 @@
                 
             </div>
             
-            <div class="portfolio__entry">
+            <div class="portfolio__entry" data-filter = "HTML CSS Javascript">
                 <img src="http://localhost:4000/assets/img/work_eft-2x.png" alt="" class="img--responsive portfolio__img">
                 <div class="portfolio__info">
                     <h3 class = "portfolio__title">Sports Therapist</h3>
@@ -161,7 +188,7 @@
                 
             </div>
             
-            <div class="portfolio__entry">
+            <div class="portfolio__entry" data-filter = "HTML CSS Javascript Design">
                 <img src="http://localhost:4000/assets/img/work_greg-woodin.jpg" alt="" class="img--responsive portfolio__img">
                 <div class="portfolio__info">
                     <h3 class = "portfolio__title">Academic Portfolio</h3>
@@ -192,7 +219,7 @@
                 
             </div>
             
-            <div class="portfolio__entry">
+            <div class="portfolio__entry" data-filter = "HTML CSS Javascript Design Wordpress PHP">
                 <img src="http://localhost:4000/assets/img/work_ionic-builds.jpg" alt="" class="img--responsive portfolio__img">
                 <div class="portfolio__info">
                     <h3 class = "portfolio__title">Construction Site</h3>
@@ -231,7 +258,7 @@
                 
             </div>
             
-            <div class="portfolio__entry">
+            <div class="portfolio__entry" data-filter = "HTML CSS Javascript Design Jekyll">
                 <img src="http://localhost:4000/assets/img/work_student-grub.png" alt="" class="img--responsive portfolio__img">
                 <div class="portfolio__info">
                     <h3 class = "portfolio__title">Food Review & Recipe Site</h3>
@@ -338,7 +365,7 @@
             </div>
         </div>
     </footer>
-    <script src = "http://localhost:4000/js/script.js" ></script>
+    <script src = "http://localhost:4000/assets/js/script.js" ></script>
 </body>
 
 </html>
