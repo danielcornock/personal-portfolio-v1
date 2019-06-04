@@ -62,7 +62,7 @@
         border-left: 10px solid $pink;
         margin-bottom: 30px;
         @media (max-width: $large-phone-sizing){
-            font-size: 30px;
+            font-size: 35px;
         }
     }
     &__meta{
@@ -153,6 +153,9 @@
     word-spacing: 10px;
     font-size: 20px;
     margin-bottom: -10px;
+    @media (max-width: $large-phone-sizing){
+        margin-bottom: 5px;
+    }
 
     &__element{
         font-weight: bold;
