@@ -5,7 +5,21 @@
         <title>Daniel Cornock</title>
         <link>http://localhost:4000</link>
         <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
-        <lastBuildDate>Wed, 05 Jun 2019 00:28:24 +0100</lastBuildDate>
+        <lastBuildDate>Wed, 05 Jun 2019 00:56:49 +0100</lastBuildDate>
+        
+        <item>
+            <title>#100DaysOfCode - My Thoughts So Far</title>
+            <link>
+                http://localhost:4000/blog/discussion/100-days-of-code
+            </link>
+            <description>
+                &lt;p&gt;If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode. It’s a coding challenge which, as you might have guessed, goes on for 100 days. The rules of the challenge are flexible, with each tailoring it to their own lifestyle. For me, I chose to aim to do an hour of either learning, coding, designing, or blog post writing every day (where ...
+            </description>
+            <pubDate>Wed, 05 Jun 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/discussion/100-days-of-code
+            </guid>
+        </item>
         
         <item>
             <title>My first post using netlifyCMS!</title>
@@ -33,20 +47,6 @@
             <pubDate>Thu, 23 May 2019 00:00:00 +0100</pubDate>
             <guid>
                 http://localhost:4000/blog/tutorials/website-anatomy
-            </guid>
-        </item>
-        
-        <item>
-            <title>#100DaysOfCode - My Thoughts So Far</title>
-            <link>
-                http://localhost:4000/blog/discussion/100-days-of-code-thoughts
-            </link>
-            <description>
-                &lt;p&gt;If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode. It’s a coding challenge which, as you might have guessed, goes on for 100 days. The rules of the challenge are flexible, with each tailoring it to their own lifestyle. For me, I chose to aim to do an hour of either learning, coding, designing, or blog post writing every day (where ...
-            </description>
-            <pubDate>Thu, 23 May 2019 00:00:00 +0100</pubDate>
-            <guid>
-                http://localhost:4000/blog/discussion/100-days-of-code-thoughts
             </guid>
         </item>
         

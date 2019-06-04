@@ -312,7 +312,7 @@ input, textarea {
     text-transform: capitalize; }
     .blog-header__category:hover {
       transform: translateY(-2%);
-      color: #1f1f1f; }
+      color: #EC5367; }
     .blog-header__category:last-of-type {
       margin-right: 0; }
     @media (max-width: 700px) {

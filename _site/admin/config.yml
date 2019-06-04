@@ -29,8 +29,8 @@ collections:
     fields:
       - { label: "Title", name: title, widget: "string" }
       - { label: "Type", name: type, widget: "string" }
-      - { label: "Link", name: link, widget: "string" required: false}
-      - { label: "GitHub", name: github, widget: "string" required: false}
+      - { label: "Link", name: link, widget: "string", required: false}
+      - { label: "GitHub", name: github, widget: "string", required: false}
       - { label: "Stacks", name: stacks, widget: "list" }
       - { label: "Description", name: description, widget: "string" }
       - { label: "Image", name: img, widget: "image" }

@@ -110,6 +110,13 @@
 
     
     <url>
+        <loc>/blog/discussion/100-days-of-code</loc>
+        <lastmod>2019-06-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>/blog/discussion/my-first-post-using-netlifycms</loc>
         <lastmod>2019-06-05</lastmod>
         <changefreq>daily</changefreq>
@@ -118,13 +125,6 @@
     
     <url>
         <loc>/blog/tutorials/website-anatomy</loc>
-        <lastmod>2019-06-05</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>/blog/discussion/100-days-of-code-thoughts</loc>
         <lastmod>2019-06-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
