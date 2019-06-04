@@ -7,7 +7,19 @@
                 {% endfor %}
             </div>
             <div class = "blog-header__search-container">
-                <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Blog">
+                <!-- <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Blog"> -->
+                <script>
+                        (function() {
+                          var cx = '001785196721739134647:0kmj5vtxsvg';
+                          var gcse = document.createElement('script');
+                          gcse.type = 'text/javascript';
+                          gcse.async = true;
+                          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                          var s = document.getElementsByTagName('script')[0];
+                          s.parentNode.insertBefore(gcse, s);
+                        })();
+                      </script>
+                      <gcse:search></gcse:search>
                 <i class="blog-header__search-icon fas fa-search"></i>
             </div>
             
