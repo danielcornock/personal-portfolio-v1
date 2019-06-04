@@ -40,6 +40,12 @@
                 margin-bottom: 0;
             }
         }
+        >a{
+            color: $pink;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
 
     }
 
