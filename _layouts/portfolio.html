@@ -50,6 +50,10 @@ layout: default
                         {% endfor %}
                     </div>
                     {% endif %}
+
+                    {% if work.github %}
+                    <a href="{{work.github}}" class="btn btn--secondary">GitHub</a>
+                    {% endif %}
                 </div>
                 
             </div>
