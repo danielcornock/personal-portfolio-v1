@@ -39,7 +39,13 @@ layout: default
                 <img src="{{site.url}}{{ work.img }}" alt="" class="img--responsive portfolio__img">
                 <div class="portfolio__info">
                     <h3 class = "portfolio__title">{{ work.type }}</h3>
-                    <a href = "https://{{work.link}}" class="portfolio__link">{{ work.link }}</a>
+                    <a href = "https://{{work.link}}" class="portfolio__link">
+                        {% if work.completed %}
+                            {{ work.link }}
+                        {% else  %}
+                            <s>{{ work.link }}</s>
+                        {% endif %}
+                    </a>
                     <p class="portfolio__description">{{ work.description }}</p>
                     {% if work.stacks %}
                     <div class = "blog-entry__tags portfolio__tags">
@@ -52,7 +58,7 @@ layout: default
                     {% endif %}
 
                     {% if work.github %}
-                    <a href="{{work.github}}" class="btn btn--secondary">GitHub</a>
+                    <a href="{{work.github}}" class="portfolio__github">GitHub <i class="portfolio__icon fab fa-github"></i></a>
                     {% endif %}
                 </div>
                 

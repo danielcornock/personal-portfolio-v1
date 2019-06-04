@@ -5,7 +5,7 @@
         <title>Daniel Cornock</title>
         <link>http://localhost:4000</link>
         <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
-        <lastBuildDate>Mon, 03 Jun 2019 22:48:30 +0100</lastBuildDate>
+        <lastBuildDate>Tue, 04 Jun 2019 17:38:35 +0100</lastBuildDate>
         
         <item>
             <title>My first post using netlifyCMS!</title>
@@ -13,11 +13,8 @@
                 http://localhost:4000/blog/discussion/my-first-post-using-netlifycms
             </link>
             <description>
-                &lt;p&gt;CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.&lt;/p&gt;
+                &lt;p&gt;POST RESERVED FOR FUTURE USE&lt;/p&gt;
 
-&lt;p&gt;Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.&lt;/p&gt;
-
-...
             </description>
             <pubDate>Fri, 31 May 2019 00:00:00 +0100</pubDate>
             <guid>
@@ -45,14 +42,7 @@
                 http://localhost:4000/blog/discussion/100-days-of-code-thoughts
             </link>
             <description>
-                &lt;p&gt;If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-experience&quot;&gt;My Experience&lt;/h2&gt;
-&lt;p&gt;MY first real experience documenting things.&lt;/p&gt;
-
-&lt;p&gt;It was what helped me to come involved in the tech society. I’m now part of a coding group.&lt;/p&gt;
-
-&lt;p&gt;On days where I didn’...
+                &lt;p&gt;If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode. It’s a coding challenge which, as you might have guessed, goes on for 100 days. The rules of the challenge are flexible, with each tailoring it to their own lifestyle. For me, I chose to aim to do an hour of either learning, coding, designing, or blog post writing every day (where ...
             </description>
             <pubDate>Thu, 23 May 2019 00:00:00 +0100</pubDate>
             <guid>
@@ -66,11 +56,14 @@
                 http://localhost:4000/blog/tutorials/css-positioning
             </link>
             <description>
-                &lt;p&gt;CSS positioning is something that trips even the most senior of developers up. In this tutorial, I will go through each different type, and how to use them in a simple, easy way.&lt;/p&gt;
+                &lt;p&gt;Positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.&lt;/p&gt;
 
-&lt;p&gt;Ok, jokes aside, positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.&lt;/p&gt;
-
-...
+&lt;ul&gt;
+  &lt;li&gt;Absolute Positioning&lt;/li&gt;
+  &lt;li&gt;Relative Positioning&lt;/li&gt;
+  &lt;li&gt;Fixed Positioning&lt;/li&gt;
+  &lt;li&gt;Sticky Positioning&lt;/li&gt;
+  &lt;li&gt;Static Positioning&lt;...
             </description>
             <pubDate>Fri, 17 May 2019 00:00:00 +0100</pubDate>
             <guid>
