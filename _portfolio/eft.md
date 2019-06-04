@@ -1,8 +1,8 @@
 ---
-title: EFT.co.uk
+title: EFT
 type: Sports Therapist
 link: www.efitnessntherapy.co.uk
-github: 'https://github.com/danielcornock/efitnessntherapy.github.io/'
+github: 'https://github.com/danielcornock/efitnessntherapy.github.io.git'
 stacks:
   - HTML
   - CSS
@@ -12,5 +12,6 @@ description: >-
   personal training business.
 img: /assets/img/work_eft-2x.png
 featured: false
+completed: false
 ---
 

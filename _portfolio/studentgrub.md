@@ -13,4 +13,5 @@ description: A website made to review local ready meals, as well as provide stud
 img: /assets/img/work_student-grub.png
 
 featured: true
+completed: false
 ---

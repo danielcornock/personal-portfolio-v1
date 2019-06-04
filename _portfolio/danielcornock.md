@@ -14,5 +14,6 @@ description: >-
   out to become a blog, and used the static site generator Jekyll.
 img: /assets/img/work_daniel-cornock.png
 featured: true
+completed: true
 ---
 

@@ -13,4 +13,5 @@ description: A site built for Bristol-based construction company, Ionic Builds. 
 img: /assets/img/work_ionic-builds.jpg
 
 featured: true
+completed: false
 ---

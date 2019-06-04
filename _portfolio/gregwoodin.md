@@ -12,4 +12,5 @@ description: A personal academic portfolio designed to replace social media site
 img: /assets/img/work_greg-woodin.jpg
 
 featured: true
+completed: true
 ---
