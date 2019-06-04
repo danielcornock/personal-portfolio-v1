@@ -1,7 +1,7 @@
 ---
 title: '#100DaysOfCode - My Thoughts So Far'
 description: >-
-  I'm currently on day 16 of the challenge. In this post I'll talk about what
+  I'm currently on day 27 of the challenge. In this post I'll talk about what
   I've learned & how I've found it.
 author: Daniel Cornock
 category: discussion
