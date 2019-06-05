@@ -64,11 +64,14 @@
     &__title{
         color: $white;
         display: inline-block;
-        padding-left: 20px;
-        border-left: 10px solid $pink;
-        margin-bottom: 30px;
+        
         @media (max-width: $large-phone-sizing){
             font-size: 35px;
+        }
+        &-container{
+            padding-left: 20px;
+            border-left: 10px solid $pink;
+            margin-bottom: 30px;
         }
     }
     &__meta{

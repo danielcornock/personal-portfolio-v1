@@ -8,10 +8,10 @@ layout: default
         <span class = "post__featured-img--container"><img class = "img--responsive post__featured-img" src = " {{ site.url }}{{ site.blogImgLocation}}{{page.featuredImg}}" alt=""></span>
         <div class="wrapper wrapper--section">
             <div class="post__header-content">
-                <h1 class = "post__title">
+                <div class = "post__title-container">
                     {% include breadcrumbs.html %}
-                    {{ page.title }}
-                </h1>
+                    <h1 class = "post__title">{{ page.title }}</h1>
+                </div>
                 <div class="post__meta">
                     <img src="{{site.url}}{{site.staticImgLocation}}/headshot.jpg" alt="" class="img--responsive post__meta-avatar">
                     <div class="post__meta-entry post__meta-author">

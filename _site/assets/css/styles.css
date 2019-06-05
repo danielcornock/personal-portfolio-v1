@@ -887,13 +887,14 @@ input, textarea {
       align-items: flex-start; }
   .post__title {
     color: white;
-    display: inline-block;
-    padding-left: 20px;
-    border-left: 10px solid #EC5367;
-    margin-bottom: 30px; }
+    display: inline-block; }
     @media (max-width: 570px) {
       .post__title {
         font-size: 35px; } }
+    .post__title-container {
+      padding-left: 20px;
+      border-left: 10px solid #EC5367;
+      margin-bottom: 30px; }
   .post__meta {
     display: grid;
     grid-template-columns: auto auto auto auto;
