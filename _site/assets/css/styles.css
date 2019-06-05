@@ -1020,6 +1020,10 @@ kbd {
   padding: 5px;
   border-radius: 5px; }
 
+.twitter-share-button {
+  display: block !important;
+  margin-top: 20px; }
+
 .portfolio {
   overflow: hidden;
   background-color: #242424;

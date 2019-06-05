@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div id="fb-root"></div>
 
 <article class="post">
     <!-- HEADER START -->
@@ -51,7 +52,7 @@ layout: default
         <section class="post__content">
             <p class="post__lead">{{page.description}}</p>
         {{ content }}
-
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         {% include written-by-dan.html %}
     </div>
     <!-- MAIN CONTENT END -->
@@ -65,7 +66,7 @@ layout: default
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
         
         var disqus_config = function () {
-        this.page.url = "{{ site.url }}{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = "{{ site.url }}/{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         

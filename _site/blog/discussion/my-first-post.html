@@ -36,8 +36,6 @@
 </head>
 
 <body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
   <header class="header 
       
           header--secondary
@@ -80,7 +78,9 @@
 </button>
 <main class = "main__secondary main__secondary--post">
     
-    <article class="post">
+    <div id="fb-root"></div>
+
+<article class="post">
     <!-- HEADER START -->
     <header class="post__header">
         <span class = "post__featured-img--container"><img class = "img--responsive post__featured-img" src = " http://localhost:4000/assets/img/post_welcome.jpg" alt=""></span>
@@ -153,7 +153,7 @@
 <p>Enjoy!</p>
 
 
-
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
     <div class="post__footer__details">
@@ -177,7 +177,7 @@
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
         
         var disqus_config = function () {
-        this.page.url = "http://localhost:4000/blog/discussion/my-first-post";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = "http://localhost:4000//blog/discussion/my-first-post";  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = "/blog/discussion/my-first-post"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         
