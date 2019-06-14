@@ -503,6 +503,7 @@ input, textarea {
     font-size: 40px;
     color: white;
     opacity: 0;
+    z-index: 20;
     animation: icon-reveal 4s ease-in-out forwards;
     animation-delay: 4s; }
   .hero__bg {
