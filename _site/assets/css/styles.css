@@ -283,6 +283,10 @@ input, textarea {
       height: 30px;
       margin-top: 10px;
       margin-bottom: 10px; }
+      @media (max-width: 570px) {
+        .header__logo--small {
+          margin-top: 14px;
+          margin-bottom: 14px; } }
 
 .blog-header {
   padding: 8px 0;
