@@ -280,8 +280,8 @@ input, textarea {
     transition: 750ms; }
     .header__logo--small {
       height: 30px;
-      margin-top: 15px;
-      margin-bottom: 15px; }
+      margin-top: 10px;
+      margin-bottom: 10px; }
 
 .blog-header {
   padding: 8px 0;
