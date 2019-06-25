@@ -171,6 +171,10 @@
         &__title{
             color: $white;
             font-size: 23px;
+            transition: 250ms;
+            &:hover{
+                color: $pink;
+            }
         }
 
         &__description{
@@ -214,6 +218,7 @@
         padding: 2px 12px;
         border: 1px solid $grey-on-black;
         transition: 250ms;
+        user-select: none;
 
         &--post{
             background-color: rgba(grey,0.1);
