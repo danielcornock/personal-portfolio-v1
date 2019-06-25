@@ -1,0 +1,4 @@
+- name: Responsive Gallery
+  description: A gallery template for anybody to use in their websites for both static HTML sites and the default wordpress gallery.
+  link: https://github.com/danielcornock/GalleryTemplate
+  image: '/assets/img/resources/gallery.jpg'

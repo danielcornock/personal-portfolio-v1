@@ -1,0 +1,64 @@
+.thankyou{
+    background-color: $pink;
+    &__content{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    &__header{
+        color: $white;
+        text-align: center;
+    }
+    &__message{
+        color: $grey;
+        text-align: center;
+
+        &>a{
+            font-weight: 800;
+            color: $white;
+        }
+    }
+}
+
+.page-not-found{
+    background-color: $grey;
+
+    &__content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__heading{
+        margin-bottom: 30px;
+    }
+
+    &__subheading{
+        color: $pink;
+        margin-bottom: 15px;
+    }
+}
+
+.resources{
+    &--mine{
+        background-color: $black;
+
+        &__content{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+    }
+
+    &__title{
+        margin-top: 10px;
+    }
+
+    &__button{
+        margin-top: 20px;
+    }
+}

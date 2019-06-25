@@ -1046,7 +1046,7 @@ kbd {
     border-bottom: 2px solid #EC5367;
     position: relative; }
   .portfolio__img {
-    height: 250px; }
+    height: 200px; }
   .portfolio__info {
     padding: 15px 30px 30px 30px;
     margin-top: 0; }
@@ -1446,6 +1446,49 @@ kbd {
           width: 40px;
           font-size: 20px; } }
 
+.thankyou {
+  background-color: #EC5367; }
+  .thankyou__content {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .thankyou__header {
+    color: white;
+    text-align: center; }
+  .thankyou__message {
+    color: #242424;
+    text-align: center; }
+    .thankyou__message > a {
+      font-weight: 800;
+      color: white; }
+
+.page-not-found {
+  background-color: #242424; }
+  .page-not-found__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .page-not-found__heading {
+    margin-bottom: 30px; }
+  .page-not-found__subheading {
+    color: #EC5367;
+    margin-bottom: 15px; }
+
+.resources--mine {
+  background-color: #1f1f1f; }
+  .resources--mine__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; }
+.resources__title {
+  margin-top: 10px; }
+.resources__button {
+  margin-top: 20px; }
+
 .footer {
   background-color: #242424;
   color: rgba(255, 255, 255, 0.7);
@@ -1564,34 +1607,3 @@ kbd {
     transform: rotate(-10deg) scale(1.2); }
   100% {
     transform: rotate(0); } }
-.thankyou {
-  background-color: #EC5367; }
-  .thankyou__content {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-  .thankyou__header {
-    color: white;
-    text-align: center; }
-  .thankyou__message {
-    color: #242424;
-    text-align: center; }
-    .thankyou__message > a {
-      font-weight: 800;
-      color: white; }
-
-.page-not-found {
-  background-color: #242424; }
-  .page-not-found__content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .page-not-found__heading {
-    margin-bottom: 30px; }
-  .page-not-found__subheading {
-    color: #EC5367;
-    margin-bottom: 15px; }

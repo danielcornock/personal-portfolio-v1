@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include page-header.html %}
+
+<div class="resources--mine">
+    <div class="wrapper wrapper--section">
+        <h2 class="blog__header">RESOURCES BY ME</h2>
+        <div class="resources--mine__content">
+            {% for item in site.data.resources %}
+            <div class="blog-entry--tall blog-entry--grey">
+                
+                <a href = "{{item.link}}" class = "blog-entry--tall__img">
+                    <img class = "img--responsive" src="{{site.url}}{{item.image}}" alt="Gallery Preview">
+                </a>
+                <div class="blog-entry--tall__details">
+                    <a href="{{item.link}}"><h3 class="blog-entry--tall__title resources__title">{{item.name}}</h3></a>
+                    <p class="blog-entry--tall__description">{{item.description}}</p>
+                    <a href="{{post.url}}" class="btn btn--secondary resources__button">VIEW ON GITHUB</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="resources--recommended">
+    <div class="wrapper wrapper--section">
+        <div class="resources--recommended__content"></div>
+    </div>
+</div>
