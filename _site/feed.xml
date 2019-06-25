@@ -5,7 +5,21 @@
         <title>Daniel Cornock</title>
         <link>http://localhost:4000</link>
         <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
-        <lastBuildDate>Tue, 25 Jun 2019 14:58:18 +0100</lastBuildDate>
+        <lastBuildDate>Tue, 25 Jun 2019 14:59:05 +0100</lastBuildDate>
+        
+        <item>
+            <title>The Anatomy of a Website</title>
+            <link>
+                http://localhost:4000/blog/tutorials/website-anatomy
+            </link>
+            <description>
+                &lt;p&gt;For newcomers, jumping straight into code can be a daunting task. For somebody that’s been creating websites for a while, the layout of a HTML page might seem simple, or even obvious. This is the curse of knowledge at its peak here, so in this article I will be discussing websites at each layer of the stack, so that you can see exactly how it is built, and why it is built the way it is...
+            </description>
+            <pubDate>Tue, 25 Jun 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/tutorials/website-anatomy
+            </guid>
+        </item>
         
         <item>
             <title>#100DaysOfCode - My Thoughts So Far</title>
@@ -33,20 +47,6 @@
             <pubDate>Fri, 31 May 2019 00:00:00 +0100</pubDate>
             <guid>
                 http://localhost:4000/blog/discussion/my-first-post-using-netlifycms
-            </guid>
-        </item>
-        
-        <item>
-            <title>The Anatomy of a Website</title>
-            <link>
-                http://localhost:4000/blog/tutorials/website-anatomy
-            </link>
-            <description>
-                &lt;p&gt;For newcomers, jumping straight into code can be a daunting task. For somebody that’s been creating websites for a while, the layout of a HTML page might seem simple, or even obvious. This is the curse of knowledge at its peak here, so in this article I will be discussing websites at each layer of the stack, so that you can see exactly how it is built, and why it is built the way it is...
-            </description>
-            <pubDate>Thu, 23 May 2019 00:00:00 +0100</pubDate>
-            <guid>
-                http://localhost:4000/blog/tutorials/website-anatomy
             </guid>
         </item>
         
