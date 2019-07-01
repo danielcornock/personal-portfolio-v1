@@ -5,35 +5,35 @@
 
     &__content{
         &>p{
-            color: #333;
-            font-size: 16px;
+            color: rgba(0,0,0,0.84);
+            font-size: 21px;
+            margin-bottom: 29px;
+            line-height: 1.8;
+            // font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
             &>img{
                 width: 100%;
                 height: auto;
                 border: 5px solid rgba(#333,0.5);
             }
+
+            @media (max-width: $tablet-sizing){
+                font-size: 18px;
+                margin-bottom: 21px;
+            }
         }
 
         &>h2{
             margin-top: 30px;
-            font-size: 38px;
+            font-size: 32px;
             color: $pink;
-            // background-color: $grey;
-            // padding-left: 8px;
-            position: relative;
-            &::after{
-                content: "";
-                position: absolute;
-                bottom: 0px;
-                left: 0;
-                width: 80px;
-                height: 2px;
-                background-color: rgba($black,0.4);
-            }
+            margin-bottom: 10px;
+            line-height: 1.2;
         }
         h3, h4{
             margin-top: 20px;
             color: $pink;
+            margin-bottom: 10px;
         }
         &>h3{
             font-size: 24px;
@@ -44,16 +44,26 @@
             color: $black;
         }
 
-        ul{
+        &>ul{
             margin-bottom: 15px;
+            margin-top: -14px;
         }
         
         li{
             list-style-type: inside;
             margin-bottom: 2px;
-            margin-left: 60px;
-            font-size: 16px;
-            color: #333;
+            margin-left: 30px;
+            line-height: 1.58;
+            // font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            color: rgba(0,0,0,0.84);
+            font-size: 21px;
+
+            @media (max-width: $tablet-sizing){
+                font-size: 18px;
+            }
+            
+
         
             &:last-of-type{
                 margin-bottom: 0;
@@ -147,10 +157,12 @@
     }
 
     &__lead{
-        font-weight: 600;
-        margin-bottom: 25px;
+        font-weight: 800 !important;
+        margin-bottom: 40px !important;
         line-height: 150%;
-        font-size: 22px !important;
+        font-size: 24px !important;
+        font-family: "Poppins" !important;
+        color: $pink !important;
     }
 
     &__read-time{
@@ -264,4 +276,36 @@ kbd{
 .twitter-share-button{
     display: block !important;
     margin-top: 20px;
+}
+
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: decimal;
+
+    &>li{
+        &>a{
+            font-size: 18px;
+        }
+    }
+}
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    li{
+        font-size: 18px;
+    }
+    &>li{
+        margin-left: 15px;
+    }
 }

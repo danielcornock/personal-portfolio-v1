@@ -12,7 +12,8 @@ tags:
   - Beginner
 featured: true
 ---
-
+* Do not remove this line (it will not be displayed)
+{:toc}
 For newcomers, jumping straight into code can be a daunting task. For somebody that's been creating websites for a while, the layout of a HTML page might seem simple, or even obvious. This is the curse of knowledge at its peak here, so in this article I will be discussing websites at each layer of the stack, so that you can see exactly how it is built, and why it is built the way it is.
 
 ## The Front End
