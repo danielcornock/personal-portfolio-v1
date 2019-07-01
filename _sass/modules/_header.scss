@@ -11,7 +11,7 @@
 
     animation: header-slide 1000ms ease-in-out forwards;
     animation-delay: 3.3s;
-    transition: transform 1s;
+    transition: 1s;
 
         &--no-anim{
             transform: translateY(0);
