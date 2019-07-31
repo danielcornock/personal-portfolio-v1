@@ -46,17 +46,40 @@ layout: default
             </section>
             <aside class="post__sidebar">
                 {% if page.tags %}
-                <div class = "blog-entry__tags post__tags">
-                    {% for tag in page.tags %}
-                    <div class="blog-entry__tag post__tag">
-                        #{{ tag }}
+                <div class = "post__tags">
+                    <h3 class="post__tags-label">Post Tags</h3>
+                    <div class = "post__tags-container">
+                        {% for tag in page.tags %}
+                        <div class="post__tag">
+                            #{{ tag }}
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
                 {% endif %}
+                <div class="post__sidebar-divider"></div>
+                <div class = "post__tags">{% include sidebar-written-by.html %}</div>
+                <div class="post__sidebar-divider"></div>
+
+                {% assign read_next = "" | split: ',' %}
+                {% for post in site.posts %}
+                    {% if post.category == page.category %}
+                        {% assign read_next = read_next | push: post %}
+                    {% endif %}
+                {% endfor %}
+
+                <div class = "post__tags">
+                    <h3 class="post__tags-label">Related Articles</h3>
+                    {% for post in read_next %}
+                        <a class = "suggested">
+                            <img src="{{site.url}}{{post.featuredImg}}" alt="" class="suggested__img">
+                            <h4 class="suggested__title">{{ post.title }}</h4>
+                            <span class="suggested__category">{{ post.category }}</span>
+                        </a>
+                    {% endfor %}
+                </div>
             </aside>
         </div>
-        {% include written-by-dan.html %}
     </div>
 </article>
 
