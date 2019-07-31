@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<div id="fb-root"></div>
 
 <article class="post">
     <!-- HEADER START -->
@@ -56,6 +55,15 @@ layout: default
         {% include written-by-dan.html %}
     </div>
     <!-- MAIN CONTENT END -->
+    {% assign read_next = "" | split: ',' %}
+
+    {% for post in site.posts %}
+        {% if post.category == page.category %}
+            {% assign read_next = read_next | push: post %}
+        {% endif %}
+    {% endfor %}
+
+    <!-- RESERVED TO MAKE READ NEXT SECTION -->
 </article>
 <section class="comments">
     <div class="wrapper wrapper--blog wrapper--disqus">

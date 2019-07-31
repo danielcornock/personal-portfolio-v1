@@ -1,11 +1,12 @@
 // STARTED CHANGING NOW
 
 .post{
-    background-color: #fcfcfc;
+    background-color: rgb(252, 252, 252);
 
     &__content{
+        padding: 20px;
         &>p{
-            color: rgba(0,0,0,0.84);
+            color: #333;
             font-size: 21px;
             margin-bottom: 29px;
             line-height: 1.8;
@@ -56,7 +57,7 @@
             line-height: 1.58;
             // font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 300;
-            color: rgba(0,0,0,0.84);
+            color: #333;
             font-size: 21px;
 
             @media (max-width: $tablet-sizing){

@@ -1,0 +1,312 @@
+// STARTED CHANGING NOW
+
+.post{
+    background-color: rgb(252, 252, 252);
+
+    &__content{
+        padding: 20px;
+        &>p{
+            color: #333;
+            font-size: 21px;
+            margin-bottom: 29px;
+            line-height: 1.8;
+            // font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            &>img{
+                width: 100%;
+                height: auto;
+                border: 5px solid rgba(#333,0.5);
+            }
+
+            @media (max-width: $tablet-sizing){
+                font-size: 18px;
+                margin-bottom: 21px;
+            }
+        }
+
+        &>h2{
+            margin-top: 30px;
+            font-size: 32px;
+            color: $pink;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        h3, h4{
+            margin-top: 20px;
+            color: $pink;
+            margin-bottom: 10px;
+        }
+        &>h3{
+            font-size: 24px;
+        }
+
+        &>h4{
+            font-size: 22px;
+            color: $black;
+        }
+
+        &>ul{
+            margin-bottom: 15px;
+            margin-top: -14px;
+        }
+        
+        li{
+            list-style-type: inside;
+            margin-bottom: 2px;
+            margin-left: 30px;
+            line-height: 1.58;
+            // font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            color: #333;
+            font-size: 21px;
+
+            @media (max-width: $tablet-sizing){
+                font-size: 18px;
+            }
+            
+
+        
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+        a{
+            color: $pink;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    &__header{
+        position: relative;
+
+        &-content{
+            position: relative;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+    &__title{
+        color: $white;
+        display: inline-block;
+        
+        @media (max-width: $large-phone-sizing){
+            font-size: 35px;
+        }
+        &-container{
+            padding-left: 20px;
+            border-left: 10px solid $pink;
+            margin-bottom: 30px;
+        }
+    }
+    &__meta{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 80px;
+        align-items: center;
+
+        @media (max-width: $tablet-sizing){
+            grid-template-columns: auto auto;
+            grid-gap: 40px;
+        }
+
+        &-avatar{
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+        }
+        &-entry{
+            color: $white;
+            font-size: 18px;
+        }
+        &-label{
+            font-size: 20px;
+            color: $pink;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 4px;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 30px;
+                height: 1px;
+                bottom: -2px;
+                left: 0;
+                background-color: $pink;
+            }
+        }
+    }
+
+    &__featured-img{
+        opacity: 0.05;
+
+        &--container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: $black;
+        }
+
+        
+    }
+
+    &__lead{
+        font-weight: 800 !important;
+        margin-bottom: 40px !important;
+        line-height: 150%;
+        font-size: 24px !important;
+        font-family: "Poppins" !important;
+        color: $pink !important;
+    }
+
+    &__read-time{
+        font-weight: 800;
+        color: $pink;
+        display: flex;
+        align-items: center;
+        &-icon{
+            margin-right: 10px;
+            color: $black;
+            font-size: 20px;
+        }
+    }
+
+    &__tags{
+        margin-top: 40px;
+    }
+    &__tag{
+        background-color: initial;
+        transition: 250ms;
+        &:hover{
+            background-color: $pink;
+        }
+    }
+}
+
+.breadcrumbs{
+    color: $grey-on-black;
+    word-spacing: 10px;
+    font-size: 20px;
+    margin-bottom: -10px;
+    @media (max-width: $large-phone-sizing){
+        margin-bottom: 5px;
+    }
+
+    &__element{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $pink;
+    }
+}
+
+.post__footer{
+    margin-top: 50px;
+    display: grid;
+    border-top: 4px solid $pink;
+    grid-template-columns: auto 1fr;
+    background-color: rgba(grey,0.1);
+    padding: 30px;
+
+    @media (max-width: $large-phone-sizing){
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    &__img{
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        object-position: bottom;
+        @media (max-width: $large-phone-sizing){
+
+            margin: auto;
+        }
+
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+
+        @media (max-width: $large-phone-sizing){
+            padding-left: 0;
+            margin-top: 10px;
+        }
+    }
+    &__intro{
+        text-transform: uppercase;
+        color: $black;
+        font-size: 12px;
+    }
+    &__name{
+        font-size: 25px;
+        color: $pink;
+    }
+    &__about{
+        color: grey;
+    }
+    &__social{
+        margin-top: 10px;
+    }
+}
+
+.highlight{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    &>pre{
+        margin-bottom: 0;
+    }
+}
+
+kbd{
+    background-color: rgba(grey,0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.twitter-share-button{
+    display: block !important;
+    margin-top: 20px;
+}
+
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: decimal;
+
+    &>li{
+        &>a{
+            font-size: 18px;
+        }
+    }
+}
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    li{
+        font-size: 18px;
+    }
+    &>li{
+        margin-left: 15px;
+    }
+}
