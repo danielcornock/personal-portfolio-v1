@@ -78,100 +78,44 @@
 </button>
 <main class = "main__secondary main__secondary--post">
     
-    <article class="post">
-    <!-- HEADER START -->
-    <header class="post__header">
-        <span class = "post__featured-img--container"><img class = "img--responsive post__featured-img" src = " http://localhost:4000/assets/img/post_anatomy.jpg" alt=""></span>
-        <div class="wrapper wrapper--section">
-            <div class="post__header-content">
-                <div class = "post__title-container">
-                    <div class="breadcrumbs">
+    
 
 
 
-  
-    <a class = "breadcrumbs__element" href="/blog/">Blog</a> /
-  
 
-
-  
-    <a class = "breadcrumbs__element" href="/blog/tutorials/">Tutorials</a> /
-  
-
-
-  
-
-  
-
-</div>
-                    <h1 class = "post__title">The Anatomy of a Website</h1>
-                </div>
-                <div class="post__meta">
-                    <img src="http://localhost:4000/assets/img/static/headshot.jpg" alt="" class="img--responsive post__meta-avatar">
-                    <div class="post__meta-entry post__meta-author">
-                        <div class="post__meta-label">Author</div>
-                        Daniel Cornock
-                    </div>
-                    <div class="post__meta-entry post__meta-published">
-                        <div class="post__meta-label">Published</div>
-                        <time datetime = ''>25 Jun 2019</time>
-                    </div>
-                    <div class="post__meta-entry post__meta-time">
-                        <div class="post__meta-label">Reading Time</div>
-                        
-                        
-                            6 mins
-                        
-                    </div>
-                </div>
-                
-                <div class = "blog-entry__tags post__tags">
-                    
-                    <div class="blog-entry__tag post__tag">
-                        #HTML
-                    </div>
-                    
-                    <div class="blog-entry__tag post__tag">
-                        #CSS
-                    </div>
-                    
-                    <div class="blog-entry__tag post__tag">
-                        #Beginner
-                    </div>
-                    
-                </div>
-                
+<article class="post">
+    <div class="wrapper wrapper--section">
+        <header class="post__header">
+            <a href = "http://localhost:4000/blog/tutorials" class="post__category">tutorials</a>
+            <h1 class="post__heading">The Anatomy of a Website</h1>
+            <div class="post__subheading">Are you new to web development, and find yourself wondering what goes in to all these websites? This article may be for you!</div>
+            <div class="post__meta">
+                <span class="post__author">By Daniel Cornock</span>
+                <span class="post__meta-divider"> | </span>
+                <time class = "post__date" datetime = ''>25 Jun 2019</time>
+                <span class="post__meta-divider"> | </span>
+                <span class="post__time">5 mins</span>
             </div>
-        </div>
-    </header>
-    <!-- HEADER END -->
+            <div class = "post__social">
+                <a class = "post__social-link" href=https://www.facebook.com/sharer/sharer.php?u=#http://localhost:4000/blog/tutorials/website-anatomy" target="_blank"><i class="post__icon fab fa-facebook-f"></i></a>
+    
+                <a class = "post__social-link" href="http://twitter.com/intent/tweet?url=http://localhost:4000/blog/tutorials/website-anatomy&text=Checkout this awesome blog.&via=danielcornock&hashtags=webdev" title="Tweet" target="_blank"><i class="post__icon fab fa-twitter"></i></a>
+    
+                <a class = "post__social-link" href = "http://www.reddit.com/submit?url=http://localhost:4000/blog/tutorials/website-anatomy&title=Post%20to%20Reddit%20via%20URL"><i class="post__icon fab fa-reddit-alien"></i></a>
+            </div>
+        </header>
 
-    <!-- MAIN CONTENT START -->
-    <div class="wrapper wrapper--section wrapper--blog">
-        <section class="post__content">
-            <p class="post__lead">Are you new to web development, and find yourself wondering what goes in to all these websites? This article may be for you!</p>
-        <ul id="markdown-toc">
-  <li><a href="#the-front-end" id="markdown-toc-the-front-end">The Front End</a>    <ul>
-      <li><a href="#layout" id="markdown-toc-layout">Layout</a></li>
-      <li><a href="#technologies-used" id="markdown-toc-technologies-used">Technologies Used</a>        <ul>
-          <li><a href="#html" id="markdown-toc-html">HTML</a></li>
-          <li><a href="#css" id="markdown-toc-css">CSS</a></li>
-          <li><a href="#javascript" id="markdown-toc-javascript">Javascript</a></li>
-        </ul>
-      </li>
-      <li><a href="#further-technologies" id="markdown-toc-further-technologies">Further Technologies</a></li>
-    </ul>
-  </li>
-  <li><a href="#the-back-end" id="markdown-toc-the-back-end">The Back End</a></li>
-  <li><a href="#more-tools--technologies" id="markdown-toc-more-tools--technologies">More Tools &amp; Technologies</a>    <ul>
-      <li><a href="#cms" id="markdown-toc-cms">CMS</a></li>
-      <li><a href="#static-site-generator" id="markdown-toc-static-site-generator">Static Site Generator</a></li>
-      <li><a href="#git--version-control" id="markdown-toc-git--version-control">Git &amp; Version Control</a></li>
-    </ul>
-  </li>
-  <li><a href="#to-conclude" id="markdown-toc-to-conclude">To Conclude</a></li>
-</ul>
-<p>For newcomers, jumping straight into code can be a daunting task. For somebody that’s been creating websites for a while, the layout of a HTML page might seem simple, or even obvious. This is the curse of knowledge at its peak here, so in this article I will be discussing websites at each layer of the stack, so that you can see exactly how it is built, and why it is built the way it is.</p>
+        <hr class="post__divider"></hr>
+
+        <div class="post__main">
+            <section class="post__content">
+                <figure class = "post__image-container">
+                    <img src="http://localhost:4000/assets/img/post_anatomy.jpg" alt="" class="img--responsive post__image">
+                    <figcaption class = "post__image-caption">
+                        Image from Unsplash.
+                    </figcaption>
+                </figure>
+                <p>In this article you can find a brief summary of a few words you will hear around the programming/web development industry, which will hopefully clear up some of the jargon that gets thrown around. Without further ado, let’s get started.</p>
 
 <h2 id="the-front-end">The Front End</h2>
 <p>The front end of a website is the bit that you physically see. In most cases, a person has designed this layout, and then someone has used HTML and CSS to create each element and add style &amp; positioning to it in order for it to look good.</p>
@@ -271,7 +215,27 @@
 <p>I’m very new to writing blogs, so any feedback &amp; criticisms are welcome. However, I hope you enjoyed reading, and hopefully learned something if you are a #CodeNewbie!</p>
 
 
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+            <aside class="post__sidebar">
+                
+                <div class = "blog-entry__tags post__tags">
+                    
+                    <div class="blog-entry__tag post__tag">
+                        #HTML
+                    </div>
+                    
+                    <div class="blog-entry__tag post__tag">
+                        #CSS
+                    </div>
+                    
+                    <div class="blog-entry__tag post__tag">
+                        #Beginner
+                    </div>
+                    
+                </div>
+                
+            </aside>
+        </div>
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
     <div class="post__footer__details">
@@ -284,15 +248,22 @@
     </div>
 </footer>
     </div>
+</article>
+
+
+
+
+                
+
     <!-- MAIN CONTENT END -->
     
 
     
 
     <!-- RESERVED TO MAKE READ NEXT SECTION -->
-</article>
+
 <section class="comments">
-    <div class="wrapper wrapper--blog wrapper--disqus">
+    <div class="wrapper wrapper--section">
         <div id="disqus_thread"></div>
         <script>
         /**

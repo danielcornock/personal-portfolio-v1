@@ -48,16 +48,23 @@ h2{
 .wrapper{
     z-index: 1;
     max-width: 1200px;
-    padding: 20px;
+    padding: 20px 50px;;
     width: 100%;
     margin: auto;
     transition: 1s;
     position: relative;
     height: 100%;
 
+    @media (max-width: $large-phone-sizing){
+        padding:20px;
+    }
+
 
     &--section{
-        padding: 80px 20px;
+        padding: 80px 50px;
+        @media (max-width: $large-phone-sizing){
+            padding:80px 20px;
+        }
     }
 
     &--blog{

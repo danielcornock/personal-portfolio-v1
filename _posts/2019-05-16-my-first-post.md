@@ -4,6 +4,7 @@ description: Hey, thanks for stopping by! In this blog I aim to provide tutorial
 author: Daniel Cornock
 category: discussion
 featuredImg: /assets/img/post_welcome.jpg
+imgCredits: Unsplash
 tags:
 - Personal
 featured: true

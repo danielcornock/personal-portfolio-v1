@@ -5,7 +5,7 @@
         <title>Daniel Cornock</title>
         <link>http://localhost:4000</link>
         <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
-        <lastBuildDate>Wed, 31 Jul 2019 17:40:38 +0100</lastBuildDate>
+        <lastBuildDate>Wed, 31 Jul 2019 21:25:09 +0100</lastBuildDate>
         
         <item>
             <title>The Anatomy of a Website</title>
@@ -13,10 +13,10 @@
                 http://localhost:4000/blog/tutorials/website-anatomy
             </link>
             <description>
-                &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-front-end&quot; id=&quot;markdown-toc-the-front-end&quot;&gt;The Front End&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#layout&quot; id=&quot;markdown-toc-layout&quot;&gt;Layout&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#technologies-used&quot; id=&quot;markdown-toc-technologies-used&quot;&gt;Techn...
+                &lt;p&gt;In this article you can find a brief summary of a few words you will hear around the programming/web development industry, which will hopefully clear up some of the jargon that gets thrown around. Without further ado, let’s get started.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-front-end&quot;&gt;The Front End&lt;/h2&gt;
+&lt;p&gt;The front end of a website is the bit that you physically see. In m...
             </description>
             <pubDate>Tue, 25 Jun 2019 00:00:00 +0100</pubDate>
             <guid>

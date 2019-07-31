@@ -78,52 +78,54 @@
 </button>
 <main class = "main__secondary main__secondary--post">
     
-    <article class="post">
-    <!-- HEADER START -->
-    <header class="post__header">
-        <span class = "post__featured-img--container"><img class = "img--responsive post__featured-img" src = " http://localhost:4000/assets/img/post_welcome.jpg" alt=""></span>
-        <div class="wrapper wrapper--section">
-            <div class="post__header-content">
-                <div class = "post__title-container">
-                    <div class="breadcrumbs">
+    
 
 
 
-  
-    <a class = "breadcrumbs__element" href="/blog/">Blog</a> /
-  
+
+<article class="post">
+    <div class="wrapper wrapper--section">
+        <header class="post__header">
+            <a href = "http://localhost:4000/blog/discussion" class="post__category">discussion</a>
+            <h1 class="post__heading">Hello, and welcome to my humble blog!</h1>
+            <div class="post__subheading">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</div>
+            <div class="post__meta">
+                <span class="post__author">By Daniel Cornock</span>
+                <span class="post__meta-divider"> | </span>
+                <time class = "post__date" datetime = ''>16 May 2019</time>
+                <span class="post__meta-divider"> | </span>
+                <span class="post__time">1 min read</span>
+            </div>
+            <div class = "post__social">
+                <a class = "post__social-link" href=https://www.facebook.com/sharer/sharer.php?u=#http://localhost:4000/blog/discussion/my-first-post" target="_blank"><i class="post__icon fab fa-facebook-f"></i></a>
+    
+                <a class = "post__social-link" href="http://twitter.com/intent/tweet?url=http://localhost:4000/blog/discussion/my-first-post&text=Checkout this awesome blog.&via=danielcornock&hashtags=webdev" title="Tweet" target="_blank"><i class="post__icon fab fa-twitter"></i></a>
+    
+                <a class = "post__social-link" href = "http://www.reddit.com/submit?url=http://localhost:4000/blog/discussion/my-first-post&title=Post%20to%20Reddit%20via%20URL"><i class="post__icon fab fa-reddit-alien"></i></a>
+            </div>
+        </header>
+
+        <hr class="post__divider"></hr>
+
+        <div class="post__main">
+            <section class="post__content">
+                <figure class = "post__image-container">
+                    <img src="http://localhost:4000/assets/img/post_welcome.jpg" alt="" class="img--responsive post__image">
+                    <figcaption class = "post__image-caption">
+                        Image from Unsplash.
+                    </figcaption>
+                </figure>
+                <p>Hi, and welcome to my web development blog!</p>
+
+<p>In this blog, you can find my thoughts, ideas and experiences within the web development world. I will also be posting tutorials for common development concepts, both to help others and for my own benefit when I need a little bit of a reminder.</p>
+
+<p>I hope you find something here that can benefit you or you find interesting!</p>
+
+<p>Enjoy!</p>
 
 
-  
-    <a class = "breadcrumbs__element" href="/blog/discussion/">Discussion</a> /
-  
-
-
-  
-
-  
-
-</div>
-                    <h1 class = "post__title">Hello, and welcome to my humble blog!</h1>
-                </div>
-                <div class="post__meta">
-                    <img src="http://localhost:4000/assets/img/static/headshot.jpg" alt="" class="img--responsive post__meta-avatar">
-                    <div class="post__meta-entry post__meta-author">
-                        <div class="post__meta-label">Author</div>
-                        Daniel Cornock
-                    </div>
-                    <div class="post__meta-entry post__meta-published">
-                        <div class="post__meta-label">Published</div>
-                        <time datetime = ''>16 May 2019</time>
-                    </div>
-                    <div class="post__meta-entry post__meta-time">
-                        <div class="post__meta-label">Reading Time</div>
-                        
-                        
-                            1 min
-                        
-                    </div>
-                </div>
+            </section>
+            <aside class="post__sidebar">
                 
                 <div class = "blog-entry__tags post__tags">
                     
@@ -133,25 +135,8 @@
                     
                 </div>
                 
-            </div>
+            </aside>
         </div>
-    </header>
-    <!-- HEADER END -->
-
-    <!-- MAIN CONTENT START -->
-    <div class="wrapper wrapper--section wrapper--blog">
-        <section class="post__content">
-            <p class="post__lead">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</p>
-        <p>Hi, and welcome to my web development blog!</p>
-
-<p>In this blog, you can find my thoughts, ideas and experiences within the web development world. I will also be posting tutorials for common development concepts, both to help others and for my own benefit when I need a little bit of a reminder.</p>
-
-<p>I hope you find something here that can benefit you or you find interesting!</p>
-
-<p>Enjoy!</p>
-
-
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
     <div class="post__footer__details">
@@ -164,15 +149,22 @@
     </div>
 </footer>
     </div>
+</article>
+
+
+
+
+                
+
     <!-- MAIN CONTENT END -->
     
 
     
 
     <!-- RESERVED TO MAKE READ NEXT SECTION -->
-</article>
+
 <section class="comments">
-    <div class="wrapper wrapper--blog wrapper--disqus">
+    <div class="wrapper wrapper--section">
         <div id="disqus_thread"></div>
         <script>
         /**

@@ -6,15 +6,14 @@ description: >-
 author: Daniel Cornock
 category: tutorials
 featuredImg: /assets/img/post_anatomy.jpg
+imgCredits: Unsplash
 tags:
   - HTML
   - CSS
   - Beginner
 featured: true
 ---
-* Do not remove this line (it will not be displayed)
-{:toc}
-For newcomers, jumping straight into code can be a daunting task. For somebody that's been creating websites for a while, the layout of a HTML page might seem simple, or even obvious. This is the curse of knowledge at its peak here, so in this article I will be discussing websites at each layer of the stack, so that you can see exactly how it is built, and why it is built the way it is.
+In this article you can find a brief summary of a few words you will hear around the programming/web development industry, which will hopefully clear up some of the jargon that gets thrown around. Without further ado, let's get started.
 
 ## The Front End
 The front end of a website is the bit that you physically see. In most cases, a person has designed this layout, and then someone has used HTML and CSS to create each element and add style & positioning to it in order for it to look good.

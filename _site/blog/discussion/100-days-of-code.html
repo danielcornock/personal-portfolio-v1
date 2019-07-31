@@ -78,75 +78,44 @@
 </button>
 <main class = "main__secondary main__secondary--post">
     
-    <article class="post">
-    <!-- HEADER START -->
-    <header class="post__header">
-        <span class = "post__featured-img--container"><img class = "img--responsive post__featured-img" src = " http://localhost:4000/assets/img/post_100daysofcode.jpg" alt=""></span>
-        <div class="wrapper wrapper--section">
-            <div class="post__header-content">
-                <div class = "post__title-container">
-                    <div class="breadcrumbs">
+    
 
 
 
-  
-    <a class = "breadcrumbs__element" href="/blog/">Blog</a> /
-  
 
-
-  
-    <a class = "breadcrumbs__element" href="/blog/discussion/">Discussion</a> /
-  
-
-
-  
-
-  
-
-</div>
-                    <h1 class = "post__title">#100DaysOfCode - My Thoughts So Far</h1>
-                </div>
-                <div class="post__meta">
-                    <img src="http://localhost:4000/assets/img/static/headshot.jpg" alt="" class="img--responsive post__meta-avatar">
-                    <div class="post__meta-entry post__meta-author">
-                        <div class="post__meta-label">Author</div>
-                        Daniel Cornock
-                    </div>
-                    <div class="post__meta-entry post__meta-published">
-                        <div class="post__meta-label">Published</div>
-                        <time datetime = ''>05 Jun 2019</time>
-                    </div>
-                    <div class="post__meta-entry post__meta-time">
-                        <div class="post__meta-label">Reading Time</div>
-                        
-                        
-                            3 mins
-                        
-                    </div>
-                </div>
-                
-                <div class = "blog-entry__tags post__tags">
-                    
-                    <div class="blog-entry__tag post__tag">
-                        #Challenges
-                    </div>
-                    
-                    <div class="blog-entry__tag post__tag">
-                        #Personal
-                    </div>
-                    
-                </div>
-                
+<article class="post">
+    <div class="wrapper wrapper--section">
+        <header class="post__header">
+            <a href = "http://localhost:4000/blog/discussion" class="post__category">discussion</a>
+            <h1 class="post__heading">#100DaysOfCode - My Thoughts So Far</h1>
+            <div class="post__subheading">I'm currently on day 27 of the challenge. In this post I'll talk about what I've learned & how I've found it.</div>
+            <div class="post__meta">
+                <span class="post__author">By Daniel Cornock</span>
+                <span class="post__meta-divider"> | </span>
+                <time class = "post__date" datetime = ''>05 Jun 2019</time>
+                <span class="post__meta-divider"> | </span>
+                <span class="post__time">3 mins</span>
             </div>
-        </div>
-    </header>
-    <!-- HEADER END -->
+            <div class = "post__social">
+                <a class = "post__social-link" href=https://www.facebook.com/sharer/sharer.php?u=#http://localhost:4000/blog/discussion/100-days-of-code" target="_blank"><i class="post__icon fab fa-facebook-f"></i></a>
+    
+                <a class = "post__social-link" href="http://twitter.com/intent/tweet?url=http://localhost:4000/blog/discussion/100-days-of-code&text=Checkout this awesome blog.&via=danielcornock&hashtags=webdev" title="Tweet" target="_blank"><i class="post__icon fab fa-twitter"></i></a>
+    
+                <a class = "post__social-link" href = "http://www.reddit.com/submit?url=http://localhost:4000/blog/discussion/100-days-of-code&title=Post%20to%20Reddit%20via%20URL"><i class="post__icon fab fa-reddit-alien"></i></a>
+            </div>
+        </header>
 
-    <!-- MAIN CONTENT START -->
-    <div class="wrapper wrapper--section wrapper--blog">
-        <section class="post__content">
-            <p class="post__lead">I'm currently on day 27 of the challenge. In this post I'll talk about what I've learned & how I've found it.</p>
-        <p>If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode. It’s a coding challenge which, as you might have guessed, goes on for 100 days. The rules of the challenge are flexible, with each tailoring it to their own lifestyle. For me, I chose to aim to do an hour of either learning, coding, designing, or blog post writing every day (where possible).</p>
+        <hr class="post__divider"></hr>
+
+        <div class="post__main">
+            <section class="post__content">
+                <figure class = "post__image-container">
+                    <img src="http://localhost:4000/assets/img/post_100daysofcode.jpg" alt="" class="img--responsive post__image">
+                    <figcaption class = "post__image-caption">
+                        Image from Unsplash.
+                    </figcaption>
+                </figure>
+                <p>If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode. It’s a coding challenge which, as you might have guessed, goes on for 100 days. The rules of the challenge are flexible, with each tailoring it to their own lifestyle. For me, I chose to aim to do an hour of either learning, coding, designing, or blog post writing every day (where possible).</p>
 
 <p>Having recently passed the quarter-way mark, I’ve been doing the challenge for a month now. From the very start, I realised how helpful and fun doing the challenge can be.</p>
 
@@ -177,7 +146,23 @@
 
 <p>Thank you for reading!</p>
 
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="danielcornock" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+            <aside class="post__sidebar">
+                
+                <div class = "blog-entry__tags post__tags">
+                    
+                    <div class="blog-entry__tag post__tag">
+                        #Challenges
+                    </div>
+                    
+                    <div class="blog-entry__tag post__tag">
+                        #Personal
+                    </div>
+                    
+                </div>
+                
+            </aside>
+        </div>
         <footer class = "post__footer">
     <img class = "post__footer__img" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
     <div class="post__footer__details">
@@ -190,15 +175,22 @@
     </div>
 </footer>
     </div>
+</article>
+
+
+
+
+                
+
     <!-- MAIN CONTENT END -->
     
 
     
 
     <!-- RESERVED TO MAKE READ NEXT SECTION -->
-</article>
+
 <section class="comments">
-    <div class="wrapper wrapper--blog wrapper--disqus">
+    <div class="wrapper wrapper--section">
         <div id="disqus_thread"></div>
         <script>
         /**

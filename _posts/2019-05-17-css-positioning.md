@@ -5,7 +5,9 @@ description: >-
   can't get that positioning quite right.
 author: Daniel Cornock
 category: tutorials
-featuredImg: /assets/img/post_positioning.jpg
+featuredImg: /assets/img/post_positioning.png
+imgCredits: Myself
+
 tags:
   - CSS
   - HTML
