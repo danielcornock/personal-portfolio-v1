@@ -252,10 +252,11 @@ input, textarea {
     transform: translateY(0);
     animation: none; }
   .header--secondary {
-    border-bottom: 2px solid rgba(236, 83, 103, 0.7);
+    border-bottom: 2px solid #ec5367;
     background-color: #1f1f1f;
     transform: translateY(0);
-    animation: none; }
+    animation: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); }
   .header--fixed {
     border-bottom: 2px solid #EC5367;
     background-color: #1f1f1f; }
@@ -870,13 +871,13 @@ input, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; }
-    @media (max-width: 950px) {
-      .post__header {
-        margin-top: -40px; } }
+    text-align: center;
+    position: relative; }
     @media (max-width: 570px) {
       .post__header {
-        margin-top: -60px; } }
+        margin-top: -30px;
+        text-align: left;
+        align-items: flex-start; } }
   .post__category {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -896,6 +897,12 @@ input, textarea {
     @media (max-width: 950px) {
       .post__heading {
         font-size: 45px; } }
+    @media (max-width: 570px) {
+      .post__heading {
+        margin-bottom: 25px;
+        line-height: 120%;
+        margin-top: 0;
+        font-size: 40px; } }
   .post__subheading {
     font-size: 26px;
     color: #333;
@@ -912,10 +919,30 @@ input, textarea {
       color: #999;
       letter-spacing: 6px; }
       @media (max-width: 570px) {
-        .post__meta-divider {
+        .post__meta-divider--hide {
           display: none; } }
+    @media (max-width: 570px) {
+      .post__meta {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        grid-column-gap: 15px;
+        grid-template-areas: "avatar author" "avatar time"; } }
+  .post__avatar {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+    grid-area: avatar;
+    display: none; }
+    @media (max-width: 570px) {
+      .post__avatar {
+        display: block; } }
   .post__author {
-    color: #EC5367; }
+    grid-area: author; }
+  .post__details {
+    grid-area: time;
+    display: inline; }
   .post__time {
     text-transform: uppercase; }
   .post__social {
@@ -924,6 +951,9 @@ input, textarea {
       width: 30px;
       display: block;
       margin-right: 20px; }
+      @media (max-width: 570px) {
+        .post__social-link {
+          margin-right: 30px; } }
       .post__social-link:last-of-type {
         margin-right: 0; }
   .post__icon {
@@ -944,7 +974,15 @@ input, textarea {
     grid-gap: 30px; }
     @media (max-width: 950px) {
       .post__main {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        grid-gap: 0; } }
+  .post__content {
+    padding: 30px;
+    background-color: white; }
+    @media (max-width: 950px) {
+      .post__content {
+        padding: 0;
+        background-color: initial; } }
   .post__image-container {
     margin-bottom: 30px; }
   .post__image {
@@ -969,15 +1007,33 @@ input, textarea {
       background-color: rgba(236, 83, 103, 0.2);
       margin-top: 25px;
       margin-bottom: 25px; }
+      @media (max-width: 950px) {
+        .post__sidebar-divider {
+          display: none; } }
+    @media (max-width: 950px) {
+      .post__sidebar {
+        padding: 0;
+        position: static;
+        background-color: transparent; } }
+    @media (max-width: 570px) {
+      .post__sidebar {
+        position: static;
+        padding: 0; } }
   .post__tags:last-of-type {
     margin-bottom: 0; }
   .post__tags-label {
     text-transform: uppercase;
     font-size: 14px;
     margin-right: 10px; }
+    @media (max-width: 950px) {
+      .post__tags-label {
+        display: none; } }
   .post__tags-container {
     display: flex;
     margin-top: 10px; }
+  @media (max-width: 950px) {
+    .post__tags {
+      margin-bottom: 25px; } }
   .post__tag {
     background-color: #efefef;
     color: #EC5367;
@@ -990,6 +1046,17 @@ input, textarea {
     padding: 3px 6px; }
     .post__tag:last-of-type {
       margin-right: 0; }
+  .post__bg {
+    z-index: -1; }
+    .post__bg--right {
+      transform: scale(0.3);
+      bottom: -15%;
+      right: -90px; }
+    .post__bg--left {
+      transform: scale(0.4);
+      top: -20%;
+      transform-origin: top left;
+      left: -90px; }
 
 .post__content {
   font-family: 'Montserrat', sans-serif; }
@@ -1029,7 +1096,7 @@ input, textarea {
   .post__content h2, .post__content h3, .post__content h4, .post__content h5 {
     margin-bottom: 10px; }
   .post__content h2 {
-    font-size: 40px; }
+    font-size: 35px; }
   .post__content h3 {
     font-size: 30px; }
   .post__content h4 {
@@ -1040,7 +1107,18 @@ input, textarea {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "image text" "twitter twitter";
-  grid-gap: 10px; }
+  grid-column-gap: 10px; }
+  @media (max-width: 950px) {
+    .author-info {
+      grid-column-gap: 30px;
+      align-items: center;
+      padding: 30px;
+      background-color: #f6f6f6;
+      border-top: 4px solid #EC5367; } }
+  @media (max-width: 570px) {
+    .author-info {
+      display: block;
+      text-align: center; } }
   .author-info__img {
     margin: 0 auto;
     width: 50px;
@@ -1048,22 +1126,39 @@ input, textarea {
     border-radius: 100px;
     object-fit: cover;
     grid-area: image; }
+    @media (max-width: 950px) {
+      .author-info__img {
+        width: 150px;
+        height: 150px; } }
   .author-info__details {
     grid-area: text; }
   .author-info__intro {
     text-transform: uppercase;
     color: #1f1f1f;
     font-size: 8px; }
+    @media (max-width: 950px) {
+      .author-info__intro {
+        font-size: 12px; } }
   .author-info__name {
     font-size: 18px;
     color: #EC5367; }
+    @media (max-width: 950px) {
+      .author-info__name {
+        font-size: 25px; } }
   .author-info__about {
     color: #333;
-    font-size: 12px;
-    margin-bottom: 15px; }
+    font-size: 12px; }
+    @media (max-width: 950px) {
+      .author-info__about {
+        font-size: 16px; } }
   .author-info__social {
     grid-area: twitter;
-    margin: auto; }
+    margin: auto;
+    display: none; }
+    @media (max-width: 570px) {
+      .author-info__social {
+        display: block;
+        margin-top: 15px; } }
 
 .suggested {
   display: grid;
@@ -1072,6 +1167,12 @@ input, textarea {
   grid-template-areas: "image title" "image category";
   grid-column-gap: 15px;
   margin-top: 15px; }
+  @media (max-width: 950px) {
+    .suggested {
+      display: none; } }
+  @media (max-width: 570px) {
+    .suggested {
+      display: grid; } }
   .suggested__img {
     grid-area: image;
     width: 70px;

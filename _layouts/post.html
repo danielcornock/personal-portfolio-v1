@@ -13,15 +13,26 @@ layout: default
 <article class="post">
     <div class="wrapper wrapper--section">
         <header class="post__header">
+            <img class = "hero__bg hero__bg--left post__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+            <img class = "hero__bg hero__bg--right post__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
+
+
             <a href = "{{ site.url }}/blog/{{ page.category }}" class="post__category">{{ page.category }}</a>
             <h1 class="post__heading">{{ page.title }}</h1>
             <div class="post__subheading">{{ page.description }}</div>
             <div class="post__meta">
-                <span class="post__author">By {{ page.author }}</span>
-                <span class="post__meta-divider"> | </span>
-                <time class = "post__date" datetime = '{{post.date}}'>{{ page.date | date_to_string }}</time>
-                <span class="post__meta-divider"> | </span>
-                <span class="post__time">{{ time }}</span>
+                <img class = "post__avatar" src="{{ "assets/img/static/headshot.jpg" | absolute_url }}" alt="Daniel Cornock Avatar">
+
+                <span class="post__author">By <span class="colored">{{ page.author }}</span></span>
+                <span class="post__meta-divider post__meta-divider--hide"> | </span>
+                <div class = "post__details">
+                    <time class = "post__date" datetime = '{{post.date}}'>
+                        {{ page.date | date_to_string }}
+                    </time>
+                    <span class="post__meta-divider"> | </span>
+                    
+                    <span class="post__time">{{ time }}</span>
+                </div>
             </div>
             <div class = "post__social">
                 <a class = "post__social-link" href=https://www.facebook.com/sharer/sharer.php?u=#{{ site.url }}{{ page.url }}" target="_blank"><i class="post__icon fab fa-facebook-f"></i></a>

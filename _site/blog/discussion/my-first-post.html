@@ -86,15 +86,26 @@
 <article class="post">
     <div class="wrapper wrapper--section">
         <header class="post__header">
+            <img class = "hero__bg hero__bg--left post__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+            <img class = "hero__bg hero__bg--right post__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+
+
             <a href = "http://localhost:4000/blog/discussion" class="post__category">discussion</a>
             <h1 class="post__heading">Hello, and welcome to my humble blog!</h1>
             <div class="post__subheading">Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything & everything web dev.</div>
             <div class="post__meta">
-                <span class="post__author">By Daniel Cornock</span>
-                <span class="post__meta-divider"> | </span>
-                <time class = "post__date" datetime = ''>16 May 2019</time>
-                <span class="post__meta-divider"> | </span>
-                <span class="post__time">1 min read</span>
+                <img class = "post__avatar" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
+
+                <span class="post__author">By <span class="colored">Daniel Cornock</span></span>
+                <span class="post__meta-divider post__meta-divider--hide"> | </span>
+                <div class = "post__details">
+                    <time class = "post__date" datetime = ''>
+                        16 May 2019
+                    </time>
+                    <span class="post__meta-divider"> | </span>
+                    
+                    <span class="post__time">1 min read</span>
+                </div>
             </div>
             <div class = "post__social">
                 <a class = "post__social-link" href=https://www.facebook.com/sharer/sharer.php?u=#http://localhost:4000/blog/discussion/my-first-post" target="_blank"><i class="post__icon fab fa-facebook-f"></i></a>
