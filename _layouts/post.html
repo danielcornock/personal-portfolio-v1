@@ -83,7 +83,7 @@ layout: default
 
                 <div class = "post__tags">
                     <h3 class="post__tags-label">Related Articles</h3>
-                    {% for post in read_next %}
+                    {% for post in read_next limit: 4 %}
                         <a class = "suggested">
                             <img src="{{site.url}}{{post.featuredImg}}" alt="" class="suggested__img">
                             <h4 class="suggested__title">{{ post.title }}</h4>
