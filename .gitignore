@@ -7,5 +7,6 @@
 .jekyll-metadata
 temp/
 _site/
+_pages/about.md
 
 # End of https://www.gitignore.io/api/jekyll
