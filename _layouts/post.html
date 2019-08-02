@@ -75,7 +75,9 @@ layout: default
                 {% assign read_next = "" | split: ',' %}
                 {% for post in site.posts %}
                     {% if post.category == page.category %}
-                        {% assign read_next = read_next | push: post %}
+                        {% unless post.title == page.title %}
+                            {% assign read_next = read_next | push: post %}
+                        {% endunless %}
                     {% endif %}
                 {% endfor %}
 
