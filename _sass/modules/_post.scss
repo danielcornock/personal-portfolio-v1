@@ -531,3 +531,13 @@
         margin-top: 10px;
     }
 }
+
+.highlight{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    &>pre{
+        margin-bottom: 0;
+    }
+}

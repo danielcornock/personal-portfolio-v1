@@ -1230,6 +1230,14 @@ input, textarea {
   .post__footer__social {
     margin-top: 10px; }
 
+.highlight {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px; }
+  .highlight > pre {
+    margin-bottom: 0; }
+
 .portfolio {
   overflow: hidden;
   background-color: #242424;
@@ -1248,13 +1256,15 @@ input, textarea {
         grid-template-columns: 1fr; } }
   .portfolio__entry {
     background-color: #1f1f1f;
-    border-bottom: 2px solid #EC5367;
-    position: relative; }
+    position: relative;
+    display: flex;
+    flex-direction: column; }
   .portfolio__img {
     height: 200px; }
   .portfolio__info {
     padding: 15px 30px 30px 30px;
-    margin-top: 0; }
+    margin-top: 0;
+    height: 100%; }
   .portfolio__title {
     color: white;
     font-size: 25px; }
@@ -1262,10 +1272,8 @@ input, textarea {
     color: #EC5367; }
   .portfolio__description {
     color: rgba(255, 255, 255, 0.7);
-    height: 100%;
-    margin-top: 15px; }
-  .portfolio__tags {
-    margin-bottom: 30px; }
+    margin-top: 15px;
+    margin-bottom: 15px; }
   .portfolio__tag {
     background-color: initial;
     color: white;
@@ -1325,10 +1333,13 @@ input, textarea {
   background-color: #1f1f1f; }
   .fp-portfolio__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     position: relative;
     z-index: 1; }
+    @media (max-width: 950px) {
+      .fp-portfolio__content {
+        grid-template-columns: 1fr 1fr; } }
     @media (max-width: 570px) {
       .fp-portfolio__content {
         grid-template-columns: 1fr; } }
@@ -1336,6 +1347,14 @@ input, textarea {
     position: relative;
     overflow: hidden;
     height: 260px; }
+    .fp-portfolio__entry:last-of-type {
+      display: none; }
+    @media (max-width: 950px) {
+      .fp-portfolio__entry:last-of-type {
+        display: block; } }
+    @media (max-width: 570px) {
+      .fp-portfolio__entry:last-of-type {
+        display: none; } }
     .fp-portfolio__entry:hover .fp-portfolio__overlay {
       opacity: 1;
       transform: translateY(0); }

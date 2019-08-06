@@ -2,7 +2,7 @@
 title: Daniel Cornock
 type: Portfolio & Blog
 link: www.danielcornock.co.uk
-github: 'https://github.com/danielcornock/danielcornock.github.io'
+github:
 stacks:
   - HTML
   - CSS

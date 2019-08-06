@@ -12,6 +12,6 @@ stacks:
 description: A website made to review local ready meals, as well as provide student-friendly recipes that are easy on the wallet.
 img: /assets/img/work_student-grub.png
 
-featured: true
+featured: false
 completed: false
 ---

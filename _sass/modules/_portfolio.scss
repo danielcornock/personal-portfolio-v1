@@ -19,8 +19,9 @@
     }
     &__entry{
         background-color: $black;
-        border-bottom: 2px solid $pink;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
     &__img{
@@ -29,6 +30,7 @@
     &__info{
         padding: 15px 30px 30px 30px;
         margin-top: 0;
+        height: 100%;
     }
     &__title{
         color: $white;
@@ -40,12 +42,11 @@
     }
     &__description{
         color: $grey-on-black;
-        height: 100%;
         margin-top: 15px;
+        margin-bottom: 15px;
 
     }
     &__tags{
-        margin-bottom: 30px;
     }
     &__tag{
         background-color: initial;
@@ -126,13 +127,15 @@
 
     &__content{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
         position: relative;
         z-index: 1;
+
+        @media (max-width: $tablet-sizing){
+            grid-template-columns: 1fr 1fr;
+        }
         
-
-
         @media (max-width: $large-phone-sizing){
             grid-template-columns: 1fr;
         }
@@ -142,6 +145,22 @@
         position: relative;
         overflow: hidden;
         height: 260px;
+
+        &:last-of-type{
+            display: none;
+        }
+
+        @media (max-width: $tablet-sizing){
+            &:last-of-type{
+                display: block;
+            }
+        }
+
+        @media (max-width: $large-phone-sizing){
+            &:last-of-type{
+                display: none;
+            }
+        }
 
         &:hover{
             .fp-portfolio__overlay{
@@ -153,6 +172,8 @@
                 transform: scale(1.1);
             }
         }
+
+        
     }
 
     &__img{
