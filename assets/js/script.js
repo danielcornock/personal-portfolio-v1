@@ -154,4 +154,100 @@ const filterWork = function (){
     }))
 }();
 
+const searchTagsMatch = (post, searchCriteria) => {
+    tag = post.dataset.search.toUpperCase();
+    return tag.includes(searchCriteria);
+}
+const searchTitleMatch = (post, searchCriteria) => {
+    title = post.querySelector('.blog-entry--wide__title').textContent.toUpperCase();
+    return title.includes(searchCriteria);
+}
+const searchDescriptionMatch = (post, searchCriteria) => {
+    title = post.querySelector('.blog-entry--wide__description').textContent.toUpperCase();
+    return title.includes(searchCriteria);
+}
+
+const searchPosts = function() {
+    if (!window.location.hash) {
+        return;
+    }
+    const postList = document.querySelector('.blog-posts--vertical');
+    const allPosts = Array.from(document.querySelectorAll('.blog-entry--wide'));
+
+    let rawSearchCriteria = window.location.hash.substr(1);
+    let searchCriteria = rawSearchCriteria.toUpperCase();
+    let searchCount = 0;
+
+    let filteredPosts = allPosts.filter(post => {
+        if (searchTagsMatch(post, searchCriteria)) {
+            searchCount++;
+            return true;
+        }
+        if (searchTitleMatch(post, searchCriteria)) {
+            searchCount++;
+            return true;
+        }
+        if (searchDescriptionMatch(post, searchCriteria)) {
+            searchCount++;
+            return true;
+        }
+    })
+
+    if (rawSearchCriteria) {
+        while (postList.firstChild) {
+            postList.removeChild(postList.firstChild);
+        }
+        // Adds new child nodes
+        filteredPosts.forEach(post => {
+            postList.appendChild(post);
+        })
+
+        document.querySelector('.blog__header').style.display = 'none';
+        document.querySelector('.blog__search-title').style.display = 'block';
+        document.querySelector('#search-amount').innerHTML = searchCount;
+        if (0 < searchCount && searchCount < 2) {
+            document.querySelector('#search-plural').style.display = 'none';
+        }
+        document.querySelectorAll('.search-query').forEach(span => {
+            span.innerHTML = rawSearchCriteria;
+        });
+
+        if(!searchCount){
+            document.querySelector('.blog__search-title').style.marginTop = '100px';
+            document.querySelector('.search-apology').style.display = 'block';
+        }
+    }
+}();
+
+const sendSearch = () => {
+
+}
+const listenForSearch = function () {
+    const baseUrl = window.location.origin;
+    const path = '/blog/archive/';
+    const searchBar = document.querySelector('.blog-header__search');
+    const searchButton = document.querySelector('.blog-header__search-submit');
+    let searchToken = false;
+
+    searchBar.addEventListener('keypress', (e) => {
+        if (e.keyCode == 13){
+            console.log(path);
+            window.location.href = `${baseUrl}${path}#${searchBar.value}`;
+            if (window.location.pathname === path){
+                location.reload();
+            }
+        }
+    });
+
+    searchButton.addEventListener('click', () => {
+        console.log('he');
+        window.location.href = `${baseUrl}${path}#${searchBar.value}`;
+        if (window.location.pathname === path){
+            location.reload();
+        }
+
+    })
+    
+}();
+
 

@@ -8,12 +8,13 @@ layout: default
 
     <div class="wrapper">
             <h2 class="blog__header">ALL POSTS</h2>
+            <h2 class="blog__search-title">
+                <span id="search-amount"></span> result<span id="search-plural">s</span> for <span class="search-query"></span>!</h2>
+            <h3 class="search-apology">I'm sorry, hopefully I'll write something about <span class="search-query"></span> in the future!</h3>
             <ul class="blog-posts--vertical">
                 {% for post in site.posts %}
-                {% if forloop.index > 1 %}
-                    <hr class = "blog-entry__divider">
-                {% endif %}
-                    <li class = "blog-entry--wide">
+                
+                    <li class = "blog-entry--wide" data-search = "{{ post.tags | join: ' ' }}">
                         <img class = "img--responsive blog-entry--wide__img" src="{{ site.url }}{{post.featuredImg}}" alt="">
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">

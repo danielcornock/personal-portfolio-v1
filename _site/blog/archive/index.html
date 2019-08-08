@@ -90,11 +90,15 @@
                 
                     <a href = "http://localhost:4000/blog/tutorials/" class="blog-header__category">tutorials</a>
                 
+                    <a href = "http://localhost:4000/blog/archive/" class="blog-header__category">archive</a>
+                
             </div>
-            <!-- <div class = "blog-header__search-container">
-                <input type="text" class = "blog-header__search blog-header__search" placeholder="Search Not Active">
-                <i class="blog-header__search-icon fas fa-search"></i>
-            </div> -->
+            <div class = "blog-header__search-container">
+                <input name = "searchCriteria" type="text" class = "blog-header__search" placeholder="Search">
+                <div class="blog-header__search-submit">
+                    <i class="blog-header__search-icon fas fa-search"></i>
+                </div>
+            </div>
             
         </div>
     </div>
@@ -107,10 +111,13 @@
 
     <div class="wrapper">
             <h2 class="blog__header">ALL POSTS</h2>
+            <h2 class="blog__search-title">
+                <span id="search-amount"></span> result<span id="search-plural">s</span> for <span class="search-query"></span>!</h2>
+            <h3 class="search-apology">I'm sorry, hopefully I'll write something about <span class="search-query"></span> in the future!</h3>
             <ul class="blog-posts--vertical">
                 
                 
-                    <li class = "blog-entry--wide">
+                    <li class = "blog-entry--wide" data-search = "HTML CSS Beginner">
                         <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/post_anatomy.jpg" alt="">
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
@@ -146,9 +153,7 @@
                     </li>
                 
                 
-                    <hr class = "blog-entry__divider">
-                
-                    <li class = "blog-entry--wide">
+                    <li class = "blog-entry--wide" data-search = "Challenges Personal">
                         <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/post_100daysofcode.jpg" alt="">
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
@@ -180,9 +185,7 @@
                     </li>
                 
                 
-                    <hr class = "blog-entry__divider">
-                
-                    <li class = "blog-entry--wide">
+                    <li class = "blog-entry--wide" data-search = "CMS Jekyll Netlify">
                         <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/post_netlify.jpg" alt="">
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
@@ -218,9 +221,7 @@
                     </li>
                 
                 
-                    <hr class = "blog-entry__divider">
-                
-                    <li class = "blog-entry--wide">
+                    <li class = "blog-entry--wide" data-search = "CSS HTML Beginner">
                         <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/post_positioning.png" alt="">
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">
@@ -256,9 +257,7 @@
                     </li>
                 
                 
-                    <hr class = "blog-entry__divider">
-                
-                    <li class = "blog-entry--wide">
+                    <li class = "blog-entry--wide" data-search = "Personal">
                         <img class = "img--responsive blog-entry--wide__img" src="http://localhost:4000/assets/img/post_welcome.jpg" alt="">
                         <div class="blog-entry--wide__details">
                             <div class="blog-entry__meta blog-entry--wide__meta">

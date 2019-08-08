@@ -70,9 +70,6 @@ layout: default
             <h2 class="blog__header">RECENT POSTS</h2>
             <ul class="blog-posts--vertical">
                 {% for post in site.posts %}
-                {% if forloop.index > 1 %}
-                    <hr class = "blog-entry__divider">
-                {% endif %}
                     <li class = "blog-entry--wide">
                         <img class = "img--responsive blog-entry--wide__img" src="{{ site.url }}{{post.featuredImg}}" alt="">
                         <div class="blog-entry--wide__details">
