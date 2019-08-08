@@ -95,6 +95,10 @@ function setLights(){
 
 const lightsOnLightsOff = function() {
     const button = document.querySelector('.lights');
+
+    if (!button){
+        return;
+    }
     
     button.addEventListener("click", () => {
         if (sessionStorage.getItem('inverted') == "true"){

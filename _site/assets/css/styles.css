@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
   width: 100vw; }
 
+@media (max-width: 950px) {
+  main {
+    overflow-x: hidden; } }
+
 p {
   margin-bottom: 15px;
   line-height: 30px;
@@ -313,8 +317,7 @@ input, textarea {
     @media (max-width: 600px) {
       .blog-header__categories {
         width: 100%;
-        justify-content: space-evenly;
-        margin-top: 20px; } }
+        justify-content: space-evenly; } }
   .blog-header__category {
     color: white;
     height: 100%;
@@ -1023,8 +1026,7 @@ input, textarea {
     margin-bottom: 0; }
   .post__tags-label {
     text-transform: uppercase;
-    font-size: 14px;
-    margin-right: 10px; }
+    font-size: 14px; }
     @media (max-width: 950px) {
       .post__tags-label {
         display: none; } }

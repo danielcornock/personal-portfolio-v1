@@ -18,7 +18,10 @@ body{
 }
 
 main{
-    overflow-x:hidden;
+
+    @media (max-width: $tablet-sizing){
+        overflow-x:hidden;
+    }
 }
 
 p{

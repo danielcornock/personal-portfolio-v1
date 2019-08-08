@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
+<!-- Read Time Generator START -->
 {% assign words = content | number_of_words %}
-
 
 {% if words < 360 %}
     {% assign time = '1 min read' %}
 {% else %}
     {% assign time =  words | divided_by:180  | append: ' ' | append: 'mins' %}
 {% endif %}
+<!-- Read Time Generator END -->
+
 {% include header-blog.html %}
 
 <article class="post">
