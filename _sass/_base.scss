@@ -17,6 +17,10 @@ body{
     width: 100vw;
 }
 
+main{
+    overflow-x:hidden;
+}
+
 p{
     margin-bottom: 15px;
     line-height: 30px;
