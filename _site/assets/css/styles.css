@@ -353,7 +353,7 @@ input, textarea {
       padding: 5px 20px;
       border-radius: 20px;
       position: relative;
-      margin-top: 6px;
+      margin-top: 3px;
       transition: 500ms; }
       @media (max-width: 600px) {
         .blog-header__search-container {
