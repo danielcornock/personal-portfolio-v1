@@ -196,7 +196,7 @@
         &--onImage{
             position: absolute;
             top: 5px;
-            right: 5px;
+            right: 10px;
             margin-top: 0;
         }
 
@@ -218,6 +218,7 @@
         border: 1px solid $grey-on-black;
         transition: 250ms;
         user-select: none;
+        cursor: pointer;
 
         &--post{
             background-color: rgba(grey,0.1);

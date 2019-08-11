@@ -251,7 +251,6 @@
     }
 
     &__tag{
-        background-color: #efefef;
         color: $pink;
         border-radius: 0;
         font-weight: bold;
@@ -260,6 +259,10 @@
         text-transform: uppercase;
         margin-right: 5px;
         padding: 3px 6px;
+
+        &:hover{
+            transform: scale(1.05);
+        }
         &:last-of-type{
             margin-right: 0;
         }
@@ -395,8 +398,8 @@
 
     &__intro{
         text-transform: uppercase;
-        color: $black;
-        font-size: 8px;
+        color: #777;
+        font-size: 12px;
 
         @media (max-width: $tablet-sizing){
             font-size: 12px;

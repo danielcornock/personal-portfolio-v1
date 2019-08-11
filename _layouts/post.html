@@ -64,9 +64,9 @@ layout: default
                     <h3 class="post__tags-label">Post Tags</h3>
                     <div class = "post__tags-container">
                         {% for tag in page.tags %}
-                        <div class="post__tag">
+                        <a href = "{{site.url}}{{site.searchLocation}}/#{{tag}}" class="post__tag">
                             #{{ tag }}
-                        </div>
+                        </a>
                         {% endfor %}
                     </div>
                 </div>

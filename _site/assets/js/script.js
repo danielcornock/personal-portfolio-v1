@@ -227,17 +227,28 @@ const listenForSearch = function () {
     const path = '/blog/archive/';
     const searchBar = document.querySelector('.blog-header__search');
     const searchButton = document.querySelector('.blog-header__search-submit');
+    const tags = document.querySelectorAll('.blog-entry__tag');
     let searchToken = false;
 
     searchBar.addEventListener('keypress', (e) => {
         if (e.keyCode == 13){
-            console.log(path);
             window.location.href = `${baseUrl}${path}#${searchBar.value}`;
             if (window.location.pathname === path){
                 location.reload();
             }
+            
         }
     });
+
+    tags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            window.location.href = `${baseUrl}${path}${tag.textContent.trim()}`;
+            console.log(`${baseUrl}${path}${tag.textContent.trim()}`)
+            if (window.location.pathname === path){
+                location.reload();
+            }
+        })
+    })
 
     searchButton.addEventListener('click', () => {
         console.log('he');

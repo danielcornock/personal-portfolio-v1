@@ -4,6 +4,7 @@ title: Daniel Cornock
 description: Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.
 permalink: /blog/:categories/:title
 staticImgLocation: /assets/img/static
+searchLocation: /blog/archive
 comments: true
 categoryList:
   - discussion

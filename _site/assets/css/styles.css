@@ -786,7 +786,7 @@ input, textarea {
   .blog-entry__tags--onImage {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 10px;
     margin-top: 0; }
   .blog-entry__tags--post {
     margin-top: 40px; }
@@ -802,7 +802,8 @@ input, textarea {
   padding: 2px 12px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   transition: 250ms;
-  user-select: none; }
+  user-select: none;
+  cursor: pointer; }
   .blog-entry__tag--post {
     background-color: rgba(128, 128, 128, 0.1);
     color: #242424;
@@ -1067,7 +1068,6 @@ input, textarea {
     .post__tags {
       margin-bottom: 25px; } }
   .post__tag {
-    background-color: #efefef;
     color: #EC5367;
     border-radius: 0;
     font-weight: bold;
@@ -1076,6 +1076,8 @@ input, textarea {
     text-transform: uppercase;
     margin-right: 5px;
     padding: 3px 6px; }
+    .post__tag:hover {
+      transform: scale(1.05); }
     .post__tag:last-of-type {
       margin-right: 0; }
   .post__bg {
@@ -1166,8 +1168,8 @@ input, textarea {
     grid-area: text; }
   .author-info__intro {
     text-transform: uppercase;
-    color: #1f1f1f;
-    font-size: 8px; }
+    color: #777;
+    font-size: 12px; }
     @media (max-width: 950px) {
       .author-info__intro {
         font-size: 12px; } }
