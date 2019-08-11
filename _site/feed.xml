@@ -5,23 +5,7 @@
         <title>Daniel Cornock</title>
         <link>http://localhost:4000</link>
         <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
-        <lastBuildDate>Sun, 11 Aug 2019 21:05:20 +0100</lastBuildDate>
-        
-        <item>
-            <title>Static site search using vanilla JS</title>
-            <link>
-                http://localhost:4000/blog/tutorials/static-site-search
-            </link>
-            <description>
-                &lt;p&gt;In this tutorial, you will learn how to create a simple search for a static site using vanilla Javascript. It is ideal for use with blogs, recipe websites, and any website that holds searchable content on a small scale. If you want an example, have a go at using the search bar above and see it work for yourself!&lt;/p&gt;
 
-&lt;p&gt;Just before we begin, I’d like to mention that I am us...
-            </description>
-            <pubDate>Sun, 11 Aug 2019 00:00:00 +0100</pubDate>
-            <guid>
-                http://localhost:4000/blog/tutorials/static-site-search
-            </guid>
-        </item>
         
         <item>
             <title>The Anatomy of a Website</title>
