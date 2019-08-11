@@ -182,12 +182,10 @@ const searchPosts = function() {
         if (searchTagsMatch(post, searchCriteria)) {
             searchCount++;
             return true;
-        }
-        if (searchTitleMatch(post, searchCriteria)) {
+        } else if (searchTitleMatch(post, searchCriteria)) {
             searchCount++;
             return true;
-        }
-        if (searchDescriptionMatch(post, searchCriteria)) {
+        } else if (searchDescriptionMatch(post, searchCriteria)) {
             searchCount++;
             return true;
         }

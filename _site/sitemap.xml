@@ -117,6 +117,13 @@
 
     
     <url>
+        <loc>/blog/tutorials/static-site-search</loc>
+        <lastmod>2019-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>/blog/tutorials/website-anatomy</loc>
         <lastmod>2019-08-11</lastmod>
         <changefreq>daily</changefreq>

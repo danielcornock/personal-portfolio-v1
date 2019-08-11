@@ -295,7 +295,7 @@
     }
 
     p, li, a{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         color: #333;
         line-height: 190%;
@@ -327,21 +327,14 @@
         font-weight: bold;
     }
     ul{
-        margin-top: -20px;
         margin-bottom: 30px;
-        column-count: 2;
-        column-gap: 30px;
-
-        @media (max-width: $large-phone-sizing){
-            column-count: 1;
-        }
     }
 
     h2,h3,h4,h5{
         margin-bottom: 10px;
     }
     h2{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     h3{
@@ -531,12 +524,21 @@
     }
 }
 
-.highlight{
-    font-size: 16px;
+.highlighter-rouge {
+    margin-bottom: 40px;
+    background-color: #eee;
+}
+
+div.highlighter-rouge {
     padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    &>pre{
-        margin-bottom: 0;
+}
+
+code.highlighter-rouge {
+    padding: 4px;
+}
+
+pre.highlight {
+    code{
+        line-height: 200%;
     }
 }
