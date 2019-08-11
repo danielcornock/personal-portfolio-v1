@@ -107,6 +107,15 @@ h1 {
   .main__secondary--blog {
     padding-top: 102px; }
 
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all; }
+
 .main--blog {
   padding-top: 156px; }
 
@@ -1098,7 +1107,7 @@ input, textarea {
     width: 100%;
     object-fit: cover; }
   .post__content p, .post__content li, .post__content a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #333;
     line-height: 190%; }
@@ -1120,17 +1129,11 @@ input, textarea {
     color: #EC5367;
     font-weight: bold; }
   .post__content ul {
-    margin-top: -20px;
-    margin-bottom: 30px;
-    column-count: 2;
-    column-gap: 30px; }
-    @media (max-width: 570px) {
-      .post__content ul {
-        column-count: 1; } }
+    margin-bottom: 30px; }
   .post__content h2, .post__content h3, .post__content h4, .post__content h5 {
     margin-bottom: 10px; }
   .post__content h2 {
-    font-size: 35px; }
+    font-size: 30px; }
   .post__content h3 {
     font-size: 30px; }
   .post__content h4 {
@@ -1264,13 +1267,18 @@ input, textarea {
   .post__footer__social {
     margin-top: 10px; }
 
-.highlight {
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 15px; }
-  .highlight > pre {
-    margin-bottom: 0; }
+.highlighter-rouge {
+  margin-bottom: 40px;
+  background-color: #eee; }
+
+div.highlighter-rouge {
+  padding: 10px; }
+
+code.highlighter-rouge {
+  padding: 4px; }
+
+pre.highlight code {
+  line-height: 200%; }
 
 .portfolio {
   overflow: hidden;

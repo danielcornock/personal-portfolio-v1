@@ -142,6 +142,16 @@ h1{
         padding-top: 102px;
     }
 }
+pre{
+
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
 
 .main--blog{
     padding-top: 156px;
