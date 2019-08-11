@@ -96,4 +96,4 @@ let filteredPosts = allPosts.filter(post => {
 })
 ```
 
-This function will run through each of the elements in the `allPosts` array, and plug them in to each of the functions that we defined just above. If any of these return true, that post will be added to `filteredPosts` and `searchCount` will be incremented.
+This function will run through each of the elements in the `allPosts` array, and plug them in to each of the functions that we defined just above. If any of these return true, that post will be added to `filteredPosts` and `searchCount` will be incremented. 
