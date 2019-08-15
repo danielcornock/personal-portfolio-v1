@@ -5,7 +5,7 @@
         "title"    : "Static site search using vanilla JS",
         "url"      : "/blog/tutorials/static-site-search",
         "category" : "tutorials",
-        "tags"     : "Jekyll, Javascript",
+        "tags"     : "Search, Javascript, Static",
         "date"     : "2019-08-11 00:00:00 +0100",
         "description" : "A simple search feature that can be implemented on any static site without any external libraries."
   

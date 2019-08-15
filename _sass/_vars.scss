@@ -1,10 +1,10 @@
-@mixin center-background{
+@mixin center-background {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-@mixin center-absolute{
+@mixin center-absolute {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,21 +12,21 @@
     text-align: center;
 }
 
-@mixin gradient-background{
+@mixin gradient-background {
     background: linear-gradient(to bottom right, $pink, $orange);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap');
 
-@import url("monokai.css");
+@import url('monokai.css');
 
-$pink: #EC5367;
+$pink: #ec5367;
 $black: #1f1f1f;
 $white: white;
-$light-grey: #424C55;
-$grey: lighten($black,2%);
-$grey-on-black: rgba(white,0.7);
+$light-grey: #424c55;
+$grey: lighten($black, 2%);
+$grey-on-black: rgba(white, 0.7);
 
 $tablet-sizing: 950px;
 $large-phone-sizing: 570px;

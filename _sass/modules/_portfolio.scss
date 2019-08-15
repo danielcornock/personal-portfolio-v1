@@ -1,54 +1,52 @@
-.portfolio{
+.portfolio {
     overflow: hidden;
     background-color: $grey;
     position: relative;
-    &__content{
+    &__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
         position: relative;
         z-index: 1;
-        
-        @media (max-width: $tablet-sizing){
+
+        @media (max-width: $tablet-sizing) {
             grid-template-columns: 1fr 1fr;
         }
 
-        @media (max-width: $large-phone-sizing){
+        @media (max-width: $large-phone-sizing) {
             grid-template-columns: 1fr;
         }
     }
-    &__entry{
+    &__entry {
         background-color: $black;
         position: relative;
         display: flex;
         flex-direction: column;
     }
 
-    &__img{
+    &__img {
         height: 200px;
     }
-    &__info{
+    &__info {
         padding: 15px 30px 30px 30px;
         margin-top: 0;
         height: 100%;
     }
-    &__title{
+    &__title {
         color: $white;
         font-size: 25px;
     }
-    &__link{
+    &__link {
         color: $pink;
-        
     }
-    &__description{
+    &__description {
         color: $grey-on-black;
         margin-top: 15px;
         margin-bottom: 15px;
-
     }
-    &__tags{
+    &__tags {
     }
-    &__tag{
+    &__tag {
         background-color: initial;
         color: $white;
         border-radius: 0px;
@@ -60,13 +58,13 @@
         border: 2px solid $pink;
     }
 
-    &__filter-tags{
+    &__filter-tags {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
 
-    &__filter-tag{
+    &__filter-tag {
         margin-right: 5px;
         margin-bottom: 5px;
         font-size: 14px;
@@ -80,20 +78,19 @@
         border: 2px solid $black;
         transition: 250ms ease-in-out;
 
-
-        &:hover{
+        &:hover {
             border: 2px solid $pink;
         }
     }
 
-    &__filter-label{
+    &__filter-label {
         font-size: 30px;
         font-weight: 800;
         margin-bottom: 10px;
         display: inline-block;
         color: $white;
     }
-    &__github{
+    &__github {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -102,13 +99,13 @@
         align-items: center;
         font-size: 14px;
         text-transform: uppercase;
-        &:hover{
-            .portfolio__icon{
+        &:hover {
+            .portfolio__icon {
                 color: $pink;
             }
         }
     }
-    &__icon{
+    &__icon {
         color: $black;
         margin-left: 10px;
         font-size: 22px;
@@ -116,77 +113,70 @@
         padding: 2px;
         border-radius: 50px;
         transition: 250ms;
-
-        
     }
-
 }
 
-.fp-portfolio{
+.fp-portfolio {
     background-color: $black;
 
-    &__content{
+    &__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
+        grid-gap: 20px;
         position: relative;
         z-index: 1;
 
-        @media (max-width: $tablet-sizing){
+        @media (max-width: $tablet-sizing) {
             grid-template-columns: 1fr 1fr;
         }
-        
-        @media (max-width: $large-phone-sizing){
+
+        @media (max-width: $large-phone-sizing) {
             grid-template-columns: 1fr;
         }
     }
 
-    &__entry{
+    &__entry {
         position: relative;
         overflow: hidden;
         height: 260px;
 
-        &:last-of-type{
+        &:last-of-type {
             display: none;
         }
 
-        @media (max-width: $tablet-sizing){
-            &:last-of-type{
+        @media (max-width: $tablet-sizing) {
+            &:last-of-type {
                 display: block;
             }
         }
 
-        @media (max-width: $large-phone-sizing){
-            &:last-of-type{
+        @media (max-width: $large-phone-sizing) {
+            &:last-of-type {
                 display: none;
             }
         }
 
-        &:hover{
-            .fp-portfolio__overlay{
+        &:hover {
+            .fp-portfolio__overlay {
                 opacity: 1;
                 transform: translateY(0);
             }
 
-            .fp-portfolio__img{
+            .fp-portfolio__img {
                 transform: scale(1.1);
             }
         }
-
-        
     }
 
-    &__img{
+    &__img {
         width: 100%;
         object-fit: cover;
         object-position: center;
         height: 100%;
         transition: 1000ms;
-
-        
     }
 
-    &__overlay{
+    &__overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -198,26 +188,26 @@
         align-items: center;
         color: white;
 
-        background-color: rgba($grey,0.7);
+        background-color: rgba($grey, 0.7);
 
         transform: translateY(100%);
         opacity: 0;
         transition: 500ms;
     }
 
-    &__title{
+    &__title {
         font-size: 25px;
     }
-    &__description{
+    &__description {
         color: $grey-on-black;
         font-size: 20px;
     }
-    &__btn{
+    &__btn {
         margin-top: 10px;
     }
 }
 
-.portfolio-leave-anim{
+.portfolio-leave-anim {
     animation: portfolio-leave;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -225,14 +215,14 @@
     opacity: 1;
 }
 
-@keyframes portfolio-leave{
-    0%{
+@keyframes portfolio-leave {
+    0% {
         opacity: 1;
     }
-    50%{
+    50% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }

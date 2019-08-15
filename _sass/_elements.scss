@@ -1,5 +1,5 @@
-.page{
-    &__background{
+.page {
+    &__background {
         position: absolute;
         top: 0;
         left: 0;
@@ -7,99 +7,94 @@
         bottom: 0;
         filter: blur(2px);
         transform: scale(1.1);
-        &>img{
+        & > img {
             display: block;
             object-fit: cover;
             object-position: center;
-            
+
             height: 100%;
             width: 100%;
-
         }
 
-        &::after{
-            content: "";
+        &::after {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             background-color: rgba($black, 0.8);
-           
         }
     }
 
-    &__header{
-
+    &__header {
         overflow: hidden;
         position: relative;
         text-align: left;
         z-index: 1;
 
-        &__content{
+        &__content {
             z-index: 1;
             position: relative;
             align-self: flex-start;
         }
 
-        &__title{
+        &__title {
             color: $pink;
             text-align: left;
             font-size: 80px;
         }
 
-        &__subtext{
-            color: rgba(255,255,255,0.8);
+        &__subtext {
+            color: rgba(255, 255, 255, 0.8);
             font-size: 22px;
             font-weight: 200;
-    
         }
     }
 }
 
-.btn{
+.btn {
     padding: 10px 30px;
     transition: 250ms ease-in-out;
     cursor: pointer;
     outline: none;
     display: block;
     text-align: center;
-    
-    &--primary{
+
+    &--primary {
         background-color: $pink;
         border: 2px solid $pink;
         color: $white;
 
-        &:hover{
+        &:hover {
             color: $pink;
             background-color: $white;
             border: 2px solid $white;
-
         }
     }
 
-    &--secondary{
+    &--secondary {
         border: 2px solid $pink;
         color: $white;
 
-        &:hover{
+        &:hover {
             background-color: $pink;
 
-            color: $white
-        }
-    }
-
-    &--tertiary{
-        color: $pink;
-        padding: 10px 0;
-        text-align: left;
-
-        &:hover{
             color: $white;
         }
     }
 
-    &__view-more{
+    &--tertiary {
+        color: $pink;
+        padding: 10px 0;
+        text-align: left;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__view-more {
         margin: 50px auto 0 auto;
         padding: 10px 50px;
         display: inline-block;
@@ -107,15 +102,13 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media (max-width: $large-phone-sizing){
+        @media (max-width: $large-phone-sizing) {
             width: 100%;
         }
     }
-
-    
 }
 
-.section-header{
+.section-header {
     color: $white;
     font-size: 30px;
 
@@ -126,11 +119,11 @@
 
     margin-bottom: 50px;
 
-    &--dark{
+    &--dark {
         color: $black;
     }
 
-    &::before{
+    &::before {
         content: attr(data-heading);
         position: absolute;
         width: 100%;
@@ -142,29 +135,27 @@
     }
 }
 
-.card{
+.card {
     background-color: $grey;
     position: relative;
 
-    &::after{
-        content: "";
+    &::after {
+        content: '';
         position: absolute;
         top: 5px;
         left: 5px;
         right: 5px;
         bottom: 5px;
-        border: 2px solid rgba($pink,0.2);
+        border: 2px solid rgba($pink, 0.2);
         z-index: 0;
     }
-
 }
 
-.colored{
+.colored {
     color: $pink;
 }
 
-
-.img--responsive{
+.img--responsive {
     width: 100%;
     height: 100%;
     object-fit: cover;

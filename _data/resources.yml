@@ -1,4 +1,10 @@
 - name: Responsive Gallery
   description: A gallery template for anybody to use in their websites for both static HTML sites and the default wordpress gallery.
+  host: GitHub
   link: https://github.com/danielcornock/GalleryTemplate
   image: '/assets/img/resources/gallery.jpg'
+- name: Testimonial Slider
+  description: An example of a simple testimonial slider written with pure HTML, CSS and Javascript
+  host: Codepen
+  link: https://codepen.io/danielcornock/pen/KOZVbb
+  image: '/assets/img/resources/testimonials.jpg'

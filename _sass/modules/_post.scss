@@ -345,6 +345,15 @@
         font-size: 25px;
         color: #444;
     }
+
+    figure {
+        margin-bottom: 40px;
+
+        &>img{
+            margin-bottom: 10px;
+        }
+    }
+
 }
 
 .author-info{
@@ -526,11 +535,11 @@
 
 .highlighter-rouge {
     margin-bottom: 40px;
-    background-color: #eee;
+    background-color: #f3f3f3;
 }
 
 div.highlighter-rouge {
-    padding: 10px;
+    padding: 15px 20px;
 }
 
 code.highlighter-rouge {
@@ -540,5 +549,10 @@ code.highlighter-rouge {
 pre.highlight {
     code{
         line-height: 200%;
+        font-size: 16px;
+
+        @media (max-width: $large-phone-sizing){
+            font-size: 12px;
+        }
     }
 }

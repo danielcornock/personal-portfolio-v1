@@ -1,80 +1,77 @@
-body, html {
+body,
+html {
     font-family: 'Poppins', sans-serif;
     background-color: $black;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.inverted{
+.inverted {
     filter: invert(100%);
     // transition: 2000ms;
 }
 
-body{
+body {
     overflow-x: hidden;
     width: 100vw;
 }
 
-main{
-
-    @media (max-width: $tablet-sizing){
-        overflow-x:hidden;
+main {
+    @media (max-width: $tablet-sizing) {
+        overflow-x: hidden;
     }
 }
 
-p{
+p {
     margin-bottom: 15px;
     line-height: 30px;
     font-weight: 400;
     font-size: 16px;
 
-    @media (max-width: $large-phone-sizing){
+    @media (max-width: $large-phone-sizing) {
         font-size: 18px;
     }
-    
 
-    &:last-of-type{
+    &:last-of-type {
         margin-bottom: 0;
     }
 }
 
-h2{
+h2 {
     font-size: 26px;
     margin-bottom: 5px;
 }
 
-
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.wrapper{
+.wrapper {
     z-index: 1;
     max-width: 1250px;
-    padding: 20px 50px;;
+    padding: 20px 50px;
     width: 100%;
     margin: auto;
     transition: 1s;
     position: relative;
     height: 100%;
 
-    @media (max-width: $large-phone-sizing){
-        padding:20px;
+    @media (max-width: $large-phone-sizing) {
+        padding: 20px;
     }
 
-
-    &--section{
+    &--section {
         padding: 80px 50px;
-        @media (max-width: $large-phone-sizing){
-            padding:80px 20px;
+        @media (max-width: $large-phone-sizing) {
+            padding: 80px 20px;
         }
     }
 
-    &--blog{
+    &--blog {
         max-width: 740px;
         margin: auto;
         padding-right: 20px;
@@ -82,50 +79,50 @@ h2{
         padding-top: 40px;
     }
 
-    &--fixed-header{
+    &--fixed-header {
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
-    &--tools{
+    &--tools {
         position: relative;
     }
 
-    &--disqus{
+    &--disqus {
         display: block;
     }
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     transition: 0.2s ease-in-out;
 
-    &:hover{
+    &:hover {
         color: $pink;
     }
 }
 
-h1{
+h1 {
     font-size: 50px;
     color: $white;
     font-weight: 700;
 }
 
-.hide-on-mobile{
-    @media (max-width: $large-phone-sizing){
+.hide-on-mobile {
+    @media (max-width: $large-phone-sizing) {
         display: none;
     }
 }
 
-.main__secondary{
+.main__secondary {
     background-color: $black;
     animation: page-fade-in 400ms ease-in-out forwards;
     opacity: 0;
     padding-top: 100px;
     position: relative;
 
-    &--Thankyou{
+    &--Thankyou {
         height: 80vh;
         display: flex;
         justify-content: center;
@@ -134,17 +131,16 @@ h1{
         overflow: hidden;
     }
 
-    &--post{
+    &--post {
         padding-top: 102px;
         background-color: $white;
     }
-    &--blog{
+    &--blog {
         padding-top: 102px;
     }
 }
-pre{
-
-    overflow-x: auto;
+pre {
+    overflow-x: scroll;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
@@ -153,20 +149,21 @@ pre{
     word-break: break-all;
 }
 
-.main--blog{
+.main--blog {
     padding-top: 156px;
 }
 
-input,textarea {
-    width:100%;
-    display:block
+input,
+textarea {
+    width: 100%;
+    display: block;
 }
 
-@keyframes page-fade-in{
-    from{
+@keyframes page-fade-in {
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }

@@ -7,28 +7,27 @@ staticImgLocation: /assets/img/static
 searchLocation: /blog/archive
 comments: true
 categoryList:
-  - discussion
-  - tutorials
-  - archive
+    - discussion
+    - tutorials
+    - archive
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+    input: GFM
+    syntax_highlighter: rouge
 include: ['_pages']
 
 collections:
-  portfolio:
-    output: true
+    portfolio:
+        output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "portfolio"
-    values:
-      layout: "portfolio"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
+    - scope:
+          path: ''
+          type: 'portfolio'
+      values:
+          layout: 'portfolio'
+    - scope:
+          path: ''
+          type: 'posts'
+      values:
+          layout: 'post'

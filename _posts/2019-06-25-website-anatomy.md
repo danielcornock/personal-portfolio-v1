@@ -31,7 +31,7 @@ Typical elements for a website layout include:
 
 Take a look at the example diagram below to get a feel for which elements are which, and where they might be placed on a typical website.
 
-![Simple website structure](../../assets/img/post_anatomy_IMG1.png "Website Structure Image")
+![Simple website structure]({{ site.url }}/assets/img/post_anatomy_IMG1.png "Website Structure Image")
 
 Each element is represented by a red box. Elements can contain as many elements as necessary, and nested as many times as necessary. However, most web developers try to avoid excessive nesting to improve legibility for screen readers.
 

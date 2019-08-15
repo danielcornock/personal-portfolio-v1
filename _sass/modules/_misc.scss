@@ -1,31 +1,31 @@
-.thankyou{
+.thankyou {
     background-color: $pink;
-    &__content{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    &__content {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    &__header{
+    &__header {
         color: $white;
         text-align: center;
     }
-    &__message{
+    &__message {
         color: $grey;
         text-align: center;
 
-        &>a{
+        & > a {
             font-weight: 800;
             color: $white;
         }
     }
 }
 
-.page-not-found{
+.page-not-found {
     background-color: $grey;
 
-    &__content{
+    &__content {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -33,32 +33,33 @@
         justify-content: center;
     }
 
-    &__heading{
+    &__heading {
         margin-bottom: 10px;
     }
 
-    &__subheading{
+    &__subheading {
         color: $pink;
         margin-bottom: 30px;
     }
 }
 
-.resources{
-    &--mine{
+.resources {
+    &--mine {
         background-color: $black;
 
-        &__content{
+        &__content {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 30px;
         }
     }
 
-    &__title{
+    &__title {
         margin-top: 10px;
     }
 
-    &__button{
+    &__button {
         margin-top: 20px;
+        text-transform: uppercase;
     }
 }
