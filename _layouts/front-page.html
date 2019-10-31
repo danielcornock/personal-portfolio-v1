@@ -1,189 +1,290 @@
 {% include header.html %}
 <button class="lights">
-    <i class="lights__icon far fa-lightbulb"></i>
-    <div class="lights__text">LIGHTS<br>ON!</div>
+  <i class="lights__icon far fa-lightbulb"></i>
+  <div class="lights__text">LIGHTS<br />ON!</div>
 </button>
 <main>
-    
-    <section class="hero">
-        <div class="wrapper section-wrapper">
-            <div class="hero__content">
-                <div class="hero__logo">
-                    <img class = "hero__logo--left" src="assets/icons/mylogo_left.png" alt="">
-                    <img class = "hero__logo--right" src="assets/icons/mylogo_right.png" alt="">
-                </div>
-                <div class="hero__text">
-                    <h1 class="hero__title">DANIEL CORNOCK</h1>
-                    <div class="hero__subtext">Web Developer</div>
-                </div>
-
-            </div>
+  <section class="hero">
+    <div class="wrapper section-wrapper">
+      <div class="hero__content">
+        <div class="hero__logo">
+          <img
+            class="hero__logo--left"
+            src="assets/icons/mylogo_left.png"
+            alt=""
+          />
+          <img
+            class="hero__logo--right"
+            src="assets/icons/mylogo_right.png"
+            alt=""
+          />
         </div>
-        <a href = "#about" class="hero__icon fas fa-chevron-down"></a>
-        <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
-        <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
-    </section>
-
-    <section class="fp-about" id = "about">
-        <div class="wrapper wrapper--section">
-            <h2 data-heading="ABOUT ME" class="section-header">welcome!</h2>
-            <div class = "fp-about__content">
-                <img src="{{ "assets/img/static/headshot.jpg" | absolute_url }}" alt="" class="fp-about__img">
-                <div class="fp-about__text">
-                    <h3 class = "fp-about__title"><span class = "colored">Who</span> am I?</h3>
-                    <p>Hey, I'm Dan! Welcome to my little corner of the internet. I am a front end developer from Birmingham, United Kingdom, having graduated in Computer Systems Engineering at the University of Birmingham in 2017. Despite the degree, nearly all of my skills in web development are from self-motivated learning!</p>
-                    <h3 class = "fp-about__title"><span class = "colored">What</span> do I do?</h3>
-                    <p>I enjoy creating tailor-made websites for small businesses. I am a developer first, designer second. However, I spend lots of my time researching design trends and soaking up knowledge that I can use for my projects.</p>
-                    <h3 class = "fp-about__title"><span class = "colored">Why</span> choose me?</h3>
-                    <p>I am extremely dedicated to getting the job done efficiently, properly, and in good time. I enjoy making people happy, and I won't quit until my clients are 110% satisfied with the product that I have delivered.</p>
-                </div>
-            </div>
-            <a href="{{site.url}}/assets/files/CV.pdf" class="btn btn--secondary btn__view-more">Download my CV</a>
-            
+        <div class="hero__text">
+          <h1 class="hero__title">DANIEL CORNOCK</h1>
+          <div class="hero__subtext">Web Developer</div>
         </div>
+      </div>
+    </div>
+    <a href="#about" class="hero__icon fas fa-chevron-down"></a>
+    <img class = "hero__bg hero__bg--right" src="{{
+      'assets/icons/mylogo.svg' | absolute_url
+    }}" alt=""> <img class = "hero__bg hero__bg--left" src="{{
+      'assets/icons/mylogo.svg' | absolute_url
+    }}" alt="">
+  </section>
 
-        
-    </section>
-    
-    <section class="services">
-        <div class="wrapper wrapper--section">
-
-            <h2 class="section-header" data-heading="SERVICES">what I offer.</h2>
-            <div class="services__content">
-                {% for service in site.data.services %}
-                    <div class="card services__card">
-                        <svg class = "services__icon" {{ service.svg }}></svg>
-                        <h3 class = "services__name">{{ service.title }}</h3>
-                        <p class="services__description">
-                            {{ service.content }}
-                        </p>
-                    </div>
-                {% endfor %}
-            </div>
+  <section class="fp-about" id="about">
+    <div class="wrapper wrapper--section">
+      <h2 data-heading="ABOUT ME" class="section-header">welcome!</h2>
+      <div class="fp-about__content">
+        <img src="{{ 'assets/img/static/headshot.jpg' | absolute_url }}" alt=""
+        class="fp-about__img">
+        <div class="fp-about__text">
+          <h3 class="fp-about__title">
+            <span class="colored">Who</span> am I?
+          </h3>
+          <p>
+            Hey, I'm Dan! Welcome to my little corner of the internet. I am a
+            front end developer from Birmingham, United Kingdom, having
+            graduated in Computer Systems Engineering at the University of
+            Birmingham in 2017. Despite the degree, nearly all of my skills in
+            web development are from self-motivated learning!
+          </p>
+          <h3 class="fp-about__title">
+            <span class="colored">What</span> do I do?
+          </h3>
+          <p>
+            I enjoy creating tailor-made websites for small businesses. I am a
+            developer first, designer second. However, I spend lots of my time
+            researching design trends and soaking up knowledge that I can use
+            for my projects.
+          </p>
+          <h3 class="fp-about__title">
+            <span class="colored">Why</span> choose me?
+          </h3>
+          <p>
+            I am extremely dedicated to getting the job done efficiently,
+            properly, and in good time. I enjoy making people happy, and I won't
+            quit until my clients are 110% satisfied with the product that I
+            have delivered.
+          </p>
         </div>
-    </section>
-    <section class="tools">
-        <div class="wrapper wrapper--section wrapper--tools">
-            <h2 data-heading="MY TECH STACK" class="section-header section-header--tools">what I use.</h2>
-            <div class="tools__content">
-                <div class = "tools__list">
-                    <i class="tools__icon fab fa-html5"><div class="tools__expansion">HTML5</div></i>
-                    <i class="tools__icon fab fa-css3"><div class="tools__expansion">CSS3</div></i>
-                    <i class="tools__icon fab fa-js"><div class="tools__expansion">Javascript</div></i>
-                    <i class="tools__icon fab fa-sass"><div class="tools__expansion">SASS/SCSS</div></i>
-                    <i class="tools__icon fab fa-angular"><div class="tools__expansion">Angular2</div></i>
-                    <i class="tools__icon fab fa-php"><div class="tools__expansion">PHP</div></i>
-                    <i class="tools__icon fab fa-wordpress-simple"><div class="tools__expansion">Wordpress</div></i>
-                    <i class="tools__icon fab fa-git"><div class="tools__expansion">Git CLI</div></i>
-                    <i class="tools__icon fab fa-github"><div class="tools__expansion">Github</div></i>
-                    <i class="tools__icon fas fa-database"><div class="tools__expansion">MySql</div></i>
-                    <i class="tools__icon fas fa-mobile-alt"><div class="tools__expansion">Media Queries</div></i>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+      <a
+        href="{{ site.url }}/assets/files/CV.pdf"
+        class="btn btn--secondary btn__view-more"
+        >Download my CV</a
+      >
+    </div>
+  </section>
 
-    <section class="fp-portfolio" id="fp-portfolio">
-        <div class="wrapper wrapper--section">
-            <h2 data-heading="FEATURED PROJECTS" class="section-header">what I've made.</h2>
-            <div class="fp-portfolio__content">
-                {% for work in site.portfolio %}
-                {% if work.featured %}
-                <div class="fp-portfolio__entry">
-                    <img src="{{ work.img }}" alt="" class="fp-portfolio__img">
-                    <div class="fp-portfolio__overlay">
-                        <h3 class = "fp-portfolio__title">{{ work.type }}</h3>
-                        <a href = "https://{{work.link}}" class="fp-portfolio__description">{{ work.link }}</a>
-                        <a href="{{site.url}}/portfolio/" class="btn btn--primary fp-portfolio__btn">Find out more</a>
-                    </div>
-                </div>
-                {% endif %}
-                {% endfor %} 
-            </div>
-            <a href="/portfolio/" class="btn btn--secondary btn__view-more">See more of my work</a>
+  <section class="services">
+    <div class="wrapper wrapper--section">
+      <h2 class="section-header" data-heading="SERVICES">what I offer.</h2>
+      <div class="services__content">
+        {% for service in site.data.services %}
+        <div class="card services__card">
+          <svg class="services__icon" {{ service.svg }}></svg>
+          <h3 class="services__name">{{ service.title }}</h3>
+          <p class="services__description">
+            {{ service.content }}
+          </p>
         </div>
-    </section>
-
-    <section class="fp-blog">
-        <div class="wrapper wrapper--section">
-            <h2 data-heading = "BLOG" class="section-header">what I write about.</h2>
-            <div class="blog-posts--horizontal">
-                {% for post in site.posts limit:4%}
-
-                       <div class="blog-entry--tall blog-entry--black">
-                            <img src="{{site.url}}{{post.featuredImg}}" alt="" class="img--responsive blog-entry--tall__img">
-                            <div class="blog-entry--tall__details">
-                                <div class="blog-entry__meta">
-                                    <time datetime = '{{post.date}}'>{{ post.date | date_to_string }}</time>
-                                    • {{post.category}}
-                                </div>
-                                
-                                <a href="{{post.url}}"><h3 class="blog-entry--tall__title">{{post.title}}</h3></a>
-                                <p class="blog-entry--tall__description">{{post.description}}</p>
-                                <a href="{{post.url}}" class="btn btn--tertiary blog-entry--tall__btn">Read More</a>
-                            </div>
-                        </div> 
-                {% endfor %}
-            </div>
-            <a href="/blog/" class="btn btn--secondary btn__view-more">View my blog</a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section class="tools">
+    <div class="wrapper wrapper--section wrapper--tools">
+      <h2
+        data-heading="MY TECH STACK"
+        class="section-header section-header--tools"
+      >
+        what I use.
+      </h2>
+      <div class="tools__content">
+        <div class="tools__list">
+          <i class="tools__icon fab fa-html5"
+            ><div class="tools__expansion">HTML5</div></i
+          >
+          <i class="tools__icon fab fa-css3"
+            ><div class="tools__expansion">CSS3</div></i
+          >
+          <i class="tools__icon fab fa-js"
+            ><div class="tools__expansion">Javascript</div></i
+          >
+          <i class="tools__icon fab fa-sass"
+            ><div class="tools__expansion">SASS/SCSS</div></i
+          >
+          <i class="tools__icon fab fa-angular"
+            ><div class="tools__expansion">Angular2</div></i
+          >
+          <i class="tools__icon fab fa-node"
+            ><div class="tools__expansion">NodeJS</div></i
+          >
+          <i class="tools__icon fab fa-wordpress-simple"
+            ><div class="tools__expansion">Wordpress</div></i
+          >
+          <i class="tools__icon fab fa-git"
+            ><div class="tools__expansion">Git CLI</div></i
+          >
+          <i class="tools__icon fab fa-github"
+            ><div class="tools__expansion">Github</div></i
+          >
+          <i class="tools__icon fas fa-database"
+            ><div class="tools__expansion">MySql</div></i
+          >
+          <i class="tools__icon fas fa-mobile-alt"
+            ><div class="tools__expansion">Media Queries</div></i
+          >
         </div>
-    </section>
-    <section class="testimonials" id="testimonials">
-        <div class="wrapper wrapper--section">
-            <h2 data-heading="TESTIMONIALS" class="section-header">what people say.</h2>
-            <div class="testimonials__content">
-                <div class="card testimonials__card">
-                    <i class="testimonials__bg testimonials__bg--top material-icons">
-                        format_quote
-                    </i>
-                    <i class="testimonials__bg testimonials__bg--bottom material-icons">
-                        format_quote
-                    </i>
-                    <img src="{{"assets/img/static/testimonials/logo_ionic.jpg" | absolute_url}}" alt="" class="testimonials__image">
-                    <header class="testimonials__header">
-                        
-                        <div class="testimonials__details">
-                            <h3 class="testimonials__name">Alexis Birakos</h3>
-                            <a href = "http://www.ionicbuilds.co.uk" class="testimonials__website">www.ionicbuilds.co.uk</a>
-                        </div>
-                    </header>
-                    <p class="testimonials__paragraph">
-                        I’m pleased to say that Daniel was very helpful in catering to my requests to develop the style of website I was after, while suggesting a more sleek and professional layout to the one I initially had in mind.
-                        
-                        Daniel completed the website in good time, producing very high quality work for a very reasonable price. 
+      </div>
+    </div>
+  </section>
 
-                        I wouldn’t hesitate to recommend him to anyone.
-                    </p>
-                </div>
-                <div class="card testimonials__card">
-                    <i class="testimonials__bg testimonials__bg--top material-icons">
-                        format_quote
-                    </i>
-                    <i class="testimonials__bg testimonials__bg--bottom material-icons">
-                        format_quote
-                    </i>
-                    <img src="{{"assets/img/static/testimonials/logo_GW.jpg" | absolute_url}}" alt="" class="testimonials__image">
-                    <header class="testimonials__header">
-                        
-                        <div class="testimonials__details">
-                            <h3 class="testimonials__name">Greg Woodin</h3>
-                            <a href = "http://www.gregwoodin.co.uk" class="testimonials__website">www.gregwoodin.co.uk</a>
-                        </div>
-                    </header>
-                    <p class="testimonials__paragraph">
-                        I was very pleased with the experience of working with Daniel, and the final product exceeded my expectations – to my eyes, it’s the best of its kind that I’ve seen. Daniel also managed to get the site finished and live in time for a conference I was attending, as I requested, and he continued to suggest creative changes that improved the site even after this.
-                    </p>
-                </div>
-            </div>
+  <section class="fp-portfolio" id="fp-portfolio">
+    <div class="wrapper wrapper--section">
+      <h2 data-heading="FEATURED PROJECTS" class="section-header">
+        what I've made.
+      </h2>
+      <div class="fp-portfolio__content">
+        {% for work in site.portfolio %} {% if work.featured %}
+        <div class="fp-portfolio__entry">
+          <img src="{{ work.img }}" alt="" class="fp-portfolio__img" />
+          <div class="fp-portfolio__overlay">
+            <h3 class="fp-portfolio__title">{{ work.type }}</h3>
+            <a
+              href="https://{{ work.link }}"
+              class="fp-portfolio__description"
+              >{{ work.link }}</a
+            >
+            <a
+              href="{{ site.url }}/portfolio/"
+              class="btn btn--primary fp-portfolio__btn"
+              >Find out more</a
+            >
+          </div>
         </div>
-    </section>
+        {% endif %} {% endfor %}
+      </div>
+      <a href="/portfolio/" class="btn btn--secondary btn__view-more"
+        >See more of my work</a
+      >
+    </div>
+  </section>
+
+  <section class="fp-blog">
+    <div class="wrapper wrapper--section">
+      <h2 data-heading="BLOG" class="section-header">what I write about.</h2>
+      <div class="blog-posts--horizontal">
+        {% for post in site.posts limit:4%}
+
+        <div class="blog-entry--tall blog-entry--black">
+          <img
+            src="{{ site.url }}{{ post.featuredImg }}"
+            alt=""
+            class="img--responsive blog-entry--tall__img"
+          />
+          <div class="blog-entry--tall__details">
+            <div class="blog-entry__meta">
+              <time datetime="{{ post.date }}">{{
+                post.date | date_to_string
+              }}</time>
+              • {{ post.category }}
+            </div>
+
+            <a href="{{ post.url }}"
+              ><h3 class="blog-entry--tall__title">{{ post.title }}</h3></a
+            >
+            <p class="blog-entry--tall__description">{{ post.description }}</p>
+            <a
+              href="{{ post.url }}"
+              class="btn btn--tertiary blog-entry--tall__btn"
+              >Read More</a
+            >
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <a href="/blog/" class="btn btn--secondary btn__view-more"
+        >View my blog</a
+      >
+    </div>
+  </section>
+  <section class="testimonials" id="testimonials">
+    <div class="wrapper wrapper--section">
+      <h2 data-heading="TESTIMONIALS" class="section-header">
+        what people say.
+      </h2>
+      <div class="testimonials__content">
+        <div class="card testimonials__card">
+          <i class="testimonials__bg testimonials__bg--top material-icons">
+            format_quote
+          </i>
+          <i class="testimonials__bg testimonials__bg--bottom material-icons">
+            format_quote
+          </i>
+          <img src="{{
+            'assets/img/static/testimonials/logo_ionic.jpg' | absolute_url
+          }}" alt="" class="testimonials__image">
+          <header class="testimonials__header">
+            <div class="testimonials__details">
+              <h3 class="testimonials__name">Alexis Birakos</h3>
+              <a
+                href="http://www.ionicbuilds.co.uk"
+                class="testimonials__website"
+                >www.ionicbuilds.co.uk</a
+              >
+            </div>
+          </header>
+          <p class="testimonials__paragraph">
+            I’m pleased to say that Daniel was very helpful in catering to my
+            requests to develop the style of website I was after, while
+            suggesting a more sleek and professional layout to the one I
+            initially had in mind. Daniel completed the website in good time,
+            producing very high quality work for a very reasonable price. I
+            wouldn’t hesitate to recommend him to anyone.
+          </p>
+        </div>
+        <div class="card testimonials__card">
+          <i class="testimonials__bg testimonials__bg--top material-icons">
+            format_quote
+          </i>
+          <i class="testimonials__bg testimonials__bg--bottom material-icons">
+            format_quote
+          </i>
+          <img src="{{
+            'assets/img/static/testimonials/logo_GW.jpg' | absolute_url
+          }}" alt="" class="testimonials__image">
+          <header class="testimonials__header">
+            <div class="testimonials__details">
+              <h3 class="testimonials__name">Greg Woodin</h3>
+              <a
+                href="http://www.gregwoodin.co.uk"
+                class="testimonials__website"
+                >www.gregwoodin.co.uk</a
+              >
+            </div>
+          </header>
+          <p class="testimonials__paragraph">
+            I was very pleased with the experience of working with Daniel, and
+            the final product exceeded my expectations – to my eyes, it’s the
+            best of its kind that I’ve seen. Daniel also managed to get the site
+            finished and live in time for a conference I was attending, as I
+            requested, and he continued to suggest creative changes that
+            improved the site even after this.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
+    window.netlifyIdentity.on('init', user => {
       if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
         });
       }
     });
