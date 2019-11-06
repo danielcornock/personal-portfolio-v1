@@ -2,69 +2,71 @@
 layout: default
 ---
 
-{% assign rawtags = "" %}
-{% for entry in site.portfolio %}
-	{% assign ttags = entry.stacks | join:'|' | append:'|' %}
-	{% assign rawtags = rawtags | append:ttags %}
-{% endfor %}
-{% assign rawtags = rawtags | split:'|' | sort %}
-
-{% assign tags = "" %}
-{% for tag in rawtags %}
-	{% if tag != "" %}
-		{% if tags == "" %}
-			{% assign tags = tag | split:'|' %}
-		{% endif %}
-		{% unless tags contains tag %}
-			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-		{% endunless %}
-	{% endif %}
-{% endfor %}
-
-{% include page-header.html %}
+{% assign rawtags = "" %} {% for entry in site.portfolio %} {% assign ttags =
+entry.stacks | join:'|' | append:'|' %} {% assign rawtags = rawtags |
+append:ttags %} {% endfor %} {% assign rawtags = rawtags | split:'|' | sort %}
+{% assign tags = "" %} {% for tag in rawtags %} {% if tag != "" %} {% if tags ==
+"" %} {% assign tags = tag | split:'|' %} {% endif %} {% unless tags contains
+tag %} {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+{% endunless %} {% endif %} {% endfor %} {% include page-header.html %}
 
 <section class="portfolio">
-    <img class = "hero__bg hero__bg--right" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
-    <img class = "hero__bg hero__bg--left" src="{{ "assets/icons/mylogo.svg" | absolute_url }}" alt="">
-    <div class="wrapper wrapper--section">
-        <div class="portfolio__filter-label">Filter by tags:</div>
-        <div class="portfolio__filter-tags">
-            {% for tag in tags %}
-                <button class = "portfolio__filter-tag">{{ tag }}</button>
-            {% endfor %}
-        </div>
-        
-        <div class="portfolio__content">
-            {% for work in site.portfolio %}
-            <div class="portfolio__entry" data-filter = "{{ work.stacks | join: ' ' }}">
-                <img src="{{site.url}}{{ work.img }}" alt="" class="img--responsive portfolio__img">
-                <div class="portfolio__info">
-                    <h3 class = "portfolio__title">{{ work.type }}</h3>
-                    <a href = "https://{{work.link}}" class="portfolio__link">
-                        {% if work.completed %}
-                            {{ work.link }}
-                        {% else  %}
-                            <s>{{ work.link }}</s>
-                        {% endif %}
-                    </a>
-                    <p class="portfolio__description">{{ work.description }}</p>
-                    {% if work.stacks %}
-                    <div class = "blog-entry__tags portfolio__tags">
-                        {% for stack in work.stacks %}
-                        <div class="blog-entry__tag portfolio__tag">
-                            {{ stack }}
-                        </div>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    {% if work.github %}
-                    <a href="{{work.github}}" class="portfolio__github">GitHub <i class="portfolio__icon fab fa-github"></i></a>
-                    {% endif %}
-                </div>
-                
-            </div>
-            {% endfor %} 
-        </div>
+  <img
+    class="hero__bg hero__bg--right"
+    src="{{ 'assets/icons/mylogo.svg' | absolute_url }}"
+    alt=""
+  />
+  <img
+    class="hero__bg hero__bg--left"
+    src="{{ 'assets/icons/mylogo.svg' | absolute_url }}"
+    alt=""
+  />
+  <div class="wrapper wrapper--section">
+    <div class="portfolio__filter-label">Filter by tags:</div>
+    <div class="portfolio__filter-tags">
+      {% for tag in tags %}
+      <button class="portfolio__filter-tag">{{ tag }}</button>
+      {% endfor %}
     </div>
+
+    <div class="portfolio__content">
+      {% for work in site.portfolio %}
+      <div class="portfolio__entry" data-filter="{{ work.stacks | join: ' ' }}">
+        <img
+          src="{{ site.url }}{{ work.img }}"
+          alt=""
+          class="img--responsive portfolio__img"
+        />
+        <div class="portfolio__info">
+          <h3 class="portfolio__title">{{ work.type }}</h3>
+          <a href="https://{{ work.link }}" class="portfolio__link">
+            {% if work.completed %}
+            {{ work.link }}
+            {% else %}
+            <s>{{ work.link }}</s>
+
+            {% endif %}
+          </a>
+          {% if work.completed == false %}
+          <div class="portfolio__construction">UNDER CONSTRUCTION</div>
+          {% endif %}
+          <p class="portfolio__description">{{ work.description }}</p>
+          {% if work.stacks %}
+          <div class="blog-entry__tags portfolio__tags">
+            {% for stack in work.stacks %}
+            <div class="blog-entry__tag portfolio__tag">
+              {{ stack }}
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %} {% if work.github %}
+          <a href="{{ work.github }}" class="portfolio__github"
+            >GitHub <i class="portfolio__icon fab fa-github"></i
+          ></a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

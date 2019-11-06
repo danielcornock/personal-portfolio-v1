@@ -1380,6 +1380,8 @@ pre.highlight code {
     padding: 2px;
     border-radius: 50px;
     transition: 250ms; }
+  .portfolio__construction {
+    color: rgba(236, 83, 103, 0.6); }
 
 .fp-portfolio {
   background-color: #1f1f1f; }

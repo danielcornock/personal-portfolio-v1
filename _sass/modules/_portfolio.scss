@@ -1,228 +1,231 @@
 .portfolio {
-    overflow: hidden;
-    background-color: $grey;
+  overflow: hidden;
+  background-color: $grey;
+  position: relative;
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
     position: relative;
-    &__content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-        position: relative;
-        z-index: 1;
+    z-index: 1;
 
-        @media (max-width: $tablet-sizing) {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        @media (max-width: $large-phone-sizing) {
-            grid-template-columns: 1fr;
-        }
-    }
-    &__entry {
-        background-color: $black;
-        position: relative;
-        display: flex;
-        flex-direction: column;
+    @media (max-width: $tablet-sizing) {
+      grid-template-columns: 1fr 1fr;
     }
 
-    &__img {
-        height: 200px;
+    @media (max-width: $large-phone-sizing) {
+      grid-template-columns: 1fr;
     }
-    &__info {
-        padding: 15px 30px 30px 30px;
-        margin-top: 0;
-        height: 100%;
+  }
+  &__entry {
+    background-color: $black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    height: 200px;
+  }
+  &__info {
+    padding: 15px 30px 30px 30px;
+    margin-top: 0;
+    height: 100%;
+  }
+  &__title {
+    color: $white;
+    font-size: 25px;
+  }
+  &__link {
+    color: $pink;
+  }
+  &__description {
+    color: $grey-on-black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &__tags {
+  }
+  &__tag {
+    background-color: initial;
+    color: $white;
+    border-radius: 0px;
+    border: none;
+    padding: 4px 10px;
+    margin-top: 3px;
+    border-radius: 50px;
+    font-size: 10px;
+    border: 2px solid $pink;
+  }
+
+  &__filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  &__filter-tag {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border: none;
+    background-color: $black;
+    color: $white;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid $black;
+    transition: 250ms ease-in-out;
+
+    &:hover {
+      border: 2px solid $pink;
     }
-    &__title {
-        color: $white;
-        font-size: 25px;
-    }
-    &__link {
+  }
+
+  &__filter-label {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: $white;
+  }
+  &__github {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover {
+      .portfolio__icon {
         color: $pink;
+      }
     }
-    &__description {
-        color: $grey-on-black;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    &__tags {
-    }
-    &__tag {
-        background-color: initial;
-        color: $white;
-        border-radius: 0px;
-        border: none;
-        padding: 4px 10px;
-        margin-top: 3px;
-        border-radius: 50px;
-        font-size: 10px;
-        border: 2px solid $pink;
-    }
-
-    &__filter-tags {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-
-    &__filter-tag {
-        margin-right: 5px;
-        margin-bottom: 5px;
-        font-size: 14px;
-        font-weight: 800;
-        padding: 10px 20px;
-        border: none;
-        background-color: $black;
-        color: $white;
-        cursor: pointer;
-        outline: none;
-        border: 2px solid $black;
-        transition: 250ms ease-in-out;
-
-        &:hover {
-            border: 2px solid $pink;
-        }
-    }
-
-    &__filter-label {
-        font-size: 30px;
-        font-weight: 800;
-        margin-bottom: 10px;
-        display: inline-block;
-        color: $white;
-    }
-    &__github {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        color: $white;
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        text-transform: uppercase;
-        &:hover {
-            .portfolio__icon {
-                color: $pink;
-            }
-        }
-    }
-    &__icon {
-        color: $black;
-        margin-left: 10px;
-        font-size: 22px;
-        background-color: $white;
-        padding: 2px;
-        border-radius: 50px;
-        transition: 250ms;
-    }
+  }
+  &__icon {
+    color: $black;
+    margin-left: 10px;
+    font-size: 22px;
+    background-color: $white;
+    padding: 2px;
+    border-radius: 50px;
+    transition: 250ms;
+  }
+  &__construction {
+    color: rgba($pink, 0.6);
+  }
 }
 
 .fp-portfolio {
-    background-color: $black;
+  background-color: $black;
 
-    &__content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        position: relative;
-        z-index: 1;
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+    z-index: 1;
 
-        @media (max-width: $tablet-sizing) {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        @media (max-width: $large-phone-sizing) {
-            grid-template-columns: 1fr;
-        }
+    @media (max-width: $tablet-sizing) {
+      grid-template-columns: 1fr 1fr;
     }
 
-    &__entry {
-        position: relative;
-        overflow: hidden;
-        height: 260px;
+    @media (max-width: $large-phone-sizing) {
+      grid-template-columns: 1fr;
+    }
+  }
 
-        &:last-of-type {
-            display: none;
-        }
+  &__entry {
+    position: relative;
+    overflow: hidden;
+    height: 260px;
 
-        @media (max-width: $tablet-sizing) {
-            &:last-of-type {
-                display: block;
-            }
-        }
-
-        @media (max-width: $large-phone-sizing) {
-            &:last-of-type {
-                display: none;
-            }
-        }
-
-        &:hover {
-            .fp-portfolio__overlay {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            .fp-portfolio__img {
-                transform: scale(1.1);
-            }
-        }
+    &:last-of-type {
+      display: none;
     }
 
-    &__img {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        height: 100%;
-        transition: 1000ms;
+    @media (max-width: $tablet-sizing) {
+      &:last-of-type {
+        display: block;
+      }
     }
 
-    &__overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-
-        background-color: rgba($grey, 0.7);
-
-        transform: translateY(100%);
-        opacity: 0;
-        transition: 500ms;
+    @media (max-width: $large-phone-sizing) {
+      &:last-of-type {
+        display: none;
+      }
     }
 
-    &__title {
-        font-size: 25px;
+    &:hover {
+      .fp-portfolio__overlay {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .fp-portfolio__img {
+        transform: scale(1.1);
+      }
     }
-    &__description {
-        color: $grey-on-black;
-        font-size: 20px;
-    }
-    &__btn {
-        margin-top: 10px;
-    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    transition: 1000ms;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    background-color: rgba($grey, 0.7);
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 500ms;
+  }
+
+  &__title {
+    font-size: 25px;
+  }
+  &__description {
+    color: $grey-on-black;
+    font-size: 20px;
+  }
+  &__btn {
+    margin-top: 10px;
+  }
 }
 
 .portfolio-leave-anim {
-    animation: portfolio-leave;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    opacity: 1;
+  animation: portfolio-leave;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 1;
 }
 
 @keyframes portfolio-leave {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
