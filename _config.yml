@@ -1,5 +1,5 @@
 name: Daniel Cornock
-url: https://www.danielcornock.co.uk
+url: https://www.danielcornock-legacy.netlify.app
 title: Daniel Cornock
 description: Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.
 permalink: /blog/:categories/:title
@@ -7,27 +7,27 @@ staticImgLocation: /assets/img/static
 searchLocation: /blog/archive
 comments: true
 categoryList:
-    - discussion
-    - tutorials
-    - archive
+  - discussion
+  - tutorials
+  - archive
 markdown: kramdown
 kramdown:
-    input: GFM
-    syntax_highlighter: rouge
+  input: GFM
+  syntax_highlighter: rouge
 include: ['_pages']
 
 collections:
-    portfolio:
-        output: true
+  portfolio:
+    output: true
 
 defaults:
-    - scope:
-          path: ''
-          type: 'portfolio'
-      values:
-          layout: 'portfolio'
-    - scope:
-          path: ''
-          type: 'posts'
-      values:
-          layout: 'post'
+  - scope:
+      path: ''
+      type: 'portfolio'
+    values:
+      layout: 'portfolio'
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
