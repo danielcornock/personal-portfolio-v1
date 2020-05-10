@@ -1,7 +1,7 @@
 ---
 title: Daniel Cornock
 type: Portfolio & Blog
-link: www.danielcornock.co.uk
+link: www.danielcornock-legacy.netlify.app
 github:
 stacks:
   - HTML
@@ -16,4 +16,3 @@ img: /assets/img/work_daniel-cornock.png
 featured: true
 completed: true
 ---
-
