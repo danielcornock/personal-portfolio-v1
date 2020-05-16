@@ -1,0 +1,80 @@
+[
+    
+      {
+  
+        "title"    : "2019: My year in a blog post",
+        "url"      : "/blog/discussion/2019-year-review",
+        "category" : "discussion",
+        "tags"     : "Review, Personal, Reflection",
+        "date"     : "2019-12-29 00:00:00 +0000",
+        "description" : "A discussion of the last year and my progress in to the tech industry."
+  
+      } ,
+    
+      {
+  
+        "title"    : "Static site search using vanilla JS",
+        "url"      : "/blog/tutorials/static-site-search",
+        "category" : "tutorials",
+        "tags"     : "Search, Javascript, Static",
+        "date"     : "2019-08-11 00:00:00 +0100",
+        "description" : "A simple search feature that can be implemented on any static site without any external libraries."
+  
+      } ,
+    
+      {
+  
+        "title"    : "The Anatomy of a Website",
+        "url"      : "/blog/tutorials/website-anatomy",
+        "category" : "tutorials",
+        "tags"     : "HTML, CSS, Beginner",
+        "date"     : "2019-06-25 00:00:00 +0100",
+        "description" : "Are you new to web development, and find yourself wondering what goes in to all these websites? This article may be for you!"
+  
+      } ,
+    
+      {
+  
+        "title"    : "#100DaysOfCode - My Thoughts So Far",
+        "url"      : "/blog/discussion/100-days-of-code",
+        "category" : "discussion",
+        "tags"     : "Challenges, Personal",
+        "date"     : "2019-06-05 00:00:00 +0100",
+        "description" : "I&#39;m currently on day 27 of the challenge. In this post I&#39;ll talk about what I&#39;ve learned &amp; how I&#39;ve found it."
+  
+      } ,
+    
+      {
+  
+        "title"    : "My first post using netlifyCMS!",
+        "url"      : "/blog/discussion/my-first-post-using-netlifycms",
+        "category" : "discussion",
+        "tags"     : "CMS, Jekyll, Netlify",
+        "date"     : "2019-05-31 00:00:00 +0100",
+        "description" : "I decided to get stuck in to a CMS with jekyll, and I&#39;m pleasantly surprised!"
+  
+      } ,
+    
+      {
+  
+        "title"    : "CSS Positioning For Absolute Beginners",
+        "url"      : "/blog/tutorials/css-positioning",
+        "category" : "tutorials",
+        "tags"     : "CSS, HTML, Beginner",
+        "date"     : "2019-05-17 00:00:00 +0100",
+        "description" : "A handy reference for both new and experienced developers for when you just can&#39;t get that positioning quite right."
+  
+      } ,
+    
+      {
+  
+        "title"    : "Hello, and welcome to my humble blog!",
+        "url"      : "/blog/discussion/my-first-post",
+        "category" : "discussion",
+        "tags"     : "Personal",
+        "date"     : "2019-05-16 00:00:00 +0100",
+        "description" : "Hey, thanks for stopping by! In this blog I aim to provide tutorials, experiences and anything &amp; everything web dev."
+  
+      } 
+    
+  ]

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- BROWSER ESSENTIALS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- META INFORMATION -->
+    <title>Static site search using vanilla JS | Daniel Cornock</title>
+    <meta name="description" content="A simple search feature that can be implemented on any static site without any external libraries." />
+    <meta name="theme-color" content="#EC5367" />
+
+    <!-- XML FEED -->
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml" title="Daniel Cornock" />
+
+    <!-- STYLESHEETS / FONTAWESOME -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140387372-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140387372-1');
+    </script>
+
+    
+  </head>
+
+  <body>
+    <header
+      class="header 
+      
+          header--secondary
+      "
+    >
+      <div class="wrapper">
+        <div class="header__content">
+          <a href="/" class="header__branding">
+            <img class="header__logo" src="http://localhost:4000/assets/icons/mylogo.svg" alt="" />
+            
+            <div class="header__branding__text">Daniel Cornock<span>Web Developer</span></div>
+            
+          </a>
+
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <nav class="nav">
+            
+            <a
+              class="nav__item
+                      "
+              href="http://localhost:4000/portfolio"
+              >Portfolio</a
+            >
+            
+            <a
+              class="nav__item
+                      "
+              href="http://localhost:4000/blog"
+              >Blog</a
+            >
+            
+            <a
+              class="nav__item
+                      "
+              href="http://localhost:4000/contact"
+              >Contact</a
+            >
+            
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+
+
+<main class = "main__secondary main__secondary--post">
+    
+    <!-- Read Time Generator START -->
+
+
+
+<!-- Read Time Generator END -->
+
+<div class="blog-header  hide-on-mobile ">
+    <div class="wrapper wrapper--fixed-header">
+        <div class="blog-header__content">
+            <div class="blog-header__categories">
+                
+                    <a href = "http://localhost:4000/blog/discussion/" class="blog-header__category">discussion</a>
+                
+                    <a href = "http://localhost:4000/blog/tutorials/" class="blog-header__category">tutorials</a>
+                
+                    <a href = "http://localhost:4000/blog/archive/" class="blog-header__category">archive</a>
+                
+            </div>
+            <div class = "blog-header__search-container">
+                <input name = "searchCriteria" type="text" class = "blog-header__search" placeholder="Search">
+                <button class="blog-header__search-submit">
+                    <i class="blog-header__search-icon fas fa-search"></i>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<article class="post">
+    <div class="wrapper wrapper--section">
+        <header class="post__header">
+            <img class = "hero__bg hero__bg--left post__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+            <img class = "hero__bg hero__bg--right post__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+
+
+            <a href = "http://localhost:4000/blog/tutorials" class="post__category">tutorials</a>
+            <h1 class="post__heading">Static site search using vanilla JS</h1>
+            <div class="post__subheading">A simple search feature that can be implemented on any static site without any external libraries.</div>
+            <div class="post__meta">
+                <img class = "post__avatar" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
+
+                <span class="post__author">By <span class="colored">Daniel Cornock</span></span>
+                <span class="post__meta-divider post__meta-divider--hide"> | </span>
+                <div class = "post__details">
+                    <time class = "post__date" datetime = ''>
+                        11 Aug 2019
+                    </time>
+                    <span class="post__meta-divider"> | </span>
+                    
+                    <span class="post__time">7 mins</span>
+                </div>
+            </div>
+            <div class = "post__social">
+                <a class = "post__social-link" href=https://www.facebook.com/sharer/sharer.php?u=#http://localhost:4000/blog/tutorials/static-site-search" target="_blank"><i class="post__icon fab fa-facebook-f"></i></a>
+    
+                <a class = "post__social-link" href="http://twitter.com/intent/tweet?url=http://localhost:4000/blog/tutorials/static-site-search&text=Checkout this awesome blog.&via=danielcornock&hashtags=webdev" title="Tweet" target="_blank"><i class="post__icon fab fa-twitter"></i></a>
+    
+                <a class = "post__social-link" href = "http://www.reddit.com/submit?url=http://localhost:4000/blog/tutorials/static-site-search&title=Post%20to%20Reddit%20via%20URL"><i class="post__icon fab fa-reddit-alien"></i></a>
+            </div>
+        </header>
+
+        <hr class="post__divider"></hr>
+
+        <div class="post__main">
+            <section class="post__content">
+                <figure class = "post__image-container">
+                    <img src="http://localhost:4000/assets/img/post_static-search.jpg" alt="" class="img--responsive post__image">
+                    <figcaption class = "post__image-caption">
+                        Image from Unsplash.
+                    </figcaption>
+                </figure>
+                <p>In this tutorial, you will learn how to create a simple search for a static site using vanilla Javascript. It is ideal for use with blogs, recipe websites, and any website that holds searchable content on a small scale. If you want an example, have a go at using the search bar above and see it work for yourself!</p>
+
+<p>Just before we begin, I’d like to mention that I am using Jekyll to automatically loop through the posts on my site. This is not necessary for the tutorial, but it saves you repeating yourself when creating the searchable items. For more information about what Jekyll does and how to set it up, take a look <a href="https://jekyllrb.com/">here</a>.</p>
+
+<h2 id="step-1---creating-a-page-that-holds-all-of-your-searchable-items">Step 1 - Creating a page that holds all of your searchable items</h2>
+<p>Create a new page on your site - I called mine <code class="highlighter-rouge">archive</code>. This page will hold all of the searchable content. To make this easy, each of your searchable items should have the same structure, so that the Javascript you write can easily traverse through the information for each post and provide accurate search results.</p>
+
+<p>To not make it too resource-heavy, we will be searching through the <em>tags</em>, <em>title</em> and <em>description</em> of each post. For the most part, you can leave it as you would when normally displaying posts. However, to make searching easier, we’re going to add a <code class="highlighter-rouge">data-search</code> attribute to the container of each post that holds the tags. If using jekyll, you can use the following code below.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;li</span> <span class="na">class = </span><span class="s">"post"</span> <span class="na">data-search = </span><span class="s">"{{ post.tags | join: ' ' }}&gt;
+</span></code></pre></div></div>
+
+<p>Otherwise, you can just add your tags manually with a space between each.</p>
+
+<h2 id="step-2---create-the-search-function">Step 2 - Create the search function</h2>
+<p>The way this search function works is by looking at the URL, and checking if there is a value for the <code class="highlighter-rouge">hash</code> part of it using <code class="highlighter-rouge">window.location.hash</code>. You might have seen the has part of a URL before when adding navigation links that send you to a different part of the page using the ID of an element.</p>
+
+<p>First, we can set up the function.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">searchPosts</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">hash</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kd">const</span> <span class="nx">postList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.blog-posts</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">allPosts</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="nx">postList</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">.post</span><span class="dl">'</span><span class="p">));</span>
+<span class="p">}();</span>
+</code></pre></div></div>
+
+<ul>
+  <li>We automatically call the function by placing it in a variable and adding <code class="highlighter-rouge">();</code> after the curly braces.</li>
+  <li><code class="highlighter-rouge">if (!window.location.hash)</code> stops the function from running if there is no hash string found in the URL.</li>
+  <li>We use <code class="highlighter-rouge">Array.from</code> on the <code class="highlighter-rouge">allPosts</code> variable because <code class="highlighter-rouge">querySelectorAll()</code> extracts a node list, and we will be needing an array in order to use the filter function on it.</li>
+</ul>
+
+<p>After where the variables are assigned, we now need to declare and initialise a few more variables.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">rawSearchCriteria</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">has</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">searchCriteria</span> <span class="o">=</span> <span class="nx">rawSearchCriteria</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">searchCount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>The <code class="highlighter-rouge">rawSearchCriteria</code> extracts the has value from the url, and uses <code class="highlighter-rouge">substr(1)</code> to remove the first item from the string, which in our case is the <code class="highlighter-rouge">#</code> symbol.</li>
+  <li>The <code class="highlighter-rouge">searchCriteria</code> converts that value into uppercase to be compared with the values found in the posts.</li>
+  <li><code class="highlighter-rouge">searchCount</code> will be used to keep track of how many items match the criteria of the search.</li>
+</ul>
+
+<p>Now, we need to create a few functions outside of the main function that are reponsible for comparing each element that we want tested to the search criteria.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">searchTagsMatch</span> <span class="o">=</span> <span class="p">(</span><span class="nx">post</span><span class="p">,</span> <span class="nx">searchCriteria</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">tag</span> <span class="o">=</span> <span class="nx">post</span><span class="p">.</span><span class="nx">dataset</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nx">tag</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">searchCriteria</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">const</span> <span class="nx">searchTitleMatch</span> <span class="o">=</span> <span class="p">(</span><span class="nx">post</span><span class="p">,</span> <span class="nx">searchCriteria</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">title</span> <span class="o">=</span> <span class="nx">post</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.post-title</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nx">title</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">searchCriteria</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">const</span> <span class="nx">searchDescriptionMatch</span> <span class="o">=</span> <span class="p">(</span><span class="nx">post</span><span class="p">,</span> <span class="nx">searchCriteria</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">title</span> <span class="o">=</span> <span class="nx">post</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.post-description</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nx">title</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">searchCriteria</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As I mentioned earlier, we put the tags into it’s own dataset on the HTML element. This is because at this stage, we would have to select all of the tag elements and compare each of them to the search critera. However with this method we can just all the same <code class="highlighter-rouge">.includes()</code> method on them as we do with the title and description.</p>
+
+<p>These functions are quite repetitive, so if you can think of a more efficient way, don’t hesistate to send me a message or let me know in the comments!</p>
+
+<p>Now that these functions have been taken care of, we can plug them into a filter function back in our main function.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">filteredPosts</span> <span class="o">=</span> <span class="nx">allPosts</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">post</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">searchTagsMatch</span><span class="p">(</span><span class="nx">post</span><span class="p">,</span> <span class="nx">searchCriteria</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nx">searchCount</span><span class="o">++</span><span class="p">;</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">searchTitleMatch</span><span class="p">(</span><span class="nx">post</span><span class="p">,</span> <span class="nx">searchCriteria</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nx">searchCount</span><span class="o">++</span><span class="p">;</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">searchDescriptionMatch</span><span class="p">(</span><span class="nx">post</span><span class="p">,</span> <span class="nx">searchCriteria</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nx">searchCount</span><span class="o">++</span><span class="p">;</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>This function will run through each of the elements in the <code class="highlighter-rouge">allPosts</code> array, and plug them in to each of the functions that we defined just above. If any of these return true, that post will be added to <code class="highlighter-rouge">filteredPosts</code> and <code class="highlighter-rouge">searchCount</code> will be incremented.</p>
+
+<p>Now, we just have to replace the posts already present on the page with the new filtered array. This is easy with a bit of <code class="highlighter-rouge">removeChild()</code> and <code class="highlighter-rouge">appendChild()</code> magic!</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">rawSearchCriteria</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">postList</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">postList</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">postList</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">filteredPosts</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">post</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">postList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">post</span><span class="p">);</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Firstly, we double check that there is something in the hash portion of the URL.</li>
+  <li>Then, we run a <code class="highlighter-rouge">while</code> loop, removing the children of the element containing the posts one by one until there are none left.</li>
+  <li>Finally, we run a <code class="highlighter-rouge">forEach</code> loop on the list of filtered posts, and append them to the post container element.</li>
+</ul>
+
+<p><em>Congratulations!</em> At this point, you should now be able to add a search query into the URL of the site, and it will filter the posts based on the word you typed (you will have to refresh if you were already on your posts list page!).</p>
+
+<!-- ![URL: localhost:4000/blog/archives/#CSS](http://localhost:4000/assets/img/post_static-search_IMG1.png "Example URL") -->
+<figure>
+    <img src="http://localhost:4000/assets/img/post_static-search_IMG1.png" alt="Suffixing #CSS to the end of the URL." />
+    <figcaption class="post__image-caption">Suffixing #CSS to the end of the URL.</figcaption>
+</figure>
+
+<p>For me, the above URL brings up these results.</p>
+
+<figure>
+    <img src="http://localhost:4000/assets/img/post_static-search_IMG2.png" alt="Two results from searching for CSS" />
+    <figcaption class="post__image-caption">Two results from searching for CSS</figcaption>
+</figure>
+
+
+            </section>
+            <aside class="post__sidebar">
+                
+                <div class = "post__tags">
+                    <h3 class="post__tags-label">Post Tags</h3>
+                    <div class = "post__tags-container">
+                        
+                        <a href = "http://localhost:4000/blog/archive/#Search" class="post__tag">
+                            #Search
+                        </a>
+                        
+                        <a href = "http://localhost:4000/blog/archive/#Javascript" class="post__tag">
+                            #Javascript
+                        </a>
+                        
+                        <a href = "http://localhost:4000/blog/archive/#Static" class="post__tag">
+                            #Static
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                <div class="post__sidebar-divider"></div>
+                <div class = "post__tags"><div class = "author-info">
+    <img class = "author-info__img" src="http://localhost:4000/assets/img/static/headshot.jpg" alt="Daniel Cornock Avatar">
+    <div class="author-info__details">
+        <div class="author-info__intro">Meet the author...</div>
+        <div class="author-info__name">Daniel Cornock</div>
+        <div class="author-info__about">Front end developer specialising in HTML, CSS, Javascript and Angular with a keen interest in UX/UI design.</div>
+    </div>
+    <div class="author-info__social">
+        <a href="https://twitter.com/danielcornock?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-via="danielcornock" data-show-count="true">Follow @danielcornock</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div></div>
+                <div class="post__sidebar-divider"></div>
+
+                
+                
+
+                <div class = "post__tags">
+                    <h3 class="post__tags-label">Related Articles</h3>
+                    
+                        <a href = "http://localhost:4000/blog/tutorials/website-anatomy"class = "suggested">
+                            <img src="http://localhost:4000/assets/img/post_anatomy.jpg" alt="" class="suggested__img">
+                            <h4 class="suggested__title">The Anatomy of a Website</h4>
+                            <span class="suggested__category">tutorials</span>
+                        </a>
+                    
+                        <a href = "http://localhost:4000/blog/tutorials/css-positioning"class = "suggested">
+                            <img src="http://localhost:4000/assets/img/post_positioning.png" alt="" class="suggested__img">
+                            <h4 class="suggested__title">CSS Positioning For Absolute Beginners</h4>
+                            <span class="suggested__category">tutorials</span>
+                        </a>
+                    
+                </div>
+            </aside>
+        </div>
+    </div>
+</article>
+
+
+
+
+                
+
+    <!-- MAIN CONTENT END -->
+    
+
+    
+
+    <!-- RESERVED TO MAKE READ NEXT SECTION -->
+
+<section class="comments">
+    <div class="wrapper wrapper--section">
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+        this.page.url = "http://localhost:4000//blog/tutorials/static-site-search";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/blog/tutorials/static-site-search"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://danielcornock.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+<script id="dsq-count-scr" src="//danielcornock.disqus.com/count.js" async></script>
+
+
+    
+
+</main>
+    <div class="mailing">
+        <div class="wrapper wrapper--section">
+            <h2 class = "mailing__subhead">Like what you see? Keep updated with my latest posts.</h2>
+            <div class="mailing__content">
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = 'http://localhost:4000/thank-you';}"></iframe>
+               
+                <form class = "mailing__form" action="https://docs.google.com/forms/d/e/1FAIpQLSeuHXjqbf8hQeKVrFit-LpFEzVDeRBE_Bm3WPYcVaTKjUR3MA/formResponse" method="post" target = "hidden_iframe" onsubmit = "submitted=true">
+                    <input type='email' class = "mailing__input" name='emailAddress' placeholder = "e.g. johnsmith@gmail.com" required/>
+                    <button type='submit' class = "mailing__btn btn btn--primary" value="Send">Count me in!</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer__branding">
+                    <a href = "/" class="header__branding footer__title">
+                        <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo_full.png" alt="">
+                        <div class="header__branding__text">
+                            Daniel Cornock<span>Web Developer</span>
+                        </div>
+                    </a>
+                    <div class="footer__branding-text">
+                        I design, create and implement beautiful, functional websites for your every need. Contact me using any of the methods here, or read more on my <a class = "footer__branding__link" href="http://localhost:4000/blog">blog</a>.
+                    </div>  
+                </div>
+                <div class="sitemap">
+                    <h3 class = "footer__title">Links</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/about/">About Me</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/contact/">Contact Me</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/feed.xml/">RSS Feed</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/sitemap.xml">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer__resources">
+                    <h3 class = "footer__title">Resources</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/blog/">Blog</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/blog/tutorials/">Tutorials</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/portfolio/">My Work</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/resources/">Free Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3 class = "footer__title">Connect</h3>
+                    <a href = "https://www.linkedin.com/in/danielcornock/" class = "footer__social-entry"><i class="footer__social-icon fab fa-linkedin-in"></i>LinkedIn</a>
+                    <a href = "https://twitter.com/danielcornock" class = "footer__social-entry"><i class="footer__social-icon fab fa-twitter"></i>Twitter</a>
+                    <a href = "https://github.com/danielcornock" class = "footer__social-entry"><i class="footer__social-icon fab fa-github"></i>Github</a>    
+                    <a href = "https://github.com/danielcornock" class = "footer__social-entry"><i class="footer__social-icon far fa-envelope"></i>Email</a>    
+                </div>
+                
+            </div>
+            <div class="footer__other">
+
+            </div>
+            <div class="footer__credits">
+                SVG icons in SERVICES designed by Andi Nur Abdillah, Creative Mania & LAFS from the Noun Project.
+                <br>&copy; Daniel Cornock 2019
+            </div>
+        </div>
+    </footer>
+    <script src = "http://localhost:4000/assets/js/script.js" ></script>
+</body>
+
+</html>

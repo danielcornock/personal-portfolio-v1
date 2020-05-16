@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Daniel Cornock</title>
+        <link>http://localhost:4000</link>
+        <description>Personal portfolio page of Daniel Cornock, a front end developer from Birmingham, United Kingdom.</description>
+        <lastBuildDate>Sat, 16 May 2020 13:18:13 +0100</lastBuildDate>
+        
+        <item>
+            <title>2019: My year in a blog post</title>
+            <link>
+                http://localhost:4000/blog/discussion/2019-year-review
+            </link>
+            <description>
+                &lt;p&gt;I’m writing this blog post as a reflection of the past year, as I think that myself and many others don’t spend enough time looking back at our achievements. In this profession, it can feel like a constant uphill battle and you can be left feeling like you haven’t made any progress, until you take a second to look back even just a month ago and realise how much you’ve progressed.&lt;/p...
+            </description>
+            <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+            <guid>
+                http://localhost:4000/blog/discussion/2019-year-review
+            </guid>
+        </item>
+        
+        <item>
+            <title>Static site search using vanilla JS</title>
+            <link>
+                http://localhost:4000/blog/tutorials/static-site-search
+            </link>
+            <description>
+                &lt;p&gt;In this tutorial, you will learn how to create a simple search for a static site using vanilla Javascript. It is ideal for use with blogs, recipe websites, and any website that holds searchable content on a small scale. If you want an example, have a go at using the search bar above and see it work for yourself!&lt;/p&gt;
+
+&lt;p&gt;Just before we begin, I’d like to mention that I am us...
+            </description>
+            <pubDate>Sun, 11 Aug 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/tutorials/static-site-search
+            </guid>
+        </item>
+        
+        <item>
+            <title>The Anatomy of a Website</title>
+            <link>
+                http://localhost:4000/blog/tutorials/website-anatomy
+            </link>
+            <description>
+                &lt;p&gt;In this article you can find a brief summary of a few words you will hear around the programming/web development industry, which will hopefully clear up some of the jargon that gets thrown around. Without further ado, let’s get started.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-front-end&quot;&gt;The Front End&lt;/h2&gt;
+&lt;p&gt;The front end of a website is the bit that you physically see. In m...
+            </description>
+            <pubDate>Tue, 25 Jun 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/tutorials/website-anatomy
+            </guid>
+        </item>
+        
+        <item>
+            <title>#100DaysOfCode - My Thoughts So Far</title>
+            <link>
+                http://localhost:4000/blog/discussion/100-days-of-code
+            </link>
+            <description>
+                &lt;p&gt;If you’re an active member of the tech community, I’d be surprised if you hadn’t heard of #100DaysOfCode. It’s a coding challenge which, as you might have guessed, goes on for 100 days. The rules of the challenge are flexible, with each tailoring it to their own lifestyle. For me, I chose to aim to do an hour of either learning, coding, designing, or blog post writing every day (where ...
+            </description>
+            <pubDate>Wed, 05 Jun 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/discussion/100-days-of-code
+            </guid>
+        </item>
+        
+        <item>
+            <title>My first post using netlifyCMS!</title>
+            <link>
+                http://localhost:4000/blog/discussion/my-first-post-using-netlifycms
+            </link>
+            <description>
+                &lt;p&gt;POST RESERVED FOR FUTURE USE&lt;/p&gt;
+
+            </description>
+            <pubDate>Fri, 31 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/discussion/my-first-post-using-netlifycms
+            </guid>
+        </item>
+        
+        <item>
+            <title>CSS Positioning For Absolute Beginners</title>
+            <link>
+                http://localhost:4000/blog/tutorials/css-positioning
+            </link>
+            <description>
+                &lt;p&gt;Positioning objects in CSS can often be quite a daunting task. There are 4 main types of positioning, some which you will use all the time! Others, not so much.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Absolute Positioning&lt;/li&gt;
+  &lt;li&gt;Relative Positioning&lt;/li&gt;
+  &lt;li&gt;Fixed Positioning&lt;/li&gt;
+  &lt;li&gt;Sticky Positioning&lt;/li&gt;
+  &lt;li&gt;Static Positioning&lt;...
+            </description>
+            <pubDate>Fri, 17 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/tutorials/css-positioning
+            </guid>
+        </item>
+        
+        <item>
+            <title>Hello, and welcome to my humble blog!</title>
+            <link>
+                http://localhost:4000/blog/discussion/my-first-post
+            </link>
+            <description>
+                &lt;p&gt;Hi, and welcome to my web development blog!&lt;/p&gt;
+
+&lt;p&gt;In this blog, you can find my thoughts, ideas and experiences within the web development world. I will also be posting tutorials for common development concepts, both to help others and for my own benefit when I need a little bit of a reminder.&lt;/p&gt;
+
+&lt;p&gt;I hope you find something here that can benefit you or you ...
+            </description>
+            <pubDate>Thu, 16 May 2019 00:00:00 +0100</pubDate>
+            <guid>
+                http://localhost:4000/blog/discussion/my-first-post
+            </guid>
+        </item>
+        
+    </channel>
+</rss>

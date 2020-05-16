@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="381" height="381" viewBox="0 0 381 381">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="381" height="381"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <g id="Group_9" data-name="Group 9" transform="translate(34 50)">
+      <g id="Group_7" data-name="Group 7" transform="translate(26 10)">
+        <g id="Group_5" data-name="Group 5" transform="translate(130.539)">
+          <path id="Path_1" data-name="Path 1" d="M-4.01,159.35l130.149-130.1L-4.009-100.84h0" transform="translate(4.01 100.84)" fill="none" stroke="#ec5367" stroke-linecap="round" stroke-linejoin="round" stroke-width="120"/>
+          <path id="Path_2" data-name="Path 2" d="M-4.01,159.35l130.149-130.1L-4.009-100.84h0" transform="translate(4.01 100.84)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="50"/>
+        </g>
+        <g id="Group_6" data-name="Group 6">
+          <path id="Path_1-2" data-name="Path 1" d="M126.139,159.35-4.01,29.255l130.149-130.1h0" transform="translate(4.01 100.84)" fill="none" stroke="#ec5367" stroke-linecap="round" stroke-linejoin="round" stroke-width="120"/>
+          <path id="Path_2-2" data-name="Path 2" d="M126.139,159.35-4.01,29.255l130.149-130.1h0" transform="translate(4.01 100.84)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="50"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

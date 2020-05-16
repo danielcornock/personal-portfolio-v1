@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- BROWSER ESSENTIALS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- META INFORMATION -->
+    <title>Contact | Daniel Cornock</title>
+    <meta name="description" content="Whether you'd like a website, to collaborate with me, or anything. I'd love to hear from you!" />
+    <meta name="theme-color" content="#EC5367" />
+
+    <!-- XML FEED -->
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml" title="Daniel Cornock" />
+
+    <!-- STYLESHEETS / FONTAWESOME -->
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140387372-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140387372-1');
+    </script>
+
+    
+  </head>
+
+  <body>
+    <header
+      class="header 
+      
+          header--secondary
+      "
+    >
+      <div class="wrapper">
+        <div class="header__content">
+          <a href="/" class="header__branding">
+            <img class="header__logo" src="http://localhost:4000/assets/icons/mylogo.svg" alt="" />
+            
+            <div class="header__branding__text">Daniel Cornock<span>Web Developer</span></div>
+            
+          </a>
+
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <nav class="nav">
+            
+            <a
+              class="nav__item
+                      "
+              href="http://localhost:4000/portfolio"
+              >Portfolio</a
+            >
+            
+            <a
+              class="nav__item
+                      "
+              href="http://localhost:4000/blog"
+              >Blog</a
+            >
+            
+            <a
+              class="nav__item
+                      "
+              href="http://localhost:4000/contact"
+              >Contact</a
+            >
+            
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+
+
+<button class="lights">
+    <i class="lights__icon far fa-lightbulb"></i>
+    <div class="lights__text">LIGHTS<br>ON!</div>
+</button>
+
+<main class = "main__secondary main__secondary--contact">
+    
+    <div class="contact">
+    <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+    <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+    <div class="wrapper wrapper--section">
+        <div class="contact__content">
+            <div class="contact__information">
+                <h1 class="contact__heading">Contact Me</h1>
+                <p class="contact__subheading">Whether you'd like a website, to collaborate with me, or anything. I'd love to hear from you!</p>
+                <div class="contact__social">
+                    <a href = "#" class="contact__social-entry"><div class="contact__social-icon"><i class = "fab fa-linkedin-in"></i></div>Daniel Cornock</a>
+                    <a href = "#" class="contact__social-entry"><div class="contact__social-icon"><i class="fab fa-twitter"></i></div>danielcornock</a>
+                    <a href = "#" class="contact__social-entry"><div class="contact__social-icon"><i class="fab fa-github"></i></div>danielc7150</a>
+                    <a href = "tel:07586328423" class="contact__social-entry"><div class="contact__social-icon"><i class="fas fa-phone"></i></div></i>07586328423</a>
+                    <a href = "mailto:daniel_cornock@hotmail.co.uk" class="contact__social-entry contact__social-entry--wide"><div class="contact__social-icon"><i class="far fa-envelope"></i></div></i>daniel_cornock@hotmail.co.uk</a>
+                </div>
+                <!-- <iframe class = "contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155525.55550746876!2d-2.0037149429204786!3d52.47756399694619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942d1b417173%3A0xca81fef0aeee7998!2sBirmingham!5e0!3m2!1sen!2suk!4v1559393899994!5m2!1sen!2suk" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+            </div>
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = 'http://localhost:4000/thank-you-form';}"></iframe>
+
+            <form name = "Contact Form" method = "POST" data-netlify = "true" class="contact-form" target = "hidden_iframe" onsubmit = "submitted=true">
+                <label class = "contact-form__label" for="name">Name</label>
+                <input type="text" class="contact-form__input contact-form__name" name = "name" required placeholder = "Full Name">
+                <label class = "contact-form__label" for="email">Email</label>
+                <input type="email" class="contact-form__input contact-form__email" name = "email" required placeholder = "Email Address">
+                <label class = "contact-form__label" for="message">Message</label>
+                <textarea name="message" cols="30" rows="10" class="contact-form__input contact-form__message" required placeholder = "Your message here..."></textarea>
+                <button class = "btn btn--primary contact-form__btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+    
+
+</main>
+    <div class="mailing">
+        <div class="wrapper wrapper--section">
+            <h2 class = "mailing__subhead">Like what you see? Keep updated with my latest posts.</h2>
+            <div class="mailing__content">
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location = 'http://localhost:4000/thank-you';}"></iframe>
+               
+                <form class = "mailing__form" action="https://docs.google.com/forms/d/e/1FAIpQLSeuHXjqbf8hQeKVrFit-LpFEzVDeRBE_Bm3WPYcVaTKjUR3MA/formResponse" method="post" target = "hidden_iframe" onsubmit = "submitted=true">
+                    <input type='email' class = "mailing__input" name='emailAddress' placeholder = "e.g. johnsmith@gmail.com" required/>
+                    <button type='submit' class = "mailing__btn btn btn--primary" value="Send">Count me in!</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <img class = "hero__bg hero__bg--right" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <img class = "hero__bg hero__bg--left" src="http://localhost:4000/assets/icons/mylogo.svg" alt="">
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer__branding">
+                    <a href = "/" class="header__branding footer__title">
+                        <img class = "header__logo" src="http://localhost:4000/assets/icons/mylogo_full.png" alt="">
+                        <div class="header__branding__text">
+                            Daniel Cornock<span>Web Developer</span>
+                        </div>
+                    </a>
+                    <div class="footer__branding-text">
+                        I design, create and implement beautiful, functional websites for your every need. Contact me using any of the methods here, or read more on my <a class = "footer__branding__link" href="http://localhost:4000/blog">blog</a>.
+                    </div>  
+                </div>
+                <div class="sitemap">
+                    <h3 class = "footer__title">Links</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/about/">About Me</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/contact/">Contact Me</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/feed.xml/">RSS Feed</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/sitemap.xml">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer__resources">
+                    <h3 class = "footer__title">Resources</h3>
+                    <ul class="sitemap__list">
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/blog/">Blog</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/blog/tutorials/">Tutorials</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/portfolio/">My Work</a></li>
+                        <li class="sitemap__entry"><a href = "http://localhost:4000/resources/">Free Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3 class = "footer__title">Connect</h3>
+                    <a href = "https://www.linkedin.com/in/danielcornock/" class = "footer__social-entry"><i class="footer__social-icon fab fa-linkedin-in"></i>LinkedIn</a>
+                    <a href = "https://twitter.com/danielcornock" class = "footer__social-entry"><i class="footer__social-icon fab fa-twitter"></i>Twitter</a>
+                    <a href = "https://github.com/danielcornock" class = "footer__social-entry"><i class="footer__social-icon fab fa-github"></i>Github</a>    
+                    <a href = "https://github.com/danielcornock" class = "footer__social-entry"><i class="footer__social-icon far fa-envelope"></i>Email</a>    
+                </div>
+                
+            </div>
+            <div class="footer__other">
+
+            </div>
+            <div class="footer__credits">
+                SVG icons in SERVICES designed by Andi Nur Abdillah, Creative Mania & LAFS from the Noun Project.
+                <br>&copy; Daniel Cornock 2019
+            </div>
+        </div>
+    </footer>
+    <script src = "http://localhost:4000/assets/js/script.js" ></script>
+</body>
+
+</html>

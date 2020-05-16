@@ -1,0 +1,23 @@
+<ul class="blog-posts">
+    {% for post in site.posts %}
+        <li class = "post" data-search = "{{ post.tags | join: ' ' }}">
+            <img class = "post-img" src="{{ site.url }}{{post.featuredImg}}" alt="">
+            <div class="post-details">
+                <a href="{{ post.url }}">
+                    <h2 class = "post-title">{{post.title}}</h2>
+                </a>
+                <div class = "post-description">
+                    {{post.description}}
+                </div>
+
+                <div class = "post-tags">
+                    {% for tag in post.tags %}
+                        <div class="post-tag">
+                            #{{ tag }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </li>
+    {% endfor %}
+</ul>
